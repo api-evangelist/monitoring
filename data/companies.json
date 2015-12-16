@@ -61,7 +61,7 @@
 	},
 	{
 		"id": "oCe4p116Vw7SiS5F116V96ziiFHc116fVsMMlijBRfsq8OwOSjuTcHgUhi65bpn9MZZO6v1WNyub6q6ksPqDqMGIWydQ117117",
-		"name": "APIMetrics",
+		"name": "APImetrics",
 		"summary": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today.  By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution.  This allows developers, enterprises and API pr",
 		"details": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today.  By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution.  This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 		"website": "http://apimetrics.io",
