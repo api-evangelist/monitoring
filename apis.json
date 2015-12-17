@@ -1,0 +1,34 @@
+
+{
+	"name": "Monitoring",
+	"image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png",
+	"created": "2015-12-16",
+	"modified": "2015-12-16",
+	"url": "http://monitoring.apievangelist.com/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+	],
+	"include": [
+		{
+			"name": "API Science",
+			"url": "http://monitoring.apievangelist.com/data/api-science/apis.json"
+		},
+		{
+			"name": "APImetrics",
+			"url": "http://monitoring.apievangelist.com/data/apimetrics/apis.json"
+		},
+		{
+			"name": "Runscope",
+			"url": "http://monitoring.apievangelist.com/data/runscope/apis.json"
+		}
+	],
+	"tags": [
+	],
+	"maintainers": [
+		{
+			"FN": "Kin",
+			"X-twitter": "apievangelist",
+			"email": "info@apievangelist.com"
+		}
+	]
+}
