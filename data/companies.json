@@ -1,10 +1,10 @@
 [
 	{
-		"id": "NAzS116wMod33FWf8j116PiE97ZQTTC116LTdgJnOGux3WKT4fN9mKNgkpvE1UFn9smje123bhBD98rL4WgSkSfJe116eBSQ117117",
+		"id": "4L0KCnS9wxn5116gkc8JI0uGnZLRUq9ZdxnQp2XNOKMpw117",
 		"name": "Amazon Web Services",
-		"summary": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. With a few clicks in the AWS Management Console, you can create an API that acts as a u201cfront dooru201d for applications to access data, business logic, or functionality from your back-end services, such as workloads running on Amazon Elastic Compu",
-		"details": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. With a few clicks in the AWS Management Console, you can create an API that acts as a u201cfront dooru201d for applications to access data, business logic, or functionality from your back-end services, such as workloads running on Amazon Elastic Compute Cloud (Amazon EC2), code running on AWS Lambda, or any Web application. ",
-		"website": "http://aws.amazon.com/api-gateway/",
+		"summary": "Amazon Web Services(AWS) is a collection of remote computing services (also called web services) that together make up a cloud computing platform, offered over the Internet by Amazon.com. The most central and well-known of these services are Amazon EC2 and Amazon S3. The service is advertised as providing a large computing capacity (potentially many servers) much faster and cheaper than building a",
+		"details": "Amazon Web Services(AWS) is a collection of remote computing services (also called web services) that together make up a cloud computing platform, offered over the Internet by Amazon.com. The most central and well-known of these services are Amazon EC2 and Amazon S3. The service is advertised as providing a large computing capacity (potentially many servers) much faster and cheaper than building a physical server farm.",
+		"website": "http://aws.amazon.com",
 		"twitter": "https://twitter.com/awscloud",
 		"github": "https://github.com/amazonwebservices",
 		"blog": "http://aws.amazon.com/blogs/aws/",
@@ -12,10 +12,10 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-logo.jpg",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-logo.jpg",
-		"tags": null
+		"tags": "API Deployment,API Deployment Cloud,API Deployment Gateways,API Management,API Management Other,API Monitoring,API Virtualization,API-Stack,BaaS,Cloud Computing,Cloud Storage,Cloud-Stack,Compute-Stack,DNS,File-Stack,Hypermedia-API,My API Stack,Partners,Payment-API,Payments,Plans,Storage-Stack,Voice"
 	},
 	{
-		"id": "LKQz7R5tJnH4Jq8AtceIt5iz1r8C3eUcaoydVI116LLNIc29iL83UIxTPc116NH6veJ31160rNK8x1pwup2ldTdP0v123Q117117",
+		"id": "2Go3xrmb116lulMGxZTxekQPM123ZKyKqlrR68OPOmx5mH0117",
 		"name": "API Fortress",
 		"summary": "Test. Monitor. Automate: API Fortress is an enterprise cloud solution to test, monitor, and automate the testing of APIs and web services. Create a response validation test using our simple wizard, schedule the test to run multiple times a day, and monitor the updates sent to your inbox.",
 		"details": "Test. Monitor. Automate: API Fortress is an enterprise cloud solution to test, monitor, and automate the testing of APIs and web services. Create a response validation test using our simple wizard, schedule the test to run multiple times a day, and monitor the updates sent to your inbox.",
@@ -27,10 +27,10 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png",
-		"tags": null
+		"tags": "API Monitoring,API Testing"
 	},
 	{
-		"id": "R34U7pcjkNNr2SQ4ytTPlztCDDBUokgDpYc2BXY57sQgdDpaMavFGQtO9MEBNlakPtvpVuv1EEcUcx1230FdjFcg117117",
+		"id": "f3hfajjZFcB7IFOY123Z11617w6QJAMjUjYbnnDvmlm9jZk117",
 		"name": "API Science",
 		"summary": "Traditional monitoring services were designed long before APIs became core to modern applications. API Science is designed specifically for monitoring APIs. Sure, we understand REST, JSON, OAuth, XML. No problem.",
 		"details": "Traditional monitoring services were designed long before APIs became core to modern applications. API Science is designed specifically for monitoring APIs. Sure, we understand REST, JSON, OAuth, XML. No problem.",
@@ -42,10 +42,10 @@
 		"logo": "http://pbs.twimg.com/profile_images/3339472647/36be5c9570af7dcca6c86d46d0fabba8_normal.png",
 		"logo_width": "150",
 		"screenshot": "http://pbs.twimg.com/profile_images/3339472647/36be5c9570af7dcca6c86d46d0fabba8_normal.png",
-		"tags": null
+		"tags": "API Monitoring,My API Stack"
 	},
 	{
-		"id": "MVn3IlJ9116HQjkefvNKsdIIqClTwkIAWs3cl9B0f3DOYT1231165eywMlcC6ugOUNGSZ1GJVv4AxI9r0nhs2ANtNcbQ117117",
+		"id": "W4OXuvEaouZp2X123X0IKkZfRx7gPDHOWkfNCY8B6Et3M117",
 		"name": "apibond.com",
 		"summary": "APIBond is an API management platform that acts as a proxy where you can validate, transform, secure, analyze and scale any existing API.",
 		"details": "APIBond is an API management platform that acts as a proxy where you can validate, transform, secure, analyze and scale any existing API.",
@@ -57,13 +57,13 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apibond.png",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apibond.png",
-		"tags": null
+		"tags": "API Aggregation,API Monitoring,API Security,API Testing"
 	},
 	{
-		"id": "oCe4p116Vw7SiS5F116V96ziiFHc116fVsMMlijBRfsq8OwOSjuTcHgUhi65bpn9MZZO6v1WNyub6q6ksPqDqMGIWydQ117117",
+		"id": "E123FUGu6Ab1cEK17PeETKmeWC6aPx2A16123mf4wcs3TTw117",
 		"name": "APImetrics",
-		"summary": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today.  By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution.  This allows developers, enterprises and API pr",
-		"details": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today.  By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution.  This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
+		"summary": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API prov",
+		"details": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 		"website": "http://apimetrics.io",
 		"twitter": "https://twitter.com/apimetricstats",
 		"github": "",
@@ -72,10 +72,10 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
-		"tags": null
+		"tags": "Analytics,API Monitoring,My API Stack"
 	},
 	{
-		"id": "bhXG0Z7123A8MtOQ2G123sG6ZwbryZAPrVu7aVADgwXTiO7pkx5mGpm8mHY0Tq9zaK19gOctMgegdcv3ooBMkZwCRQ117117",
+		"id": "jtmln5cE2RnJJaGmpEi0kuMmEekN123Ni2ObIA62aXDVo117",
 		"name": "PagerDuty",
 		"summary": "PagerDuty is the 911 dispatch system for IT, helping operations engineers, DevOps and developers resolve IT system problems as quickly as possible. PagerDuty aggregates errors from all of your IT monitoring tools and handles the people part of the equation: alerting via phone, SMS or email, on-call scheduling and automatic escalation of critical incidents.",
 		"details": "PagerDuty is the 911 dispatch system for IT, helping operations engineers, DevOps and developers resolve IT system problems as quickly as possible. PagerDuty aggregates errors from all of your IT monitoring tools and handles the people part of the equation: alerting via phone, SMS or email, on-call scheduling and automatic escalation of critical incidents.",
@@ -87,13 +87,13 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
-		"tags": null
+		"tags": "Alerts,API Monitoring,API-Stack,Incident,Management,Monitoring,Platform-Stack,Security"
 	},
 	{
-		"id": "poU116WpqSvWOTqY123hu0ztvCgMATrk116QGlpySd4d0j5D6X18n4bdYsGa116WrAlBG9F4TsH9dvrocXssggZiyDzkww117117",
+		"id": "WEa6rkNHKhROZ8qzjICQCs1231KYiMyDNmIsjwju3kYXg117",
 		"name": "Pingdom",
-		"summary": "Pingdom is a service that tracks the uptime, downtime, and performance of websites.  When problems happen with a site that Pingdom monitors, it immediately alerts the owner so the problem can be taken care of. Pingdom monitors websites from multiple locations globally so that it can distinguish genuine downtime from routing and access problems. ",
-		"details": "Pingdom is a service that tracks the uptime, downtime, and performance of websites.  When problems happen with a site that Pingdom monitors, it immediately alerts the owner so the problem can be taken care of. Pingdom monitors websites from multiple locations globally so that it can distinguish genuine downtime from routing and access problems. ",
+		"summary": "Pingdom is a service that tracks the uptime, downtime, and performance of websites. When problems happen with a site that Pingdom monitors, it immediately alerts the owner so the problem can be taken care of. Pingdom monitors websites from multiple locations globally so that it can distinguish genuine downtime from routing and access problems.",
+		"details": "Pingdom is a service that tracks the uptime, downtime, and performance of websites. When problems happen with a site that Pingdom monitors, it immediately alerts the owner so the problem can be taken care of. Pingdom monitors websites from multiple locations globally so that it can distinguish genuine downtime from routing and access problems.",
 		"website": "http://www.pingdom.com",
 		"twitter": "https://twitter.com/#!/pingdom",
 		"github": "https://github.com/Pingdom",
@@ -102,10 +102,10 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
 		"logo_width": "125",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"tags": null
+		"tags": "API Monitoring,API Performance,API-Stack,Network-Stack"
 	},
 	{
-		"id": "DmzvxiZew12pBtBXofu2A8UhXxsBXqOjE116gCz8D9123123cZiO7Eg60x123RcX8w8Bl8W123nOJvBkPXV4IMaHWFHFcrUg117117",
+		"id": "tyQ7X0fQkFs6RxmXKQ1238nI71236c31lfm0uMXZp7sWxuQ117",
 		"name": "Pingometer",
 		"summary": "Pingometer is a service that monitors the uptime, downtime, and performance of websites. We offer HTTP, HTTPS, RUM, DNS, ICMP, IMAP, POP3, SMTP, TCP, UDP, and Transaction monitors. We have locations in Australia, Brazil, France, Germany, Luxembourg, Japan, the Netherlands, South Africa, the United Kingdom, and the United States.",
 		"details": "Pingometer is a service that monitors the uptime, downtime, and performance of websites. We offer HTTP, HTTPS, RUM, DNS, ICMP, IMAP, POP3, SMTP, TCP, UDP, and Transaction monitors. We have locations in Australia, Brazil, France, Germany, Luxembourg, Japan, the Netherlands, South Africa, the United Kingdom, and the United States.",
@@ -117,10 +117,10 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png",
-		"tags": null
+		"tags": "API Monitoring,API Performance"
 	},
 	{
-		"id": "DUxXFisUAy3BMSvZ8WDIsVrEKw5ARBi210lrybHKfdvx2wOGEDSqV8LDt7rA6AlfWHwm2k6hf8Z4UYNXY8DJHQ117117",
+		"id": "gW7Mcp6qnlzDYBaQGOfTn91ODd8Q87sluduIFJCwODY117",
 		"name": "RightAPI",
 		"summary": "TheRightAPI is enabling the API community by providing solutions to make working with APIs easier. If you need to discover, trust, monitor and manage APIs, TheRightAPI is here to help. TheRightAPI provides the platform and intelligence developers need to establish and maintain successful next generation applications.",
 		"details": "TheRightAPI is enabling the API community by providing solutions to make working with APIs easier. If you need to discover, trust, monitor and manage APIs, TheRightAPI is here to help. TheRightAPI provides the platform and intelligence developers need to establish and maintain successful next generation applications.",
@@ -132,13 +132,13 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/therightapi-logo-2.png",
 		"logo_width": "225",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/therightapi-logo-2.png",
-		"tags": null
+		"tags": "API Monitoring,API Testing"
 	},
 	{
-		"id": "GW123biLWXdN123bJGNA3HIA0xCcdX92W4e74qPum7APLeQA4OPHnGVk9PFYkgBslVUFCVfCd2pgjYyeUYHTYZ2nQA117117",
+		"id": "s74LmGFxE72BVMb8UBrZ8sLby9clBu7p3dUXAVwZHh0117",
 		"name": "Runscope",
-		"summary": "Runscope was started with the idea that depending on a web service API in a mobile or web application should be as easy as depending on code running locally. Weu2019ve assembled a team of API, infrastructure and developer experience experts to build tools to support the modern application development lifecycle.",
-		"details": "Runscope was started with the idea that depending on a web service API in a mobile or web application should be as easy as depending on code running locally. Weu2019ve assembled a team of API, infrastructure and developer experience experts to build tools to support the modern application development lifecycle.",
+		"summary": "Runscope was started with the idea that depending on a web service API in a mobile or web application should be as easy as depending on code running locally. We&rsquo;ve assembled a team of API, infrastructure and developer experience experts to build tools to support the modern application development lifecycle.",
+		"details": "Runscope was started with the idea that depending on a web service API in a mobile or web application should be as easy as depending on code running locally. We&rsquo;ve assembled a team of API, infrastructure and developer experience experts to build tools to support the modern application development lifecycle.",
 		"website": "https://www.runscope.com/",
 		"twitter": "https://twitter.com/Runscope",
 		"github": "https://github.com/Runscope",
@@ -147,10 +147,10 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
 		"logo_width": "250",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
-		"tags": null
+		"tags": "API Monitoring,API Testing,API-Stack,Monitoring-Stack,My API Stack,Testing-Stack"
 	},
 	{
-		"id": "5XY9ZmWQTyosDZvFCZ6cTFcMYRYz2h0GIoyxX0OinNHu4TKtVCYplbfx5gF17zutie84lMk6i3U7wTsc1sc1FQ117117",
+		"id": "OTD87UaGzDLWnjBT0dapZtQxbb0R22bpa116rEhuMoAUY117",
 		"name": "SmartBear Software",
 		"summary": "SmartBear Software provides tools for over 100,000 software professionals to build, test, and monitor some of the best software applications and websites anywhere on the desktop, mobile and in the cloud.",
 		"details": "SmartBear Software provides tools for over 100,000 software professionals to build, test, and monitor some of the best software applications and websites anywhere on the desktop, mobile and in the cloud.",
@@ -162,10 +162,10 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/SmartBear-Logo.png",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/SmartBear-Logo.png",
-		"tags": null
+		"tags": "API Monitoring,API Performance,API Security,API Testing,API Virtualization"
 	},
 	{
-		"id": "plK0tQ7Ez7123zhEnhGp9Qys7orbXGBEhDSQSDCVPUseLU6MDtHWAkC3qVCIsWZI8NaHiUM0123iyPRxF7Fe1168KCUA117117",
+		"id": "c123u123U2GyVrLtgt1lu9zPetPlwrGD8123R116fev4hgEpIfk117",
 		"name": "StatusPage.io",
 		"summary": "StatusPage.io launched in 2013 to give companies a better way to be more transparent with their customers. We recognize managing a status page outside of ones own infrastructure can be a hassle, and hope to increase the transparency of the web by making it easier to do so.",
 		"details": "StatusPage.io launched in 2013 to give companies a better way to be more transparent with their customers. We recognize managing a status page outside of ones own infrastructure can be a hassle, and hope to increase the transparency of the web by making it easier to do so.",
@@ -177,6 +177,6 @@
 		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png",
 		"logo_width": "150",
 		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png",
-		"tags": null
+		"tags": "API Monitoring"
 	}
 ]
