@@ -34,7 +34,7 @@ feature_image_width: 45
 
 # Project
 project_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
-project_summary: Research project to keep better understand the area of API monitoring, trying to understand the emerging approaches, and where the largest areas of growth are. You can find news I've curated, organizations doing interesting things, some of the common building blocks I've identified, and open source tooling in this research repo.
+project_summary: A Research project to study the area of API monitoring, and better understand this fast growing area of the API life cycle. You can find news I've curated, organizations doing interesting things, some of the common building blocks I've identified, and open source tooling in this research report.
 
 # Navigation
 navigation:
