@@ -5,7 +5,7 @@
 		"name": "Service Availability",
 		"about": "Making sure a service is available.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png",
 		"image_width": "0",
 		"sort_order": "0"
@@ -16,7 +16,7 @@
 		"name": "Latency Measurement",
 		"about": "Measuring the latency associated with a specific request.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-speedometer.png",
 		"image_width": "0",
 		"sort_order": "0"
@@ -27,7 +27,7 @@
 		"name": "Response Header Validation",
 		"about": "Being able to validate for a specific header for a request.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-validation.jpg",
 		"image_width": "0",
 		"sort_order": "0"
@@ -38,7 +38,7 @@
 		"name": "Response Body Validation",
 		"about": "Being able to validate the content of the body for a request.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-validation.jpg",
 		"image_width": "0",
 		"sort_order": "0"
@@ -49,7 +49,7 @@
 		"name": "Request Editor",
 		"about": "Being able to edit the request being made as part of API monitoring process.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-editor.png",
 		"image_width": "0",
 		"sort_order": "0"
@@ -60,7 +60,7 @@
 		"name": "Request Retry",
 		"about": "Being able to retry a specific request that has been made at previous timeframe.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-retry.png",
 		"image_width": "0",
 		"sort_order": "0"
@@ -71,7 +71,7 @@
 		"name": "Request Sharing",
 		"about": "Allow the sharing of a specific request designated for monitoring.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-sharing.jpeg",
 		"image_width": "0",
 		"sort_order": "0"
@@ -82,7 +82,7 @@
 		"name": "Request Playback",
 		"about": "Enable the playback of a specific request that has been made at previous timeframe.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-play.jpg",
 		"image_width": "0",
 		"sort_order": "0"
@@ -93,7 +93,7 @@
 		"name": "Request Scheduling",
 		"about": "Allow the scheduling of when to run specific task at specific time(s).",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-scheduling.jpeg",
 		"image_width": "0",
 		"sort_order": "0"
@@ -104,7 +104,7 @@
 		"name": "Request Compare",
 		"about": "Being able to compare to requests against each other.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-compare.png",
 		"image_width": "0",
 		"sort_order": "0"
@@ -115,7 +115,7 @@
 		"name": "Request Scripting",
 		"about": "The ability to script against a specific request.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-html-code.png",
 		"image_width": "0",
 		"sort_order": "0"
@@ -126,7 +126,7 @@
 		"name": "Request Automation",
 		"about": "The ability to automate the running of multiple requests.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-clock-gear.png",
 		"image_width": "0",
 		"sort_order": "0"
@@ -137,7 +137,7 @@
 		"name": "Request Commenting",
 		"about": "Allowing the ability to comment on a specific request.",
 		"category_id": "167",
-		"category": "Core Monitoring",
+		"category": "Core Details",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-chat.png",
 		"image_width": "0",
 		"sort_order": "0"
