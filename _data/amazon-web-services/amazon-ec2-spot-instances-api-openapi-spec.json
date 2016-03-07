@@ -1,0 +1,295 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Spot Instances API",
+		"description": "The API for management Spot Instances",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CancelSpotInstanceRequests&k=1": {
+			"get": {
+				"summary": "Cancels one or more Spot instance requests.",
+				"description": "Cancels one or more Spot instance requests.",
+				"operationId": "cancelspotinstancerequests",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotInstanceRequestId.N",
+					"description": "One or more Spot instance request IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateSpotDatafeedSubscription&k=1": {
+			"get": {
+				"summary": "Creates a data feed for Spot instances, enabling you to view Spot instance usage logs.",
+				"description": "Creates a data feed for Spot instances, enabling you to view Spot instance usage logs.",
+				"operationId": "createspotdatafeedsubscription",
+				"parameters": [{
+					"in": "query",
+					"name": "Bucket",
+					"description": "The Amazon S3 bucket in which to store the Spot instance data feed.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Prefix",
+					"description": "A prefix for the data feed file names.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteSpotDatafeedSubscription&k=1": {
+			"get": {
+				"summary": "Deletes the data feed for Spot instances.",
+				"description": "Deletes the data feed for Spot instances.",
+				"operationId": "deletespotdatafeedsubscription",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSpotDatafeedSubscription&k=1": {
+			"get": {
+				"summary": "Describes the data feed for Spot instances.",
+				"description": "Describes the data feed for Spot instances.",
+				"operationId": "describespotdatafeedsubscription",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSpotInstanceRequests&k=1": {
+			"get": {
+				"summary": "Describes the Spot instance requests that belong to your account.",
+				"description": "Describes the Spot instance requests that belong to your account.",
+				"operationId": "describespotinstancerequests",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotInstanceRequestId.N",
+					"description": "One or more Spot instance request IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSpotPriceHistory&k=1": {
+			"get": {
+				"summary": "Describes the Spot price history.",
+				"description": "Describes the Spot price history.",
+				"operationId": "describespotpricehistory",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZone",
+					"description": "Filters the results by the specified Availability Zone.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EndTime",
+					"description": "The date and time, up to the current date, from which to stop retrieving the price history data,        in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceType.N",
+					"description": "Filters the results by the specified instance types.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return in a single call.        Specify a value between 1 and 1000. The default value is 1000.             To retrieve the remaining results, make another call with the returned       NextToken value.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token for the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ProductDescription.N",
+					"description": "Filters the results by the specified basic product descriptions.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "StartTime",
+					"description": "The date and time, up to the past 90 days, from which to start retrieving the price history data,        in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RequestSpotInstances&k=1": {
+			"get": {
+				"summary": "Creates a Spot instance request.",
+				"description": "Creates a Spot instance request.",
+				"operationId": "requestspotinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZoneGroup",
+					"description": "The user-specified name for a logical grouping of bids.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "BlockDurationMinutes",
+					"description": "The required duration for the Spot instances, in minutes. This value must be a multiple of 60        (60, 120, 180, 240, 300, or 360).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.        For more information, see How to Ensure Idempotency        in the Amazon Elastic Compute Cloud User Guide.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceCount",
+					"description": "The maximum number of Spot instances to launch.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "LaunchGroup",
+					"description": "The instance launch group. Launch groups are Spot instances thatttttlaunch together and terminate together.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "LaunchSpecification",
+					"description": "The launch specification.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotPrice",
+					"description": "The maximum hourly price (bid) for any Spot instance launched to fulfill the request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Type",
+					"description": "The Spot instance request type.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ValidFrom",
+					"description": "The start date of the request. If this is a one-time request, thettttrequest becomes active at this date and time and remains active untilttttall instances launch, the request expires, or the request is canceled.ttttIf the request is persistent, the request becomes active at this datettttand time and remains active until it expires or is canceled.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ValidUntil",
+					"description": "The end date of the request. If this is a one-time request, thettttrequest remains active until all instances launch, the request isttttcanceled, or this date is reached. If the request is persistent, itttttremains active until it is canceled or this date and time is reached.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
