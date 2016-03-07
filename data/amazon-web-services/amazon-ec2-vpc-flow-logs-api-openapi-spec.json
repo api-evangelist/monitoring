@@ -1,0 +1,125 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 VPC Flow Logs API",
+		"description": "The API for management VPC Flow Logs",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateFlowLogs&k=1": {
+			"get": {
+				"summary": "Creates one or more flow logs to capture IP traffic for a specific network interface, subnet,n      or VPC.",
+				"description": "Creates one or more flow logs to capture IP traffic for a specific network interface, subnet,n      or VPC.",
+				"operationId": "createflowlogs",
+				"parameters": [{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DeliverLogsPermissionArn",
+					"description": "The ARN for the IAM role thats used to post flow logs to a CloudWatch Logs log group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "LogGroupName",
+					"description": "The name of the CloudWatch log group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResourceId.N",
+					"description": "One or more subnet, network interface, or VPC IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResourceType",
+					"description": "The type of resource on which to create the flow log.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TrafficType",
+					"description": "The type of traffic to log.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteFlowLogs&k=1": {
+			"get": {
+				"summary": "Deletes one or more flow logs.",
+				"description": "Deletes one or more flow logs.",
+				"operationId": "deleteflowlogs",
+				"parameters": [{
+					"in": "query",
+					"name": "FlowLogId.N",
+					"description": "One or more flow log IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeFlowLogs&k=1": {
+			"get": {
+				"summary": "Describes one or more flow logs.",
+				"description": "Describes one or more flow logs.",
+				"operationId": "describeflowlogs",
+				"parameters": [{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FlowLogId.N",
+					"description": "One or more flow log IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another      request with the returned NextToken value. This value can be between 5 and 1000;      if MaxResults is given a value larger than 1000, only 1000 results are returned. You cannot specify this parameter and the flow log IDs parameter in the same      request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
