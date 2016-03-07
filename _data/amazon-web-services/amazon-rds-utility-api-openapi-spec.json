@@ -1,0 +1,253 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Utility API",
+		"description": "The API for managing Amazon RDS Utilitys",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AddSourceIdentifierToSubscription&k=1": {
+			"get": {
+				"summary": "Adds a source identifier to an existing RDS event notification subscription.",
+				"description": "Adds a source identifier to an existing RDS event notification subscription.",
+				"operationId": "addsourceidentifiertosubscription",
+				"parameters": [{
+					"in": "query",
+					"name": "SourceIdentifier",
+					"description": "The identifier of the event source to be added. An identifier must begin with a letter and must contain only             ASCII letters, digits, and hyphens; it cannot end with a hyphen or contain two consecutive hyphens.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubscriptionName",
+					"description": "The name of the RDS event notification subscription you want to add a source identifier to.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ApplyPendingMaintenanceAction&k=1": {
+			"get": {
+				"summary": "Applies a pending maintenance action to a resource (for example, to a DB instance).",
+				"description": "Applies a pending maintenance action to a resource (for example, to a DB instance).",
+				"operationId": "applypendingmaintenanceaction",
+				"parameters": [{
+					"in": "query",
+					"name": "ApplyAction",
+					"description": "The pending maintenance action to apply to this resource.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptInType",
+					"description": "A value that specifies the type of opt-in request, or undoes an opt-in request. An opt-in            request of type immediate cannot be undone.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResourceIdentifier",
+					"description": "The RDS Amazon Resource Name (ARN) of the resource that the       pending maintenance action applies to. For information about        creating an ARN,       see         Constructing an RDS Amazon Resource Name (ARN).",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeAccountAttributes&k=1": {
+			"get": {
+				"summary": "Lists all of the attributes for a customer account.",
+				"description": "Lists all of the attributes for a customer account.",
+				"operationId": "describeaccountattributes",
+				"parameters": [{
+					"in": "query",
+					"name": "AccountQuotas",
+					"description": "A list of AccountQuota objects. Within this list, each quota has a name,             a count of usage toward the quota maximum, and a maximum value for the quota.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeCertificates&k=1": {
+			"get": {
+				"summary": "Lists the set of CA certificates provided by Amazon RDS for this AWS account.",
+				"description": "Lists the set of CA certificates provided by Amazon RDS for this AWS account.",
+				"operationId": "describecertificates",
+				"parameters": [{
+					"in": "query",
+					"name": "CertificateIdentifier",
+					"description": "The user-supplied certificate identifier.        If this parameter is specified, information for only the        identified certificate is returned.        This parameter isnt case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous        DescribeCertificates request.        If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,        a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBLogFiles&k=1": {
+			"get": {
+				"summary": "Returns a list of DB log files for the DB instance.",
+				"description": "Returns a list of DB log files for the DB instance.",
+				"operationId": "describedblogfiles",
+				"parameters": [{
+					"in": "query",
+					"name": "DBInstanceIdentifier",
+					"description": "The customer-assigned name of the DB instance that contains the             log files you want to list.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FileLastWritten",
+					"description": "Filters the available log files for files written since the specified date,             in POSIX timestamp format with milliseconds.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FilenameContains",
+					"description": "Filters the available log files for log file names that contain the specified string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FileSize",
+					"description": "Filters the available log files for files larger than the specified size.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "The pagination token provided in the previous request.            If this parameter is specified the response includes only records beyond the marker, up to MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response. If more records exist than the specified MaxRecords value,            a pagination token called a marker is included in the response so that the remaining results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DownloadDBLogFilePortion&k=1": {
+			"get": {
+				"summary": "Downloads all or a portion of the specified log file, up to 1 MB in size.",
+				"description": "Downloads all or a portion of the specified log file, up to 1 MB in size.",
+				"operationId": "downloaddblogfileportion",
+				"parameters": [{
+					"in": "query",
+					"name": "DBInstanceIdentifier",
+					"description": "The customer-assigned name of the DB instance that contains the             log files you want to list.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "LogFileName",
+					"description": "The name of the log file to be downloaded.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "The pagination token provided in the previous request or 0. If the Marker parameter is specified             the response includes only records beyond the marker until the end of the file or up to NumberOfLines.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NumberOfLines",
+					"description": "The number of lines to download. If the number of lines specified results in a file over 1 MB            in size, the file will be truncated at 1 MB in size.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RemoveSourceIdentifierFromSubscription&k=1": {
+			"get": {
+				"summary": "Removes a source identifier from an existing RDS event notification subscription.",
+				"description": "Removes a source identifier from an existing RDS event notification subscription.",
+				"operationId": "removesourceidentifierfromsubscription",
+				"parameters": [{
+					"in": "query",
+					"name": "SourceIdentifier",
+					"description": "The source identifier to be removed from the subscription, such as the DB instance identifier             for a DB instance or the name of a security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubscriptionName",
+					"description": "The name of the RDS event notification subscription you want to remove a source identifier from.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
