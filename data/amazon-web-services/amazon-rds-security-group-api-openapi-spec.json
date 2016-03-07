@@ -1,0 +1,195 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Security Group API",
+		"description": "The API for managing Amazon RDS Security Groups",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AuthorizeDBSecurityGroupIngress&k=1": {
+			"get": {
+				"summary": "Enables ingress to a DBSecurityGroup using one of two forms of authorization.",
+				"description": "Enables ingress to a DBSecurityGroup using one of two forms of authorization.",
+				"operationId": "authorizedbsecuritygroupingress",
+				"parameters": [{
+					"in": "query",
+					"name": "CIDRIP",
+					"description": "The IP range to authorize.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSecurityGroupName",
+					"description": "The name of the DB security group to add authorization to.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EC2SecurityGroupId",
+					"description": "Id of the EC2 security group to authorize.        For VPC DB security groups, EC2SecurityGroupId must be provided.        Otherwise, EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId must be provided.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EC2SecurityGroupName",
+					"description": "Name of the EC2 security group to authorize.        For VPC DB security groups, EC2SecurityGroupId must be provided.        Otherwise, EC2SecurityGroupOwnerId and either EC2SecurityGroupName       or EC2SecurityGroupId must be provided.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EC2SecurityGroupOwnerId",
+					"description": "AWS account number of the owner of the EC2 security group        specified in the EC2SecurityGroupName parameter.        The AWS Access Key ID is not an acceptable value.        For VPC DB security groups, EC2SecurityGroupId must be provided.        Otherwise, EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId must be provided.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateDBSecurityGroup&k=1": {
+			"get": {
+				"summary": "Creates a new DB security group.",
+				"description": "Creates a new DB security group.",
+				"operationId": "createdbsecuritygroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSecurityGroupDescription",
+					"description": "The description for the DB security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSecurityGroupName",
+					"description": "The name for the DB security group.        This value is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDBSecurityGroup&k=1": {
+			"get": {
+				"summary": "Deletes a DB security group.",
+				"description": "Deletes a DB security group.",
+				"operationId": "deletedbsecuritygroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSecurityGroupName",
+					"description": "The name of the DB security group to delete.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBSecurityGroups&k=1": {
+			"get": {
+				"summary": "Returns a list of DBSecurityGroup descriptions.",
+				"description": "Returns a list of DBSecurityGroup descriptions.",
+				"operationId": "describedbsecuritygroups",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSecurityGroupName",
+					"description": "The name of the DB security group to return details for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous        DescribeDBSecurityGroups request.        If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,        a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RevokeDBSecurityGroupIngress&k=1": {
+			"get": {
+				"summary": "Revokes ingress from a DBSecurityGroup for previously authorized IP ranges or EC2 or VPC Securityn        Groups.",
+				"description": "Revokes ingress from a DBSecurityGroup for previously authorized IP ranges or EC2 or VPC Securityn        Groups.",
+				"operationId": "revokedbsecuritygroupingress",
+				"parameters": [{
+					"in": "query",
+					"name": "CIDRIP",
+					"description": "The IP range to revoke access from.         Must be a valid CIDR range. If CIDRIP is specified,         EC2SecurityGroupName, EC2SecurityGroupId and EC2SecurityGroupOwnerId        cannot be provided.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSecurityGroupName",
+					"description": "The name of the DB security group to revoke ingress from.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EC2SecurityGroupId",
+					"description": "The id of the EC2 security group to revoke access from.        For VPC DB security groups, EC2SecurityGroupId must be provided.        Otherwise, EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId must be provided.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EC2SecurityGroupName",
+					"description": "The name of the EC2 security group to revoke access from.        For VPC DB security groups, EC2SecurityGroupId must be provided.        Otherwise, EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId must be provided.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EC2SecurityGroupOwnerId",
+					"description": "The AWS Account Number of the owner of the EC2 security group        specified in the EC2SecurityGroupName parameter.        The AWS Access Key ID is not an acceptable value.        For VPC DB security groups, EC2SecurityGroupId must be provided.        Otherwise, EC2SecurityGroupOwnerId and either EC2SecurityGroupName or EC2SecurityGroupId must be provided.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
