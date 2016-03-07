@@ -1,0 +1,327 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "APIMetrics Calls API",
+		"description": "The API for managing APIMetrics API calls.",
+		"termsOfService": "http://apimetrics.io/tos/",
+		"contact": {
+			"name": "APIMetrics",
+			"url": "http://apimetrics.io/contact/",
+			"email": "info@apimetrics.com"
+		},
+		"version": "2"
+	},
+	"host": "client.apimetrics.io",
+	"basePath": "/api/2",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/calls/": {
+			"get": {
+				"summary": "List API Calls",
+				"description": "List API Calls",
+				"operationId": "listAPICalls",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			},
+			"post": {
+				"summary": "Create new API Call",
+				"description": "Create new API Call",
+				"operationId": "createNewAPICall",
+				"parameters": [{
+					"in": "body",
+					"name": "Body",
+					"description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http://httpbin.org/get     } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			}
+		},
+		"/calls/auth/{auth_id}/": {
+			"get": {
+				"summary": "List API Calls by Authentication",
+				"description": "List API Calls by Authentication",
+				"operationId": "listAPICallsbyAuthentication",
+				"parameters": [{
+					"in": "path",
+					"name": "auth_id",
+					"description": "The ID of the authentication setting",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			}
+		},
+		"/calls/{id}/": {
+			"delete": {
+				"summary": "Delete an API Call",
+				"description": "Delete an API Call",
+				"operationId": "deleteAnAPICall",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of API Call",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			},
+			"get": {
+				"summary": "Get an existing API Call",
+				"description": "Get an existing API Call",
+				"operationId": "getAnExistingAPICall",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of API Call",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "kind",
+					"description": "Granularity of data required, one of DAY, WEEK, MONTH, tYEAR",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "location_id",
+					"description": "Location where the API Call was made.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "time",
+					"description": "ISO formatted date string for the period you wish to view.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "type",
+					"description": "Return stats for all calls in the time period specified which had this result.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			},
+			"put": {
+				"summary": "Update an existing API Call",
+				"description": "Update an existing API Call",
+				"operationId": "updateAnExistingAPICall",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     request: {         parameters: [             { key: testing, value: bar },             { key: raspberry, value: 2 }         ]     } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of API Call",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			}
+		},
+		"/calls/{id}/run": {
+			"post": {
+				"summary": "Trigger an API Call to run",
+				"description": "Trigger an API Call to run",
+				"operationId": "triggerAnAPICallToRun",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     location_id: ,     context: {         foo: 1234,         bar: %%RESULT_ID%%,         datum: %%DATETIME%%     } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "formData",
+					"name": "context",
+					"description": "Dictionary of variable names and their values",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of API Call",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "location_id",
+					"description": "Location ID of test agent that will make the request",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			}
+		},
+		"/calls/{id}/stats/before": {
+			"get": {
+				"summary": "List Stats from before a date for an API Call",
+				"description": "List Stats from before a date for an API Call",
+				"operationId": "listStatsFromBeforeDateAPICall",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of API Call",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "kind",
+					"description": "Granularity of data required, one of DAY, WEEK, MONTH, YEAR.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "limit",
+					"description": "Maximum number of results to return",
+					"type": "integer",
+					"format": "integer"
+				},
+				{
+					"in": "query",
+					"name": "location_id",
+					"description": "Location where the API Call was made.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "time",
+					"description": "ISO formatted date string for the end of the period you wish to view.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "type",
+					"description": "Return stats for all calls in the time period specified which had this result.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			}
+		},
+		"/calls/{id}/stats/since": {
+			"get": {
+				"summary": "List Stats since a date for an API Call",
+				"description": "List Stats since a date for an API Call",
+				"operationId": "listStatsSinceDateAPICall",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of API Call",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "kind",
+					"description": "Granularity of data required, one of DAY, WEEK, MONTH, YEAR.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "limit",
+					"description": "Maximum number of results to return",
+					"type": "integer",
+					"format": "integer"
+				},
+				{
+					"in": "query",
+					"name": "location_id",
+					"description": "Location where the API Call was made.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "time",
+					"description": "ISO formatted date string for the start of the period you wish to view.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "type",
+					"description": "Return stats for all calls in the time period specified which had this result.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Calls"],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
