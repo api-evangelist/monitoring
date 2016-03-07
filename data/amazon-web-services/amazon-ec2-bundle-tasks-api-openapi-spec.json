@@ -1,0 +1,107 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Bundle Tasks API",
+		"description": "The API for management Bundle Tasks",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=BundleInstance&k=1": {
+			"get": {
+				"summary": "Bundles an Amazon instance store-backed Windows instance.",
+				"description": "Bundles an Amazon instance store-backed Windows instance.",
+				"operationId": "bundleinstance",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance to bundle.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Storage",
+					"description": "The bucket in which to store the AMI. You can specify a bucket thatttttyou already own or a new bucket that Amazon EC2 creates on your behalf.ttttIf you specify a bucket that belongs to someone else, Amazon EC2 returnsttttan error.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CancelBundleTask&k=1": {
+			"get": {
+				"summary": "Cancels a bundling operation for an instance store-backed Windows instance.",
+				"description": "Cancels a bundling operation for an instance store-backed Windows instance.",
+				"operationId": "cancelbundletask",
+				"parameters": [{
+					"in": "query",
+					"name": "BundleId",
+					"description": "The ID of the bundle task.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeBundleTasks&k=1": {
+			"get": {
+				"summary": "Describes one or more of your bundling tasks.",
+				"description": "Describes one or more of your bundling tasks.",
+				"operationId": "describebundletasks",
+				"parameters": [{
+					"in": "query",
+					"name": "BundleId.N",
+					"description": "One or more bundle task IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
