@@ -1,0 +1,297 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Elastic IP Addresses API",
+		"description": "The API for management Elastic IP Addresses",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AllocateAddress&k=1": {
+			"get": {
+				"summary": "Acquires an Elastic IP address.",
+				"description": "Acquires an Elastic IP address.",
+				"operationId": "allocateaddress",
+				"parameters": [{
+					"in": "query",
+					"name": "Domain",
+					"description": "Set to vpc to allocate the address for use with instances in a VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=AssociateAddress&k=1": {
+			"get": {
+				"summary": "Associates an Elastic IP address with an instance or a network interface.",
+				"description": "Associates an Elastic IP address with an instance or a network interface.",
+				"operationId": "associateaddress",
+				"parameters": [{
+					"in": "query",
+					"name": "AllocationId",
+					"description": "[EC2-VPC] The allocation ID. This is required for EC2-VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "AllowReassociation",
+					"description": "[EC2-VPC] For a VPC in an EC2-Classic account, specify true to allow an Elastic IP address      that is already associated with an instance or network interface to be reassociated with the      specified instance or network interface. Otherwise, the operation fails. In a VPC in an      EC2-VPC-only account, reassociation is automatic, therefore you can specify false to ensure      the operation fails if the Elastic IP address is already associated with another resource.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance. This is required for EC2-Classic. For EC2-VPC, you can specifyttteither the instance ID or the network interface ID, but not both. The operation fails if youtttspecify an instance ID unless exactly one network interface is attached.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "[EC2-VPC] The ID of the network interface. If the instance has more than one         network interface, you must specify a network interface ID.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PrivateIpAddress",
+					"description": "[EC2-VPC] The primary or secondary private IP address to associatettttwith the Elastic IP address. If no private IP address is specified, thettttElastic IP address is associated with the primary private IPttttaddress.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicIp",
+					"description": "The Elastic IP address. This is required for EC2-Classic.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeAddresses&k=1": {
+			"get": {
+				"summary": "Describes one or more of your Elastic IP addresses.",
+				"description": "Describes one or more of your Elastic IP addresses.",
+				"operationId": "describeaddresses",
+				"parameters": [{
+					"in": "query",
+					"name": "AllocationId.N",
+					"description": "[EC2-VPC] One or more allocation IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters. Filter names and values are case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicIp.N",
+					"description": "[EC2-Classic] One or more Elastic IP addresses.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeMovingAddresses&k=1": {
+			"get": {
+				"summary": "Describes your Elastic IP addresses that are being moved to the EC2-VPC platform, or that aren      being restored to the EC2-Classic platform.",
+				"description": "Describes your Elastic IP addresses that are being moved to the EC2-VPC platform, or that aren      being restored to the EC2-Classic platform.",
+				"operationId": "describemovingaddresses",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,     and provides an error response. If you have the required permissions, the error response is DryRunOperation.     Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in a single page. The remaining      results of the initial request can be seen by sending another request with the returned      NextToken value. This value can be between 5 and 1000; if      MaxResults is given a value outside of this range, an error is returned.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to use to retrieve the next page of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicIp.N",
+					"description": "One or more Elastic IP addresses.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DisassociateAddress&k=1": {
+			"get": {
+				"summary": "Disassociates an Elastic IP address from the instance or network interface it's associatedntttwith.",
+				"description": "Disassociates an Elastic IP address from the instance or network interface its associatedntttwith.",
+				"operationId": "disassociateaddress",
+				"parameters": [{
+					"in": "query",
+					"name": "AssociationId",
+					"description": "[EC2-VPC] The association ID. Required for EC2-VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicIp",
+					"description": "[EC2-Classic] The Elastic IP address. Required for EC2-Classic.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=MoveAddressToVpc&k=1": {
+			"get": {
+				"summary": "Moves an Elastic IP address from the EC2-Classic platform to the EC2-VPC platform.",
+				"description": "Moves an Elastic IP address from the EC2-Classic platform to the EC2-VPC platform.",
+				"operationId": "moveaddresstovpc",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,     and provides an error response. If you have the required permissions, the error response is DryRunOperation.     Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicIp",
+					"description": "The Elastic IP address.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ReleaseAddress&k=1": {
+			"get": {
+				"summary": "Releases the specified Elastic IP address.",
+				"description": "Releases the specified Elastic IP address.",
+				"operationId": "releaseaddress",
+				"parameters": [{
+					"in": "query",
+					"name": "AllocationId",
+					"description": "[EC2-VPC] The allocation ID. Required for EC2-VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicIp",
+					"description": "[EC2-Classic] The Elastic IP address. Required for EC2-Classic.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RestoreAddressToClassic&k=1": {
+			"get": {
+				"summary": "Restores an Elastic IP address that was previously moved to the EC2-VPC platform back to then      EC2-Classic platform.",
+				"description": "Restores an Elastic IP address that was previously moved to the EC2-VPC platform back to then      EC2-Classic platform.",
+				"operationId": "restoreaddresstoclassic",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicIp",
+					"description": "The Elastic IP address.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
