@@ -1,0 +1,183 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Dedicated Hosts API",
+		"description": "The API for management Dedicated Hosts",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AllocateHosts&k=1": {
+			"get": {
+				"summary": "Allocates a Dedicated host to your account.",
+				"description": "Allocates a Dedicated host to your account.",
+				"operationId": "allocatehosts",
+				"parameters": [{
+					"in": "query",
+					"name": "AutoPlacement",
+					"description": "This is enabled by default. This property allows instances to be automatically            placed onto available Dedicated hosts, when you are launching instances without specifying a host ID.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "AvailabilityZone",
+					"description": "The Availability Zone for the Dedicated hosts.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information,            see How to Ensure Idempotency in the             Amazon Elastic Compute Cloud User Guide.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceType",
+					"description": "Specify the instance type that you want your Dedicated hosts to be configured for. When you        specify the instance type, that is the only instance type that you can launch onto that host.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Quantity",
+					"description": "The number of Dedicated hosts you want to allocate to your account with these parameters.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeHosts&k=1": {
+			"get": {
+				"summary": "Describes one or more of your Dedicated hosts.",
+				"description": "Describes one or more of your Dedicated hosts.",
+				"operationId": "describehosts",
+				"parameters": [{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "HostId.N",
+					"description": "The IDs of the Dedicated hosts. The IDs are used for targeted instance launches.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in a single page. The remaining results can be seen        by sending another request with the returned nextToken value. This value can be between 5 and 500;        if maxResults is given a larger value than 500, you will receive an error. You cannot specify this parameter        and the host IDs parameter in the same request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyHosts&k=1": {
+			"get": {
+				"summary": "Modify the auto-placement setting of a Dedicated host.",
+				"description": "Modify the auto-placement setting of a Dedicated host.",
+				"operationId": "modifyhosts",
+				"parameters": [{
+					"in": "query",
+					"name": "AutoPlacement",
+					"description": "Specify whether to enable or disable auto-placement.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "HostId.N",
+					"description": "The host IDs of the Dedicated hosts you want to modify.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyInstancePlacement&k=1": {
+			"get": {
+				"summary": "Set the instance affinity value for a specific stopped instance and modify the instance tenancy setting.",
+				"description": "Set the instance affinity value for a specific stopped instance and modify the instance tenancy setting.",
+				"operationId": "modifyinstanceplacement",
+				"parameters": [{
+					"in": "query",
+					"name": "Affinity",
+					"description": "The new affinity setting for the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "HostId",
+					"description": "The ID of the Dedicated host that the instance will have affinity with.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance that you are modifying.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tenancy",
+					"description": "The tenancy of the instance that you are modifying.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ReleaseHosts&k=1": {
+			"get": {
+				"summary": "When you no longer want to use a Dedicated host it can be released.",
+				"description": "When you no longer want to use a Dedicated host it can be released.",
+				"operationId": "releasehosts",
+				"parameters": [{
+					"in": "query",
+					"name": "HostId.N",
+					"description": "The IDs of the Dedicated hosts you want to release.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
