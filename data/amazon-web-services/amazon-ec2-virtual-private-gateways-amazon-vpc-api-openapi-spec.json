@@ -1,0 +1,171 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Virtual Private Gateways (Amazon VPC) API",
+		"description": "The API for management Virtual Private Gateways (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AttachVpnGateway&k=1": {
+			"get": {
+				"summary": "Attaches a virtual private gateway to a VPC.",
+				"description": "Attaches a virtual private gateway to a VPC.",
+				"operationId": "attachvpngateway",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnGatewayId",
+					"description": "The ID of the virtual private gateway.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateVpnGateway&k=1": {
+			"get": {
+				"summary": "Creates a virtual private gateway.",
+				"description": "Creates a virtual private gateway.",
+				"operationId": "createvpngateway",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZone",
+					"description": "The Availability Zone for the virtual private gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Type",
+					"description": "The type of VPN connection this virtual private gateway supports.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteVpnGateway&k=1": {
+			"get": {
+				"summary": "Deletes the specified virtual private gateway.",
+				"description": "Deletes the specified virtual private gateway.",
+				"operationId": "deletevpngateway",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnGatewayId",
+					"description": "The ID of the virtual private gateway.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVpnGateways&k=1": {
+			"get": {
+				"summary": "Describes one or more of your virtual private gateways.",
+				"description": "Describes one or more of your virtual private gateways.",
+				"operationId": "describevpngateways",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnGatewayId.N",
+					"description": "One or more virtual private gateway IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DetachVpnGateway&k=1": {
+			"get": {
+				"summary": "Detaches a virtual private gateway from a VPC.",
+				"description": "Detaches a virtual private gateway from a VPC.",
+				"operationId": "detachvpngateway",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnGatewayId",
+					"description": "The ID of the virtual private gateway.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
