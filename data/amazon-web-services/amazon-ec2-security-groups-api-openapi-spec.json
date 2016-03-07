@@ -1,0 +1,409 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Security Groups API",
+		"description": "The API for management Security Groups",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AuthorizeSecurityGroupEgress (EC2-VPC only)&k=1": {
+			"get": {
+				"summary": "[EC2-VPC only] Adds one or more egress rules to a security group for use with a VPC.",
+				"description": "[EC2-VPC only] Adds one or more egress rules to a security group for use with a VPC.",
+				"operationId": "authorizesecuritygroupegress-ec2vpc-only",
+				"parameters": [{
+					"in": "query",
+					"name": "CidrIp",
+					"description": "The CIDR IP address range. We recommend that you specify the CIDR range in a set of IP      permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FromPort",
+					"description": "The start of port range for the TCP and UDP protocols, or an ICMP type number. We recommend      that you specify the port range in a set of IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupId",
+					"description": "The ID of the security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpPermissions.N",
+					"description": "A set of IP permissions. You cant specify a destination security group and a CIDR IPtttaddress range.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpProtocol",
+					"description": "The IP protocol name or number. We recommend that you specify the protocol in a set of IP      permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupName",
+					"description": "The name of a destination security group. To authorize outbound access to a destination      security group, we recommend that you use a set of IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupOwnerId",
+					"description": "The AWS account number for a destination security group. To authorize outbound access to a      destination security group, we recommend that you use a set of IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ToPort",
+					"description": "The end of port range for the TCP and UDP protocols, or an ICMP type number. We recommend      that you specify the port range in a set of IP permissions instead.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=AuthorizeSecurityGroupIngress&k=1": {
+			"get": {
+				"summary": "Adds one or more ingress rules to a security group.",
+				"description": "Adds one or more ingress rules to a security group.",
+				"operationId": "authorizesecuritygroupingress",
+				"parameters": [{
+					"in": "query",
+					"name": "CidrIp",
+					"description": "The CIDR IP address range. You cant specify this parameter when specifying a source security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FromPort",
+					"description": "The start of port range for the TCP and UDP protocols, or an ICMP type number. For the ICMP type number,         use -1 to specify all ICMP types.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupId",
+					"description": "The ID of the security group. Required for a nondefault VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName",
+					"description": "[EC2-Classic, default VPC] The name of the security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpPermissions.N",
+					"description": "A set of IP permissions. Can be used to specify multiple rules in a single command.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpProtocol",
+					"description": "The IP protocol name (tcp, udp, icmp) or number         (see Protocol Numbers). (VPC only) Use -1 to specify all.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupName",
+					"description": "[EC2-Classic, default VPC] The name of the source security group. You cant specify this      parameter in combination with the following parameters: the CIDR IP address range, the start      of the port range, the IP protocol, and the end of the port range. For EC2-VPC, the source      security group must be in the same VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupOwnerId",
+					"description": "[EC2-Classic, default VPC] The AWS account number for the source security group. For      EC2-VPC, the source security group must be in the same VPC. You cant specify this parameter      in combination with the following parameters: the CIDR IP address range, the IP protocol, the      start of the port range, and the end of the port range. Creates rules that grant full ICMP,      UDP, and TCP access. To create a rule with a specific IP protocol and port range, use a set of      IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ToPort",
+					"description": "The end of port range for the TCP and UDP protocols, or an ICMP code number. For the ICMP code number,         use -1 to specify all ICMP codes for the ICMP type.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateSecurityGroup&k=1": {
+			"get": {
+				"summary": "Creates a security group.",
+				"description": "Creates a security group.",
+				"operationId": "createsecuritygroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupDescription",
+					"description": "A description for the security group. This is informational only.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName",
+					"description": "The name of the security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "[EC2-VPC] The ID of the VPC. Required for EC2-VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteSecurityGroup&k=1": {
+			"get": {
+				"summary": "Deletes a security group.",
+				"description": "Deletes a security group.",
+				"operationId": "deletesecuritygroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupId",
+					"description": "The ID of the security group. Required for a nondefault VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName",
+					"description": "[EC2-Classic, default VPC] The name of the security group. You can specify either thetttsecurity group name or the security group ID.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSecurityGroups&k=1": {
+			"get": {
+				"summary": "Describes one or more of your security groups.",
+				"description": "Describes one or more of your security groups.",
+				"operationId": "describesecuritygroups",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters. If using multiple filters for rules, the results include security      groups for which any combination of rules - not necessarily a single rule - match all      filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupId.N",
+					"description": "One or more security group IDs. Required for security groups in a nondefault VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName.N",
+					"description": "[EC2-Classic and default VPC only] One or more security group names. You can specify eithertttthe security group name or the security group ID. For security groups in a nondefault VPC, usetttthe group-name filter to describe security groups by name.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RevokeSecurityGroupEgress (EC2-VPC only)&k=1": {
+			"get": {
+				"summary": "[EC2-VPC only] Removes one or more egress rules from a security group for EC2-VPC.",
+				"description": "[EC2-VPC only] Removes one or more egress rules from a security group for EC2-VPC.",
+				"operationId": "revokesecuritygroupegress-ec2vpc-only",
+				"parameters": [{
+					"in": "query",
+					"name": "CidrIp",
+					"description": "The CIDR IP address range. We recommend that you specify the CIDR range in a set of IP      permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FromPort",
+					"description": "The start of port range for the TCP and UDP protocols, or an ICMP type number. We recommend      that you specify the port range in a set of IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupId",
+					"description": "The ID of the security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpPermissions.N",
+					"description": "A set of IP permissions. You cant specify a destination security group and a CIDR IPtttaddress range.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpProtocol",
+					"description": "The IP protocol name or number. We recommend that you specify the protocol in a set of IP      permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupName",
+					"description": "The name of a destination security group. To revoke outbound access to a destination      security group, we recommend that you use a set of IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupOwnerId",
+					"description": "The AWS account number for a destination security group. To revoke outbound access to a      destination security group, we recommend that you use a set of IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ToPort",
+					"description": "The end of port range for the TCP and UDP protocols, or an ICMP type number. We recommend      that you specify the port range in a set of IP permissions instead.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RevokeSecurityGroupIngress&k=1": {
+			"get": {
+				"summary": "Removes one or more ingress rules from a security group.",
+				"description": "Removes one or more ingress rules from a security group.",
+				"operationId": "revokesecuritygroupingress",
+				"parameters": [{
+					"in": "query",
+					"name": "CidrIp",
+					"description": "The CIDR IP address range. You cant specify this parameter when specifying a source security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FromPort",
+					"description": "The start of port range for the TCP and UDP protocols, or an ICMP type number. For the ICMP type number,         use -1 to specify all ICMP types.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupId",
+					"description": "The ID of the security group. Required for a security group in a nondefault VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName",
+					"description": "[EC2-Classic, default VPC] The name of the security group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpPermissions.N",
+					"description": "A set of IP permissions. You cant specify a source security group and a CIDR IP addresstttrange.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpProtocol",
+					"description": "The IP protocol name (tcp, udp, icmp) or number         (see Protocol Numbers).         Use -1 to specify all.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupName",
+					"description": "[EC2-Classic, default VPC] The name of the source security group. You cant specify this      parameter in combination with the following parameters: the CIDR IP address range, the start      of the port range, the IP protocol, and the end of the port range. For EC2-VPC, the source      security group must be in the same VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSecurityGroupOwnerId",
+					"description": "[EC2-Classic, default VPC] The AWS account ID of the source security group. For EC2-VPC, the      source security group must be in the same VPC. You cant specify this parameter in combination      with the following parameters: the CIDR IP address range, the IP protocol, the start of the      port range, and the end of the port range. To revoke a specific rule for an IP protocol and      port range, use a set of IP permissions instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ToPort",
+					"description": "The end of port range for the TCP and UDP protocols, or an ICMP code number. For the ICMP code number,         use -1 to specify all ICMP codes for the ICMP type.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
