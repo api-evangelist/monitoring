@@ -1,0 +1,43 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Account Attributes API",
+		"description": "The API for management Account Attributes",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=DescribeAccountAttributes&k=1": {
+			"get": {
+				"summary": "Describes attributes of your AWS account.",
+				"description": "Describes attributes of your AWS account.",
+				"operationId": "describeaccountattributes",
+				"parameters": [{
+					"in": "query",
+					"name": "AttributeName.N",
+					"description": "One or more account attribute names.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
