@@ -1,0 +1,107 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Placement Groups API",
+		"description": "The API for management Placement Groups",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreatePlacementGroup&k=1": {
+			"get": {
+				"summary": "Creates a placement group that you launch cluster instances into.",
+				"description": "Creates a placement group that you launch cluster instances into.",
+				"operationId": "createplacementgroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName",
+					"description": "A name for the placement group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Strategy",
+					"description": "The placement strategy.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeletePlacementGroup&k=1": {
+			"get": {
+				"summary": "Deletes the specified placement group.",
+				"description": "Deletes the specified placement group.",
+				"operationId": "deleteplacementgroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName",
+					"description": "The name of the placement group.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribePlacementGroups&k=1": {
+			"get": {
+				"summary": "Describes one or more of your placement groups.",
+				"description": "Describes one or more of your placement groups.",
+				"operationId": "describeplacementgroups",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupName.N",
+					"description": "One or more placement group names.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
