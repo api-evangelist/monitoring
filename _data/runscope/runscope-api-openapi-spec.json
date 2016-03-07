@@ -1,0 +1,686 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Runscope API",
+		"description": "Manage Runscope programmatically.",
+		"version": ""
+	},
+	"host": "api.runscope.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/account": {
+			"get": {
+				"summary": "Account Resource",
+				"description": "Information about the authorized account.",
+				"operationId": "information-about-the-authorized-account",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets": {
+			"get": {
+				"summary": "Returns a list of buckets.",
+				"description": "",
+				"operationId": "",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a new bucket",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "body",
+					"name": "NewBucket",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}": {
+			"delete": {
+				"summary": "Delete a single bucket resource.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey",
+					"description": "Unique identifier for a bucket"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"get": {
+				"summary": "Returns a single bucket resource.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey",
+					"description": "Unique identifier for a bucket"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/environments": {
+			"get": {
+				"summary": "Returns list of shared environments for a specified bucket.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"post": {
+				"summary": "Create new shared environment.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey"
+				},
+				{
+					"in": "body",
+					"name": "NewEnvironment",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/environments/{environmentId}": {
+			"put": {
+				"summary": "Update the details of a test environment.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey"
+				},
+				{
+					"in": "path",
+					"name": "environmentId",
+					"description": "Unique identifier for a shared environment"
+				},
+				{
+					"in": "body",
+					"name": "ModifiedEnvironment",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/errors": {
+			"get": {
+				"summary": "Retrieve a list of error messages in a bucket",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "query",
+					"name": "before",
+					"description": "Only return messages before the given Unix timestamp"
+				},
+				{
+					"in": "path",
+					"name": "bucketKey",
+					"description": "Unique identifier for a bucket"
+				},
+				{
+					"in": "query",
+					"name": "count",
+					"description": "Maxiumum number of messages to return. Default 50, max 1000."
+				},
+				{
+					"in": "query",
+					"name": "since",
+					"description": "Only return messages after the given Unix timestamp"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/messages": {
+			"delete": {
+				"summary": "Clear a bucket (remove all messages).",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey",
+					"description": "Unique identifier for a bucket"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"get": {
+				"summary": "Retrieve a list of messages in a bucket",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "query",
+					"name": "before",
+					"description": "Only return messages before the given Unix timestamp"
+				},
+				{
+					"in": "path",
+					"name": "bucketKey",
+					"description": "Unique identifier for a bucket"
+				},
+				{
+					"in": "query",
+					"name": "count",
+					"description": "Maxiumum number of messages to return. Default 50, max 1000."
+				},
+				{
+					"in": "query",
+					"name": "since",
+					"description": "Only return messages after the given Unix timestamp"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a message",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "body",
+					"name": "NewMessage",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/messages/{messageId}": {
+			"get": {
+				"summary": "Retrieve the details for a single message.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey",
+					"description": "Unique identifier for a bucket"
+				},
+				{
+					"in": "query",
+					"name": "messageId",
+					"description": "The unique identifier for this message"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/tests": {
+			"get": {
+				"summary": "Returns a list of tests.",
+				"description": "",
+				"operationId": "",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a test.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "body",
+					"name": "NewTest",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/tests/{testId}": {
+			"delete": {
+				"summary": "Delete a single test.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/tests/{testId}/environments": {
+			"get": {
+				"summary": "Return details of the test's environments (only those that belong to the specified test)",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey"
+				},
+				{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"post": {
+				"summary": "Create new test environment.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey"
+				},
+				{
+					"in": "body",
+					"name": "NewEnvironment",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/tests/{testId}/environments/{environmentId}": {
+			"put": {
+				"summary": "Update the details of a test environment.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "bucketKey"
+				},
+				{
+					"in": "path",
+					"name": "environmentId",
+					"description": "Unique identifier for a test environment"
+				},
+				{
+					"in": "body",
+					"name": "ModifiedEnvironment",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/tests/{testId}/steps": {
+			"get": {
+				"summary": "List test steps for a test.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"post": {
+				"summary": "Add new test step.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "body",
+					"name": "NewStep",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/buckets/{bucketKey}/tests/{testId}/steps/{stepId}": {
+			"delete": {
+				"summary": "Delete a step from a test.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "path",
+					"name": "stepId",
+					"description": "Unique identifier for a step"
+				},
+				{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			},
+			"put": {
+				"summary": "Update the details of a single test step.",
+				"description": "",
+				"operationId": "",
+				"parameters": [{
+					"in": "body",
+					"name": "NewStep",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "testId",
+					"description": "Unique identifier for a test"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/teams/{teamId}/integrations": {
+			"get": {
+				"summary": "Team integrations list",
+				"description": "Returns a list of integrations configured for the team.",
+				"operationId": "returns-a-list-of-integrations-configured-for-the-team",
+				"parameters": [{
+					"in": "path",
+					"name": "teamId",
+					"description": "Unique identifier for team"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/teams/{teamId}/people": {
+			"get": {
+				"summary": "Teams Resource",
+				"description": "List people and integrations associated with a given team.",
+				"operationId": "list-people-and-integrations-associated-with-a-given-team",
+				"parameters": [{
+					"in": "path",
+					"name": "teamId",
+					"description": "Unique identifier for team"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": {
+		"Meta": {
+			"properties": {
+				"status": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"Account": {
+			"properties": {
+				"name": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"id": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"email": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"teams": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"Team": {
+			"properties": {
+				"id": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"name": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"Bucket": {
+			"properties": {
+				"auth_token": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"default": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"key": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"name": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"verify_ssl": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"NewMessage": {
+			"properties": {
+				"request": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"response": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"NewBucket": {
+			"properties": {
+				"name": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"teamId": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"NewStep": {
+			"properties": {
+				"step_type": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"NewEnvironment": {
+			"properties": {
+				"name": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		},
+		"Error": {
+			"properties": {
+				"code": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"message": {
+					"description": "This is a default description.",
+					"type": "put"
+				},
+				"fields": {
+					"description": "This is a default description.",
+					"type": "put"
+				}
+			}
+		}
+	}
+}
