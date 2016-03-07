@@ -1,0 +1,251 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Option Group API",
+		"description": "The API for managing Amazon RDS Option Groups",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CopyOptionGroup&k=1": {
+			"get": {
+				"summary": "Copies the specified option group.",
+				"description": "Copies the specified option group.",
+				"operationId": "copyoptiongroup",
+				"parameters": [{
+					"in": "query",
+					"name": "SourceOptionGroupIdentifier",
+					"description": "The identifier or ARN for the source option group. For information about        creating an ARN,       see         Constructing an RDS Amazon Resource Name (ARN).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TargetOptionGroupDescription",
+					"description": "The description for the copied option group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TargetOptionGroupIdentifier",
+					"description": "The identifier for the copied option group.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateOptionGroup&k=1": {
+			"get": {
+				"summary": "Creates a new option group.",
+				"description": "Creates a new option group.",
+				"operationId": "createoptiongroup",
+				"parameters": [{
+					"in": "query",
+					"name": "EngineName",
+					"description": "Specifies the name of the engine that this option group should be associated with.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MajorEngineVersion",
+					"description": "Specifies the major version of the engine that this option group should be associated with.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupDescription",
+					"description": "The description of the option group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "Specifies the name of the option group to be created.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteOptionGroup&k=1": {
+			"get": {
+				"summary": "Deletes an existing option group.",
+				"description": "Deletes an existing option group.",
+				"operationId": "deleteoptiongroup",
+				"parameters": [{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "The name of the option group to be deleted.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeOptionGroupOptions&k=1": {
+			"get": {
+				"summary": "Describes all available options.",
+				"description": "Describes all available options.",
+				"operationId": "describeoptiongroupoptions",
+				"parameters": [{
+					"in": "query",
+					"name": "EngineName",
+					"description": "A required parameter. Options available for the given engine name will be described.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MajorEngineVersion",
+					"description": "If specified, filters the results to include only options for the specified major engine version.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous request.            If this parameter is specified, the response includes            only records beyond the marker,            up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.            If more records exist than the specified MaxRecords value,            a pagination token called a marker is included in the response so that the remaining            results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeOptionGroups&k=1": {
+			"get": {
+				"summary": "Describes the available option groups.",
+				"description": "Describes the available option groups.",
+				"operationId": "describeoptiongroups",
+				"parameters": [{
+					"in": "query",
+					"name": "EngineName",
+					"description": "Filters the list of option groups to only include groups associated with a specific database engine.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MajorEngineVersion",
+					"description": "Filters the list of option groups to only include groups associated with a specific database engine version. If specified, then EngineName must also be specified.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous DescribeOptionGroups request.            If this parameter is specified, the response includes            only records beyond the marker,            up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.            If more records exist than the specified MaxRecords value,            a pagination token called a marker is included in the response so that the remaining            results can be retrieved.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "The name of the option group to describe.  Cannot be supplied together with EngineName or MajorEngineVersion.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyOptionGroup&k=1": {
+			"get": {
+				"summary": "Modifies an existing option group.",
+				"description": "Modifies an existing option group.",
+				"operationId": "modifyoptiongroup",
+				"parameters": [{
+					"in": "query",
+					"name": "ApplyImmediately",
+					"description": "Indicates whether the changes should be applied immediately,            or during the next maintenance window for each instance associated with the option group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "The name of the option group to be modified.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionsToInclude.member.N",
+					"description": "Options in this list are added to the option group or, if already present,            the specified configuration is used to update the existing configuration.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionsToRemove.member.N",
+					"description": "Options in this list are removed from the option group.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
