@@ -1,0 +1,807 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Cluster API",
+		"description": "The API for managing Amazon RDS Clusters",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CopyDBClusterSnapshot&k=1": {
+			"get": {
+				"summary": "Creates a snapshot of a DB cluster.",
+				"description": "Creates a snapshot of a DB cluster.",
+				"operationId": "copydbclustersnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "SourceDBClusterSnapshotIdentifier",
+					"description": "The identifier of the DB cluster snapshot to copy.            This parameter is not case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TargetDBClusterSnapshotIdentifier",
+					"description": "The identifier of the new DB cluster snapshot to create from the source DB cluster snapshot.            This parameter is not case-sensitive.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateDBCluster&k=1": {
+			"get": {
+				"summary": "Creates a new Amazon Aurora DB cluster.",
+				"description": "Creates a new Amazon Aurora DB cluster.",
+				"operationId": "createdbcluster",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZones.member.N",
+					"description": "A list of EC2 Availability Zones that instances in the DB cluster can be created in. For information on            regions and Availability Zones, see             Regions                and Availability Zones.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "BackupRetentionPeriod",
+					"description": "The number of days for which automated backups are retained.        You must specify a minimum value of 1.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "CharacterSetName",
+					"description": "A value that indicates that the DB cluster should be associated with the specified CharacterSet.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DatabaseName",
+					"description": "The name for your database of up to 8 alpha-numeric characters. If you do not provide a name, Amazon RDS will not create a database in the DB cluster you are creating.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "The DB cluster identifier.        This parameter is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of the DB cluster parameter group to associate            with this DB cluster. If this argument is omitted, default.aurora5.6 for the specified engine will be used.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSubnetGroupName",
+					"description": "A DB subnet group to associate with this DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Engine",
+					"description": "The name of the database engine to be used for this DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EngineVersion",
+					"description": "The version number of the database engine to use.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KmsKeyId",
+					"description": "The KMS key identifier for an encrypted DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MasterUsername",
+					"description": "The name of the master user for the client DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MasterUserPassword",
+					"description": "The password for the master database user. This password can contain any printable ASCII character except /, , or @.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "A value that indicates that the DB cluster should be associated with the specified option group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Port",
+					"description": "The port number on which the instances in the DB cluster accept connections.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PreferredBackupWindow",
+					"description": "The daily time range during which automated backups are created        if automated backups are enabled        using the BackupRetentionPeriod parameter.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PreferredMaintenanceWindow",
+					"description": "The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "StorageEncrypted",
+					"description": "Specifies whether the DB cluster is encrypted.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcSecurityGroupIds.member.N",
+					"description": "A list of EC2 VPC security groups to associate           with this DB cluster.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateDBClusterParameterGroup&k=1": {
+			"get": {
+				"summary": "Creates a new DB cluster parameter group.",
+				"description": "Creates a new DB cluster parameter group.",
+				"operationId": "createdbclusterparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of the DB cluster parameter group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBParameterGroupFamily",
+					"description": "The DB cluster parameter group family name. A DB cluster parameter group can be             associated with one and only one DB cluster parameter group family, and             can be applied only to a DB cluster running a database engine and engine version             compatible with that DB cluster parameter group family.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Description",
+					"description": "The description for the DB cluster parameter group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateDBClusterSnapshot&k=1": {
+			"get": {
+				"summary": "Creates a snapshot of a DB cluster.",
+				"description": "Creates a snapshot of a DB cluster.",
+				"operationId": "createdbclustersnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "The identifier of the DB cluster to create a snapshot for.            This parameter is not case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBClusterSnapshotIdentifier",
+					"description": "The identifier of the DB cluster snapshot.            This parameter is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "The tags to be assigned to the DB cluster snapshot.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDBCluster&k=1": {
+			"get": {
+				"summary": "The DeleteDBCluster action deletes a previously provisioned DB cluster.",
+				"description": "The DeleteDBCluster action deletes a previously provisioned DB cluster.",
+				"operationId": "deletedbcluster",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "The DB cluster identifier for the DB cluster to be deleted.           This parameter isnt case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "FinalDBSnapshotIdentifier",
+					"description": "The DB cluster snapshot identifier of the new DB cluster snapshot created when SkipFinalSnapshot      is set to false.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SkipFinalSnapshot",
+					"description": "Determines whether a final DB cluster snapshot is created before the DB cluster is deleted.       If true is specified, no DB cluster snapshot is created. If false is specified, a DB cluster snapshot       is created before the DB cluster is deleted.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDBClusterParameterGroup&k=1": {
+			"get": {
+				"summary": "Deletes a specified DB cluster parameter group.",
+				"description": "Deletes a specified DB cluster parameter group.",
+				"operationId": "deletedbclusterparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of the DB cluster parameter group.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDBClusterSnapshot&k=1": {
+			"get": {
+				"summary": "Deletes a DB cluster snapshot.",
+				"description": "Deletes a DB cluster snapshot.",
+				"operationId": "deletedbclustersnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterSnapshotIdentifier",
+					"description": "The identifier of the DB cluster snapshot to delete.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBClusterParameterGroups&k=1": {
+			"get": {
+				"summary": "Returns a list of DBClusterParameterGroup descriptions.",
+				"description": "Returns a list of DBClusterParameterGroup descriptions.",
+				"operationId": "describedbclusterparametergroups",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of a specific DB cluster parameter group to return details for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous        DescribeDBClusterParameterGroups request.        If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,        a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBClusterParameters&k=1": {
+			"get": {
+				"summary": "Returns the detailed parameter list for a particular DB cluster parameter group.",
+				"description": "Returns the detailed parameter list for a particular DB cluster parameter group.",
+				"operationId": "describedbclusterparameters",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of a specific DB cluster parameter group to return parameter details for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous      DescribeDBClusterParameters request.      If this parameter is specified, the response includes      only records beyond the marker,      up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.      If more records exist than the specified MaxRecords value,      a pagination token called a marker is included in the response so that the remaining      results can be retrieved.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Source",
+					"description": "A value that indicates to return only parameters for a specific source.       Parameter sources can be engine, service,      or customer.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBClusters&k=1": {
+			"get": {
+				"summary": "Returns information about provisioned Aurora DB clusters.",
+				"description": "Returns information about provisioned Aurora DB clusters.",
+				"operationId": "describedbclusters",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "The user-supplied DB cluster identifier.            If this parameter is specified, information from only the            specific DB cluster is returned.            This parameter isnt case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous            DescribeDBClusters request.            If this parameter is specified, the response includes            only records beyond the marker,            up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.            If more records exist than the specified MaxRecords value,            a pagination token called a marker is included in the response so that the remaining            results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBClusterSnapshots&k=1": {
+			"get": {
+				"summary": "Returns information about DB cluster snapshots.",
+				"description": "Returns information about DB cluster snapshots.",
+				"operationId": "describedbclustersnapshots",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "A DB cluster identifier to retrieve the list of DB cluster snapshots for.             This parameter cannot be used in conjunction with the            DBClusterSnapshotIdentifier parameter.            This parameter is not case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBClusterSnapshotIdentifier",
+					"description": "A specific DB cluster snapshot identifier to describe.             This parameter cannot be used in conjunction with the            DBClusterIdentifier parameter.                        This value is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous            DescribeDBClusterSnapshots request.            If this parameter is specified, the response includes            only records beyond the marker,            up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.            If more records exist than the specified MaxRecords value,            a pagination token called a marker is included in the response so that the remaining            results can be retrieved.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotType",
+					"description": "The type of DB cluster snapshots that will be returned. Values can be automated       or manual. If this parameter is not specified, the returned results will       include all snapshot types.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=FailoverDBCluster&k=1": {
+			"get": {
+				"summary": "Forces a failover for a DB cluster.",
+				"description": "Forces a failover for a DB cluster.",
+				"operationId": "failoverdbcluster",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "A DB cluster identifier to force a failover for.            This parameter is not case-sensitive.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyDBCluster&k=1": {
+			"get": {
+				"summary": "Modify a setting for an Amazon Aurora DB cluster.",
+				"description": "Modify a setting for an Amazon Aurora DB cluster.",
+				"operationId": "modifydbcluster",
+				"parameters": [{
+					"in": "query",
+					"name": "ApplyImmediately",
+					"description": "A value that specifies whether the modifications in this request and            any pending modifications are asynchronously applied            as soon as possible, regardless of the            PreferredMaintenanceWindow setting for the DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "BackupRetentionPeriod",
+					"description": "The number of days for which automated backups are retained.       You must specify a minimum value of 1.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "The DB cluster identifier for the cluster being modified. This parameter is not case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of the DB cluster parameter group to use for the DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MasterUserPassword",
+					"description": "The new password for the master database user. This       password can contain any printable ASCII character except /, , or @.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NewDBClusterIdentifier",
+					"description": "The new DB cluster identifier for the DB cluster when renaming a DB            cluster. This value is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "A value that indicates that the DB cluster should be associated with the specified option group.             Changing this parameter does not result in an outage except in the following case, and the change             is applied during the next maintenance window            unless the ApplyImmediately parameter is set            to true for this request. If the parameter change results in an option group that             enables OEM, this change can cause a brief (sub-second) period during which new connections             are rejected but existing connections are not interrupted.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Port",
+					"description": "The port number on which the DB cluster accepts connections.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PreferredBackupWindow",
+					"description": "The daily time range during which automated backups are created            if automated backups are enabled,            using the BackupRetentionPeriod parameter.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PreferredMaintenanceWindow",
+					"description": "The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcSecurityGroupIds.member.N",
+					"description": "A lst of VPC security groups             that the DB cluster will belong to.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyDBClusterParameterGroup&k=1": {
+			"get": {
+				"summary": "Modifies the parameters of a DB cluster parameter group.",
+				"description": "Modifies the parameters of a DB cluster parameter group.",
+				"operationId": "modifydbclusterparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of the DB cluster parameter group to modify.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Parameters.member.N",
+					"description": "A list of parameters in the DB cluster parameter group to modify.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ResetDBClusterParameterGroup&k=1": {
+			"get": {
+				"summary": "Modifies the parameters of a DB cluster parameter group to the default value.",
+				"description": "Modifies the parameters of a DB cluster parameter group to the default value.",
+				"operationId": "resetdbclusterparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterParameterGroupName",
+					"description": "The name of the DB cluster parameter group to reset.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Parameters.member.N",
+					"description": "A list of parameter names in the DB cluster parameter group to reset to the default values. You cannot use this        parameter if the ResetAllParameters parameter is set to true.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResetAllParameters",
+					"description": "A value that is set to true to reset all parameters in the DB cluster parameter group       to their default values, and false otherwise. You cannot use this parameter if there         is a list of parameter names specified for the Parameters parameter.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RestoreDBClusterFromSnapshot&k=1": {
+			"get": {
+				"summary": "Creates a new DB cluster from a DB cluster snapshot.",
+				"description": "Creates a new DB cluster from a DB cluster snapshot.",
+				"operationId": "restoredbclusterfromsnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZones.member.N",
+					"description": "Provides the list of EC2 Availability Zones that instances in the restored DB cluster can be created in.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DatabaseName",
+					"description": "The database name for the restored DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "The name of the DB cluster to create from the DB cluster snapshot.            This parameter isnt case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSubnetGroupName",
+					"description": "The name of the DB subnet group to use for the new DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Engine",
+					"description": "The database engine to use for the new DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EngineVersion",
+					"description": "The version of the database engine to use for the new DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KmsKeyId",
+					"description": "The KMS key identifier to use when restoring an encrypted DB cluster from an encrypted DB cluster snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "The name of the option group to use for the restored DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Port",
+					"description": "The port number on which the new DB cluster accepts connections.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotIdentifier",
+					"description": "The identifier for the DB cluster snapshot to restore from.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "The tags to be assigned to the restored DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcSecurityGroupIds.member.N",
+					"description": "A list of VPC security groups             that the new DB cluster will belong to.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RestoreDBClusterToPointInTime&k=1": {
+			"get": {
+				"summary": "Restores a DB cluster to an arbitrary point in time.",
+				"description": "Restores a DB cluster to an arbitrary point in time.",
+				"operationId": "restoredbclustertopointintime",
+				"parameters": [{
+					"in": "query",
+					"name": "DBClusterIdentifier",
+					"description": "The name of the new DB cluster to be created.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSubnetGroupName",
+					"description": "The DB subnet group name to use for the new DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KmsKeyId",
+					"description": "The KMS key identifier to use when restoring an encrypted DB cluster from an encrypted DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OptionGroupName",
+					"description": "The name of the option group for the new DB cluster.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Port",
+					"description": "The port number on which the new DB cluster accepts connections.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RestoreToTime",
+					"description": "The date and time to restore the DB cluster to.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceDBClusterIdentifier",
+					"description": "The identifier of the source DB cluster from which to restore.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "UseLatestRestorableTime",
+					"description": "A value that is set to true to restore the DB cluster to the latest       restorable backup time, and false otherwise.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcSecurityGroupIds.member.N",
+					"description": "A lst of VPC security groups             that the new DB cluster belongs to.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
