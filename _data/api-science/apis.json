@@ -1,0 +1,49 @@
+{
+	"name": "API Science",
+	"description": "Traditional monitoring services were designed long before APIs became core to modern applications. API Science is designed specifically for monitoring APIs. Sure, we understand REST, JSON, OAuth, XML. No problem.",
+	"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png",
+	"tags": [
+		"Monitoring"
+	],
+	"created": "2016-03-06",
+	"modified": "2016-03-06",
+	"url": "http://monitoring.apievangelist.com/data/api-science/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "API Science API",
+			"description": "Traditional monitoring services were designed long before APIs became core to modern applications. API Science is designed specifically for monitoring APIs. Sure, we understand REST, JSON, OAuth, XML. No problem.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png",
+			"humanURL": "",
+			"baseURL": "http://api.apiscience.com",
+			"tags": [
+				"Monitoring"
+			],
+			"properties": [
+				{
+					"type": "x-documentation",
+					"url": "https://www.apiscience.com/docs/api"
+				},
+				{
+					"type": "x-openapi-spec",
+					"url": "http://monitoring.apievangelist.com/data/api-science/api-science-api-openapi-spec.json"
+				}
+			]
+		}
+	],
+	"x-common": [
+	],
+	"include": [
+		{
+			"name": "Parent",
+			"url": "http://monitoring.apievangelist.com/apis.json"
+		}
+	],
+	"maintainers": [
+		{
+			"FN": "Kin Lane",
+			"x-twitter": "apievangelist",
+			"email": "info@apievangelist.com"
+		}
+	]
+}
