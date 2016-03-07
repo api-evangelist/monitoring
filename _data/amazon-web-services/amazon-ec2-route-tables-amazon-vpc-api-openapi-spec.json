@@ -1,0 +1,399 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Route Tables (Amazon VPC) API",
+		"description": "The API for management Route Tables (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AssociateRouteTable&k=1": {
+			"get": {
+				"summary": "Associates a subnet with a route table.",
+				"description": "Associates a subnet with a route table.",
+				"operationId": "associateroutetable",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the route table.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetId",
+					"description": "The ID of the subnet.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateRoute&k=1": {
+			"get": {
+				"summary": "Creates a route in a route table within a VPC.",
+				"description": "Creates a route in a route table within a VPC.",
+				"operationId": "createroute",
+				"parameters": [{
+					"in": "query",
+					"name": "DestinationCidrBlock",
+					"description": "The CIDR address block used for the destination match. Routingttttdecisions are based on the most specific match.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GatewayId",
+					"description": "The ID of an Internet gateway or virtual private gateway attached to your VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of a NAT instance in your VPC. The operation fails ifttttyou specify an instance ID unless exactly one network interface isttttattached.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NatGatewayId",
+					"description": "The ID of a NAT gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of a network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the route table for the route.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcPeeringConnectionId",
+					"description": "The ID of a VPC peering connection.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateRouteTable&k=1": {
+			"get": {
+				"summary": "Creates a route table for the specified VPC.",
+				"description": "Creates a route table for the specified VPC.",
+				"operationId": "createroutetable",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteRoute&k=1": {
+			"get": {
+				"summary": "Deletes the specified route from the specified route table.",
+				"description": "Deletes the specified route from the specified route table.",
+				"operationId": "deleteroute",
+				"parameters": [{
+					"in": "query",
+					"name": "DestinationCidrBlock",
+					"description": "The CIDR range for the route. The value you specify mustttttmatch the CIDR for the route exactly.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the route table.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteRouteTable&k=1": {
+			"get": {
+				"summary": "Deletes the specified route table.",
+				"description": "Deletes the specified route table.",
+				"operationId": "deleteroutetable",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the route table.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeRouteTables&k=1": {
+			"get": {
+				"summary": "Describes one or more of your route tables.",
+				"description": "Describes one or more of your route tables.",
+				"operationId": "describeroutetables",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId.N",
+					"description": "One or more route table IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DisableVgwRoutePropagation&k=1": {
+			"get": {
+				"summary": "Disables a virtual private gateway (VGW) from propagating routes to a specified route tablentttof a VPC.",
+				"description": "Disables a virtual private gateway (VGW) from propagating routes to a specified route tablentttof a VPC.",
+				"operationId": "disablevgwroutepropagation",
+				"parameters": [{
+					"in": "query",
+					"name": "GatewayId",
+					"description": "The ID of the virtual private gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the route table.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DisassociateRouteTable&k=1": {
+			"get": {
+				"summary": "Disassociates a subnet from a route table.",
+				"description": "Disassociates a subnet from a route table.",
+				"operationId": "disassociateroutetable",
+				"parameters": [{
+					"in": "query",
+					"name": "AssociationId",
+					"description": "The association ID representing the current association between the route table and subnet.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=EnableVgwRoutePropagation&k=1": {
+			"get": {
+				"summary": "Enables a virtual private gateway (VGW) to propagate routes to the specified route table of antttVPC.",
+				"description": "Enables a virtual private gateway (VGW) to propagate routes to the specified route table of antttVPC.",
+				"operationId": "enablevgwroutepropagation",
+				"parameters": [{
+					"in": "query",
+					"name": "GatewayId",
+					"description": "The ID of the virtual private gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the route table.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ReplaceRoute&k=1": {
+			"get": {
+				"summary": "Replaces an existing route within a route table in a VPC.",
+				"description": "Replaces an existing route within a route table in a VPC.",
+				"operationId": "replaceroute",
+				"parameters": [{
+					"in": "query",
+					"name": "DestinationCidrBlock",
+					"description": "The CIDR address block used for the destination match. The valuettttyou provide must match the CIDR of an existing route in the table.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GatewayId",
+					"description": "The ID of an Internet gateway or virtual private gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of a NAT instance in your VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NatGatewayId",
+					"description": "The ID of a NAT gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of a network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the route table.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcPeeringConnectionId",
+					"description": "The ID of a VPC peering connection.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ReplaceRouteTableAssociation&k=1": {
+			"get": {
+				"summary": "Changes the route table associated with a given subnet in a VPC.",
+				"description": "Changes the route table associated with a given subnet in a VPC.",
+				"operationId": "replaceroutetableassociation",
+				"parameters": [{
+					"in": "query",
+					"name": "AssociationId",
+					"description": "The association ID.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId",
+					"description": "The ID of the new route table to associate with the subnet.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
