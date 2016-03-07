@@ -1,0 +1,145 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Subnet Group API",
+		"description": "The API for managing Amazon RDS Subnet Groups",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateDBSubnetGroup&k=1": {
+			"get": {
+				"summary": "Creates a new DB subnet group.",
+				"description": "Creates a new DB subnet group.",
+				"operationId": "createdbsubnetgroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSubnetGroupDescription",
+					"description": "The description for the DB subnet group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSubnetGroupName",
+					"description": "The name for the DB subnet group.        This value is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetIds.member.N",
+					"description": "The EC2 Subnet IDs for the DB subnet group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDBSubnetGroup&k=1": {
+			"get": {
+				"summary": "Deletes a DB subnet group.",
+				"description": "Deletes a DB subnet group.",
+				"operationId": "deletedbsubnetgroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSubnetGroupName",
+					"description": "The name of the database subnet group to delete.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBSubnetGroups&k=1": {
+			"get": {
+				"summary": "Returns a list of DBSubnetGroup descriptions.",
+				"description": "Returns a list of DBSubnetGroup descriptions.",
+				"operationId": "describedbsubnetgroups",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSubnetGroupName",
+					"description": "The name of the DB subnet group to return details for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous DescribeDBSubnetGroups request.            If this parameter is specified, the response includes            only records beyond the marker,            up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,        a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyDBSubnetGroup&k=1": {
+			"get": {
+				"summary": "Modifies an existing DB subnet group.",
+				"description": "Modifies an existing DB subnet group.",
+				"operationId": "modifydbsubnetgroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSubnetGroupDescription",
+					"description": "The description for the DB subnet group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSubnetGroupName",
+					"description": "The name for the DB subnet group.        This value is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetIds.member.N",
+					"description": "The EC2 subnet IDs for the DB subnet group.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
