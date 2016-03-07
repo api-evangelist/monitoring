@@ -1,0 +1,215 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 ClassicLink API",
+		"description": "The API for management ClassicLink",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AttachClassicLinkVpc&k=1": {
+			"get": {
+				"summary": "Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPC'sntttsecurity groups.",
+				"description": "Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more of the VPCsntttsecurity groups.",
+				"operationId": "attachclassiclinkvpc",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, tt    and provides an error response. If you have the required permissions, the error response is DryRunOperation. tt    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of an EC2-Classic instance to link to the ClassicLink-enabled VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SecurityGroupId.N",
+					"description": "The ID of one or more of the VPCs security groups. You cannot specify security groups from a different VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of a ClassicLink-enabled VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeClassicLinkInstances&k=1": {
+			"get": {
+				"summary": "Describes one or more of your linked EC2-Classic instances.",
+				"description": "Describes one or more of your linked EC2-Classic instances.",
+				"operationId": "describeclassiclinkinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs. Must be instances linked to a VPC through ClassicLink.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in a single page. The remaining results of the initial request can be seen by sending anothert    request with the returned NextToken value. This value can be between 5 and 1000;t    if MaxResults is given a value larger than 1000, only 1000 results are returned. You cannot specify this parameter and the instance IDs parameter in the samet    request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVpcClassicLink&k=1": {
+			"get": {
+				"summary": "Describes the ClassicLink status of one or more VPCs.",
+				"description": "Describes the ClassicLink status of one or more VPCs.",
+				"operationId": "describevpcclassiclink",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId.N",
+					"description": "One or more VPCs for which you want to describe the ClassicLink status.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DetachClassicLinkVpc&k=1": {
+			"get": {
+				"summary": "Unlinks (detaches) a linked EC2-Classic instance from a VPC.",
+				"description": "Unlinks (detaches) a linked EC2-Classic instance from a VPC.",
+				"operationId": "detachclassiclinkvpc",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance to unlink from the VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC to which the instance is linked.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DisableVpcClassicLink&k=1": {
+			"get": {
+				"summary": "Disables ClassicLink for a VPC.",
+				"description": "Disables ClassicLink for a VPC.",
+				"operationId": "disablevpcclassiclink",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, tt    and provides an error response. If you have the required permissions, the error response is DryRunOperation. tt    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=EnableVpcClassicLink&k=1": {
+			"get": {
+				"summary": "Enables a VPC for ClassicLink.",
+				"description": "Enables a VPC for ClassicLink.",
+				"operationId": "enablevpcclassiclink",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
