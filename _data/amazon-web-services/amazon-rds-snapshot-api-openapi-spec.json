@@ -1,0 +1,227 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Snapshot API",
+		"description": "The API for managing Amazon RDS Snapshots",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CopyDBSnapshot&k=1": {
+			"get": {
+				"summary": "Copies the specified DBSnapshot.",
+				"description": "Copies the specified DBSnapshot.",
+				"operationId": "copydbsnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "CopyTags",
+					"description": "True to copy all tags from the source DB snapshot to the target DB snapshot; otherwise false.    The default is false.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceDBSnapshotIdentifier",
+					"description": "The identifier for the source DB snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TargetDBSnapshotIdentifier",
+					"description": "The identifier for the copied snapshot.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateDBSnapshot&k=1": {
+			"get": {
+				"summary": "Creates a DBSnapshot.",
+				"description": "Creates a DBSnapshot.",
+				"operationId": "createdbsnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "DBInstanceIdentifier",
+					"description": "The DB instance identifier. This is the unique key        that identifies a DB instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSnapshotIdentifier",
+					"description": "The identifier for the DB snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDBSnapshot&k=1": {
+			"get": {
+				"summary": "Deletes a DBSnapshot.",
+				"description": "Deletes a DBSnapshot.",
+				"operationId": "deletedbsnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSnapshotIdentifier",
+					"description": "The DBSnapshot identifier.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBSnapshotAttributes&k=1": {
+			"get": {
+				"summary": "Returns a list of DB snapshot attribute names and values for a manual DB snapshot.",
+				"description": "Returns a list of DB snapshot attribute names and values for a manual DB snapshot.",
+				"operationId": "describedbsnapshotattributes",
+				"parameters": [{
+					"in": "query",
+					"name": "DBSnapshotIdentifier",
+					"description": "The identifier for the DB snapshot to modify the attributes for.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBSnapshots&k=1": {
+			"get": {
+				"summary": "Returns information about DB snapshots.",
+				"description": "Returns information about DB snapshots.",
+				"operationId": "describedbsnapshots",
+				"parameters": [{
+					"in": "query",
+					"name": "DBInstanceIdentifier",
+					"description": "A DB instance identifier to retrieve the list of DB snapshots for.         This parameter cannot be used in conjunction with DBSnapshotIdentifier.        This parameter is not case-sensitive.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSnapshotIdentifier",
+					"description": "A specific DB snapshot identifier to describe. This parameter cannot be used in conjunction with DBInstanceIdentifier.                        This value is stored as a lowercase string.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IncludePublic",
+					"description": "True to include manual DB snapshots that are public and can be copied or restored      by any AWS account; otherwise false. The default is false.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IncludeShared",
+					"description": "True to include shared manual DB snapshots from other AWS accounts      that this AWS account has been given permission to copy or      restore; otherwise false. The default is false.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous        DescribeDBSnapshots request.            If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,        a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotType",
+					"description": "The type of snapshots that will be returned. You can specify one of the following values:",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyDBSnapshotAttribute&k=1": {
+			"get": {
+				"summary": "Adds an attribute and values to, or removes an attribute and values from a manual DBn    snapshot.",
+				"description": "Adds an attribute and values to, or removes an attribute and values from a manual DBn    snapshot.",
+				"operationId": "modifydbsnapshotattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "AttributeName",
+					"description": "The name of the DB snapshot attribute to modify.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBSnapshotIdentifier",
+					"description": "The identifier for the DB snapshot to modify the attributes for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ValuesToAdd.member.N",
+					"description": "A list of DB snapshot attributes to add to the attribute specified by AttributeName.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ValuesToRemove.member.N",
+					"description": "A list of DB snapshot attributes to remove from the attribute specified by AttributeName.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
