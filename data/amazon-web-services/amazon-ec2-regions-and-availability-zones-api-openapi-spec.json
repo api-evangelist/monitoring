@@ -1,0 +1,81 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Regions and Availability Zones API",
+		"description": "The API for management Regions and Availability Zones",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=DescribeAvailabilityZones&k=1": {
+			"get": {
+				"summary": "Describes one or more of the Availability Zones that are available to you.",
+				"description": "Describes one or more of the Availability Zones that are available to you.",
+				"operationId": "describeavailabilityzones",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ZoneName.N",
+					"description": "The names of one or more Availability Zones.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeRegions&k=1": {
+			"get": {
+				"summary": "Describes one or more regions that are currently available to you.",
+				"description": "Describes one or more regions that are currently available to you.",
+				"operationId": "describeregions",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RegionName.N",
+					"description": "The names of one or more regions.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
