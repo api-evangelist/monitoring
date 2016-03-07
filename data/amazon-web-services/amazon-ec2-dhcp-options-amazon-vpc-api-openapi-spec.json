@@ -1,0 +1,133 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 DHCP Options (Amazon VPC) API",
+		"description": "The API for management DHCP Options (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AssociateDhcpOptions&k=1": {
+			"get": {
+				"summary": "Associates a set of DHCP options (that you've previously created) with the specified VPC, orn      associates no DHCP options with the VPC.",
+				"description": "Associates a set of DHCP options (that youve previously created) with the specified VPC, orn      associates no DHCP options with the VPC.",
+				"operationId": "associatedhcpoptions",
+				"parameters": [{
+					"in": "query",
+					"name": "DhcpOptionsId",
+					"description": "The ID of the DHCP options set, or default to associate         no DHCP options with the VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateDhcpOptions&k=1": {
+			"get": {
+				"summary": "Creates a set of DHCP options for your VPC.",
+				"description": "Creates a set of DHCP options for your VPC.",
+				"operationId": "createdhcpoptions",
+				"parameters": [{
+					"in": "query",
+					"name": "DhcpConfiguration.N",
+					"description": "A DHCP configuration option.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDhcpOptions&k=1": {
+			"get": {
+				"summary": "Deletes the specified set of DHCP options.",
+				"description": "Deletes the specified set of DHCP options.",
+				"operationId": "deletedhcpoptions",
+				"parameters": [{
+					"in": "query",
+					"name": "DhcpOptionsId",
+					"description": "The ID of the DHCP options set.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDhcpOptions&k=1": {
+			"get": {
+				"summary": "Describes one or more of your DHCP options sets.",
+				"description": "Describes one or more of your DHCP options sets.",
+				"operationId": "describedhcpoptions",
+				"parameters": [{
+					"in": "query",
+					"name": "DhcpOptionsId.N",
+					"description": "The IDs of one or more DHCP options sets.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
