@@ -1,0 +1,253 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Parameter Group API",
+		"description": "The API for managing Amazon RDS Parameter Groups",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CopyDBParameterGroup&k=1": {
+			"get": {
+				"summary": "Copies the specified DB parameter group.",
+				"description": "Copies the specified DB parameter group.",
+				"operationId": "copydbparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "SourceDBParameterGroupIdentifier",
+					"description": "The identifier or ARN for the source DB parameter group.        For information about          creating an ARN,         see           Constructing an RDS Amazon Resource Name (ARN).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TargetDBParameterGroupDescription",
+					"description": "A description for the copied DB parameter group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TargetDBParameterGroupIdentifier",
+					"description": "The identifier for the copied DB parameter group.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateDBParameterGroup&k=1": {
+			"get": {
+				"summary": "Creates a new DB parameter group.",
+				"description": "Creates a new DB parameter group.",
+				"operationId": "createdbparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupFamily",
+					"description": "The DB parameter group family name. A DB parameter group can be             associated with one and only one DB parameter group family, and             can be applied only to a DB instance running a database engine and engine version             compatible with that DB parameter group family.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DBParameterGroupName",
+					"description": "The name of the DB parameter group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Description",
+					"description": "The description for the DB parameter group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "A list of tags.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteDBParameterGroup&k=1": {
+			"get": {
+				"summary": "Deletes a specified DBParameterGroup.",
+				"description": "Deletes a specified DBParameterGroup.",
+				"operationId": "deletedbparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupName",
+					"description": "The name of the DB parameter group.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBParameterGroups&k=1": {
+			"get": {
+				"summary": "Returns a list of DBParameterGroup descriptions.",
+				"description": "Returns a list of DBParameterGroup descriptions.",
+				"operationId": "describedbparametergroups",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupName",
+					"description": "The name of a specific DB parameter group to return details for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous        DescribeDBParameterGroups request.            If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,            a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeDBParameters&k=1": {
+			"get": {
+				"summary": "Returns the detailed parameter list for a particular DB parameter group.",
+				"description": "Returns the detailed parameter list for a particular DB parameter group.",
+				"operationId": "describedbparameters",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupName",
+					"description": "The name of a specific DB parameter group to return details for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous        DescribeDBParameters request.            If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,            a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Source",
+					"description": "The parameter types to return.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyDBParameterGroup&k=1": {
+			"get": {
+				"summary": "Modifies the parameters of a DB parameter group.",
+				"description": "Modifies the parameters of a DB parameter group.",
+				"operationId": "modifydbparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupName",
+					"description": "The name of the DB parameter group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Parameters.member.N",
+					"description": "An array of parameter names, values, and the apply method        for the parameter update. At least one parameter name,        value, and apply method must be supplied; subsequent arguments are optional.        A maximum of 20 parameters can be modified in a single request.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ResetDBParameterGroup&k=1": {
+			"get": {
+				"summary": "Modifies the parameters of a DB parameter group to the engine/system default value.",
+				"description": "Modifies the parameters of a DB parameter group to the engine/system default value.",
+				"operationId": "resetdbparametergroup",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupName",
+					"description": "The name of the DB parameter group.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Parameters.member.N",
+					"description": "An array of parameter names, values, and the apply method        for the parameter update. At least one parameter name,        value, and apply method must be supplied; subsequent arguments are optional.        A maximum of 20 parameters can be modified in a single request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResetAllParameters",
+					"description": "Specifies whether (true) or not (false) to reset all parameters        in the DB parameter group to default values.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
