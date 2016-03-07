@@ -1,0 +1,107 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 NAT Gateways (Amazon VPC) API",
+		"description": "The API for management NAT Gateways (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateNatGateway&k=1": {
+			"get": {
+				"summary": "Creates a NAT gateway in the specified subnet.",
+				"description": "Creates a NAT gateway in the specified subnet.",
+				"operationId": "createnatgateway",
+				"parameters": [{
+					"in": "query",
+					"name": "AllocationId",
+					"description": "The allocation ID of an Elastic IP address to associate with the NAT gateway. If the Elastic      IP address is associated with another resource, you must first disassociate it.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetId",
+					"description": "The subnet in which to create the NAT gateway.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteNatGateway&k=1": {
+			"get": {
+				"summary": "Deletes the specified NAT gateway.",
+				"description": "Deletes the specified NAT gateway.",
+				"operationId": "deletenatgateway",
+				"parameters": [{
+					"in": "query",
+					"name": "NatGatewayId",
+					"description": "The ID of the NAT gateway.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeNatGateways&k=1": {
+			"get": {
+				"summary": "Describes one or more of the your NAT gateways.",
+				"description": "Describes one or more of the your NAT gateways.",
+				"operationId": "describenatgateways",
+				"parameters": [{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NatGatewayId.N",
+					"description": "One or more NAT gateway IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
