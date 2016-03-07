@@ -1,0 +1,113 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Customer Gateways (Amazon VPC) API",
+		"description": "The API for management Customer Gateways (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateCustomerGateway&k=1": {
+			"get": {
+				"summary": "Provides information to AWS about your VPN customer gateway device.",
+				"description": "Provides information to AWS about your VPN customer gateway device.",
+				"operationId": "createcustomergateway",
+				"parameters": [{
+					"in": "query",
+					"name": "BgpAsn",
+					"description": "For devices that support BGP, the customer gateways BGP ASN.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IpAddress",
+					"description": "The Internet-routable IP address for the customer gateways outsidettttinterface. The address must be static.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Type",
+					"description": "The type of VPN connection that this customer gateway supports (ipsec.1).",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteCustomerGateway&k=1": {
+			"get": {
+				"summary": "Deletes the specified customer gateway.",
+				"description": "Deletes the specified customer gateway.",
+				"operationId": "deletecustomergateway",
+				"parameters": [{
+					"in": "query",
+					"name": "CustomerGatewayId",
+					"description": "The ID of the customer gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeCustomerGateways&k=1": {
+			"get": {
+				"summary": "Describes one or more of your VPN customer gateways.",
+				"description": "Describes one or more of your VPN customer gateways.",
+				"operationId": "describecustomergateways",
+				"parameters": [{
+					"in": "query",
+					"name": "CustomerGatewayId.N",
+					"description": "One or more customer gateway IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
