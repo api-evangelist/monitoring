@@ -1,0 +1,133 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Key Pairs API",
+		"description": "The API for management Key Pairs",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateKeyPair&k=1": {
+			"get": {
+				"summary": "Creates a 2048-bit RSA key pair with the specified name.",
+				"description": "Creates a 2048-bit RSA key pair with the specified name.",
+				"operationId": "createkeypair",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KeyName",
+					"description": "A unique name for the key pair.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteKeyPair&k=1": {
+			"get": {
+				"summary": "Deletes the specified key pair, by removing the public key from Amazon EC2.",
+				"description": "Deletes the specified key pair, by removing the public key from Amazon EC2.",
+				"operationId": "deletekeypair",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KeyName",
+					"description": "The name of the key pair.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeKeyPairs&k=1": {
+			"get": {
+				"summary": "Describes one or more of your key pairs.",
+				"description": "Describes one or more of your key pairs.",
+				"operationId": "describekeypairs",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KeyName.N",
+					"description": "One or more key pair names.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ImportKeyPair&k=1": {
+			"get": {
+				"summary": "Imports the public key from an RSA key pair that you created with a third-party tool.",
+				"description": "Imports the public key from an RSA key pair that you created with a third-party tool.",
+				"operationId": "importkeypair",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KeyName",
+					"description": "A unique name for the key pair.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PublicKeyMaterial",
+					"description": "The public key. You must base64 encode the public key material before sending it to AWS.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
