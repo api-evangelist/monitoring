@@ -1,0 +1,49 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 AWS Marketplace API",
+		"description": "The API for management AWS Marketplace",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=ConfirmProductInstance&k=1": {
+			"get": {
+				"summary": "Determines whether a product code is associated with an instance.",
+				"description": "Determines whether a product code is associated with an instance.",
+				"operationId": "confirmproductinstance",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ProductCode",
+					"description": "The product code. This must be a product code that you own.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
