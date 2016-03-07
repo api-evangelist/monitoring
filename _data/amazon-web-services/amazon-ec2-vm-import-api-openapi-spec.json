@@ -1,0 +1,239 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 VM Import API",
+		"description": "The API for management VM Import",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CancelConversionTask&k=1": {
+			"get": {
+				"summary": "Cancels an active conversion task.",
+				"description": "Cancels an active conversion task.",
+				"operationId": "cancelconversiontask",
+				"parameters": [{
+					"in": "query",
+					"name": "ConversionTaskId",
+					"description": "The ID of the conversion task.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,      and provides an error response. If you have the required permissions, the error response is DryRunOperation.      Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReasonMessage",
+					"description": "The reason for canceling the conversion task.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CancelImportTask&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "cancelimporttask",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeConversionTasks&k=1": {
+			"get": {
+				"summary": "Describes one or more of your conversion tasks.",
+				"description": "Describes one or more of your conversion tasks.",
+				"operationId": "describeconversiontasks",
+				"parameters": [{
+					"in": "query",
+					"name": "ConversionTaskId.N",
+					"description": "One or more conversion task IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,      and provides an error response. If you have the required permissions, the error response is DryRunOperation.      Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeImportImageTasks&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "describeimportimagetasks",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeImportSnapshotTasks&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "describeimportsnapshottasks",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ImportImage&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "importimage",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ImportInstance&k=1": {
+			"get": {
+				"summary": "Creates an import instance task using metadata from the specified disk image.",
+				"description": "Creates an import instance task using metadata from the specified disk image.",
+				"operationId": "importinstance",
+				"parameters": [{
+					"in": "query",
+					"name": "Description",
+					"description": "A description for the instance being imported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DiskImage.N",
+					"description": "The disk image.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,      and provides an error response. If you have the required permissions, the error response is DryRunOperation.      Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "LaunchSpecification",
+					"description": "The launch specification.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Platform",
+					"description": "The instance operating system.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ImportSnapshot&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "importsnapshot",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ImportVolume&k=1": {
+			"get": {
+				"summary": "Creates an import volume task using metadata from the specified disk image.",
+				"description": "Creates an import volume task using metadata from the specified disk image.",
+				"operationId": "importvolume",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZone",
+					"description": "The Availability Zone for the resulting EBS volume.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Description",
+					"description": "A description of the volume.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,      and provides an error response. If you have the required permissions, the error response is DryRunOperation.      Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Image",
+					"description": "The disk image.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Volume",
+					"description": "The volume size.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
