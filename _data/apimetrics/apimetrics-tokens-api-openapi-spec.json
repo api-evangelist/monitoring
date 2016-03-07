@@ -1,0 +1,143 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "APIMetrics Tokens API",
+		"description": "The API for managing APIMetrics tokens.",
+		"termsOfService": "http://apimetrics.io/tos/",
+		"contact": {
+			"name": "APIMetrics",
+			"url": "http://apimetrics.io/contact/",
+			"email": "info@apimetrics.com"
+		},
+		"version": "2"
+	},
+	"host": "client.apimetrics.io",
+	"basePath": "/api/2",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/tokens/": {
+			"get": {
+				"summary": "List Auth Tokens",
+				"description": "List Auth Tokens",
+				"operationId": "listAuthTokens",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Tokens"],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a new Auth Token",
+				"description": "Create a new Auth Token",
+				"operationId": "createANewAuthToken",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     meta: {         auth_id: agxkZXZ-dmlhdGVzdHNyGgsSDVNlcnZpY2VDb25maWcYgICAgKDLmgsM,         name: Minimal token name     } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Tokens"],
+				"security": []
+			}
+		},
+		"/tokens/auth/{auth_id}/": {
+			"get": {
+				"summary": "Get all tokens for an Authentication Setting ",
+				"description": "Get all tokens for an Authentication Setting ",
+				"operationId": "getAllTokensForAnAuthenticationSetting",
+				"parameters": [{
+					"in": "path",
+					"name": "auth_id",
+					"description": "ID of the Authentication Settings",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Tokens"],
+				"security": []
+			}
+		},
+		"/tokens/{id}/": {
+			"delete": {
+				"summary": "Delete an Auth Token",
+				"description": "Delete an Auth Token",
+				"operationId": "deleteAnAuthToken",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of Token you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Tokens"],
+				"security": []
+			},
+			"get": {
+				"summary": "Get an existing Auth Token",
+				"description": "Get an existing Auth Token",
+				"operationId": "getAnExistingAuthToken",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of Token you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Tokens"],
+				"security": []
+			},
+			"put": {
+				"summary": "Update an Auth Token",
+				"description": "Update an Auth Token",
+				"operationId": "updateAnAuthToken",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of Token you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Tokens"],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
