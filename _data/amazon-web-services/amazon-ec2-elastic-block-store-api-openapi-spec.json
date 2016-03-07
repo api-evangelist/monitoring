@@ -1,0 +1,661 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Elastic Block Store API",
+		"description": "The API for management Elastic Block Store",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AttachVolume&k=1": {
+			"get": {
+				"summary": "Attaches an EBS volume to a running or stopped instance and exposes it to the instance withn      the specified device name.",
+				"description": "Attaches an EBS volume to a running or stopped instance and exposes it to the instance withn      the specified device name.",
+				"operationId": "attachvolume",
+				"parameters": [{
+					"in": "query",
+					"name": "Device",
+					"description": "The device name to expose to the instance (for example, /dev/sdh or        xvdh).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId",
+					"description": "The ID of the EBS volume. The volume and instance must be within the same Availability      Zone.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CopySnapshot&k=1": {
+			"get": {
+				"summary": "Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3.",
+				"description": "Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3.",
+				"operationId": "copysnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "Description",
+					"description": "A description for the EBS snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DestinationRegion",
+					"description": "The destination region to use in the PresignedUrl parameter of a snapshot copy      operation. This parameter is only valid for specifying the destination region in a        PresignedUrl parameter, where it is required.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Encrypted",
+					"description": "Specifies whether the destination snapshot should be encrypted. There is no way to create an      unencrypted snapshot copy from an encrypted snapshot; however, you can encrypt a copy of an      unencrypted snapshot with this flag. The default CMK for EBS is used unless a non-default      AWS Key Management Service (AWS KMS) CMK is specified with KmsKeyId. For more information, see Amazon EBS Encryption in the        Amazon Elastic Compute Cloud User Guide.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KmsKeyId",
+					"description": "The full ARN of the AWS Key Management Service (AWS KMS) CMK to use when creating the snapshot copy. This parameter is      only required if you want to use a non-default CMK; if this parameter is not specified, the      default CMK for EBS is used. The ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef. The specified CMK must exist in the region      that the snapshot is being copied to. If a KmsKeyId is specified, the        Encrypted flag must also be set.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PresignedUrl",
+					"description": "The pre-signed URL that facilitates copying an encrypted snapshot. This parameter is only      required when copying an encrypted snapshot with the Amazon EC2 Query API; it is available as an      optional parameter in all other cases. The PresignedUrl should use the snapshot      source endpoint, the CopySnapshot action, and include the        SourceRegion, SourceSnapshotId, and DestinationRegion      parameters. The PresignedUrl must be signed using AWS Signature Version 4.      Because EBS snapshots are stored in Amazon S3, the signing algorithm for this parameter uses the      same logic that is described in Authenticating Requests by Using Query Parameters (AWS Signature Version 4) in the        Amazon Simple Storage Service API Reference. An invalid or improperly signed PresignedUrl will cause      the copy operation to fail asynchronously, and the snapshot will move to an error      state.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceRegion",
+					"description": "The ID of the region that contains the snapshot to be copied.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceSnapshotId",
+					"description": "The ID of the EBS snapshot to copy.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateSnapshot&k=1": {
+			"get": {
+				"summary": "Creates a snapshot of an EBS volume and stores it in Amazon S3.",
+				"description": "Creates a snapshot of an EBS volume and stores it in Amazon S3.",
+				"operationId": "createsnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "Description",
+					"description": "A description for the snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId",
+					"description": "The ID of the EBS volume.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateVolume&k=1": {
+			"get": {
+				"summary": "Creates an EBS volume that can be attached to an instance in the same Availability Zone.",
+				"description": "Creates an EBS volume that can be attached to an instance in the same Availability Zone.",
+				"operationId": "createvolume",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZone",
+					"description": "The Availability Zone in which to create the volume. Use DescribeAvailabilityZones to      list the Availability Zones that are currently available to you.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Encrypted",
+					"description": "Specifies whether the volume should be encrypted. Encrypted Amazon EBS volumes may only be      attached to instances that support Amazon EBS encryption. Volumes that are created from      encrypted snapshots are automatically encrypted. There is no way to create an encrypted volume      from an unencrypted snapshot or vice versa. If your AMI uses encrypted volumes, you can only      launch it on supported instance types. For more information, see Amazon EBS Encryption in the        Amazon Elastic Compute Cloud User Guide.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Iops",
+					"description": "Only valid for Provisioned IOPS (SSD) volumes. The number of I/O operations per second (IOPS) to      provision for the volume, with a maximum ratio of 30 IOPS/GiB.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KmsKeyId",
+					"description": "The full ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted      volume. This parameter is only required if you want to use a non-default CMK; if this      parameter is not specified, the default CMK for EBS is used. The ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef. If a        KmsKeyId is specified, the Encrypted flag must also be set.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Size",
+					"description": "The size of the volume, in GiBs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotId",
+					"description": "The snapshot from which to create the volume.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeType",
+					"description": "The volume type. This can be gp2 for General Purpose (SSD) volumes, io1 for      Provisioned IOPS (SSD) volumes, or standard for Magnetic volumes.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteSnapshot&k=1": {
+			"get": {
+				"summary": "Deletes the specified snapshot.",
+				"description": "Deletes the specified snapshot.",
+				"operationId": "deletesnapshot",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotId",
+					"description": "The ID of the EBS snapshot.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteVolume&k=1": {
+			"get": {
+				"summary": "Deletes the specified EBS volume.",
+				"description": "Deletes the specified EBS volume.",
+				"operationId": "deletevolume",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId",
+					"description": "The ID of the volume.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSnapshotAttribute&k=1": {
+			"get": {
+				"summary": "Describes the specified attribute of the specified snapshot.",
+				"description": "Describes the specified attribute of the specified snapshot.",
+				"operationId": "describesnapshotattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The snapshot attribute you would like to view.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotId",
+					"description": "The ID of the EBS snapshot.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSnapshots&k=1": {
+			"get": {
+				"summary": "Describes one or more of the EBS snapshots available to you.",
+				"description": "Describes one or more of the EBS snapshots available to you.",
+				"operationId": "describesnapshots",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of snapshot results returned by DescribeSnapshots in paginated      output. When this parameter is used, DescribeSnapshots only returns      MaxResults results in a single page along with a NextToken      response element. The remaining results of the initial request can be seen by sending another      DescribeSnapshots request with the returned NextToken value. This      value can be between 5 and 1000; if MaxResults is given a value larger than 1000,      only 1000 results are returned. If this parameter is not used, then      DescribeSnapshots returns all results. You cannot specify this parameter and the      snapshot IDs parameter in the same request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The NextToken value returned from a previous paginated      DescribeSnapshots request where MaxResults was used and the results      exceeded the value of that parameter. Pagination continues from the end of the previous      results that returned the NextToken value. This value is null when      there are no more results to return.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Owner.N",
+					"description": "Returns the snapshots owned by the specified owner. Multiple owners can be specified.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RestorableBy.N",
+					"description": "One or more AWS accounts IDs that can create volumes from the snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotId.N",
+					"description": "One or more snapshot IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVolumeAttribute&k=1": {
+			"get": {
+				"summary": "Describes the specified attribute of the specified volume.",
+				"description": "Describes the specified attribute of the specified volume.",
+				"operationId": "describevolumeattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The instance attribute.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId",
+					"description": "The ID of the volume.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVolumes&k=1": {
+			"get": {
+				"summary": "Describes the specified EBS volumes.",
+				"description": "Describes the specified EBS volumes.",
+				"operationId": "describevolumes",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of volume results returned by DescribeVolumes in paginatedtttoutput. When this parameter is used, DescribeVolumes only returnsttttMaxResults results in a single page along with a NextTokentttresponse element. The remaining results of the initial request can be seen by sending anotherttttDescribeVolumes request with the returned NextToken value. Thistttvalue can be between 5 and 1000; if MaxResults is given a value larger than 1000,tttonly 1000 results are returned. If this parameter is not used, thenttttDescribeVolumes returns all results. You cannot specify this parameter and thetttvolume IDs parameter in the same request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The NextToken value returned from a previous paginated        DescribeVolumes request where MaxResults was used and the results      exceeded the value of that parameter. Pagination continues from the end of the previous      results that returned the NextToken value. This value is null when      there are no more results to return.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId.N",
+					"description": "One or more volume IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVolumeStatus&k=1": {
+			"get": {
+				"summary": "Describes the status of the specified volumes.",
+				"description": "Describes the status of the specified volumes.",
+				"operationId": "describevolumestatus",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of volume results returned by DescribeVolumeStatus intttpaginated output. When this parameter is used, the request only returnsttttMaxResults results in a single page along with a NextTokentttresponse element. The remaining results of the initial request can be seen by sending anothertttrequest with the returned NextToken value. This value can be between 5 and 1000;tttif MaxResults is given a value larger than 1000, only 1000 results are returned.tttIf this parameter is not used, then DescribeVolumeStatus returns all results. Youtttcannot specify this parameter and the volume IDs parameter in the same request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The NextToken value to include in a future DescribeVolumeStatustttrequest. When the results of the request exceed MaxResults, this value can betttused to retrieve the next page of results. This value is null when there are notttmore results to return.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId.N",
+					"description": "One or more volume IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DetachVolume&k=1": {
+			"get": {
+				"summary": "Detaches an EBS volume from an instance.",
+				"description": "Detaches an EBS volume from an instance.",
+				"operationId": "detachvolume",
+				"parameters": [{
+					"in": "query",
+					"name": "Device",
+					"description": "The device name.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Force",
+					"description": "Forces detachment if the previous detachment attempt did not occur cleanly (for example,      logging into an instance, unmounting the volume, and detaching normally). This option can lead      to data loss or a corrupted file system. Use this option only as a last resort to detach a      volume from a failed instance. The instance wont have an opportunity to flush file system      caches or file system metadata. If you use this option, you must perform file system check and      repair procedures.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId",
+					"description": "The ID of the volume.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=EnableVolumeIO&k=1": {
+			"get": {
+				"summary": "Enables I/O operations for a volume that had I/O operations disabled because the data on then      volume was potentially inconsistent.",
+				"description": "Enables I/O operations for a volume that had I/O operations disabled because the data on then      volume was potentially inconsistent.",
+				"operationId": "enablevolumeio",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId",
+					"description": "The ID of the volume.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifySnapshotAttribute&k=1": {
+			"get": {
+				"summary": "Adds or removes permission settings for the specified snapshot.",
+				"description": "Adds or removes permission settings for the specified snapshot.",
+				"operationId": "modifysnapshotattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The snapshot attribute to modify.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "CreateVolumePermission",
+					"description": "A JSON representation of the snapshot attribute modification.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OperationType",
+					"description": "The type of operation to perform to the attribute.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotId",
+					"description": "The ID of the snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "UserGroup.N",
+					"description": "The group to modify for the snapshot.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "UserId.N",
+					"description": "The account ID to modify for the snapshot.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyVolumeAttribute&k=1": {
+			"get": {
+				"summary": "Modifies a volume attribute.",
+				"description": "Modifies a volume attribute.",
+				"operationId": "modifyvolumeattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "AutoEnableIO",
+					"description": "Indicates whether the volume should be auto-enabled for I/O operations.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VolumeId",
+					"description": "The ID of the volume.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ResetSnapshotAttribute&k=1": {
+			"get": {
+				"summary": "Resets permission settings for the specified snapshot.",
+				"description": "Resets permission settings for the specified snapshot.",
+				"operationId": "resetsnapshotattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The attribute to reset. Currently, only the attribute for permission to create volumes can be      reset.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SnapshotId",
+					"description": "The ID of the snapshot.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
