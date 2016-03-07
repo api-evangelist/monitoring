@@ -1,0 +1,95 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "APIMetrics Auth API",
+		"description": "The API for managing APIMetrics API auth.",
+		"termsOfService": "http://apimetrics.io/tos/",
+		"contact": {
+			"name": "APIMetrics",
+			"url": "http://apimetrics.io/contact/",
+			"email": "info@apimetrics.com"
+		},
+		"version": null
+	},
+	"host": "client.apimetrics.io",
+	"basePath": "/api/2",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/auth/": {
+			"get": {
+				"summary": "List Authentication Settings",
+				"description": "List Authentication Settings",
+				"operationId": "listAuthenticationSettings",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Auth"],
+				"security": []
+			}
+		},
+		"/auth/{id}/": {
+			"delete": {
+				"summary": "Delete an Authentication Setting",
+				"description": "Delete an Authentication Setting",
+				"operationId": "deleteAnAuthenticationSetting",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of authentication string youre upda",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Auth"],
+				"security": []
+			},
+			"get": {
+				"summary": "Get an existing Authentication Setting",
+				"description": "Get an existing Authentication Setting",
+				"operationId": "getAnExistingAuthenticationSetting",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of authentication string youre upda",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Auth"],
+				"security": []
+			},
+			"put": {
+				"summary": "Update an existing Authentication Setting",
+				"description": "Update an existing Authentication Setting",
+				"operationId": "updateAnExistingAuthenticationSetting",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of authentication string youre upda",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Auth"],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
