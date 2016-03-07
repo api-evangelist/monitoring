@@ -1,0 +1,150 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "APIMetrics Workflows API",
+		"description": "The API for managing APIMetrics workflows.",
+		"termsOfService": "http://apimetrics.io/tos/",
+		"contact": {
+			"name": "APIMetrics",
+			"url": "http://apimetrics.io/contact/",
+			"email": "info@apimetrics.com"
+		},
+		"version": "2"
+	},
+	"host": "client.apimetrics.io",
+	"basePath": "/api/2",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/workflows/": {
+			"get": {
+				"summary": "List all Workflows",
+				"description": "List all Workflows",
+				"operationId": "listAllWorkflows",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Workflows"],
+				"security": []
+			},
+			"post": {
+				"summary": "Create new Authentication Settings",
+				"description": "Create new Authentication Settings",
+				"operationId": "createNewAuthenticationSettings",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     meta: {         name: Minimal Auth Settings name,         domain: httpbin.org     },     settings: {         auth_type: NONE     } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Workflows"],
+				"security": []
+			}
+		},
+		"/workflows/{id}/": {
+			"delete": {
+				"summary": "Delete a Workflow",
+				"description": "Delete a Workflow",
+				"operationId": "deleteAWorkflow",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of Workflow you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Workflows"],
+				"security": []
+			},
+			"get": {
+				"summary": "Get an existing Workflow",
+				"description": "Get an existing Workflow",
+				"operationId": "getAnExistingWorkflow",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of Workflow you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Workflows"],
+				"security": []
+			},
+			"post": {
+				"summary": "Trigger a Workflow to run now",
+				"description": "Trigger a Workflow to run now",
+				"operationId": "triggerAWorkflowToRunNow",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     location_id: ,     context: {         foo: 1234,         bar: %%RESULT_ID%%,         datum: %%DATETIME%%     } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of Workflow you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Workflows"],
+				"security": []
+			},
+			"put": {
+				"summary": "Create a new Workflow",
+				"description": "Create a new Workflow",
+				"operationId": "createANewWorkflow",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     workflow: {         call_ids: [             agxkZXZ-dmlhdGVzdHNyFwsSClRlc3RTZXR1cDIYgICAgKDL6gsM,             agxkZXZ-dmlhdGVzdHNyFwsSClRlc3RTZXR1cDIYgICAgKDL6gsM         ],         handle_cookies: true     } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of Workflow you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Workflows"],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
