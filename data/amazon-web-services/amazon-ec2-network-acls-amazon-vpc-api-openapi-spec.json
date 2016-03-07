@@ -1,0 +1,307 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Network ACLs (Amazon VPC) API",
+		"description": "The API for management Network ACLs (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateNetworkAcl&k=1": {
+			"get": {
+				"summary": "Creates a network ACL in a VPC.",
+				"description": "Creates a network ACL in a VPC.",
+				"operationId": "createnetworkacl",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateNetworkAclEntry&k=1": {
+			"get": {
+				"summary": "Creates an entry (a rule) in a network ACL with the specified rule number.",
+				"description": "Creates an entry (a rule) in a network ACL with the specified rule number.",
+				"operationId": "createnetworkaclentry",
+				"parameters": [{
+					"in": "query",
+					"name": "CidrBlock",
+					"description": "The network range to allow or deny, in CIDR notation (for examplettt172.16.0.0/24).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Egress",
+					"description": "Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Icmp",
+					"description": "ICMP protocol: The ICMP type and code. Required if specifying ICMP for the protocol.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkAclId",
+					"description": "The ID of the network ACL.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PortRange",
+					"description": "TCP or UDP protocols: The range of ports the rule applies to.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Protocol",
+					"description": "The protocol. A value of -1 means all protocols.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RuleAction",
+					"description": "Indicates whether to allow or deny the traffic that matches the rule.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RuleNumber",
+					"description": "The rule number for the entry (for example, 100). ACLttttentries are processed in ascending order by rule number.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteNetworkAcl&k=1": {
+			"get": {
+				"summary": "Deletes the specified network ACL.",
+				"description": "Deletes the specified network ACL.",
+				"operationId": "deletenetworkacl",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkAclId",
+					"description": "The ID of the network ACL.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteNetworkAclEntry&k=1": {
+			"get": {
+				"summary": "Deletes the specified ingress or egress entry (rule) from the specified network ACL.",
+				"description": "Deletes the specified ingress or egress entry (rule) from the specified network ACL.",
+				"operationId": "deletenetworkaclentry",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Egress",
+					"description": "Indicates whether the rule is an egress rule.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkAclId",
+					"description": "The ID of the network ACL.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RuleNumber",
+					"description": "The rule number of the entry to delete.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeNetworkAcls&k=1": {
+			"get": {
+				"summary": "Describes one or more of your network ACLs.",
+				"description": "Describes one or more of your network ACLs.",
+				"operationId": "describenetworkacls",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkAclId.N",
+					"description": "One or more network ACL IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ReplaceNetworkAclAssociation&k=1": {
+			"get": {
+				"summary": "Changes which network ACL a subnet is associated with.",
+				"description": "Changes which network ACL a subnet is associated with.",
+				"operationId": "replacenetworkaclassociation",
+				"parameters": [{
+					"in": "query",
+					"name": "AssociationId",
+					"description": "The ID of the current association between the originalttttnetwork ACL and the subnet.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkAclId",
+					"description": "The ID of the new network ACL to associate with the subnet.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ReplaceNetworkAclEntry&k=1": {
+			"get": {
+				"summary": "Replaces an entry (rule) in a network ACL.",
+				"description": "Replaces an entry (rule) in a network ACL.",
+				"operationId": "replacenetworkaclentry",
+				"parameters": [{
+					"in": "query",
+					"name": "CidrBlock",
+					"description": "The network range to allow or deny, in CIDR notation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Egress",
+					"description": "Indicates whether to replace the egress rule.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Icmp",
+					"description": "ICMP protocol: The ICMP type and code. Required if specifying 1 (ICMP) for the protocol.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkAclId",
+					"description": "The ID of the ACL.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PortRange",
+					"description": "TCP or UDP protocols: The range of ports the rule applies to. Required if specifying 6 (TCP)tttor 17 (UDP) for the protocol.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Protocol",
+					"description": "The IP protocol. You can specify all or -1 to mean all protocols.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RuleAction",
+					"description": "Indicates whether to allow or deny the traffic that matches the rule.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RuleNumber",
+					"description": "The rule number of the entry to replace.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
