@@ -1,0 +1,379 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Elastic Network Interfaces (Amazon VPC) API",
+		"description": "The API for management Elastic Network Interfaces (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AssignPrivateIpAddresses&k=1": {
+			"get": {
+				"summary": "Assigns one or more secondary private IP addresses to the specified network interface.",
+				"description": "Assigns one or more secondary private IP addresses to the specified network interface.",
+				"operationId": "assignprivateipaddresses",
+				"parameters": [{
+					"in": "query",
+					"name": "AllowReassignment",
+					"description": "Indicates whether to allow an IP address that is already assigned to another network      interface or instance to be reassigned to the specified network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of the network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PrivateIpAddress.N",
+					"description": "One or more IP addresses to be assigned as a secondary private IP address to the network      interface. You cant specify this parameter when also specifying a number of secondary IP      addresses.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SecondaryPrivateIpAddressCount",
+					"description": "The number of secondary IP addresses to assign to the network interface. You cant specify      this parameter when also specifying private IP addresses.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=AttachNetworkInterface&k=1": {
+			"get": {
+				"summary": "Attaches a network interface to an instance.",
+				"description": "Attaches a network interface to an instance.",
+				"operationId": "attachnetworkinterface",
+				"parameters": [{
+					"in": "query",
+					"name": "DeviceIndex",
+					"description": "The index of the device for the network interface attachment.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of the network interface.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateNetworkInterface&k=1": {
+			"get": {
+				"summary": "Creates a network interface in the specified subnet.",
+				"description": "Creates a network interface in the specified subnet.",
+				"operationId": "createnetworkinterface",
+				"parameters": [{
+					"in": "query",
+					"name": "Description",
+					"description": "A description for the network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PrivateIpAddress",
+					"description": "The primary private IP address of the network interface. If you dont specify an IP address,tttAmazon EC2 selects one for you from the subnet range. If you specify an IP address, you cannottttindicate any IP addresses specified in privateIpAddresses as primary (only one IPtttaddress can be designated as primary).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PrivateIpAddresses.N",
+					"description": "One or more private IP addresses.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SecondaryPrivateIpAddressCount",
+					"description": "The number of secondary private IP addresses to assign to a network interface. When youtttspecify a number of secondary IP addresses, Amazon EC2 selects these IP addresses within the subnettttrange. You cant specify this option and specify more than one private IP address usingttttprivateIpAddresses.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SecurityGroupId.N",
+					"description": "The IDs of one or more security groups.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetId",
+					"description": "The ID of the subnet to associate with the network interface.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteNetworkInterface&k=1": {
+			"get": {
+				"summary": "Deletes the specified network interface.",
+				"description": "Deletes the specified network interface.",
+				"operationId": "deletenetworkinterface",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of the network interface.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeNetworkInterfaceAttribute&k=1": {
+			"get": {
+				"summary": "Describes a network interface attribute.",
+				"description": "Describes a network interface attribute.",
+				"operationId": "describenetworkinterfaceattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The attribute of the network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of the network interface.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeNetworkInterfaces&k=1": {
+			"get": {
+				"summary": "Describes one or more of your network interfaces.",
+				"description": "Describes one or more of your network interfaces.",
+				"operationId": "describenetworkinterfaces",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId.N",
+					"description": "One or more network interface IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DetachNetworkInterface&k=1": {
+			"get": {
+				"summary": "Detaches a network interface from an instance.",
+				"description": "Detaches a network interface from an instance.",
+				"operationId": "detachnetworkinterface",
+				"parameters": [{
+					"in": "query",
+					"name": "AttachmentId",
+					"description": "The ID of the attachment.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Force",
+					"description": "Specifies whether to force a detachment.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyNetworkInterfaceAttribute&k=1": {
+			"get": {
+				"summary": "Modifies the specified network interface attribute.",
+				"description": "Modifies the specified network interface attribute.",
+				"operationId": "modifynetworkinterfaceattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attachment",
+					"description": "Information about the interface attachment. If modifying the delete on terminationtttattribute, you must specify the ID of the interface attachment.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Description",
+					"description": "A description for the network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of the network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SecurityGroupId.N",
+					"description": "Changes the security groups for the network interface. The newttttset of groups you specify replaces the current set. You must specify atttttleast one group, even if its just the default security group in thettttVPC. You must specify the ID of the security group, not the name.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceDestCheck",
+					"description": "Indicates whether source/destination checking is enabled.ttttA value of true means checkingttttis enabled, and false means checking is disabled. This valuettttmust be false for a NAT instance to perform NAT. For morettttinformation, see NATttttInstances in the Amazon Virtual Private Cloud User Guide.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ResetNetworkInterfaceAttribute&k=1": {
+			"get": {
+				"summary": "Resets a network interface attribute.",
+				"description": "Resets a network interface attribute.",
+				"operationId": "resetnetworkinterfaceattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of the network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceDestCheck",
+					"description": "The source/destination checking attribute. Resets the value to true.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=UnassignPrivateIpAddresses&k=1": {
+			"get": {
+				"summary": "Unassigns one or more secondary private IP addresses from a network interface.",
+				"description": "Unassigns one or more secondary private IP addresses from a network interface.",
+				"operationId": "unassignprivateipaddresses",
+				"parameters": [{
+					"in": "query",
+					"name": "NetworkInterfaceId",
+					"description": "The ID of the network interface.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PrivateIpAddress.N",
+					"description": "The secondary private IP addresses to unassign fromttttthe network interface. You can specify this option multiple times tottttunassign more than one IP address.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
