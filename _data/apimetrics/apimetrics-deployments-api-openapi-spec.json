@@ -1,0 +1,165 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "APIMetrics Deployments API",
+		"description": "The API for managing APIMetrics deployments.",
+		"termsOfService": "http://apimetrics.io/tos/",
+		"contact": {
+			"name": "APIMetrics",
+			"url": "http://apimetrics.io/contact/",
+			"email": "info@apimetrics.com"
+		},
+		"version": "2"
+	},
+	"host": "client.apimetrics.io",
+	"basePath": "/api/2",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/deployments/": {
+			"get": {
+				"summary": "List all Deployment",
+				"description": "List all Deployment",
+				"operationId": "listAllDeployments",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Deployments"],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a new Deployment",
+				"description": "Create a new Deployment",
+				"operationId": "createANewDeployment",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     deployment: {         target_id: agxkZXZ-dmlhdGVzdHNyFwsSClRlc3RTZXR1cDIYgICAgKDL6gsM,          frequency: 12,         location_id:      } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Deployments"],
+				"security": []
+			}
+		},
+		"/deployments/call/{call_id}/": {
+			"get": {
+				"summary": "Get all Deployments for an API Call",
+				"description": "Get all Deployments for an API Call",
+				"operationId": "getAllDeploymentForAPICall",
+				"parameters": [{
+					"in": "path",
+					"name": "call_id",
+					"description": "ID of the API Call",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Deployments"],
+				"security": []
+			}
+		},
+		"/deployments/workflow/{workflow_id}": {
+			"get": {
+				"summary": "Get all Deployments for a Workflow",
+				"description": "Get all Deployments for a Workflow",
+				"operationId": "getAllDeploymentForAWorkflow",
+				"parameters": [{
+					"in": "path",
+					"name": "workflow_id",
+					"description": "ID of the Workflow",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Deployments"],
+				"security": []
+			}
+		},
+		"/deployments/{id}/": {
+			"delete": {
+				"summary": "Delete a Deployment",
+				"description": "Delete a Deployment",
+				"operationId": "deleteADeployment",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of deployment you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Deployments"],
+				"security": []
+			},
+			"get": {
+				"summary": "Get an existing Deployment",
+				"description": "Get an existing Deployment",
+				"operationId": "getAnExistingDeployment",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of deployment you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Deployments"],
+				"security": []
+			},
+			"put": {
+				"summary": "Update an existing Deployment",
+				"description": "Update an existing Deployment",
+				"operationId": "updateAnExistingDeployment",
+				"parameters": [{
+					"in": "body",
+					"name": "body",
+					"description": "{     deployment: {         target_id: __PARENT_ID__,          frequency: 15,         location_id:      } }",
+					"schema": {
+						"$ref": "#/definitions/holder"
+					}
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "ID string of deployment you are updating",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Deployments"],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
