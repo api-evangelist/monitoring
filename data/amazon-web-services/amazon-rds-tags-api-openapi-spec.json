@@ -1,0 +1,71 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS Tags API",
+		"description": "The API for managing Amazon RDS Tagss",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AddTagsToResource&k=1": {
+			"get": {
+				"summary": "Adds metadata tags to an Amazon RDS resource.",
+				"description": "Adds metadata tags to an Amazon RDS resource.",
+				"operationId": "addtagstoresource",
+				"parameters": [{
+					"in": "query",
+					"name": "ResourceName",
+					"description": "The Amazon RDS resource the tags will be added to. This value is an Amazon Resource Name (ARN). For information about              creating an ARN,         see             Constructing an RDS Amazon Resource Name (ARN).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tags.member.N",
+					"description": "The tags to be assigned to the Amazon RDS resource.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ListTagsForResource&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "listtagsforresource",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RemoveTagsFromResource&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "removetagsfromresource",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
