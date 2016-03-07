@@ -1,0 +1,61 @@
+{
+	"name": "Sift Science",
+	"description": "Sift Science fights fraud with machine learning. Machine learning teaches a computer to mine data for statistical patterns, and continuously learn and adapt as new data streams in. With simple APIs that take minutes to integrate, an online business can leverage the latest in large-scale machine learning to protect themselves from fraud. Chargebacks, spammers, account takeovers, etc. Online businesses send Sift Science user events, which are mined for identity, behavioral, and network patterns that correspond to past fraud. Sift Science also pools fraud patterns across its network of customers. The network strengthens as more data streams in. Customers can also &ldquo;train their own model&rdquo; and tailor their results via a simple interface.",
+	"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
+	"tags": [
+		"Monitoring"
+	],
+	"created": "2016-03-06",
+	"modified": "2016-03-06",
+	"url": "http://monitoring.apievangelist.com/data/sift-science/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Sift Science",
+			"description": "Sift Science is a company focused on monitoring your website&#039;s traffic to protect it from users intent on malicious activities such as: fraud, credit card chargebacks, money laundering, abuse of referral programs, and general spamming of your site.nnCurrently in private beta, the company offeres both a Java and a REST API that track events on your website. Both integrate into your website much like Google Analytics with the Java API tracking more casual interactions (logins, screen resolutions, IP address) with the REST API documenting more backend operations (user signups, transactions made). The company also offers a Score API which allows you to dynamically call up a JSON document with the current risk assessment of your site.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
+			"humanURL": "https://siftscience.com/docs",
+			"baseURL": "https://siftscience.com/docs",
+			"tags": [
+				"Monitoring"
+			],
+			"properties": [
+			]
+		}
+	],
+	"x-common": [
+		{
+			"type": "x-blog",
+			"url": "https://blog.siftscience.com"
+		},
+		{
+			"type": "x-portal",
+			"url": "https://siftscience.com/resources/tutorials/integration-guide.html"
+		},
+		{
+			"type": "x-email",
+			"url": "support@siftscience.com"
+		},
+		{
+			"type": "x-twitter",
+			"url": "https://twitter.com/siftscience"
+		},
+		{
+			"type": "x-webinars",
+			"url": "https://siftscience.com/"
+		}
+	],
+	"include": [
+		{
+			"name": "Parent",
+			"url": "http://monitoring.apievangelist.com/apis.json"
+		}
+	],
+	"maintainers": [
+		{
+			"FN": "Kin Lane",
+			"x-twitter": "apievangelist",
+			"email": "info@apievangelist.com"
+		}
+	]
+}
