@@ -1,0 +1,171 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 VPCs (Amazon VPC) API",
+		"description": "The API for management VPCs (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateVpc&k=1": {
+			"get": {
+				"summary": "Creates a VPC with the specified CIDR block.",
+				"description": "Creates a VPC with the specified CIDR block.",
+				"operationId": "createvpc",
+				"parameters": [{
+					"in": "query",
+					"name": "CidrBlock",
+					"description": "The network range for the VPC, in CIDR notation. For example, 10.0.0.0/16.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceTenancy",
+					"description": "The supported tenancy options for instances launched into the VPC. A value ofttttdefault means that instances can be launched with any tenancy; a value ofttttdedicated means all instances launched into the VPC are launched as dedicatedttttenancy instances regardless of the tenancy assigned to the instance at launch. Dedicatedttttenancy instances run on single-tenant hardware.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteVpc&k=1": {
+			"get": {
+				"summary": "Deletes the specified VPC.",
+				"description": "Deletes the specified VPC.",
+				"operationId": "deletevpc",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVpcAttribute&k=1": {
+			"get": {
+				"summary": "Describes the specified attribute of the specified VPC.",
+				"description": "Describes the specified attribute of the specified VPC.",
+				"operationId": "describevpcattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The VPC attribute.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVpcs&k=1": {
+			"get": {
+				"summary": "Describes one or more of your VPCs.",
+				"description": "Describes one or more of your VPCs.",
+				"operationId": "describevpcs",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId.N",
+					"description": "One or more VPC IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyVpcAttribute&k=1": {
+			"get": {
+				"summary": "Modifies the specified attribute of the specified VPC.",
+				"description": "Modifies the specified attribute of the specified VPC.",
+				"operationId": "modifyvpcattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "EnableDnsHostnames",
+					"description": "Indicates whether the instances launched in the VPC get DNS hostnames. If enabled, instancestttin the VPC get DNS hostnames; otherwise, they do not.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EnableDnsSupport",
+					"description": "Indicates whether the DNS resolution is supported for the VPC. If enabled, queries to the      Amazon provided DNS server at the 169.254.169.253 IP address, or the reserved IP address at      the base of the VPC network range plus two will succeed. If disabled, the Amazon provided      DNS service in the VPC that resolves public DNS hostnames to IP addresses is not enabled.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
