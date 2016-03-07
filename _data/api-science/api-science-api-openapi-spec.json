@@ -1,0 +1,522 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "API Science Monitors API",
+		"description": "This is the API Science API for API monitors.",
+		"version": "v1"
+	},
+	"host": "api.apiscience.com",
+	"basePath": "/v1",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/contacts.json": {
+			"get": {
+				"summary": "Get All Contacts",
+				"description": "Get All Contacts",
+				"operationId": "getAllContacts",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Contacts"],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a Contact",
+				"description": "Create a Contact",
+				"operationId": "createContact",
+				"parameters": [{
+					"in": "formData",
+					"name": "label",
+					"description": "User-defined label for this contact.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "type",
+					"description": "Type of contact, options are: email, url, pagerduty",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "value",
+					"description": "Contents of value vary based on the type of contact being created: an email address, a URL or your PagerDuty API key.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Contacts"],
+				"security": []
+			}
+		},
+		"/contacts/{id}.json": {
+			"delete": {
+				"summary": "Delete a Contact",
+				"description": "Delete a Contact",
+				"operationId": "deleteContact",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "The id for the contact.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Contacts"],
+				"security": []
+			},
+			"get": {
+				"summary": "Get a Specific Contact",
+				"description": "Get a Specific Contact",
+				"operationId": "getContact",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "The ID of the contact to retrieve",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Contacts"],
+				"security": []
+			},
+			"patch": {
+				"summary": "Update a Contact",
+				"description": "Update a Contact",
+				"operationId": "updateContact",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "ID for the contact",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "label",
+					"description": "User-defined label for this contact.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "type",
+					"description": "Type of contact, options are: email, url, pagerduty",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "value",
+					"description": "Contents of value vary based on the type of contact being created: an email address, a URL or your PagerDuty API key.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Contacts"],
+				"security": []
+			}
+		},
+		"/monitors": {
+			"get": {
+				"summary": "Get All Monitors",
+				"description": "Marks message as read.",
+				"operationId": "getAllMonitors",
+				"parameters": [{
+					"in": "header",
+					"name": "Authorization",
+					"description": "Your API key must be included in all API requests to the server in an Authorization HTTP header.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "tags",
+					"description": "Optionally filter monitors by tags. Can be chained multiple times to do an inclusive tag search.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Monitors"],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a Monitor",
+				"description": "Create a Monitor",
+				"operationId": "createMonitor",
+				"parameters": [{
+					"in": "formData",
+					"name": "active",
+					"description": "This flag determines whether the monitor is either running or paused. When creating a new monitor, if this flag is set to true, the monitor will immediately begin monitoring. By default, this field is set to false",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "frequency",
+					"description": "The frequency that you want this monitor to be run at. Options are: 60, 300, 600, 900, 1800, 3600 (in seconds).",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "name",
+					"description": "The name of the monitor.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "templates",
+					"description": "An array of template objects to be created. These objects must be put into an array. If there is any issue creating a template or any of itu2019s nested items, the entire monitor creation will fail.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Monitors"],
+				"security": []
+			},
+			"put": {
+				"summary": "Apply Actions to Multiple Monitors",
+				"description": "Apply Actions to Multiple Monitors",
+				"operationId": "applyActionsToMultipleMonitors",
+				"parameters": [{
+					"in": "path",
+					"name": "tags",
+					"description": "Optionally filter monitors by tags. Can be chained multiple times to do an inclusive tag search.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Monitors"],
+				"security": []
+			}
+		},
+		"/monitors/{id}": {
+			"get": {
+				"summary": "Get a Specific Monitor",
+				"description": "Get a Specific Monitor",
+				"operationId": "getMonitor",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "The ID of the monitor to retrieve",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Monitors"],
+				"security": []
+			}
+		},
+		"/monitors/{id}/checks.json": {
+			"get": {
+				"summary": "Get Checks For A Monitor",
+				"description": "Get Checks For A Monitor",
+				"operationId": "getChecksForAMonitor",
+				"parameters": [{
+					"in": "query",
+					"name": "count",
+					"description": "The number of checks to return.",
+					"type": "integer",
+					"format": "integer"
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "id for the monitors",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "start",
+					"description": "The start number represents which ID is the maximum check that could be found. Its purpose is to root the pagination even as new data keeps on being continually added. Typically this will be generated by the provided pagination URL and not something the user needs to create.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Checks"],
+				"security": []
+			}
+		},
+		"/monitors/{id}/performance": {
+			"get": {
+				"summary": "Performance Report",
+				"description": "Performance Report",
+				"operationId": "performanceReport",
+				"parameters": [{
+					"in": "query",
+					"name": "end",
+					"description": "The end point you want to build a performance report from. Format should be in ISO 8601. If the timezone is not provided, the report will assume UTC. Partial dates (ex: YYYY-MM-DD) are supported",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "The id for the monitor.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "preset",
+					"description": "Present for commonly requested reports. Options are lastDay and lastWeek.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "resolution",
+					"description": "The resolution is the time unit for aggregating data, with allowable values of hour, day, and week.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "start",
+					"description": "The start point you want to build a performance report from. Format should be in ISO 8601. If the timezone is not provided, the report will assume UTC. Partial dates (ex: YYYY-MM-DD) are supported.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Reports"],
+				"security": []
+			}
+		},
+		"/monitors/{id}/templates": {
+			"get": {
+				"summary": "Show a Monitors Templates",
+				"description": "Show a Monitors Templates",
+				"operationId": "showMonitorsTemplates",
+				"parameters": [{
+					"in": "path",
+					"name": "id",
+					"description": "The id for the monitor.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Templates"],
+				"security": []
+			}
+		},
+		"/monitors/{id}/templates/{templates]": {
+			"get": {
+				"summary": "Get a Template",
+				"description": "Get a Template",
+				"operationId": "getTemplate",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Templates"],
+				"security": []
+			},
+			"post": {
+				"summary": "Create a Template",
+				"description": "Create a Template",
+				"operationId": "createTemplate",
+				"parameters": [{
+					"in": "formData",
+					"name": "body",
+					"description": "Raw body to be send with the request.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "followRedirects",
+					"description": "True if this call should automatically follow HTTP redirects (default is False).",
+					"type": "boolean",
+					"format": "boolean"
+				},
+				{
+					"in": "formData",
+					"name": "headers",
+					"description": "An array of key/value pairs to send as URL parameters. These will be URL encoded. If you have provided parameters as part of the base URL these will be appended to those existing parameters.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "method",
+					"description": "The HTTP action to access the given URL. Options are: GET, POST, PUTS, PATCH, DELETE.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "name",
+					"description": "The name of the template.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "preProcessScript",
+					"description": "JavaScript to be executed prior to running this template. In the context of a multi-step monitor, the results of the previous call are available to this JavaScript context (ex: thus enabling you to extract and use data or variables from previous step prior to running this step).",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "url",
+					"description": "The URL to be accessed.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "formData",
+					"name": "validations",
+					"description": "An array of validation objects to be run on the results of this template.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Templates"],
+				"security": []
+			}
+		},
+		"/monitors/{id}/test": {
+			"get": {
+				"summary": "Testing your Monitor",
+				"description": "Testing your Monitor",
+				"operationId": "testMonitor",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Monitors"],
+				"security": []
+			}
+		},
+		"/monitors/{id}/uptime.json": {
+			"get": {
+				"summary": "Uptime Report",
+				"description": "Uptime Report",
+				"operationId": "uptimeReport",
+				"parameters": [{
+					"in": "query",
+					"name": "end",
+					"description": "The end point you want to build a performance report from. Format should be in ISO 8601. If the timezone is not provided, the report will assume UTC. Partial dates (ex: YYYY-MM-DD) are supported",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "path",
+					"name": "id",
+					"description": "Id for the monitor.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "preset",
+					"description": "Present for commonly requested reports. Options are lastDay and lastWeek.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "resolution",
+					"description": "The resolution is the time unit for aggregating data, with allowable values of hourly, daily, and weekly.",
+					"type": "string",
+					"format": "string"
+				},
+				{
+					"in": "query",
+					"name": "start",
+					"description": "The start point you want to build a performance report from. Format should be in ISO 8601. If the timezone is not provided, the report will assume UTC. Partial dates (ex: YYYY-MM-DD) are supported.",
+					"type": "string",
+					"format": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Reports"],
+				"security": []
+			}
+		},
+		"/tags": {
+			"get": {
+				"summary": "List All Tags",
+				"description": "List All Tags",
+				"operationId": "listAllTags",
+				"parameters": [{
+					"in": "query",
+					"name": "detailed",
+					"description": "Detailed List All Tags",
+					"type": "integer",
+					"format": "integer"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": ["Tags"],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
