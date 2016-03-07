@@ -1,0 +1,139 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Subnets (Amazon VPC) API",
+		"description": "The API for management Subnets (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateSubnet&k=1": {
+			"get": {
+				"summary": "Creates a subnet in an existing VPC.",
+				"description": "Creates a subnet in an existing VPC.",
+				"operationId": "createsubnet",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZone",
+					"description": "The Availability Zone for the subnet.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "CidrBlock",
+					"description": "The network range for the subnet, in CIDR notation. For example, 10.0.0.0/24.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteSubnet&k=1": {
+			"get": {
+				"summary": "Deletes the specified subnet.",
+				"description": "Deletes the specified subnet.",
+				"operationId": "deletesubnet",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetId",
+					"description": "The ID of the subnet.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSubnets&k=1": {
+			"get": {
+				"summary": "Describes one or more of your subnets.",
+				"description": "Describes one or more of your subnets.",
+				"operationId": "describesubnets",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetId.N",
+					"description": "One or more subnet IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifySubnetAttribute&k=1": {
+			"get": {
+				"summary": "Modifies a subnet attribute.",
+				"description": "Modifies a subnet attribute.",
+				"operationId": "modifysubnetattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "MapPublicIpOnLaunch",
+					"description": "Specify true to indicate that instances launched into the specified subnet should be assigned public IP address.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetId",
+					"description": "The ID of the subnet.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
