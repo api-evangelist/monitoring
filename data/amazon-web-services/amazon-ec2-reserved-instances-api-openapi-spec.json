@@ -1,0 +1,345 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Reserved Instances API",
+		"description": "The API for management Reserved Instances",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CancelReservedInstancesListing&k=1": {
+			"get": {
+				"summary": "Cancels the specified Reserved instance listing in the Reserved Instance Marketplace.",
+				"description": "Cancels the specified Reserved instance listing in the Reserved Instance Marketplace.",
+				"operationId": "cancelreservedinstanceslisting",
+				"parameters": [{
+					"in": "query",
+					"name": "ReservedInstancesListingId",
+					"description": "The ID of the Reserved instance listing.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateReservedInstancesListing&k=1": {
+			"get": {
+				"summary": "Creates a listing for Amazon EC2 Reserved instances to be sold in the Reserved InstancentttMarketplace.",
+				"description": "Creates a listing for Amazon EC2 Reserved instances to be sold in the Reserved InstancentttMarketplace.",
+				"operationId": "createreservedinstanceslisting",
+				"parameters": [{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "Unique, case-sensitive identifier you provide to ensure idempotency of yourttttlistings. This helps avoid duplicate listings. For more information, see ttttEnsuring Idempotency.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceCount",
+					"description": "The number of instances that are a part of a Reserved instance account to be listedttttin the Reserved Instance Marketplace. This number should be less than or equal to thettttinstance count associated with the Reserved instance ID specified in this call.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PriceSchedules.N",
+					"description": "A list specifying the price of the Reserved instance for each monthttttremaining in the Reserved instance term.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesId",
+					"description": "The ID of the active Reserved instance.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeReservedInstances&k=1": {
+			"get": {
+				"summary": "Describes one or more of the Reserved instances that you purchased.",
+				"description": "Describes one or more of the Reserved instances that you purchased.",
+				"operationId": "describereservedinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OfferingType",
+					"description": "The Reserved instance offering type. If you are using tools that predate the 2011-11-01 APItttversion, you only have access to the Medium Utilization Reserved instancetttoffering type.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesId.N",
+					"description": "One or more Reserved instance IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeReservedInstancesListings&k=1": {
+			"get": {
+				"summary": "Describes your account's Reserved instance listings in the Reserved Instance Marketplace.",
+				"description": "Describes your accounts Reserved instance listings in the Reserved Instance Marketplace.",
+				"operationId": "describereservedinstanceslistings",
+				"parameters": [{
+					"in": "query",
+					"name": "Filters.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesId",
+					"description": "One or more Reserved instance IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesListingId",
+					"description": "One or more Reserved instance Listing IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeReservedInstancesModifications&k=1": {
+			"get": {
+				"summary": "Describes the modifications made to your Reserved instances.",
+				"description": "Describes the modifications made to your Reserved instances.",
+				"operationId": "describereservedinstancesmodifications",
+				"parameters": [{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesModificationId.N",
+					"description": "IDs for the submitted modification request.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeReservedInstancesOfferings&k=1": {
+			"get": {
+				"summary": "Describes Reserved instance offerings that are available for purchase.",
+				"description": "Describes Reserved instance offerings that are available for purchase.",
+				"operationId": "describereservedinstancesofferings",
+				"parameters": [{
+					"in": "query",
+					"name": "AvailabilityZone",
+					"description": "The Availability Zone in which the Reserved instance can be used.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IncludeMarketplace",
+					"description": "Include Reserved Instance Marketplace offerings in the response.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceTenancy",
+					"description": "The tenancy of the instances covered by the reservation. A Reserved instance with a tenancy      of dedicated is applied to instances that run in a VPC on single-tenant hardware      (i.e., Dedicated instances).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceType",
+					"description": "The instance type that the reservation will cover (for example, m1.small). For more information, see Instance Types in the      Amazon Elastic Compute Cloud User Guide.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxDuration",
+					"description": "The maximum duration (in seconds) to filter when searching for offerings.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxInstanceCount",
+					"description": "The maximum number of instances to filter when searching for offerings.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in a single page. The remainingtttresults of the initial request can be seen by sending another request with the returnedttttNextToken value. The maximum is 100.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MinDuration",
+					"description": "The minimum duration (in seconds) to filter when searching for offerings.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "OfferingType",
+					"description": "The Reserved instance offering type. If you are using tools that predate the 2011-11-01 APItttversion, you only have access to the Medium Utilization Reserved instancetttoffering type.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ProductDescription",
+					"description": "The Reserved instance product platform description. Instances that include (Amazon        VPC) in the description are for use with Amazon VPC.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesOfferingId.N",
+					"description": "One or more Reserved instances offering IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyReservedInstances&k=1": {
+			"get": {
+				"summary": "Modifies the Availability Zone, instance count, instance type, or network platform (EC2-Classic or EC2-VPC) of your Reserved instances.",
+				"description": "Modifies the Availability Zone, instance count, instance type, or network platform (EC2-Classic or EC2-VPC) of your Reserved instances.",
+				"operationId": "modifyreservedinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "A unique, case-sensitive token you provide to ensure idempotency of your modification request. For more information, see    ttEnsuring Idempotency.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesConfigurationSetItemType.N",
+					"description": "The configuration settings for the Reserved instances to modify.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesId.N",
+					"description": "The IDs of the Reserved instances to modify.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=PurchaseReservedInstancesOffering&k=1": {
+			"get": {
+				"summary": "Purchases a Reserved instance for use with your account.",
+				"description": "Purchases a Reserved instance for use with your account.",
+				"operationId": "purchasereservedinstancesoffering",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceCount",
+					"description": "The number of Reserved instances to purchase.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "LimitPrice",
+					"description": "Specified for Reserved Instance Marketplace offerings to limit the total order andttttensure that the Reserved instances are not purchased at unexpected prices.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReservedInstancesOfferingId",
+					"description": "The ID of the Reserved instance offering to purchase.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
