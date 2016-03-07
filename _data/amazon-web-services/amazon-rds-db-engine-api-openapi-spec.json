@@ -1,0 +1,155 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon RDS DB Engine API",
+		"description": "The API for managing Amazon RDS DB Engines",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "rds.us-east-1.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=DescribeDBEngineVersions&k=1": {
+			"get": {
+				"summary": "Returns a list of the available DB engines.",
+				"description": "Returns a list of the available DB engines.",
+				"operationId": "describedbengineversions",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupFamily",
+					"description": "The name of a specific DB parameter group family to return details for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DefaultOnly",
+					"description": "Indicates that only the default version of the specified engine    or engine and major version combination is returned.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Engine",
+					"description": "The database engine to return.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EngineVersion",
+					"description": "The database engine version to return.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "Not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ListSupportedCharacterSets",
+					"description": "If this parameter is specified, and if the requested engine supports the             CharacterSetName parameter for CreateDBInstance, the response includes a            list of supported character sets for each engine version.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous request.        If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.    If more than the MaxRecords value is available, a pagination token called a marker is    included in the response so that the following results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeEngineDefaultClusterParameters&k=1": {
+			"get": {
+				"summary": "Returns the default engine and system parameter information for the cluster database engine.",
+				"description": "Returns the default engine and system parameter information for the cluster database engine.",
+				"operationId": "describeenginedefaultclusterparameters",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupFamily",
+					"description": "The name of the DB cluster parameter group family to return engine parameter information for.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "This parameter is not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous      DescribeEngineDefaultClusterParameters request.      If this parameter is specified, the response includes      only records beyond the marker,      up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.      If more records exist than the specified MaxRecords value,      a pagination token called a marker is included in the response so that the remaining      results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeEngineDefaultParameters&k=1": {
+			"get": {
+				"summary": "Returns the default engine and system parameter information for the specified database engine.",
+				"description": "Returns the default engine and system parameter information for the specified database engine.",
+				"operationId": "describeenginedefaultparameters",
+				"parameters": [{
+					"in": "query",
+					"name": "DBParameterGroupFamily",
+					"description": "The name of the DB parameter group family.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filters.member.N",
+					"description": "Not currently supported.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Marker",
+					"description": "An optional pagination token provided by a previous        DescribeEngineDefaultParameters request.            If this parameter is specified, the response includes        only records beyond the marker,        up to the value specified by MaxRecords.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxRecords",
+					"description": "The maximum number of records to include in the response.        If more records exist than the specified MaxRecords value,        a pagination token called a marker is included in the response so that the remaining        results can be retrieved.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
