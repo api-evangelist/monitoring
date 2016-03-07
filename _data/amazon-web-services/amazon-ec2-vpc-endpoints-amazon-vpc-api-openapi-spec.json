@@ -1,0 +1,263 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 VPC Endpoints (Amazon VPC) API",
+		"description": "The API for management VPC Endpoints (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateVpcEndpoint&k=1": {
+			"get": {
+				"summary": "Creates a VPC endpoint for a specified AWS service.",
+				"description": "Creates a VPC endpoint for a specified AWS service.",
+				"operationId": "createvpcendpoint",
+				"parameters": [{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PolicyDocument",
+					"description": "A policy to attach to the endpoint that controls access to the service. The policy must be in      valid JSON format. If this parameter is not specified, we attach a default policy that allows      full access to the service.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RouteTableId.N",
+					"description": "One or more route table IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ServiceName",
+					"description": "The AWS service name, in the form com.amazonaws.region.service                     . To      get a list of available services, use the DescribeVpcEndpointServices request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC in which the endpoint will be used.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteVpcEndpoints&k=1": {
+			"get": {
+				"summary": "Deletes one or more specified VPC endpoints.",
+				"description": "Deletes one or more specified VPC endpoints.",
+				"operationId": "deletevpcendpoints",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcEndpointId.N",
+					"description": "One or more endpoint IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribePrefixLists&k=1": {
+			"get": {
+				"summary": "Describes available AWS services in a prefix list format, which includes the prefix list namen      and prefix list ID of the service and the IP address range for the service.",
+				"description": "Describes available AWS services in a prefix list format, which includes the prefix list namen      and prefix list ID of the service and the IP address range for the service.",
+				"operationId": "describeprefixlists",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token for the next set of items to return. (You received this token from a prior call.)",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PrefixListId.N",
+					"description": "One or more prefix list IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVpcEndpoints&k=1": {
+			"get": {
+				"summary": "Describes one or more of your VPC endpoints.",
+				"description": "Describes one or more of your VPC endpoints.",
+				"operationId": "describevpcendpoints",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token for the next set of items to return. (You received this token from a prior call.)",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcEndpointId.N",
+					"description": "One or more endpoint IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVpcEndpointServices&k=1": {
+			"get": {
+				"summary": "Describes all supported AWS services that can be specified when creating a VPC endpoint.",
+				"description": "Describes all supported AWS services that can be specified when creating a VPC endpoint.",
+				"operationId": "describevpcendpointservices",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token for the next set of items to return. (You received this token from a prior call.)",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyVpcEndpoint&k=1": {
+			"get": {
+				"summary": "Modifies attributes of a specified VPC endpoint.",
+				"description": "Modifies attributes of a specified VPC endpoint.",
+				"operationId": "modifyvpcendpoint",
+				"parameters": [{
+					"in": "query",
+					"name": "AddRouteTableId.N",
+					"description": "One or more route tables IDs to associate with the endpoint.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request, t    and provides an error response. If you have the required permissions, the error response is DryRunOperation. t    Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PolicyDocument",
+					"description": "A policy document to attach to the endpoint. The policy must be in valid JSON format.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RemoveRouteTableId.N",
+					"description": "One or more route table IDs to disassociate from the endpoint.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResetPolicy",
+					"description": "Specify true to reset the policy document to the default policy. The default      policy allows access to the service.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcEndpointId",
+					"description": "The ID of the endpoint.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
