@@ -1,0 +1,171 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 VPN Connections (Amazon VPC) API",
+		"description": "The API for management VPN Connections (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateVpnConnection&k=1": {
+			"get": {
+				"summary": "Creates a VPN connection between an existing virtual private gateway and a VPN customern      gateway.",
+				"description": "Creates a VPN connection between an existing virtual private gateway and a VPN customern      gateway.",
+				"operationId": "createvpnconnection",
+				"parameters": [{
+					"in": "query",
+					"name": "CustomerGatewayId",
+					"description": "The ID of the customer gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Options",
+					"description": "Indicates whether the VPN connection requires static routes. If youttttare creating a VPN connection for a device that does not support BGP,ttttyou must specify true.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Type",
+					"description": "The type of VPN connection (ipsec.1).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnGatewayId",
+					"description": "The ID of the virtual private gateway.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateVpnConnectionRoute&k=1": {
+			"get": {
+				"summary": "Creates a static route associated with a VPN connection between an existingnttttvirtual private gateway and a VPN customer gateway.",
+				"description": "Creates a static route associated with a VPN connection between an existingnttttvirtual private gateway and a VPN customer gateway.",
+				"operationId": "createvpnconnectionroute",
+				"parameters": [{
+					"in": "query",
+					"name": "DestinationCidrBlock",
+					"description": "The CIDR block associated with the local subnet of the customer network.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnConnectionId",
+					"description": "The ID of the VPN connection.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteVpnConnection&k=1": {
+			"get": {
+				"summary": "Deletes the specified VPN connection.",
+				"description": "Deletes the specified VPN connection.",
+				"operationId": "deletevpnconnection",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnConnectionId",
+					"description": "The ID of the VPN connection.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteVpnConnectionRoute&k=1": {
+			"get": {
+				"summary": "Deletes the specified static route associated with a VPN connection between an existingnttttvirtual private gateway and a VPN customer gateway.",
+				"description": "Deletes the specified static route associated with a VPN connection between an existingnttttvirtual private gateway and a VPN customer gateway.",
+				"operationId": "deletevpnconnectionroute",
+				"parameters": [{
+					"in": "query",
+					"name": "DestinationCidrBlock",
+					"description": "The CIDR block associated with the local subnet of the customer network.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnConnectionId",
+					"description": "The ID of the VPN connection.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeVpnConnections&k=1": {
+			"get": {
+				"summary": "Describes one or more of your VPN connections.",
+				"description": "Describes one or more of your VPN connections.",
+				"operationId": "describevpnconnections",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpnConnectionId.N",
+					"description": "One or more VPN connection IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
