@@ -1,0 +1,119 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Tags API",
+		"description": "The API for management Tags",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CreateTags&k=1": {
+			"get": {
+				"summary": "Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.",
+				"description": "Adds or overwrites one or more tags for the specified Amazon EC2 resource or resources.",
+				"operationId": "createtags",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResourceId.N",
+					"description": "The IDs of one or more resources to tag. For example, ami-1a2b3c4d.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tag.N",
+					"description": "One or more tags. The value parameter is required, but if you dont want the tag to have a value,     specify the parameter with no value, and we set the value to an empty     string.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteTags&k=1": {
+			"get": {
+				"summary": "Deletes the specified set of tags from the specified set of resources.",
+				"description": "Deletes the specified set of tags from the specified set of resources.",
+				"operationId": "deletetags",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ResourceId.N",
+					"description": "The ID of the resource. For example, ami-1a2b3c4d. You can specify more than one resource ID.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Tag.N",
+					"description": "One or more tags to delete. If you omit the value parameter, we delete the tag regardless     of its value. If you specify this parameter with an empty string as the     value, we delete the key only if its value is an empty string.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeTags&k=1": {
+			"get": {
+				"summary": "Describes one or more of the tags for your EC2 resources.",
+				"description": "Describes one or more of the tags for your EC2 resources.",
+				"operationId": "describetags",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in a singletttpage. The remaining results of thetttinitial request can be seen by sending another request with the returnedttttNextToken value. This value can be between 5 and 1000; ifttttMaxResults is given a value larger than 1000, only 1000 results are returned.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
