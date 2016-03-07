@@ -1,0 +1,215 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Spot Fleets API",
+		"description": "The API for management Spot Fleets",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=CancelSpotFleetRequests&k=1": {
+			"get": {
+				"summary": "Cancels the specified Spot fleet requests.",
+				"description": "Cancels the specified Spot fleet requests.",
+				"operationId": "cancelspotfleetrequests",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotFleetRequestId.N",
+					"description": "The IDs of the Spot fleet requests.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "TerminateInstances",
+					"description": "Indicates whether to terminate instances for a Spot fleet request if it is canceled successfully.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSpotFleetInstances&k=1": {
+			"get": {
+				"summary": "Describes the running instances for the specified Spot fleet.",
+				"description": "Describes the running instances for the specified Spot fleet.",
+				"operationId": "describespotfleetinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return in a single call.       Specify a value between 1 and 1000. The default value is 1000.            To retrieve the remaining results, make another call with the returned      NextToken value.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token for the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotFleetRequestId",
+					"description": "The ID of the Spot fleet request.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSpotFleetRequestHistory&k=1": {
+			"get": {
+				"summary": "Describes the events for the specified Spot fleet request during the specified time.",
+				"description": "Describes the events for the specified Spot fleet request during the specified time.",
+				"operationId": "describespotfleetrequesthistory",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EventType",
+					"description": "The type of events to describe. By default, all events are described.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return in a single call.       Specify a value between 1 and 1000. The default value is 1000.            To retrieve the remaining results, make another call with the returned      NextToken value.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token for the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotFleetRequestId",
+					"description": "The ID of the Spot fleet request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "StartTime",
+					"description": "The starting date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeSpotFleetRequests&k=1": {
+			"get": {
+				"summary": "Describes your Spot fleet requests.",
+				"description": "Describes your Spot fleet requests.",
+				"operationId": "describespotfleetrequests",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return in a single call.       Specify a value between 1 and 1000. The default value is 1000.            To retrieve the remaining results, make another call with the returned      NextToken value.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token for the next set of results.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotFleetRequestId.N",
+					"description": "The IDs of the Spot fleet requests.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifySpotFleetRequest&k=1": {
+			"get": {
+				"summary": ".",
+				"description": ".",
+				"operationId": "modifyspotfleetrequest",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RequestSpotFleet&k=1": {
+			"get": {
+				"summary": "Creates a Spot fleet request.",
+				"description": "Creates a Spot fleet request.",
+				"operationId": "requestspotfleet",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,       and provides an error response. If you have the required permissions, the error response is DryRunOperation.       Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SpotFleetRequestConfig",
+					"description": "The configuration for the Spot fleet request.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
