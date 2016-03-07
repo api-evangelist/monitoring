@@ -3,9 +3,10 @@
 	"description": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 	"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
 	"tags": [
+		"Monitoring"
 	],
-	"created": "2015-12-16",
-	"modified": "2015-12-16",
+	"created": "2016-03-06",
+	"modified": "2016-03-06",
 	"url": "http://monitoring.apievangelist.com/data/apimetrics/apis.json",
 	"specificationVersion": "0.14",
 	"apis": [
@@ -13,14 +14,15 @@
 			"name": "APIMetrics Auth API",
 			"description": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
-			"humanURL": "http://apimetrics.io",
+			"humanURL": "",
 			"baseURL": "https://client.apimetrics.io",
 			"tags": [
+				"Monitoring"
 			],
 			"properties": [
 				{
-					"type": "x-oadf",
-					"url": "http://theapistack.com/data/apimetrics/apimetrics-auth-api-swagger.json"
+					"type": "x-openapi-spec",
+					"url": "http://monitoring.apievangelist.com/data/apimetrics/apimetrics-auth-api-openapi-spec.json"
 				}
 			]
 		},
@@ -28,14 +30,15 @@
 			"name": "APIMetrics Calls API",
 			"description": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
-			"humanURL": "http://apimetrics.io",
+			"humanURL": "",
 			"baseURL": "https://client.apimetrics.io",
 			"tags": [
+				"Monitoring"
 			],
 			"properties": [
 				{
-					"type": "x-oadf",
-					"url": "http://theapistack.com/data/apimetrics/apimetrics-calls-api-swagger.json"
+					"type": "x-openapi-spec",
+					"url": "http://monitoring.apievangelist.com/data/apimetrics/apimetrics-calls-api-openapi-spec.json"
 				}
 			]
 		},
@@ -43,14 +46,15 @@
 			"name": "APIMetrics Deployments API",
 			"description": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
-			"humanURL": "http://apimetrics.io",
+			"humanURL": "",
 			"baseURL": "https://client.apimetrics.io",
 			"tags": [
+				"Monitoring"
 			],
 			"properties": [
 				{
-					"type": "x-oadf",
-					"url": "http://theapistack.com/data/apimetrics/apimetrics-deployments-api-swagger.json"
+					"type": "x-openapi-spec",
+					"url": "http://monitoring.apievangelist.com/data/apimetrics/apimetrics-deployments-api-openapi-spec.json"
 				}
 			]
 		},
@@ -58,14 +62,15 @@
 			"name": "APIMetrics Reports API",
 			"description": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
-			"humanURL": "http://apimetrics.io",
+			"humanURL": "",
 			"baseURL": "https://client.apimetrics.io",
 			"tags": [
+				"Monitoring"
 			],
 			"properties": [
 				{
-					"type": "x-oadf",
-					"url": "http://theapistack.com/data/apimetrics/apimetrics-reports-api-swagger.json"
+					"type": "x-openapi-spec",
+					"url": "http://monitoring.apievangelist.com/data/apimetrics/apimetrics-reports-api-openapi-spec.json"
 				}
 			]
 		},
@@ -73,14 +78,15 @@
 			"name": "APIMetrics Tokens API",
 			"description": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
-			"humanURL": "http://apimetrics.io",
+			"humanURL": "",
 			"baseURL": "https://client.apimetrics.io",
 			"tags": [
+				"Monitoring"
 			],
 			"properties": [
 				{
-					"type": "x-oadf",
-					"url": "http://theapistack.com/data/apimetrics/apimetrics-tokens-api-swagger.json"
+					"type": "x-openapi-spec",
+					"url": "http://monitoring.apievangelist.com/data/apimetrics/apimetrics-tokens-api-openapi-spec.json"
 				}
 			]
 		},
@@ -88,31 +94,36 @@
 			"name": "APIMetrics Workflows API",
 			"description": "APImetrics builds on 3 years experience gained working on the challenge of API abstraction and management that is critical to every App and Web Service in use today. By combining elements gained from API management tools and authentication technologies, APImetrics have been able to build the first, complete, end-to-end API performance test solution. This allows developers, enterprises and API providers to model complex API scenarios and provide them with real time monitoring and alerts when things go wrong.",
 			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png",
-			"humanURL": "http://apimetrics.io",
+			"humanURL": "",
 			"baseURL": "https://client.apimetrics.io",
 			"tags": [
+				"Monitoring"
 			],
 			"properties": [
 				{
-					"type": "x-oadf",
-					"url": "http://theapistack.com/data/apimetrics/apimetrics-workflows-api-swagger.json"
+					"type": "x-openapi-spec",
+					"url": "http://monitoring.apievangelist.com/data/apimetrics/apimetrics-workflows-api-openapi-spec.json"
 				}
 			]
 		}
 	],
 	"x-common": [
 		{
-			"type": "X-blog",
+			"type": "x-blog",
 			"url": "http://apimetrics.io/blog/"
 		}
 	],
 	"include": [
+		{
+			"name": "Parent",
+			"url": "http://monitoring.apievangelist.com/apis.json"
+		}
 	],
 	"maintainers": [
 		{
-			"FN": "Kin",
-			"X-twitter": "apievangelist",
-			"email": "kin@email.com"
+			"FN": "Kin Lane",
+			"x-twitter": "apievangelist",
+			"email": "info@apievangelist.com"
 		}
 	]
 }
