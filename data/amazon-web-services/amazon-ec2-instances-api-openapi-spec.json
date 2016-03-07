@@ -1,0 +1,707 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Instances API",
+		"description": "The API for management Instances",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=DescribeInstanceAttribute&k=1": {
+			"get": {
+				"summary": "Describes the specified attribute of the specified instance.",
+				"description": "Describes the specified attribute of the specified instance.",
+				"operationId": "describeinstanceattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The instance attribute.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeInstances&k=1": {
+			"get": {
+				"summary": "Describes one or more of your instances.",
+				"description": "Describes one or more of your instances.",
+				"operationId": "describeinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in atttsingle page. The remaining results of thetttinitial request can be seen by sending another request with the returnedttttNextToken value. This value can be between 5 and 1000; ifttttMaxResults is given a value larger than 1000, only 1000 results are returned. Youtttcannot specify this parameter and the instance IDs parameter in the same request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to request the next page of results.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeInstanceStatus&k=1": {
+			"get": {
+				"summary": "Describes the status of one or more instances.",
+				"description": "Describes the status of one or more instances.",
+				"operationId": "describeinstancestatus",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IncludeAllInstances",
+					"description": "When true, includes the health status for all instances.ttttWhen false, includes the health status for running instances only.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxResults",
+					"description": "The maximum number of results to return for the request in a   ttsingle page. The remaining results of the   ttinitial request can be seen by sending another request with the returned   ttNextToken value. This value can be between 5 and 1000; if   ttMaxResults is given a value larger than 1000, only 1000 results are returned.tttYou cannot specify this parameter and the instance IDs parameter in the same request.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NextToken",
+					"description": "The token to retrieve the next page of results.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=GetConsoleOutput&k=1": {
+			"get": {
+				"summary": "Gets the console output for the specified instance.",
+				"description": "Gets the console output for the specified instance.",
+				"operationId": "getconsoleoutput",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=GetPasswordData&k=1": {
+			"get": {
+				"summary": "Retrieves the encrypted administrator password for an instance runningnttttWindows.",
+				"description": "Retrieves the encrypted administrator password for an instance runningnttttWindows.",
+				"operationId": "getpassworddata",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the Windows instance.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ModifyInstanceAttribute&k=1": {
+			"get": {
+				"summary": "Modifies the specified attribute of the specified instance.",
+				"description": "Modifies the specified attribute of the specified instance.",
+				"operationId": "modifyinstanceattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The name of the attribute.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "BlockDeviceMapping.N",
+					"description": "Modifies the DeleteOnTermination attribute for volumesttttthat are currently attached. The volume must be owned by the caller. Ifttttno value is specified for DeleteOnTermination, the defaultttttis true and the volume is deleted when the instance isttttterminated.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DisableApiTermination",
+					"description": "If the value is true, you cant terminate the instance using the Amazon EC2      console, CLI, or API; otherwise, you can. You cannot use this paramater for Spot      Instances.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EbsOptimized",
+					"description": "Specifies whether the instance is optimized for EBS I/O. This optimizationttttprovides dedicated throughput to Amazon EBS and an optimizedttttconfiguration stack to provide optimal EBS I/O performance. Thisttttoptimization isnt available with all instance types. Additional usagettttcharges apply when using an EBS Optimized instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "GroupId.N",
+					"description": "[EC2-VPC] Changes the security groups of the instance. You must specifyttttat least one security group, even if its just the default securityttttgroup for the VPC. You must specify the security group ID, not thettttsecurity group name.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceInitiatedShutdownBehavior",
+					"description": "Specifies whether an instance stops or terminates when you initiatettttshutdown from the instance (using the operating system command for system shutdown).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceType",
+					"description": "Changes the instance type to the specified value. For more information, seettttInstance Types.ttttIf the instance type is not valid, the error returned is InvalidInstanceAttributeValue.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Kernel",
+					"description": "Changes the instances kernel to the specified value. We recommend that you use PV-GRUBtttinstead of kernels and RAM disks. For more information, see PV-GRUB.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Ramdisk",
+					"description": "Changes the instances RAM disk to the specified value. We recommend that you use PV-GRUB     tinstead of kernels and RAM disks. For more information, see PV-GRUB.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SourceDestCheck",
+					"description": "Specifies whether source/destination checking is enabled.ttttA value of true means that checking is enabled, andttttfalse means checking is disabled. This valuettttmust be false for a NAT instance to perform NAT.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SriovNetSupport",
+					"description": "Set to simple to enable enhanced networking for the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "UserData",
+					"description": "Changes the instances user data to the specified value.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Value",
+					"description": "A new value for the attribute. Use only with the kernel, ramdisk,        userData, disableApiTermination, or        instanceInitiatedShutdownBehavior attribute.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=MonitorInstances&k=1": {
+			"get": {
+				"summary": "Enables monitoring for a running instance.",
+				"description": "Enables monitoring for a running instance.",
+				"operationId": "monitorinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RebootInstances&k=1": {
+			"get": {
+				"summary": "Requests a reboot of one or more instances.",
+				"description": "Requests a reboot of one or more instances.",
+				"operationId": "rebootinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ReportInstanceStatus&k=1": {
+			"get": {
+				"summary": "Submits feedback about the status of an instance.",
+				"description": "Submits feedback about the status of an instance.",
+				"operationId": "reportinstancestatus",
+				"parameters": [{
+					"in": "query",
+					"name": "Description",
+					"description": "Descriptive text about the health state of your instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EndTime",
+					"description": "The time at which the reported instance health state ended.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instances.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ReasonCode.N",
+					"description": "One or more reason codes that describes the health state of your instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "StartTime",
+					"description": "The time at which the reported instance health state began.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Status",
+					"description": "The status of all instances listed.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=ResetInstanceAttribute&k=1": {
+			"get": {
+				"summary": "Resets an attribute of an instance to its default value.",
+				"description": "Resets an attribute of an instance to its default value.",
+				"operationId": "resetinstanceattribute",
+				"parameters": [{
+					"in": "query",
+					"name": "Attribute",
+					"description": "The attribute to reset.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId",
+					"description": "The ID of the instance.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=RunInstances&k=1": {
+			"get": {
+				"summary": "Launches the specified number of instances using an AMI for which you have permissions.",
+				"description": "Launches the specified number of instances using an AMI for which you have permissions.",
+				"operationId": "runinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "AdditionalInfo",
+					"description": "Reserved.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "BlockDeviceMapping.N",
+					"description": "The block device mapping.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ClientToken",
+					"description": "Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information,     see Ensuring Idempotency.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DisableApiTermination",
+					"description": "If you set this parameter to true, you cant terminate the instance using the Amazon EC2      console, CLI, or API; otherwise, you can. If you set this parameter to true and then later want      to be able to terminate the instance, you must first change the value of the      disableApiTermination attribute to false using      ModifyInstanceAttribute. Alternatively, if you set      InstanceInitiatedShutdownBehavior to terminate,      you can terminate the instance by running the shutdown command from the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "EbsOptimized",
+					"description": "Indicates whether the instance is optimized for EBS I/O. This optimization     provides dedicated throughput to Amazon EBS and an optimized     configuration stack to provide optimal EBS I/O performance. This     optimization isnt available with all instance types. Additional usage     charges apply when using an EBS-optimized instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "IamInstanceProfile",
+					"description": "The IAM instance profile.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "ImageId",
+					"description": "The ID of the AMI, which you can get by calling DescribeImages.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceInitiatedShutdownBehavior",
+					"description": "Indicates whether an instance stops or terminates when you initiate     shutdown from the instance (using the operating system command for system shutdown).",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceType",
+					"description": "The instance type. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KernelId",
+					"description": "The ID of the kernel.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "KeyName",
+					"description": "The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MaxCount",
+					"description": "The maximum number of instances to launch. If you specify more instances     than Amazon EC2 can launch in the target Availability Zone, Amazon EC2 launches the     largest possible number of instances above MinCount.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "MinCount",
+					"description": "The minimum number of instances to launch. If you specify a minimum that is more instances     than Amazon EC2 can launch in the target Availability Zone, Amazon EC2 launches no instances.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Monitoring",
+					"description": "The monitoring for the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "NetworkInterface.N",
+					"description": "One or more network interfaces.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Placement",
+					"description": "The placement for the instance.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "PrivateIpAddress",
+					"description": "[EC2-VPC] The primary IP address. You must specify a value     from the IP address range of the subnet.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "RamdiskId",
+					"description": "The ID of the RAM disk.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SecurityGroup.N",
+					"description": "[EC2-Classic, default VPC] One or more security group names. For a nondefault VPC, you must use     security group IDs instead.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SecurityGroupId.N",
+					"description": "One or more security group IDs. You can create a security group using CreateSecurityGroup.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "SubnetId",
+					"description": "[EC2-VPC] The ID of the subnet to launch the instance into.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "UserData",
+					"description": "The Base64-encoded MIME user data for the instances.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=StartInstances&k=1": {
+			"get": {
+				"summary": "Starts an Amazon EBS-backed AMI that you've previously stopped.",
+				"description": "Starts an Amazon EBS-backed AMI that youve previously stopped.",
+				"operationId": "startinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "AdditionalInfo",
+					"description": "Reserved.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=StopInstances&k=1": {
+			"get": {
+				"summary": "Stops an Amazon EBS-backed instance.",
+				"description": "Stops an Amazon EBS-backed instance.",
+				"operationId": "stopinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Force",
+					"description": "Forces the instances to stop. The instances do not have anttttopportunity to flush file system caches or file system metadata. If youttttuse this option, you must perform file system check and repairttttprocedures. This option is not recommended for Windowsttt  instances.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=TerminateInstances&k=1": {
+			"get": {
+				"summary": "Shuts down one or more instances.",
+				"description": "Shuts down one or more instances.",
+				"operationId": "terminateinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=UnmonitorInstances&k=1": {
+			"get": {
+				"summary": "Disables monitoring for a running instance.",
+				"description": "Disables monitoring for a running instance.",
+				"operationId": "unmonitorinstances",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InstanceId.N",
+					"description": "One or more instance IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
