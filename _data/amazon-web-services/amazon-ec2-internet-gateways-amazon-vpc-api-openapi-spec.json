@@ -1,0 +1,159 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Amazon EC2 Internet Gateways (Amazon VPC) API",
+		"description": "The API for management Internet Gateways (Amazon VPC)",
+		"termsOfService": "https://aws.amazon.com/terms/",
+		"version": null
+	},
+	"host": "ec2.amazonaws.com",
+	"basePath": "/",
+	"schemes": ["http"],
+	"produces": ["application/json"],
+	"consumes": ["application/json"],
+	"paths": {
+		"/?Action=AttachInternetGateway&k=1": {
+			"get": {
+				"summary": "Attaches an Internet gateway to a VPC, enabling connectivity between the Internetnttttand the VPC.",
+				"description": "Attaches an Internet gateway to a VPC, enabling connectivity between the Internetnttttand the VPC.",
+				"operationId": "attachinternetgateway",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InternetGatewayId",
+					"description": "The ID of the Internet gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=CreateInternetGateway&k=1": {
+			"get": {
+				"summary": "Creates an Internet gateway for use with a VPC.",
+				"description": "Creates an Internet gateway for use with a VPC.",
+				"operationId": "createinternetgateway",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DeleteInternetGateway&k=1": {
+			"get": {
+				"summary": "Deletes the specified Internet gateway.",
+				"description": "Deletes the specified Internet gateway.",
+				"operationId": "deleteinternetgateway",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InternetGatewayId",
+					"description": "The ID of the Internet gateway.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DescribeInternetGateways&k=1": {
+			"get": {
+				"summary": "Describes one or more of your Internet gateways.",
+				"description": "Describes one or more of your Internet gateways.",
+				"operationId": "describeinternetgateways",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "Filter.N",
+					"description": "One or more filters.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InternetGatewayId.N",
+					"description": "One or more Internet gateway IDs.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		},
+		"/?Action=DetachInternetGateway&k=1": {
+			"get": {
+				"summary": "Detaches an Internet gateway from a VPC, disabling connectivity between thenttttInternet and the VPC.",
+				"description": "Detaches an Internet gateway from a VPC, disabling connectivity between thenttttInternet and the VPC.",
+				"operationId": "detachinternetgateway",
+				"parameters": [{
+					"in": "query",
+					"name": "DryRun",
+					"description": "Checks whether you have the required permissions for the action, without actually making the request,        and provides an error response. If you have the required permissions, the error response is DryRunOperation.        Otherwise, it is UnauthorizedOperation.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "InternetGatewayId",
+					"description": "The ID of the Internet gateway.",
+					"type": "string"
+				},
+				{
+					"in": "query",
+					"name": "VpcId",
+					"description": "The ID of the VPC.",
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				},
+				"tags": [""],
+				"security": []
+			}
+		}
+	},
+	"definitions": []
+}
