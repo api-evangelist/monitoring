@@ -1,6 +1,10 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: OpsClarity
+description: OpsClarity provides an always-up-to-date map of application dependencies
+  and health status by leveraging advanced data-science to automatically discover
+  your dynamic applications and infrastructure. It automatically collects metrics,
+  constantly learns your system, analyzes failures and helps you identify bottlenecks,
+  earlier than others can.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/opsclarity.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +21,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/opsclarity/custom-metrics-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/opsclarity/custom-metrics-api-openapi-spec.yaml
 x-common:
 - type: x-portal
   url: https://www.opsclarity.com/
