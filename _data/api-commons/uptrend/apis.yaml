@@ -1,6 +1,6 @@
-name: Monitoring
+name: Uptrend
 description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uptrends-monitoring-logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
