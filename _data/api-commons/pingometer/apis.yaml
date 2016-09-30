@@ -1,6 +1,9 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Pingometer
+description: Pingometer is a service that monitors the uptime, downtime, and performance
+  of websites. We offer HTTP, HTTPS, RUM, DNS, ICMP, IMAP, POP3, SMTP, TCP, UDP, and
+  Transaction monitors. We have locations in Australia, Brazil, France, Germany, Luxembourg,
+  Japan, the Netherlands, South Africa, the United Kingdom, and the United States.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +20,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingometer/alerts-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingometer/alerts-api-openapi-spec.yaml
 - name: Checks API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png
@@ -27,7 +30,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingometer/checks-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingometer/checks-api-openapi-spec.yaml
 - name: Metrics API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png
@@ -37,7 +40,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingometer/metrics-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingometer/metrics-api-openapi-spec.yaml
 x-common:
 - type: x-portal
   url: https://pingometer.com/
