@@ -8,25 +8,33 @@
   url: http://monitoring.apievangelist.com
   specificationVersion: "0.14"
   apis:
-  - name: Alerts API
+  - name: Carbon Black Client API
     description: ""
-    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
     humanURL: ""
     baseURL: ""
     tags:
     - Monitoring
     properties: []
-  - name: Checks API
+  - name: Carbon Black Feed API
     description: ""
-    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
     humanURL: ""
     baseURL: ""
     tags:
     - Monitoring
     properties: []
-  - name: Metrics API
+  - name: Carbon Black Sensor API
     description: ""
-    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
+    humanURL: ""
+    baseURL: ""
+    tags:
+    - Monitoring
+    properties: []
+  - name: Carbon Black Server API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
     humanURL: ""
     baseURL: ""
     tags:
@@ -34,7 +42,7 @@
     properties: []
   x-common:
   - type: x-portal
-    url: https://pingometer.com/
+    url: https://www.redcanary.co/
   include: []
   maintainers:
   - FN: Kin Lane
