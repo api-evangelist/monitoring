@@ -10,7 +10,7 @@
 	"apis": [],
 	"x-common": [{
 		"type": "x-portal",
-		"url": "http://netsil.com/"
+		"url": "https://newrelic.com/"
 	}],
 	"include": [],
 	"maintainers": [{
