@@ -1,6 +1,12 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: APImetrics
+description: APImetrics builds on 3 years experience gained working on the challenge
+  of API abstraction and management that is critical to every App and Web Service
+  in use today. By combining elements gained from API management tools and authentication
+  technologies, APImetrics have been able to build the first, complete, end-to-end
+  API performance test solution. This allows developers, enterprises and API providers
+  to model complex API scenarios and provide them with real time monitoring and alerts
+  when things go wrong.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +23,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-auth-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apimetrics-auth-api-openapi-spec.yaml
 - name: APIMetrics Calls API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -27,7 +33,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-calls-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apimetrics-calls-api-openapi-spec.yaml
 - name: APIMetrics Deployments API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -37,7 +43,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-deployments-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apimetrics-deployments-api-openapi-spec.yaml
 - name: APIMetrics Reports API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -47,7 +53,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-reports-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apimetrics-reports-api-openapi-spec.yaml
 - name: APIMetrics Tokens API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -57,7 +63,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-tokens-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apimetrics-tokens-api-openapi-spec.yaml
 - name: APIMetrics Workflows API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -67,7 +73,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-workflows-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apimetrics-workflows-api-openapi-spec.yaml
 x-common:
 - type: x-base-url-for-api
   url: https://client.apimetrics.io
