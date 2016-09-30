@@ -15,7 +15,9 @@ apis:
   baseURL: https://client.apimetrics.io
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-auth-api-openapi-spec.yaml
 - name: APIMetrics Calls API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -23,7 +25,9 @@ apis:
   baseURL: https://client.apimetrics.io
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-calls-api-openapi-spec.yaml
 - name: APIMetrics Deployments API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -31,7 +35,9 @@ apis:
   baseURL: https://client.apimetrics.io
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-deployments-api-openapi-spec.yaml
 - name: APIMetrics Reports API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -39,7 +45,9 @@ apis:
   baseURL: https://client.apimetrics.io
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-reports-api-openapi-spec.yaml
 - name: APIMetrics Tokens API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -47,7 +55,9 @@ apis:
   baseURL: https://client.apimetrics.io
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-tokens-api-openapi-spec.yaml
 - name: APIMetrics Workflows API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
@@ -55,7 +65,9 @@ apis:
   baseURL: https://client.apimetrics.io
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/apimetrics/apimetrics-workflows-api-openapi-spec.yaml
 x-common:
 - type: x-base-url-for-api
   url: https://client.apimetrics.io
