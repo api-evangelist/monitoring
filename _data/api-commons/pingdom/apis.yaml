@@ -1,0 +1,141 @@
+name: Monitoring
+description: ""
+image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+tags:
+- Monitoring
+created: "2016-09-30"
+modified: "2016-09-30"
+url: http://monitoring.apievangelist.com
+specificationVersion: "0.14"
+apis:
+- name: Actions API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Analysis API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Checks API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Contacts API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Credits API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Probes API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Reference API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Reports API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Results API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Servertime API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Settings API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Single API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Summary API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Traceroute
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+x-common:
+- type: x-blog
+  url: http://royal.pingdom.com/
+- type: x-blog-rss-feed
+  url: http://royal.pingdom.com/feed/
+- type: x-portal
+  url: https://www.pingdom.com/features/api/
+- type: x-github
+  url: https://github.com/Pingdom
+- type: x-twitter
+  url: https://twitter.com/#!/pingdom
+- type: x-webinars
+  url: http://www.pingdom.com
+include: []
+maintainers:
+- FN: Kin Lane
+  x-twitter: apievangelist
+  email: info@apievangelist.com
+...
