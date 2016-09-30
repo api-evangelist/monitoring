@@ -1,6 +1,11 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Amazon Web Services
+description: Amazon Web Services(AWS) is a collection of remote computing services
+  (also called web services) that together make up a cloud computing platform, offered
+  over the Internet by Amazon.com. The most central and well-known of these services
+  are Amazon EC2 and Amazon S3. The service is advertised as providing a large computing
+  capacity (potentially many servers) much faster and cheaper than building a physical
+  server farm.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-logo.jpg
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +22,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/amazon-web-services/amazon-cloudwatch-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/amazon-web-services/amazon-cloudwatch-openapi-spec.yaml
 x-common:
 - type: x-base-url-for-api
   url: https://amazonaws.com/
