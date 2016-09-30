@@ -1,6 +1,11 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Fisheye Analytics
+description: Fisheye Analytics is a Singaporean company that provides premium media
+  monitoring and analytics services, which help businesses and governments in PR,
+  marketing and customer care. It has offices in Singapore and India and counts the
+  World Economic Forum, International Olympic Committee and government departments
+  (communication ministries or law enforcement) of the European Union, Singapore,
+  U.A.E, Cyprus etc., as some of its clients.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1325_logo.jpg
 tags:
 - Monitoring
 created: "2016-09-30"
