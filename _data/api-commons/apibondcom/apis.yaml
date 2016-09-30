@@ -1,6 +1,7 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: apibond.com
+description: APIBond is an API management platform that acts as a proxy where you
+  can validate, transform, secure, analyze and scale any existing API.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apibond-logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
