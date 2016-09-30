@@ -7,58 +7,10 @@
 	"modified": "2016-09-30",
 	"url": "http://monitoring.apievangelist.com",
 	"specificationVersion": "0.14",
-	"apis": [{
-		"name": "Insights API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Project API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Test API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Test Run API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Validators API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	}],
+	"apis": [],
 	"x-common": [{
-		"type": "x-blog",
-		"url": "http://apifortress.com/blog/"
-	},
-	{
 		"type": "x-portal",
-		"url": "http://apifortress.com/landing/"
+		"url": "https://apiowl.com/"
 	}],
 	"include": [],
 	"maintainers": [{
