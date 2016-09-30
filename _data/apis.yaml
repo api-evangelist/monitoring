@@ -10,60 +10,60 @@ tags:
 - Monitoring
 include:
 - name: Amazon Web Services
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/amazon-web-services/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/amazon-web-services/apis.yaml
 - name: Apache Karaf
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/apache-karaf/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apache-karaf/apis.yaml
 - name: API Fortress
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/api-fortress/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/apis.yaml
 - name: API Owl
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/api-owl/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-owl/apis.yaml
 - name: API Science
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/api-science/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/apis.yaml
 - name: apibond.com
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/apibondcom/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apibondcom/apis.yaml
 - name: Apica
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/apica/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apica/apis.yaml
 - name: APImetrics
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/apimetrics/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apis.yaml
 - name: BMC Software
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/bmc-software/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/bmc-software/apis.yaml
 - name: DataDog
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/datadog/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/datadog/apis.yaml
 - name: DNS Check
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/dns-check/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/dns-check/apis.yaml
 - name: Fisheye Analytics
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/fisheye-analytics/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/fisheye-analytics/apis.yaml
 - name: Google
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/google/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/google/apis.yaml
 - name: Nagios
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/nagios/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/nagios/apis.yaml
 - name: Netsil
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/netsil/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/netsil/apis.yaml
 - name: New Relic
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/new-relic/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/apis.yaml
 - name: OpsClarity
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/opsclarity/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/opsclarity/apis.yaml
 - name: PagerDuty
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/pagerduty/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pagerduty/apis.yaml
 - name: Pingdom
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/pingdom/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/apis.yaml
 - name: Pingometer
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/pingometer/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingometer/apis.yaml
 - name: redcanary
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/redcanary/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/apis.yaml
 - name: RightAPI
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/rightapi/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/rightapi/apis.yaml
 - name: Runscope
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/runscope/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/runscope/apis.yaml
 - name: Server Density
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/server-density/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/server-density/apis.yaml
 - name: Sift Science
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/sift-science/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/apis.yaml
 - name: Site24x7
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/site24x7/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/site24x7/apis.yaml
 - name: SmartBear Software
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/smartbear-software/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/smartbear-software/apis.yaml
 - name: StatusPage.io
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/statuspageio/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/apis.yaml
 - name: Uptrend
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/uptrend/apis.yaml
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/uptrend/apis.yaml
