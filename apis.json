@@ -8,17 +8,145 @@
 	"url": "http://monitoring.apievangelist.com",
 	"specificationVersion": "0.14",
 	"apis": [{
-		"name": "Custom Metrics API",
+		"name": "Abilities API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/opsclarity.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Add-ons API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Escalation Policies API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Incidents API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Log Entries API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Maintenance Windows API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Notifications API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "On-Calls API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Schedules API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Services API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Teams API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Users API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "Vendors API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	}],
 	"x-common": [{
+		"type": "x-blog",
+		"url": "http://blog.pagerduty.com/"
+	},
+	{
+		"type": "x-blog-rss-feed",
+		"url": "http://blog.pagerduty.com/feed/"
+	},
+	{
 		"type": "x-portal",
-		"url": "https://www.opsclarity.com/"
+		"url": "http://developer.pagerduty.com/"
+	},
+	{
+		"type": "x-github",
+		"url": "https://github.com/PagerDuty"
+	},
+	{
+		"type": "x-twitter",
+		"url": "https://twitter.com/pagerduty"
+	},
+	{
+		"type": "x-webinars",
+		"url": "http://www.pagerduty.com"
 	}],
 	"include": [],
 	"maintainers": [{
