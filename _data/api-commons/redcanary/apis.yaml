@@ -1,6 +1,11 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: redcanary
+description: Red Canary continuously monitors your endpoints, reviews suspicious activity,
+  eliminates false positives and provides the tools and intelligence for rapid response.Red
+  Canary was founded to bring world-class endpoint threat detection and response to
+  every business. We were using the Carbon Black endpoint data recorder for incident
+  response. We realized that the data used for incident response was ideal for detecting
+  cyber threats.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +22,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-client-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/carbon-black-client-api-openapi-spec.yaml
 - name: Carbon Black Feed API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
@@ -27,7 +32,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-feed-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/carbon-black-feed-api-openapi-spec.yaml
 - name: Carbon Black Sensor API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
@@ -37,7 +42,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-sensor-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/carbon-black-sensor-api-openapi-spec.yaml
 - name: Carbon Black Server API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
@@ -47,7 +52,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-server-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/carbon-black-server-api-openapi-spec.yaml
 x-common:
 - type: x-portal
   url: https://www.redcanary.co/
