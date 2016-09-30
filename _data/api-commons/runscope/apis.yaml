@@ -15,7 +15,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/account-api-openapi-spec.yaml
 - name: Buckets API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -23,7 +25,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/buckets-api-openapi-spec.yaml
 - name: Collections API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -31,7 +35,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/collections-api-openapi-spec.yaml
 - name: Environments API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -39,7 +45,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/environments-api-openapi-spec.yaml
 - name: Integrations API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -47,7 +55,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/integrations-api-openapi-spec.yaml
 - name: Messages API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -55,7 +65,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/messages-api-openapi-spec.yaml
 - name: Regions API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -63,7 +75,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/regions-api-openapi-spec.yaml
 - name: Results API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -71,7 +85,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/results-api-openapi-spec.yaml
 - name: Schedules API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -79,7 +95,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/schedules-api-openapi-spec.yaml
 - name: Steps API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -87,7 +105,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/steps-api-openapi-spec.yaml
 - name: Teams API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -95,7 +115,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/teams-api-openapi-spec.yaml
 - name: Tests API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
@@ -103,7 +125,9 @@ apis:
   baseURL: https://api.runscope.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/runscope/tests-api-openapi-spec.yaml
 x-common:
 - type: x-blog
   url: http://blog.runscope.com/
