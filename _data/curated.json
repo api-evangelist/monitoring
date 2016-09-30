@@ -1,9 +1,145 @@
 [
 	{
+		"curated_id": "aTvNWQaocYpmYzEqKyZStWzFUJn6pK3116rS116E2HXCOWfooZDRrVnLcZVYefC0r8siBNt4qmfd0IzhNMf9I3AmCA117117",
+		"item_date": "2016-09-12 00:00:00",
+		"title": "Integrating API Monitoring with PagerDuty",
+		"url": "https://www.apiscience.com/blog/integrating-api-monitoring-pagerduty/",
+		"domain": "www.apiscience.com",
+		"image": ""
+	},
+	{
+		"curated_id": "96WZ1YRJt7wcK2Eun1Ba458UrytYcI7G7XQ1jHz0WeSSQUe7w9gxuKTKgua2uV9us1hCzGmtuIoy8sAWeTw6jA117117",
+		"item_date": "2016-09-17 00:00:00",
+		"title": "Monitoring Docker Containers with Elasticsearch and Cadvisor",
+		"url": "https://dzone.com/articles/monitoring-docker-containers-with-elasticsearch-an",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "1n8ArI5ukTiQy5S6fQM123eJ8QA2Ko5fpkAaHWE9TNZ123I1adRm7v2rGI5KkeViTfVXjvmQw1M4Dx5NAgpzWEhCCA117117",
+		"item_date": "2016-09-15 13:35:23",
+		"title": "Monitoring Distributed Systems",
+		"url": "http://www.oreilly.com/webops-perf/free/monitoring-distributed-systems.csp",
+		"domain": "www.oreilly.com",
+		"image": ""
+	},
+	{
+		"curated_id": "KpfJSOet9VvxSVOD123sQJQ1qxtemF56wtACn123Nnj8QLA8GO1169Mh66Xmb8MV3nwntCQhSaVPou8A1V2F4123oCAeQA117117",
+		"item_date": "2016-09-15 00:00:00",
+		"title": "Synthetic Monitoring The Start of the Monitoring Journey",
+		"url": "http://devops.com/2016/09/15/synthetic-monitoring-the-start-of-the-monitoring-journey/",
+		"domain": "devops.com",
+		"image": ""
+	},
+	{
+		"curated_id": "ivX3QsrDjN7d6rjSoe123lYQLzU6AE9JEaKQLf123ctk7cI9NwxpjL2WchoW8bDD123oNj879G123aAQm4WrJAmTlNf3LA117117",
+		"item_date": "2016-09-13 00:00:00",
+		"title": "Startup Focuses On RealTime Security Monitoring Of Plant Networks",
+		"url": "http://www.darkreading.com/cloud/startup-focuses-on-real-time-security-monitoring-of-plant-networks/d/d-id/1326887",
+		"domain": "www.darkreading.com",
+		"image": ""
+	},
+	{
+		"curated_id": "s04bWORooFr116kwsHz1230EBXoNXAOTgmJom1PPL2eDNZ116ncelgk123HVbArswB7mEQbHrAyk3Lmq16KzG71athuxMQ117117",
+		"item_date": "2016-09-14 00:00:00",
+		"title": "Monitoring Serverless Architectures Microservices and Containerized Applications",
+		"url": "https://www.opsclarity.com/monitoring-serverless-architectures-microservices-containerized-applications/",
+		"domain": "www.opsclarity.com",
+		"image": ""
+	},
+	{
+		"curated_id": "wwB6VUwSktbOJ5S1ldV2LqzWtclBIzwRjDz2jmoj1ASVE123CsEOqF0wmFiPHEHaPG9ft1QSxb3QlgHWN4AhSQ9A117117",
+		"item_date": "2016-09-13 00:00:00",
+		"title": "Monitoring Docker Containers with Elasticsearch and cAdvisor",
+		"url": "https://blog.codeship.com/monitoring-docker-containers-with-elasticsearch-and-cadvisor/",
+		"domain": "blog.codeship.com",
+		"image": ""
+	},
+	{
+		"curated_id": "4nLPSuLgySWnwBrCuefmPxeMF6HaRfOic7akftOnX14Ps8aBRwUCPxpxnLqlkGtu7c1231KUt18gYg7BlydvYfRA117117",
+		"item_date": "2016-09-13 00:00:00",
+		"title": "PHP Monitoring",
+		"url": "https://dzone.com/articles/php-monitoring-1",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "QbMgzEU5e0t0pg9q0Axk1S8b1Lfx0xWkx09a915E9lHN116HC7QJn4EZcZbKQDNTvw8mp3f8KFTh7PkmsMUXgxKQ117117",
+		"item_date": "2016-08-31 00:00:00",
+		"title": "The science of autodiscovery advances container monitoring",
+		"url": "https://www.opsclarity.com/monitoring-docker-part-2/",
+		"domain": "www.opsclarity.com",
+		"image": ""
+	},
+	{
+		"curated_id": "2oTtyqxdyNXroCTbtLTfKRGsdOq6FtKIk5nmerNUTegyE116LjhQnzbp3G99nDZEBaBkTfQKFdoR83whvGgg116zAg117117",
+		"item_date": "2016-08-30 00:00:00",
+		"title": "How to Use Amazon CloudWatch Events to Monitor Application Health",
+		"url": "https://blogs.aws.amazon.com/security/post/TxLS5C1IKAYQPY/How-to-Use-Amazon-CloudWatch-Events-to-Monitor-Application-Health",
+		"domain": "blogs.aws.amazon.com",
+		"image": ""
+	},
+	{
+		"curated_id": "X4123o1t7b4Bm1B0MtXKoWri9ucI7hE912ME7auRch9116iobWMKCN1Xsg5E116Q0R4Nfo9UAfIU3amJTylhIYBgDLtA117117",
+		"item_date": "2016-08-29 00:00:00",
+		"title": "SCADAware Introduces New Production Monitoring Product",
+		"url": "http://www.remotemagazine.com/main/markets/scada/scadaware-introduces-new-production-monitoring-product/",
+		"domain": "www.remotemagazine.com",
+		"image": ""
+	},
+	{
+		"curated_id": "VwFWjxTIj74xDQJ2kOtwo21YZx7eWJJDr1vKstniNtaVTs5KB1cnRKzi1RjpG8KRNUoPPXhTyMy8AcfECYf1Sw117117",
+		"item_date": "2016-08-29 00:00:00",
+		"title": "Monitoring Docker Container Health",
+		"url": "https://blog.newrelic.com/2016/08/24/docker-health-check-instruction/",
+		"domain": "blog.newrelic.com",
+		"image": ""
+	},
+	{
+		"curated_id": "2ioQx3qkrPiBKJu8qu662L55ZGz123UJ6sMhMGVChUS55UteAbGBkPAbdMOVc116QE2fHl0789tDBUBVGhHHxHaOGg117117",
+		"item_date": "2016-08-15 00:00:00",
+		"title": "CNCF Stabilizes Prometheus Monitoring API",
+		"url": "http://containerjournal.com/2016/08/16/cncf-stabilizes-prometheus-monitoring-api/",
+		"domain": "containerjournal.com",
+		"image": ""
+	},
+	{
+		"curated_id": "lpqk73UYIdJ1XkOa7mucF3n3T45w4s97WFCa1zZ39hwXphUGm84GGP7k2Pe46736wKQWoa4aQjhNz0SJgPPAPg117117",
+		"item_date": "2016-08-16 00:00:00",
+		"title": "3 Ways to Fortify Your APIs to Make Sure Theyre Battle Ready",
+		"url": "http://blog.smartbear.com/api-testing/fortify-apis-with-api-testing/",
+		"domain": "blog.smartbear.com",
+		"image": ""
+	},
+	{
+		"curated_id": "ig3LjAc2Tyo3n5OCAAtTeMe7SZ06gs17098NEP9116vBw123l0f1231DugVYlqculYuh4hFU61gzAS1GnX7C2PZk9Tuw117117",
+		"item_date": "2016-08-16 00:00:00",
+		"title": "End to End Monitoring Tames the SDN Beast",
+		"url": "https://gigaom.com/2016/08/16/end-to-end-monitoring-tames-the-sdn-beast/",
+		"domain": "gigaom.com",
+		"image": ""
+	},
+	{
+		"curated_id": "KtNmK328N9NYrY116XA116GU2CvD1162x4D2YqUcXq116Lff1PkvJCHVUjand8v7P8HKvqRG2Nff5dcKceCPSlDZkRKa2w117117",
+		"item_date": "2016-08-17 00:00:00",
+		"title": "Maker of web monitoring software can be sued says court",
+		"url": "http://www.pcworld.com/article/3108582/maker-of-web-monitoring-software-can-be-sued-says-court.html#tk.rss_all",
+		"domain": "www.pcworld.com",
+		"image": ""
+	},
+	{
+		"curated_id": "LKyR8JiN9mcZUB6uqC116RDMKXpCsL3w42eenLjIrnsJ7H1234Xo123tS1MGEX65G9yr0oQL5V2116IHEl116O4s123pcpwZGQ117117",
+		"item_date": "2016-08-12 00:00:00",
+		"title": "Monitoring Docker Containers Getting Smart About Tracking Ephemeral Infrastructure",
+		"url": "https://dzone.com/articles/monitoring-docker-containers-getting-smart-about-t-1",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
 		"curated_id": "HWUbR3i116ZeltKLMFfh99116LtG3DG7x5CJxI123kd5CG9VVyfWJU5ad9gzd3JPvBizW32KqGI85dlhLYgAeH52116F0g117117",
 		"item_date": "2016-08-08 00:00:00",
 		"title": "Lessons Learned From One Year of Monitoring Single Page Applications",
-		"url": "https://dzone.com/articles/lessons-learned-from-one-year-of-monitoring-single?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+dzone",
+		"url": "https://dzone.com/articles/lessons-learned-from-one-year-of-monitoring-single",
 		"domain": "dzone.com",
 		"image": ""
 	},
@@ -11,7 +147,7 @@
 		"curated_id": "Z116OoDFVrscrdwPgnFV1jrnvDMyfdghp4h123P4dvootq0aAm29TMeB8FCNTkFxdVByNoRx4YB3ZfUooJBIWwjwYA117117",
 		"item_date": "2016-08-09 00:00:00",
 		"title": "IT Monitoring The Second Is the New Minute",
-		"url": "https://dzone.com/articles/it-monitoring-the-second-is-the-new-minute?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+dzone",
+		"url": "https://dzone.com/articles/it-monitoring-the-second-is-the-new-minute",
 		"domain": "dzone.com",
 		"image": ""
 	},
@@ -19,8 +155,8 @@
 		"curated_id": "TIZuJQB91uyESJVv0gfAjjKoM9V0LR116123fHSFEI9xVHudwzBnCD0fcvRuJjs8KZuwFxwssvvoapZaV116D3Pp0CLg117117",
 		"item_date": "2016-08-09 00:00:00",
 		"title": "Netsil launches public beta",
-		"url": "https://blog.netsil.com/netsil-launches-public-beta-bda618b95b44?source=rss----70aaaf0935d9---4",
-		"domain": "blog.netsil.com",
+		"url": "https://medium.com/m/global-identity",
+		"domain": "medium.com",
 		"image": ""
 	},
 	{
