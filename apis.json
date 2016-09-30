@@ -10,11 +10,11 @@
 	"apis": [],
 	"x-common": [{
 		"type": "x-blog",
-		"url": "http://blogs.site24x7.com/"
+		"url": "http://blog.smartbear.com/"
 	},
 	{
 		"type": "x-portal",
-		"url": "https://www.site24x7.com/"
+		"url": "http://smartbear.com/"
 	}],
 	"include": [],
 	"maintainers": [{
