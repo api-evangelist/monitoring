@@ -1,6 +1,10 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Nagios
+description: Nagios now known as Nagios Core, is a free and open source computer-software
+  application that monitors systems, networks and infrastructure. Nagios offers monitoring
+  and alerting services for servers, switches, applications and services. It alerts
+  users when things go wrong and alerts them a second time when the problem has been
+  resolved.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/nagios-logo
 tags:
 - Monitoring
 created: "2016-09-30"
