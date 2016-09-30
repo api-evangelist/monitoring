@@ -1,6 +1,12 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Netsil
+description: 'Netsil automatically discovers your application&rsquo;s topology and
+  builds a map of services and stakeholders so that you can visually locate hotspots
+  and failures faster. There&rsquo;s no more code instrumentation, no more hunting
+  through manual documentation to understand services and dependencies.Netsil works
+  the way you want to work: quickly, iteratively and collaboratively. Finally, a solution
+  designed for microservices, containers and modern distributed systems. Download
+  Netsil for the monitoring and performance analytics needs of your production applications.'
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/netsil-logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
