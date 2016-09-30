@@ -1,6 +1,10 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Pingdom
+description: Pingdom is a service that tracks the uptime, downtime, and performance
+  of websites. When problems happen with a site that Pingdom monitors, it immediately
+  alerts the owner so the problem can be taken care of. Pingdom monitors websites
+  from multiple locations globally so that it can distinguish genuine downtime from
+  routing and access problems.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +21,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/actions-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/actions-api-openapi-spec.yaml
 - name: Analysis API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -27,7 +31,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/analysis-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/analysis-api-openapi-spec.yaml
 - name: Checks API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -37,7 +41,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/checks-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/checks-api-openapi-spec.yaml
 - name: Contacts API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -47,7 +51,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/contacts-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/contacts-api-openapi-spec.yaml
 - name: Credits API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -57,7 +61,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/credits-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/credits-api-openapi-spec.yaml
 - name: Probes API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -67,7 +71,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/probes-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/probes-api-openapi-spec.yaml
 - name: Reference API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -77,7 +81,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/reference-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/reference-api-openapi-spec.yaml
 - name: Reports API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -87,7 +91,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/reports-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/reports-api-openapi-spec.yaml
 - name: Results API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -97,7 +101,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/results-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/results-api-openapi-spec.yaml
 - name: Servertime API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -107,7 +111,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/servertime-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/servertime-api-openapi-spec.yaml
 - name: Settings API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -117,7 +121,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/settings-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/settings-api-openapi-spec.yaml
 - name: Single API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -127,7 +131,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/single-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/single-api-openapi-spec.yaml
 - name: Summary API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -137,7 +141,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/summary-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/summary-api-openapi-spec.yaml
 - name: Traceroute
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -147,7 +151,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/pingdom/traceroute-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/traceroute-openapi-spec.yaml
 x-common:
 - type: x-blog
   url: http://royal.pingdom.com/
