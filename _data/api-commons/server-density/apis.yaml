@@ -15,7 +15,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/alerts-api-openapi-spec.yaml
 - name: Dashboards API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -23,7 +25,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/dashboards-api-openapi-spec.yaml
 - name: Devices API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -31,7 +35,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/devices-api-openapi-spec.yaml
 - name: Metrics API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -39,7 +45,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/metrics-api-openapi-spec.yaml
 - name: Postbacks API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -47,7 +55,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/postbacks-api-openapi-spec.yaml
 - name: Service Status API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -55,7 +65,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/service-status-api-openapi-spec.yaml
 - name: Services API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -63,7 +75,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/services-api-openapi-spec.yaml
 - name: Tags API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -71,7 +85,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/tags-api-openapi-spec.yaml
 - name: Tokens API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -79,7 +95,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/tokens-api-openapi-spec.yaml
 - name: Users API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -87,7 +105,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/users-api-openapi-spec.yaml
 - name: Widgets API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
@@ -95,7 +115,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/server-density/widgets-api-openapi-spec.yaml
 x-common:
 - type: x-blog
   url: http://blog.serverdensity.com/
