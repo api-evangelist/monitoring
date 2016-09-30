@@ -8,18 +8,9 @@
 	"url": "http://monitoring.apievangelist.com",
 	"specificationVersion": "0.14",
 	"apis": [{
-		"name": "Actions API",
+		"name": "Alerts API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Analysis API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
@@ -28,134 +19,24 @@
 	{
 		"name": "Checks API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Contacts API",
+		"name": "Metrics API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Credits API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Probes API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Reference API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Reports API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Results API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Servertime API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Settings API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Single API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Summary API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Traceroute",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Pingometer-Full-Logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	}],
 	"x-common": [{
-		"type": "x-blog",
-		"url": "http://royal.pingdom.com/"
-	},
-	{
-		"type": "x-blog-rss-feed",
-		"url": "http://royal.pingdom.com/feed/"
-	},
-	{
 		"type": "x-portal",
-		"url": "https://www.pingdom.com/features/api/"
-	},
-	{
-		"type": "x-github",
-		"url": "https://github.com/Pingdom"
-	},
-	{
-		"type": "x-twitter",
-		"url": "https://twitter.com/#!/pingdom"
-	},
-	{
-		"type": "x-webinars",
-		"url": "http://www.pingdom.com"
+		"url": "https://pingometer.com/"
 	}],
 	"include": [],
 	"maintainers": [{
