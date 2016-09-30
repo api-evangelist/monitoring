@@ -1,0 +1,149 @@
+name: Monitoring
+description: ""
+image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+tags:
+- Monitoring
+created: "2016-09-30"
+modified: "2016-09-30"
+url: http://monitoring.apievangelist.com
+specificationVersion: "0.14"
+apis:
+- name: Actions API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Administration API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Alarms API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Batching API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Datasets API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Events API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Extended Metrics API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Hostgroups API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Meters API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Metrics API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Plugins API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Products API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Relays API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Sources API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Synchronize Data API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Tenants API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+x-common:
+- type: x-blog
+  url: http://www.bmc.com/blogs
+- type: x-portal
+  url: https://boundary.com/product/#sdi
+include: []
+maintainers:
+- FN: Kin Lane
+  x-twitter: apievangelist
+  email: info@apievangelist.com
+...
