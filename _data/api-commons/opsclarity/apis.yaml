@@ -15,7 +15,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/opsclarity/custom-metrics-api-openapi-spec.yaml
 x-common:
 - type: x-portal
   url: https://www.opsclarity.com/
