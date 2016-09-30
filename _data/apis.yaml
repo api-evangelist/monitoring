@@ -7,10 +7,72 @@
   modified: "2016-09-30"
   url: http://monitoring.apievangelist.com
   specificationVersion: "0.14"
-  apis: []
+  apis:
+  - name: APIMetrics Auth API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
+    humanURL: ""
+    baseURL: https://client.apimetrics.io
+    tags:
+    - Monitoring
+    properties: []
+  - name: APIMetrics Calls API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
+    humanURL: ""
+    baseURL: https://client.apimetrics.io
+    tags:
+    - Monitoring
+    properties: []
+  - name: APIMetrics Deployments API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
+    humanURL: ""
+    baseURL: https://client.apimetrics.io
+    tags:
+    - Monitoring
+    properties: []
+  - name: APIMetrics Reports API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
+    humanURL: ""
+    baseURL: https://client.apimetrics.io
+    tags:
+    - Monitoring
+    properties: []
+  - name: APIMetrics Tokens API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
+    humanURL: ""
+    baseURL: https://client.apimetrics.io
+    tags:
+    - Monitoring
+    properties: []
+  - name: APIMetrics Workflows API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
+    humanURL: ""
+    baseURL: https://client.apimetrics.io
+    tags:
+    - Monitoring
+    properties: []
   x-common:
-  - type: x-portal
-    url: https://www.apicasystem.com
+  - type: x-base-url-for-api
+    url: https://client.apimetrics.io
+  - type: x-blog
+    url: http://apimetrics.io/blog/
+  - type: x-blog-rss-feed
+    url: http://apimetrics.io/feed/
+  - type: x-base-url-for-portal
+    url: https://apimetrics.readme.io/
+  - type: x-dedicated-plans--pricing-page
+    url: http://apimetrics.io/
+  - type: x-privacy-policy-page
+    url: http://apimetrics.io/privacy
+  - type: x-terms-of-service-page
+    url: http://apimetrics.io/tos
+  - type: x-twitter
+    url: https://twitter.com/apimetricstats
   include: []
   maintainers:
   - FN: Kin Lane
