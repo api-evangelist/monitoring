@@ -15,7 +15,9 @@ apis:
   baseURL: https://developers.google.com/speed/pagespeed/
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/google/google-pagespeed-api-openapi-spec.yaml
 x-common:
 - type: x-blog-rss-feed
   url: http://feeds.feedburner.com/GoogleAdsDeveloperBlog
