@@ -8,99 +8,63 @@
 	"url": "http://monitoring.apievangelist.com",
 	"specificationVersion": "0.14",
 	"apis": [{
-		"name": "Alerts API",
+		"name": "Descisions API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Dashboards API",
+		"name": "Device Fingerprinting API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Devices API",
+		"name": "Events API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Metrics API",
+		"name": "Labels API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Postbacks API",
+		"name": "Partner API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Service Status API",
+		"name": "Score API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Services API",
+		"name": "Workflows API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Tags API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Tokens API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Users API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
-		"humanURL": "",
-		"baseURL": "",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Widgets API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png",
 		"humanURL": "",
 		"baseURL": "",
 		"tags": ["Monitoring"],
@@ -108,11 +72,23 @@
 	}],
 	"x-common": [{
 		"type": "x-blog",
-		"url": "http://blog.serverdensity.com/"
+		"url": "https://blog.siftscience.com"
 	},
 	{
 		"type": "x-portal",
-		"url": "http://www.serverdensity.com/"
+		"url": "https://siftscience.com/resources/tutorials/integration-guide.html"
+	},
+	{
+		"type": "x-email",
+		"url": "support@siftscience.com"
+	},
+	{
+		"type": "x-twitter",
+		"url": "https://twitter.com/siftscience"
+	},
+	{
+		"type": "x-webinars",
+		"url": "https://siftscience.com/"
 	}],
 	"include": [],
 	"maintainers": [{
