@@ -1,6 +1,15 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Sift Science
+description: Sift Science fights fraud with machine learning. Machine learning teaches
+  a computer to mine data for statistical patterns, and continuously learn and adapt
+  as new data streams in. With simple APIs that take minutes to integrate, an online
+  business can leverage the latest in large-scale machine learning to protect themselves
+  from fraud. Chargebacks, spammers, account takeovers, etc. Online businesses send
+  Sift Science user events, which are mined for identity, behavioral, and network
+  patterns that correspond to past fraud. Sift Science also pools fraud patterns across
+  its network of customers. The network strengthens as more data streams in. Customers
+  can also &ldquo;train their own model&rdquo; and tailor their results via a simple
+  interface.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +26,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/sift-science/descisions-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/descisions-api-openapi-spec.yaml
 - name: Device Fingerprinting API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png
@@ -27,7 +36,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/sift-science/device-fingerprinting-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/device-fingerprinting-api-openapi-spec.yaml
 - name: Events API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png
@@ -37,7 +46,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/sift-science/events-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/events-api-openapi-spec.yaml
 - name: Labels API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png
@@ -47,7 +56,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/sift-science/labels-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/labels-api-openapi-spec.yaml
 - name: Partner API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png
@@ -57,7 +66,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/sift-science/partner-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/partner-api-openapi-spec.yaml
 - name: Score API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png
@@ -67,7 +76,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/sift-science/score-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/score-api-openapi-spec.yaml
 - name: Workflows API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1475_logo.png
@@ -77,7 +86,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/sift-science/workflows-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/workflows-api-openapi-spec.yaml
 x-common:
 - type: x-blog
   url: https://blog.siftscience.com
