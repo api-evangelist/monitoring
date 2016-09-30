@@ -1,6 +1,11 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Apica
+description: Apica provides the most effective technology for optimizing the performance
+  of cloud and mobile applications. Apica offers companies and developers alike easy-to-use,
+  cloud-based load testing and web performance monitoring tools to test applications
+  for maximum capacity, daily performance, improved load times, and protection from
+  peak loads. For more information about how Apica is providing the highest standard
+  for cloud and mobile application performance management.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apica-logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
