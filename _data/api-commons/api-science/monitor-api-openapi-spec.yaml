@@ -13,4 +13,3 @@ consumes:
 - application/json
 paths: []
 definitions: []
-...
