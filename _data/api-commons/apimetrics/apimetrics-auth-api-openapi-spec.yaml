@@ -1,0 +1,21 @@
+swagger: "2.0"
+info:
+  title: APIMetrics Auth API
+  description: The API for managing APIMetrics API auth.
+  termsOfService: http://apimetrics.io/tos/
+  contact:
+    name: APIMetrics
+    url: http://apimetrics.io/contact/
+    email: info@apimetrics.com
+  version: ~
+host: client.apimetrics.io
+basePath: /api/2
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths: []
+definitions: []
+...
