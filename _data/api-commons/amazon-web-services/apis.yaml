@@ -15,7 +15,9 @@ apis:
   baseURL: http://aws.amazon.com/cloudwatch/
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/amazon-web-services/amazon-cloudwatch-openapi-spec.yaml
 x-common:
 - type: x-base-url-for-api
   url: https://amazonaws.com/
