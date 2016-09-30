@@ -7,10 +7,52 @@ created: "2016-09-30"
 modified: "2016-09-30"
 url: http://monitoring.apievangelist.com
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Insights API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Project API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Test API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Test Run API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
+- name: Validators API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties: []
 x-common:
+- type: x-blog
+  url: http://apifortress.com/blog/
 - type: x-portal
-  url: http://karaf.apache.org/
+  url: http://apifortress.com/landing/
 include: []
 maintainers:
 - FN: Kin Lane
