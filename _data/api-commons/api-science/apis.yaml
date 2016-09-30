@@ -1,6 +1,8 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: API Science
+description: Traditional monitoring services were designed long before APIs became
+  core to modern applications. API Science is designed specifically for monitoring
+  APIs. Sure, we understand REST, JSON, OAuth, XML. No problem.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -15,7 +17,9 @@ apis:
   baseURL: http://api.apiscience.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/check-api-openapi-spec.yaml
 - name: Contacts API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
@@ -23,7 +27,9 @@ apis:
   baseURL: http://api.apiscience.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/contacts-api-openapi-spec.yaml
 - name: Monitor API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
@@ -31,7 +37,9 @@ apis:
   baseURL: http://api.apiscience.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/monitor-api-openapi-spec.yaml
 - name: Monitor Reports API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
@@ -39,7 +47,9 @@ apis:
   baseURL: http://api.apiscience.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/monitor-reports-api-openapi-spec.yaml
 - name: Monitor Tags API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
@@ -47,7 +57,9 @@ apis:
   baseURL: http://api.apiscience.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/monitor-tags-api-openapi-spec.yaml
 - name: Template API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
@@ -55,7 +67,9 @@ apis:
   baseURL: http://api.apiscience.com
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/template-api-openapi-spec.yaml
 x-common:
 - type: x-base-url-for-api
   url: http://api.apiscience.com
