@@ -7,10 +7,18 @@
   modified: "2016-09-30"
   url: http://monitoring.apievangelist.com
   specificationVersion: "0.14"
-  apis: []
+  apis:
+  - name: Custom Metrics API
+    description: ""
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/opsclarity.png
+    humanURL: ""
+    baseURL: ""
+    tags:
+    - Monitoring
+    properties: []
   x-common:
   - type: x-portal
-    url: https://newrelic.com/
+    url: https://www.opsclarity.com/
   include: []
   maintainers:
   - FN: Kin Lane
