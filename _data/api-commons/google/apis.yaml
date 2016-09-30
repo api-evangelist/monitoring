@@ -1,6 +1,10 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Google
+description: Google Inc. is an American multinational corporation specializing in
+  Internet-related services and products. These include search, cloud computing, software
+  and online advertising technologies. Google provides search and advertising services,
+  which together aim to organize and monetize the world&rsquo;s information. In addition
+  to its dominant search engine, it offers a plethora of online tools and platforms.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-logo.jpg
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +21,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/google/google-pagespeed-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/google/google-pagespeed-api-openapi-spec.yaml
 x-common:
 - type: x-blog-rss-feed
   url: http://feeds.feedburner.com/GoogleAdsDeveloperBlog
