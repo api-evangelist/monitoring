@@ -15,7 +15,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/dns-check/dns-record-group-monitoring-api-openapi-spec.yaml
 - name: DNS Record Monitoring API
   description: ""
   image: https://cdn.dnscheck.co/images/dns-check-icon.png
@@ -23,7 +25,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/dns-check/dns-record-monitoring-api-openapi-spec.yaml
 x-common:
 - type: x-portal
   url: https://www.dnscheck.co/
