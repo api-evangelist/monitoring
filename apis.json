@@ -8,7 +8,10 @@
 	"url": "http://monitoring.apievangelist.com",
 	"specificationVersion": "0.14",
 	"apis": [],
-	"x-common": [],
+	"x-common": [{
+		"type": "x-portal",
+		"url": "https://www.uptrends.com"
+	}],
 	"include": [],
 	"maintainers": [{
 		"FN": "Kin Lane",
