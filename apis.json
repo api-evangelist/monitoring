@@ -10,7 +10,7 @@
 	"apis": [],
 	"x-common": [{
 		"type": "x-portal",
-		"url": "https://www.nagios.org/"
+		"url": "http://netsil.com/"
 	}],
 	"include": [],
 	"maintainers": [{
