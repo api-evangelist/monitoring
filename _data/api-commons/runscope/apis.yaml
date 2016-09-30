@@ -134,6 +134,24 @@ apis:
 x-common:
 - type: x-blog
   url: http://blog.runscope.com/
+- type: x-blog-rss-feed
+  url: http://blog.runscope.com/posts?format=rss
+- type: x-portal
+  url: https://www.runscope.com/docs/api
+- type: x-github
+  url: https://github.com/Runscope
+- type: x-dedicated-plans--pricing-page
+  url: https://www.runscope.com/pricing-and-plans
+- type: x-privacy-policy-page
+  url: https://www.runscope.com/privacy
+- type: x-status-dashboard
+  url: http://status.runscope.com/
+- type: x-support-overview-page
+  url: https://www.runscope.com/support
+- type: x-terms-of-service-page
+  url: https://www.runscope.com/terms
+- type: x-twitter
+  url: https://twitter.com/Runscope
 include: []
 maintainers:
 - FN: Kin Lane
