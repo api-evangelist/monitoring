@@ -7,26 +7,12 @@
   modified: "2016-09-30"
   url: http://monitoring.apievangelist.com
   specificationVersion: "0.14"
-  apis:
-  - name: DNS Record Group Monitoring API
-    description: ""
-    image: https://cdn.dnscheck.co/images/dns-check-icon.png
-    humanURL: ""
-    baseURL: ""
-    tags:
-    - Monitoring
-    properties: []
-  - name: DNS Record Monitoring API
-    description: ""
-    image: https://cdn.dnscheck.co/images/dns-check-icon.png
-    humanURL: ""
-    baseURL: ""
-    tags:
-    - Monitoring
-    properties: []
+  apis: []
   x-common:
+  - type: x-blog
+    url: http://blog.fisheyeanalytics.com/
   - type: x-portal
-    url: https://www.dnscheck.co/
+    url: http://www.fisheyeanalytics.com/api.html
   include: []
   maintainers:
   - FN: Kin Lane
