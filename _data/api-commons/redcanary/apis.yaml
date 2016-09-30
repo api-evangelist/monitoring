@@ -15,7 +15,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-client-api-openapi-spec.yaml
 - name: Carbon Black Feed API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
@@ -23,7 +25,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-feed-api-openapi-spec.yaml
 - name: Carbon Black Sensor API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
@@ -31,7 +35,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-sensor-api-openapi-spec.yaml
 - name: Carbon Black Server API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
@@ -39,7 +45,9 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties: []
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/redcanary/carbon-black-server-api-openapi-spec.yaml
 x-common:
 - type: x-portal
   url: https://www.redcanary.co/
