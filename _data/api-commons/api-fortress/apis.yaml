@@ -1,6 +1,9 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: API Fortress
+description: 'Test. Monitor. Automate: API Fortress is an enterprise cloud solution
+  to test, monitor, and automate the testing of APIs and web services. Create a response
+  validation test using our simple wizard, schedule the test to run multiple times
+  a day, and monitor the updates sent to your inbox.'
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
 tags:
 - Monitoring
 created: "2016-09-30"
@@ -17,7 +20,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/api-fortress/insights-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/insights-api-openapi-spec.yaml
 - name: Project API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
@@ -27,7 +30,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/api-fortress/project-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/project-api-openapi-spec.yaml
 - name: Test API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
@@ -37,7 +40,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/api-fortress/test-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/test-api-openapi-spec.yaml
 - name: Test Run API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
@@ -47,7 +50,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/api-fortress/test-run-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/test-run-api-openapi-spec.yaml
 - name: Validators API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
@@ -57,7 +60,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/_data/api-commons/api-fortress/validators-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/validators-api-openapi-spec.yaml
 x-common:
 - type: x-blog
   url: http://apifortress.com/blog/
