@@ -8,116 +8,111 @@
 	"url": "http://monitoring.apievangelist.com",
 	"specificationVersion": "0.14",
 	"apis": [{
-		"name": "Account API",
+		"name": "Alerts API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Buckets API",
+		"name": "Dashboards API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Collections API",
+		"name": "Devices API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Environments API",
+		"name": "Metrics API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Integrations API",
+		"name": "Postbacks API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Messages API",
+		"name": "Service Status API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Regions API",
+		"name": "Services API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Results API",
+		"name": "Tags API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Schedules API",
+		"name": "Tokens API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Steps API",
+		"name": "Users API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	},
 	{
-		"name": "Teams API",
+		"name": "Widgets API",
 		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png",
 		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
-		"tags": ["Monitoring"],
-		"properties": []
-	},
-	{
-		"name": "Tests API",
-		"description": "",
-		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
-		"humanURL": "",
-		"baseURL": "https://api.runscope.com",
+		"baseURL": "",
 		"tags": ["Monitoring"],
 		"properties": []
 	}],
 	"x-common": [{
 		"type": "x-blog",
-		"url": "http://blog.runscope.com/"
+		"url": "http://blog.serverdensity.com/"
+	},
+	{
+		"type": "x-portal",
+		"url": "http://www.serverdensity.com/"
 	}],
 	"include": [],
 	"maintainers": [{
