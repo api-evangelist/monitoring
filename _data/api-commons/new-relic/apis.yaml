@@ -1,6 +1,9 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: New Relic
+description: New Relic offers SaaS Software Analytics Platform that offers Application
+  Performance Management and Real User Monitoring for Cloud and Data Center deployed
+  web applications implemented in Ruby, Java, .NET, Python, PHP, Node.js. New Relic
+  also offers mobile monitoring solutions for iOS and Android applications.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
 tags:
 - Monitoring
 created: "2016-09-30"
