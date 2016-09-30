@@ -8,5 +8,63 @@ apis: []
 tags:
 - Monitoring
 - Monitoring
-include: []
+include:
+- name: Amazon Web Services
+  url: http://monitoring.apievangelist.com
+- name: Apache Karaf
+  url: http://monitoring.apievangelist.com
+- name: API Fortress
+  url: http://monitoring.apievangelist.com
+- name: API Owl
+  url: http://monitoring.apievangelist.com
+- name: API Science
+  url: http://monitoring.apievangelist.com
+- name: apibond.com
+  url: http://monitoring.apievangelist.com
+- name: Apica
+  url: http://monitoring.apievangelist.com
+- name: APImetrics
+  url: http://monitoring.apievangelist.com
+- name: BMC Software
+  url: http://monitoring.apievangelist.com
+- name: DataDog
+  url: http://monitoring.apievangelist.com
+- name: DNS Check
+  url: http://monitoring.apievangelist.com
+- name: Fisheye Analytics
+  url: http://monitoring.apievangelist.com
+- name: Google
+  url: http://monitoring.apievangelist.com
+- name: Nagios
+  url: http://monitoring.apievangelist.com
+- name: Netsil
+  url: http://monitoring.apievangelist.com
+- name: New Relic
+  url: http://monitoring.apievangelist.com
+- name: OpsClarity
+  url: http://monitoring.apievangelist.com
+- name: PagerDuty
+  url: http://monitoring.apievangelist.com
+- name: Pingdom
+  url: http://monitoring.apievangelist.com
+- name: Pingometer
+  url: http://monitoring.apievangelist.com
+- name: redcanary
+  url: http://monitoring.apievangelist.com
+- name: RightAPI
+  url: http://monitoring.apievangelist.com
+- name: Runscope
+  url: http://monitoring.apievangelist.com
+- name: Server Density
+  url: http://monitoring.apievangelist.com
+- name: Sift Science
+  url: http://monitoring.apievangelist.com
+- name: Site24x7
+  url: http://monitoring.apievangelist.com
+- name: SmartBear Software
+  url: http://monitoring.apievangelist.com
+- name: StatusPage.io
+  url: http://monitoring.apievangelist.com
+- name: Uptrend
+  url: http://monitoring.apievangelist.com
 ...
