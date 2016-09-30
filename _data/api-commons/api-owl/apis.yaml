@@ -1,6 +1,8 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: API Owl
+description: API Owl is a Florida headquartered start-up offering modern tooling,
+  testing, and monitoring for keeping your most mission critical APIs from misbehaving
+  in addition to assisting in their development and deployment.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-owl.png
 tags:
 - Monitoring
 created: "2016-09-30"
