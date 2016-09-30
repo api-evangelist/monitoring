@@ -1,6 +1,9 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: RightAPI
+description: TheRightAPI is enabling the API community by providing solutions to make
+  working with APIs easier. If you need to discover, trust, monitor and manage APIs,
+  TheRightAPI is here to help. TheRightAPI provides the platform and intelligence
+  developers need to establish and maintain successful next generation applications.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/therightapi-logo-2.png
 tags:
 - Monitoring
 created: "2016-09-30"
