@@ -1,6 +1,10 @@
-name: Monitoring
-description: ""
-image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+name: Site24x7
+description: Site24x7 is a web infrastructure monitoring service that helps to monitor
+  the uptime and performance of websites, online applications and servers. The monitoring
+  is done from 50+ locations across the world, thus giving you a global perspective
+  of the end-user experience. Site24x7 supports monitoring HTTP, HTTPS, SMTP, TCP,
+  IMAP, SSL, Ping, FTP, SFTP, DNS and other internet facing network services.
+image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/site24x7-logo-new.png
 tags:
 - Monitoring
 created: "2016-09-30"
