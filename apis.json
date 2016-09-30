@@ -7,10 +7,27 @@
 	"modified": "2016-09-30",
 	"url": "http://monitoring.apievangelist.com",
 	"specificationVersion": "0.14",
-	"apis": [],
+	"apis": [{
+		"name": "DNS Record Group Monitoring API",
+		"description": "",
+		"image": "https://cdn.dnscheck.co/images/dns-check-icon.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	},
+	{
+		"name": "DNS Record Monitoring API",
+		"description": "",
+		"image": "https://cdn.dnscheck.co/images/dns-check-icon.png",
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Monitoring"],
+		"properties": []
+	}],
 	"x-common": [{
 		"type": "x-portal",
-		"url": "https://www.datadoghq.com/"
+		"url": "https://www.dnscheck.co/"
 	}],
 	"include": [],
 	"maintainers": [{
