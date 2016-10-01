@@ -19,7 +19,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Aggregated
   '/checks/aggregated?mostrecent={mostrecent}&amp;detail_level={detail_level}&amp;scope={scope} ':
     ' get ':
       summary: Checks Aggregated?mostrecent={mostrecent}&amp;detail_level={detail_level}&amp;scope={scope}
@@ -30,7 +30,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Aggregated
   '/checks/{checkId}/aggregated?mostrecent={mostrecent}&amp;detail_level={detail_level}&amp;scope={scope} ':
     ' get ':
       summary: Checks {checkId} Aggregated?mostrecent={mostrecent}&amp;detail_level={detail_level}&amp;scope={scope}
@@ -41,5 +41,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Aggregated
 definitions: []
