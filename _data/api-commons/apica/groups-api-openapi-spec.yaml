@@ -19,7 +19,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
     ' post ':
       summary: Groups
       description: ttttCreates a new monitor group.ttt
@@ -28,7 +28,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
   '/groups/{groupId} ':
     ' delete ':
       summary: Groups {groupId}
@@ -38,7 +38,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
     ' put ':
       summary: Groups {groupId}
       description: ttttUpdates a monitor group.ttt
@@ -47,7 +47,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
   '/groups/{groupId}/checks ':
     ' delete ':
       summary: Groups {groupId} Checks
@@ -57,7 +57,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
     ' get ':
       summary: Groups {groupId} Checks
       description: ttttGets a list of checks assigned to the monitor group.ttt
@@ -66,7 +66,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
     ' post ':
       summary: Groups {groupId} Checks
       description: ttttAssigns checks to the monitor group.ttt
@@ -75,7 +75,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
   '/groups/{groupId}/users ':
     ' delete ':
       summary: Groups {groupId} Users
@@ -85,7 +85,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
     ' get ':
       summary: Groups {groupId} Users
       description: ttttGets a list of users assigned to the monitor group.ttt
@@ -94,7 +94,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
     ' post ':
       summary: Groups {groupId} Users
       description: ttttAssigns users to the monitor group.ttt
@@ -103,5 +103,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Groups
 definitions: []
