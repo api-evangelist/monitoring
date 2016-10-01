@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Customers
   '/customers/{customerId} ':
     ' get ':
       summary: Customers {customerId}
@@ -28,7 +28,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Customers
   '/customers/{customerId}/subscription ':
     ' put ':
       summary: Customers {customerId} Subscription
@@ -38,5 +38,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Customers
 definitions: []
