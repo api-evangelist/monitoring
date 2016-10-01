@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Contacts
     post:
       summary: Create a Contact
       description: Create a Contact
@@ -38,7 +38,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Contacts
   /contacts/{id}.json:
     delete:
       summary: Delete a Contact
@@ -52,7 +52,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Contacts
     get:
       summary: Get a Specific Contact
       description: Get a Specific Contact
@@ -65,7 +65,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Contacts
     patch:
       summary: Update a Contact
       description: Update a Contact
@@ -88,5 +88,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Contacts
 definitions: []
