@@ -40,7 +40,7 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/monitor-api-openapi-spec.yaml
-- name: Monitor Reports API
+- name: Performance
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
   humanURL: ""
@@ -49,8 +49,8 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/monitor-reports-api-openapi-spec.yaml
-- name: Monitor Tags API
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/performance-openapi-spec.yaml
+- name: Tags API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
   humanURL: ""
@@ -59,7 +59,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/monitor-tags-api-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/tags-api-openapi-spec.yaml
 - name: Template API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
@@ -70,6 +70,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/template-api-openapi-spec.yaml
+- name: Uptime API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
+  humanURL: ""
+  baseURL: http://api.apiscience.com
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/uptime-api-openapi-spec.yaml
 x-common:
 - type: x-base-url-for-api
   url: http://api.apiscience.com
