@@ -1,0 +1,59 @@
+swagger: "2.0"
+info:
+  title: Users API
+  version: 1.0.0
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  '/users ':
+    ' get ':
+      summary: Users
+      description: ttttReturns all customers users.ttt
+      operationId: -users-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+    ' post ':
+      summary: Users
+      description: ttttCreates a new user.ttt
+      operationId: -users-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+    ' put ':
+      summary: Users
+      description: ttttUpdates a user.ttt
+      operationId: -users-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  '/users/{user_guid} ':
+    ' delete ':
+      summary: Users {user_guid}
+      description: ttttDeletes a user.ttt
+      operationId: -users-user-guid-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+    ' get ':
+      summary: Users {user_guid}
+      description: ttttReturns customers user by user GUID.ttt
+      operationId: -users-user-guid-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+definitions: []
