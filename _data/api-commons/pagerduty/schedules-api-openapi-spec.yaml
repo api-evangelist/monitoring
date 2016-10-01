@@ -19,7 +19,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     post:
       summary: Create Schedule
       description: Create a new test schedule.
@@ -29,7 +28,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
   /buckets/{bucket_key}/tests/{test_id}/schedules/{schedule_id}:
     delete:
       summary: Delete (Stop) Schedule
@@ -40,7 +38,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     get:
       summary: Schedule Details
       description: Schedule Details
@@ -50,7 +47,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     put:
       summary: Modify Schedule
       description: Update the details of a single schedule by making a PUT request
@@ -63,5 +59,4 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
 definitions: []
