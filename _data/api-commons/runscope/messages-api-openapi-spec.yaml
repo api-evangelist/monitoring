@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   title: Messages API
-  version: ""
+  version: 1.0.0
 schemes:
 - http
 produces:
@@ -71,6 +71,55 @@ paths:
       - in: query
         name: messageId
         description: The unique identifier for this message
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  '/messages ':
+    ' post ':
+      summary: Messages
+      description: ttttCreates an UI message.ttt
+      operationId: -messages-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  '/messages/{id} ':
+    ' delete ':
+      summary: Messages {id}
+      description: ttttDeletes an existing UI message.ttt
+      operationId: -messages-id-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+    ' get ':
+      summary: Messages {id}
+      description: ttttGets an existing UI message by Id.ttt
+      operationId: -messages-id-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+    ' put ':
+      summary: Messages {id}
+      description: ttttUpdates an existing UI message.ttt
+      operationId: -messages-id-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  '/messages?active={active}&amp;customerId={customerId} ':
+    ' get ':
+      summary: Messages?active={active}&amp;customerId={customerId}
+      description: ttttGets a list of UI messages. UI messages are used for user notifications
+        on announcements/information/warnings.ttt
+      operationId: -messagesactiveactiveampcustomeridcustomerid-
       responses:
         200:
           description: OK
