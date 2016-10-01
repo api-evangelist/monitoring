@@ -26,7 +26,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Deployments
     post:
       summary: Create a new Deployment
       description: Create a new Deployment
@@ -42,7 +42,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Deployments
   /deployments/call/{call_id}/:
     get:
       summary: Get all Deployments for an API Call
@@ -56,7 +56,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Deployments
   /deployments/workflow/{workflow_id}:
     get:
       summary: Get all Deployments for a Workflow
@@ -70,7 +70,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Deployments
   /deployments/{id}/:
     delete:
       summary: Delete a Deployment
@@ -84,7 +84,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Deployments
     get:
       summary: Get an existing Deployment
       description: Get an existing Deployment
@@ -97,7 +97,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Deployments
     put:
       summary: Update an existing Deployment
       description: Update an existing Deployment
@@ -116,5 +116,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Deployments
 definitions: []
