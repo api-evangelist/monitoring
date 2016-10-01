@@ -11,8 +11,6 @@ tags:
 include:
 - name: Amazon CloudWatch
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/amazon-cloudwatch/apis.yaml
-- name: Amazon Web Services
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/amazon-web-services/apis.yaml
 - name: Apache Karaf
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apache-karaf/apis.yaml
 - name: API Fortress
@@ -35,8 +33,8 @@ include:
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/dns-check/apis.yaml
 - name: Fisheye Analytics
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/fisheye-analytics/apis.yaml
-- name: Google
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/google/apis.yaml
+- name: Google Stackdriver Monitoring API
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/google-stackdriver-monitoring-api/apis.yaml
 - name: Nagios
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/nagios/apis.yaml
 - name: Netsil
