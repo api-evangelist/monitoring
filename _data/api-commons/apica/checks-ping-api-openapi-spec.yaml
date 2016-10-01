@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Ping
   '/checks/ping/locations ':
     ' get ':
       summary: Checks Ping Locations
@@ -28,7 +28,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Ping
   '/checks/ping/{checkId} ':
     ' put ':
       summary: Checks Ping {checkId}
@@ -38,5 +38,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Ping
 definitions: []
