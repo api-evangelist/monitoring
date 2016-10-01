@@ -22,7 +22,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Templates
   /monitors/{id}/templates/{templates]:
     get:
       summary: Get a Template
@@ -32,7 +32,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Templates
     post:
       summary: Create a Template
       description: Create a Template
@@ -74,5 +74,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Templates
 definitions: []
