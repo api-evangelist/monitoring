@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   title: API Science Monitors API
   description: This is the API Science API for API monitors.
-  version: v1
+  version: ""
 host: api.apiscience.com
 basePath: /v1
 schemes:
