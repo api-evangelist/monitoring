@@ -20,5 +20,4 @@ paths:
           description: OK
       tags:
       - Regions
-      security: []
 definitions: []
