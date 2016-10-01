@@ -1,1 +1,70 @@
-~
+swagger: "2.0"
+info:
+  title: Events API
+  version: 1.0.0
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  '/custom_events ':
+    ' post ':
+      summary: Custom_events
+      description: ttttCreates new custom event.ttt
+      operationId: -custom-events-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  '/custom_events/all?fromUtc={fromUtc}&amp;toUtc={toUtc} ':
+    ' get ':
+      summary: Custom_events All?fromUtc={fromUtc}&amp;toUtc={toUtc}
+      description: ttttGets all custom events using optional filter.ttt
+      operationId: -custom-events-allfromutcfromutcamptoutctoutc-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  '/custom_events/{id} ':
+    ' delete ':
+      summary: Custom_events {id}
+      description: ttttDeletes custom event.ttt
+      operationId: -custom-events-id-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+    ' get ':
+      summary: Custom_events {id}
+      description: ttttGets custom event by Id.ttt
+      operationId: -custom-events-id-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+    ' put ':
+      summary: Custom_events {id}
+      description: ttttUpdates custom event.ttt
+      operationId: -custom-events-id-
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+  ? '/events?message={message}&amp;severity={severity}&amp;timestamp_utc_from={timestamp_utc_from}&amp;timestamp_utc_to={timestamp_utc_to} '
+  : ' get ':
+      summary: Events?message={message}&amp;severity={severity}&amp;timestamp_utc_from={timestamp_utc_from}&amp;timestamp_utc_to={timestamp_utc_to}
+      description: ttttGets a list of events for the current user.ttt
+      operationId: -eventsmessagemessageampseverityseverityamptimestamp-utc-fromtimestamp-utc-fromamptimestamp-utc-toti
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+definitions: []
