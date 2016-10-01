@@ -1,1 +1,67 @@
-~
+swagger: "2.0"
+info:
+  title: No Title
+  version: ~
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /buckets/{bucket_key}/tests/{test_id}/schedules:
+    get:
+      summary: Test Schedule List
+      description: Get the list of schedules for a test.
+      operationId: ""
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      security: []
+    post:
+      summary: Create Schedule
+      description: Create a new test schedule.
+      operationId: ""
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      security: []
+  /buckets/{bucket_key}/tests/{test_id}/schedules/{schedule_id}:
+    delete:
+      summary: Delete (Stop) Schedule
+      description: Delete a schedule.
+      operationId: ""
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      security: []
+    get:
+      summary: Schedule Details
+      description: Schedule Details
+      operationId: ""
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      security: []
+    put:
+      summary: Modify Schedule
+      description: Update the details of a single schedule by making a PUT request
+        with a JSON body to the schedule details resource. Updating a schedule will
+        cause the test to execute starting at the time of the request on the given
+        interval.
+      operationId: ""
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      security: []
+definitions: []
