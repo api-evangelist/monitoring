@@ -19,7 +19,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     post:
       summary: Creating Tests
       description: Create one or more tests in this bucket.
@@ -29,7 +28,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
   /buckets/{bucket_key}/tests/{test_id}:
     delete:
       summary: Deleting Tests
@@ -41,7 +39,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     get:
       summary: Test Detail
       description: Retrieve the details of a given test by ID.
@@ -51,7 +48,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     put:
       summary: Starting a Test Run
       description: To programmatically initiate a test run, use a Trigger URL.
@@ -61,5 +57,4 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
 definitions: []
