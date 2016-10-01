@@ -7,7 +7,7 @@ info:
     name: APIMetrics
     url: http://apimetrics.io/contact/
     email: info@apimetrics.com
-  version: ~
+  version: ""
 host: client.apimetrics.io
 basePath: /api/2
 schemes:
