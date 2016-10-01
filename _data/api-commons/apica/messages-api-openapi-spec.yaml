@@ -22,7 +22,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
     get:
       summary: Retrieve a list of messages in a bucket
       description: ""
@@ -44,7 +44,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
     post:
       summary: Create a message
       description: ""
@@ -58,7 +58,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
   /buckets/{bucketKey}/messages/{messageId}:
     get:
       summary: Retrieve the details for a single message.
@@ -75,54 +75,54 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
   '/messages ':
     ' post ':
       summary: Messages
-      description: ttttCreates an UI message.ttt
-      operationId: -messages-
+      description: Creates an UI message.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
   '/messages/{id} ':
     ' delete ':
       summary: Messages {id}
-      description: ttttDeletes an existing UI message.ttt
-      operationId: -messages-id-
+      description: Deletes an existing UI message.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
     ' get ':
       summary: Messages {id}
-      description: ttttGets an existing UI message by Id.ttt
-      operationId: -messages-id-
+      description: Gets an existing UI message by Id.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
     ' put ':
       summary: Messages {id}
-      description: ttttUpdates an existing UI message.ttt
-      operationId: -messages-id-
+      description: Updates an existing UI message.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
   '/messages?active={active}&amp;customerId={customerId} ':
     ' get ':
       summary: Messages?active={active}&amp;customerId={customerId}
-      description: ttttGets a list of UI messages. UI messages are used for user notifications
+      description: Gets a list of UI messages. UI messages are used for user notifications
         on announcements/information/warnings.ttt
-      operationId: -messagesactiveactiveampcustomeridcustomerid-
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Messages
 definitions: []
