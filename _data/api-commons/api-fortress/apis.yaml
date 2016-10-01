@@ -10,57 +10,7 @@ created: "2016-09-30"
 modified: "2016-09-30"
 url: http://monitoring.apievangelist.com
 specificationVersion: "0.14"
-apis:
-- name: Insights API
-  description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
-  humanURL: ""
-  baseURL: ""
-  tags:
-  - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/insights-api-openapi-spec.yaml
-- name: Project API
-  description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
-  humanURL: ""
-  baseURL: ""
-  tags:
-  - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/project-api-openapi-spec.yaml
-- name: Test API
-  description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
-  humanURL: ""
-  baseURL: ""
-  tags:
-  - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/test-api-openapi-spec.yaml
-- name: Test Run API
-  description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
-  humanURL: ""
-  baseURL: ""
-  tags:
-  - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/test-run-api-openapi-spec.yaml
-- name: Validators API
-  description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
-  humanURL: ""
-  baseURL: ""
-  tags:
-  - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/validators-api-openapi-spec.yaml
+apis: []
 x-common:
 - type: x-blog
   url: http://apifortress.com/blog/
