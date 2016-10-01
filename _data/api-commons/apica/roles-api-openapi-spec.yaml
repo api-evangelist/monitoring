@@ -11,12 +11,12 @@ consumes:
 paths:
   '/roles ':
     ' get ':
-      summary: Roles
-      description: ttttReturn user rolesttt
-      operationId: -roles-
+      summary: Get Roles
+      description: Return user rolesttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Roles
 definitions: []
