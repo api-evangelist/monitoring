@@ -20,7 +20,6 @@ paths:
           description: OK
       tags:
       - Collections
-      security: []
   /buckets/:bucket_key/collection/:collection_uuid/:message_uuid:
     delete:
       summary: Removing a Message From a Collection
@@ -33,7 +32,6 @@ paths:
           description: OK
       tags:
       - Collections
-      security: []
   /buckets/:bucket_key/collections:
     get:
       summary: Collection List
@@ -44,7 +42,6 @@ paths:
           description: OK
       tags:
       - Collections
-      security: []
     post:
       summary: Creating a Collection
       description: Creating a Collection
@@ -54,7 +51,6 @@ paths:
           description: OK
       tags:
       - Collections
-      security: []
   /buckets/:bucket_key/collections/:collection_uuid:
     get:
       summary: Collection Detail
@@ -67,7 +63,6 @@ paths:
           description: OK
       tags:
       - Collections
-      security: []
   /buckets/:bucket_key/collections/:collection_uuid/:message_uuid:
     put:
       summary: Adding Messages to Collections or Modifying Message Rank
@@ -79,5 +74,4 @@ paths:
           description: OK
       tags:
       - Collections
-      security: []
 definitions: []
