@@ -9,11 +9,11 @@ produces:
 consumes:
 - application/json
 paths:
-  /buckets/{bucketKey}/tests:
+  /buckets/{bucket_key}/tests:
     get:
-      summary: Returns a list of tests.
-      description: ""
-      operationId: ""
+      summary: Test List
+      description: A list of all the tests for this bucket.
+      operationId: test-list
       responses:
         200:
           description: OK
@@ -21,142 +21,31 @@ paths:
       - ""
       security: []
     post:
-      summary: Create a test.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: body
-        name: NewTest
-        schema:
-          $ref: '#/definitions/holder'
+      summary: Creating Tests
+      description: Create one or more tests in this bucket.
+      operationId: creating-tests
       responses:
         200:
           description: OK
       tags:
       - ""
       security: []
-  /buckets/{bucketKey}/tests/{testId}:
+  /buckets/{bucket_key}/tests/{test_id}:
     delete:
-      summary: Delete a single test.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: path
-        name: testId
-        description: Unique identifier for a test
+      summary: Deleting Tests
+      description: Delete a test, including all steps, schedules, test-specific environments
+        and results.
+      operationId: deleting-tests
       responses:
         200:
           description: OK
       tags:
       - ""
       security: []
-  /buckets/{bucketKey}/tests/{testId}/environments:
     get:
-      summary: Return details of the test's environments (only those that belong to
-        the specified test)
-      description: ""
-      operationId: ""
-      parameters:
-      - in: path
-        name: bucketKey
-      - in: path
-        name: testId
-        description: Unique identifier for a test
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-      security: []
-    post:
-      summary: Create new test environment.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: path
-        name: bucketKey
-      - in: body
-        name: NewEnvironment
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: testId
-        description: Unique identifier for a test
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-      security: []
-  /buckets/{bucketKey}/tests/{testId}/environments/{environmentId}:
-    put:
-      summary: Update the details of a test environment.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: path
-        name: bucketKey
-      - in: path
-        name: environmentId
-        description: Unique identifier for a test environment
-      - in: body
-        name: ModifiedEnvironment
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: testId
-        description: Unique identifier for a test
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-      security: []
-  /buckets/{bucketKey}/tests/{testId}/steps:
-    get:
-      summary: List test steps for a test.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: path
-        name: testId
-        description: Unique identifier for a test
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-      security: []
-    post:
-      summary: Add new test step.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: body
-        name: NewStep
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: testId
-        description: Unique identifier for a test
-      responses:
-        200:
-          description: OK
-      tags:
-      - ""
-      security: []
-  /buckets/{bucketKey}/tests/{testId}/steps/{stepId}:
-    delete:
-      summary: Delete a step from a test.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: path
-        name: stepId
-        description: Unique identifier for a step
-      - in: path
-        name: testId
-        description: Unique identifier for a test
+      summary: Test Detail
+      description: Retrieve the details of a given test by ID.
+      operationId: test-detail
       responses:
         200:
           description: OK
@@ -164,17 +53,9 @@ paths:
       - ""
       security: []
     put:
-      summary: Update the details of a single test step.
-      description: ""
-      operationId: ""
-      parameters:
-      - in: body
-        name: NewStep
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: testId
-        description: Unique identifier for a test
+      summary: Starting a Test Run
+      description: To programmatically initiate a test run, use a Trigger URL.
+      operationId: starting-a-test-run
       responses:
         200:
           description: OK
