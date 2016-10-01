@@ -26,7 +26,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
     post:
       summary: Create new API Call
       description: Create new API Call
@@ -42,7 +42,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
   /calls/auth/{auth_id}/:
     get:
       summary: List API Calls by Authentication
@@ -56,7 +56,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
   /calls/{id}/:
     delete:
       summary: Delete an API Call
@@ -70,7 +70,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
     get:
       summary: Get an existing API Call
       description: Get an existing API Call
@@ -96,7 +96,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
     put:
       summary: Update an existing API Call
       description: Update an existing API Call
@@ -115,7 +115,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
   /calls/{id}/run:
     post:
       summary: Trigger an API Call to run
@@ -141,7 +141,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
   /calls/{id}/stats/before:
     get:
       summary: List Stats from before a date for an API Call
@@ -172,7 +172,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
   /calls/{id}/stats/since:
     get:
       summary: List Stats since a date for an API Call
@@ -203,5 +203,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Calls
 definitions: []
