@@ -40,5 +40,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Uptime
 definitions: []
