@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
   '/checks/command-v2 ':
     ' post ':
       summary: Checks Command V2
@@ -28,7 +28,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
   '/checks/command-v2/categories ':
     ' get ':
       summary: Checks Command V2 Categories
@@ -39,7 +39,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
   '/checks/command-v2/locations?protocol={protocol} ':
     ' get ':
       summary: Checks Command V2 Locations?protocol={protocol}
@@ -50,7 +50,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
   '/checks/command-v2/{checkId} ':
     ' put ':
       summary: Checks Command V2 {checkId}
@@ -60,7 +60,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
   '/checks/command/categories ':
     ' get ':
       summary: Checks Command Categories
@@ -71,7 +71,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
   '/checks/command/locations ':
     ' get ':
       summary: Checks Command Locations
@@ -82,7 +82,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
   '/checks/command/{checkId} ':
     ' put ':
       summary: Checks Command {checkId}
@@ -92,5 +92,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Command
 definitions: []
