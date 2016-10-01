@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   title: No Title
-  version: ""
+  version: 1.0.0
 schemes:
 - http
 produces:
@@ -129,9 +129,9 @@ paths:
     post:
       summary: Test Run Advanced Run
       description: <p>Use this endpoint if you want override variables or the payload
-        in the test.</p>nn<ul>n<li><p>params will be accessible as <em>variables</em>
-        inside the test</p></li>n<li><p>payload will be parsed based on the &quot;Content-Type&quot;
-        field as will be accessible via the &quot;payload&quot; variable</p></li>n</ul>nn<p><em>payload</em>
+        in the test.</p><ul><li><p>params will be accessible as <em>variables</em>
+        inside the test</p></li><li><p>payload will be parsed based on the &quot;Content-Type&quot;
+        field as will be accessible via the &quot;payload&quot; variable</p></li></ul><p><em>payload</em>
         AND <em>params</em> are not required at the same time</p>
       operationId: test-run-advanced-run
       parameters:
