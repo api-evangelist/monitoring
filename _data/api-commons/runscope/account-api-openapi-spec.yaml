@@ -1,1 +1,23 @@
-~
+swagger: "2.0"
+info:
+  title: No Title
+  version: ~
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /account:
+    get:
+      summary: Account Resource
+      description: Information about the authorized account.
+      operationId: information-about-the-authorized-account
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+      security: []
+definitions: []
