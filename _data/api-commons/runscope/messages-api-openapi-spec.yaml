@@ -23,7 +23,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     get:
       summary: Retrieve a list of messages in a bucket
       description: ""
@@ -46,7 +45,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     post:
       summary: Create a message
       description: ""
@@ -61,7 +59,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
   /buckets/{bucketKey}/messages/{messageId}:
     get:
       summary: Retrieve the details for a single message.
@@ -79,5 +76,4 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
 definitions: []
