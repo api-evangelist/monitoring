@@ -22,7 +22,6 @@ paths:
           description: OK
       tags:
       - Environments
-      security: []
     post:
       summary: Create new shared environment.
       description: Create new shared environment.
@@ -39,7 +38,6 @@ paths:
           description: OK
       tags:
       - Environments
-      security: []
   /buckets/{bucketKey}/environments/{environmentId}:
     delete:
       summary: Delete an Environment
@@ -50,7 +48,6 @@ paths:
           description: OK
       tags:
       - Environments
-      security: []
     get:
       summary: Environment Detail
       description: Get the details of a single test environment or shared envionment.
@@ -60,7 +57,6 @@ paths:
           description: OK
       tags:
       - Environments
-      security: []
     put:
       summary: Update the details of a test environment.
       description: Update the details of a test environment.
@@ -80,7 +76,6 @@ paths:
           description: OK
       tags:
       - Environments
-      security: []
   /buckets/{bucketKey}/tests/{test_id}/environments/{environmentId}:
     get:
       summary: Modify Environment
@@ -93,5 +88,4 @@ paths:
           description: OK
       tags:
       - Environments
-      security: []
 definitions: []
