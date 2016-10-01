@@ -11,14 +11,14 @@ consumes:
 paths:
   '/custom_events ':
     ' post ':
-      summary: Custom_events
+      summary: Custom Events
       description: ttttCreates new custom event.ttt
       operationId: -custom-events-
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Custom Events
   '/custom_events/all?fromUtc={fromUtc}&amp;toUtc={toUtc} ':
     ' get ':
       summary: Custom_events All?fromUtc={fromUtc}&amp;toUtc={toUtc}
@@ -28,7 +28,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Custom Events
   '/custom_events/{id} ':
     ' delete ':
       summary: Custom_events {id}
@@ -38,7 +38,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Custom Events
     ' get ':
       summary: Custom_events {id}
       description: ttttGets custom event by Id.ttt
@@ -47,7 +47,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Custom Events
     ' put ':
       summary: Custom_events {id}
       description: ttttUpdates custom event.ttt
@@ -56,7 +56,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Custom Events
   ? '/events?message={message}&amp;severity={severity}&amp;timestamp_utc_from={timestamp_utc_from}&amp;timestamp_utc_to={timestamp_utc_to} '
   : ' get ':
       summary: Events?message={message}&amp;severity={severity}&amp;timestamp_utc_from={timestamp_utc_from}&amp;timestamp_utc_to={timestamp_utc_to}
@@ -66,5 +66,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Custom Events
 definitions: []
