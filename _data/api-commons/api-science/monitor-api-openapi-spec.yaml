@@ -30,7 +30,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Monitors
     post:
       summary: Create a Monitor
       description: Create a Monitor
@@ -57,7 +57,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Monitors
     put:
       summary: Apply Actions to Multiple Monitors
       description: Apply Actions to Multiple Monitors
@@ -71,7 +71,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Monitors
   /monitors/{id}:
     get:
       summary: Get a Specific Monitor
@@ -85,7 +85,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Monitors
   /monitors/{id}/test:
     get:
       summary: Testing your Monitor
@@ -95,5 +95,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Monitors
 definitions: []
