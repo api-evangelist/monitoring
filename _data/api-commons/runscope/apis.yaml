@@ -81,16 +81,6 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/runscope/regions-api-openapi-spec.yaml
-- name: Results API
-  description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
-  humanURL: ""
-  baseURL: https://api.runscope.com
-  tags:
-  - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/runscope/results-api-openapi-spec.yaml
 - name: Schedules API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
