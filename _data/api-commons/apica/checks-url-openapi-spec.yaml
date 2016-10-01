@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks URL
   '/checks/url-v2 ':
     ' post ':
       summary: Checks URL V2
@@ -28,7 +28,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks URL
   '/checks/url-v2/locations ':
     ' get ':
       summary: Checks URL V2 Locations
@@ -39,7 +39,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks URL
   '/checks/url-v2/{checkId} ':
     ' put ':
       summary: Checks URL V2 {checkId}
@@ -49,7 +49,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks URL
   '/checks/url/locations ':
     ' get ':
       summary: Checks URL Locations
@@ -60,7 +60,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks URL
   '/checks/url/{checkId} ':
     ' put ':
       summary: Checks URL {checkId}
@@ -70,5 +70,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks URL
 definitions: []
