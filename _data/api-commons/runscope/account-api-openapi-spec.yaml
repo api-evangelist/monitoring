@@ -19,5 +19,4 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
 definitions: []
