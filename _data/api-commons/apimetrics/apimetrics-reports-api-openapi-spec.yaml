@@ -26,7 +26,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Reports
     post:
       summary: Create a new Report
       description: Create a new Report
@@ -41,7 +41,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Reports
   /reports/{id}/:
     delete:
       summary: Delete a Report
@@ -55,7 +55,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Reports
     get:
       summary: Get an existing Report
       description: Get an existing Report
@@ -68,7 +68,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Reports
     put:
       summary: Update an existing Report
       description: Update an existing Report
@@ -90,5 +90,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Reports
 definitions: []
