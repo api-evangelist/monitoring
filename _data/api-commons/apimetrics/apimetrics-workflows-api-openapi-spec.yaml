@@ -26,7 +26,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Workflows
     post:
       summary: Create new Authentication Settings
       description: Create new Authentication Settings
@@ -42,7 +42,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Workflows
   /workflows/{id}/:
     delete:
       summary: Delete a Workflow
@@ -56,7 +56,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Workflows
     get:
       summary: Get an existing Workflow
       description: Get an existing Workflow
@@ -69,7 +69,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Workflows
     post:
       summary: Trigger a Workflow to run now
       description: Trigger a Workflow to run now
@@ -88,7 +88,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Workflows
     put:
       summary: Create a new Workflow
       description: Create a new Workflow
@@ -107,5 +107,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Workflows
 definitions: []
