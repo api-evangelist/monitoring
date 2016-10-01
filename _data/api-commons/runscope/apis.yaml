@@ -6,8 +6,8 @@ description: Runscope was started with the idea that depending on a web service 
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
 tags:
 - Monitoring
-created: "2016-09-30"
-modified: "2016-09-30"
+created: "2016-10-01"
+modified: "2016-10-01"
 url: http://monitoring.apievangelist.com
 specificationVersion: "0.14"
 apis:
