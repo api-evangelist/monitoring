@@ -1,0 +1,26 @@
+swagger: "2.0"
+info:
+  title: Tags API
+  version: ""
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /tags:
+    get:
+      summary: List All Tags
+      description: List All Tags
+      operationId: listAllTags
+      parameters:
+      - in: query
+        name: detailed
+        description: Detailed List All Tags
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
+definitions: []
