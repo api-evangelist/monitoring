@@ -22,5 +22,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Tags
 definitions: []
