@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
   '/alerts/recipient/{recipient_id} ':
     ' put ':
       summary: Alerts Recipient {recipient_id}
@@ -28,7 +28,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
   '/alerts/recipients ':
     ' get ':
       summary: Alerts Recipients
@@ -39,7 +39,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
   '/alerts/recipients/{recipient_id} ':
     ' get ':
       summary: Alerts Recipients {recipient_id}
@@ -49,7 +49,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
   '/alerts/targets ':
     ' get ':
       summary: Alerts Targets
@@ -60,7 +60,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
   '/alerts/{alert_id} ':
     ' delete ':
       summary: Alerts {alert_id}
@@ -70,7 +70,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
     ' get ':
       summary: Alerts {alert_id}
       description: ttttGets alert by Id.ttt
@@ -79,7 +79,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
     ' put ':
       summary: Alerts {alert_id}
       description: ttttUpdates alert.ttt
@@ -88,7 +88,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
   '/alerts/{alert_type} ':
     ' post ':
       summary: Alerts {alert_type}
@@ -98,7 +98,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
   ? '/alerts?check_id={check_id}&amp;severity={severity}&amp;enabled={enabled}&amp;target_type={target_type}&amp;target_id={target_id} '
   : ' get ':
       summary: Alerts?check_id={check_id}&amp;severity={severity}&amp;enabled={enabled}&amp;target_type={target_type}&amp;target_id={target_id}
@@ -108,5 +108,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Alerts
 definitions: []
