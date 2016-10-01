@@ -28,9 +28,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert--policy-api-openapi-spec.yaml
+  properties: []
 - name: Alert Channel API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -38,9 +36,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-channel-api-openapi-spec.yaml
+  properties: []
 - name: Alert Conditions API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -48,9 +44,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-conditions-api-openapi-spec.yaml
+  properties: []
 - name: Alert Entity Condition API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -58,9 +52,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-entity-condition-api-openapi-spec.yaml
+  properties: []
 - name: Alert Event API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -68,9 +60,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-event-api-openapi-spec.yaml
+  properties: []
 - name: Alert External Service Condition API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -78,9 +68,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-external-service-condition-api-openapi-spec.yaml
+  properties: []
 - name: Alert Incident API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -88,9 +76,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-incident-api-openapi-spec.yaml
+  properties: []
 - name: Alert Policy Channel API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -98,9 +84,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-policy-channel-api-openapi-spec.yaml
+  properties: []
 - name: Alert Synthetic Condition API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -108,9 +92,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-synthetic-condition-api-openapi-spec.yaml
+  properties: []
 - name: Alert Violation API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -118,9 +100,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/alert-violation-api-openapi-spec.yaml
+  properties: []
 - name: Application Deployment API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -128,9 +108,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/application-deployment-api-openapi-spec.yaml
+  properties: []
 - name: Application Host API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -138,9 +116,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/application-host-api-openapi-spec.yaml
+  properties: []
 - name: Application Instance API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -148,9 +124,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/application-instance-api-openapi-spec.yaml
+  properties: []
 - name: Applications API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -158,9 +132,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/applications-api-openapi-spec.yaml
+  properties: []
 - name: Browser Application API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -168,9 +140,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/browser-application-api-openapi-spec.yaml
+  properties: []
 - name: Component API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -178,9 +148,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/component-api-openapi-spec.yaml
+  properties: []
 - name: Key Transaction API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -188,9 +156,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/key-transaction-api-openapi-spec.yaml
+  properties: []
 - name: Label API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -198,9 +164,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/label-api-openapi-spec.yaml
+  properties: []
 - name: Mobile Application API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -208,9 +172,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/mobile-application-api-openapi-spec.yaml
+  properties: []
 - name: Notification Channel API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -218,9 +180,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/notification-channel-api-openapi-spec.yaml
+  properties: []
 - name: Plugin API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -228,9 +188,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/plugin-api-openapi-spec.yaml
+  properties: []
 - name: Server API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -238,9 +196,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/server-api-openapi-spec.yaml
+  properties: []
 - name: Usage API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -248,9 +204,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/usage-api-openapi-spec.yaml
+  properties: []
 - name: Users API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
@@ -258,9 +212,7 @@ apis:
   baseURL: ""
   tags:
   - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/users-api-openapi-spec.yaml
+  properties: []
 x-common: []
 include: []
 maintainers:
