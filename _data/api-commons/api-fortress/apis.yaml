@@ -6,8 +6,8 @@ description: 'Test. Monitor. Automate: API Fortress is an enterprise cloud solut
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-fortress.png
 tags:
 - Monitoring
-created: "2016-09-30"
-modified: "2016-09-30"
+created: "2016-10-01"
+modified: "2016-10-01"
 url: http://monitoring.apievangelist.com
 specificationVersion: "0.14"
 apis:
