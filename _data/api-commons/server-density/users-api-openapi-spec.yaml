@@ -12,48 +12,48 @@ paths:
   '/users ':
     ' get ':
       summary: Users
-      description: ttttReturns all customers users.ttt
-      operationId: -users-
+      description: Returns all customers users.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Users
     ' post ':
       summary: Users
-      description: ttttCreates a new user.ttt
-      operationId: -users-
+      description: Creates a new user.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Users
     ' put ':
       summary: Users
-      description: ttttUpdates a user.ttt
-      operationId: -users-
+      description: Updates a user.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Users
   '/users/{user_guid} ':
     ' delete ':
       summary: Users {user_guid}
-      description: ttttDeletes a user.ttt
-      operationId: -users-user-guid-
+      description: Deletes a user.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Users
     ' get ':
       summary: Users {user_guid}
-      description: ttttReturns customers user by user GUID.ttt
-      operationId: -users-user-guid-
+      description: Returns customers user by user GUID.ttt
+      operationId: ""
       responses:
         200:
           description: OK
       tags:
-      - ""
+      - Users
 definitions: []
