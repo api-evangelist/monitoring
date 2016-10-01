@@ -19,7 +19,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
   '/checks/{checkId} ':
     ' delete ':
       summary: Checks {checkId}
@@ -29,7 +29,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
     ' get ':
       summary: Checks {checkId}
       description: ttttGets info about a check, current SLA, last result and its status.ttt
@@ -38,7 +38,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
     ' put ':
       summary: Checks {checkId}
       description: ttttUpdates a check.ttt
@@ -47,7 +47,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
   '/checks/{checkId}/lastvalue ':
     ' get ':
       summary: Checks {checkId} Lastvalue
@@ -57,7 +57,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
   '/checks/{checkId}/results/{millisecondsUtc}?detail_level={detail_level} ':
     ' get ':
       summary: Checks {checkId} Results {millisecondsUtc}?detail_level={detail_level}
@@ -67,7 +67,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
   '/checks/{checkId}/results?fromUtc={fromUtc}&amp;toUtc={toUtc}&amp;detail_level={detail_level} ':
     ' get ':
       summary: Checks {checkId} Results?fromUtc={fromUtc}&amp;toUtc={toUtc}&amp;detail_level={detail_level}
@@ -77,7 +77,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
   '/checks/{checkId}/results?mostrecent={mostrecent}&amp;detail_level={detail_level} ':
     ' get ':
       summary: Checks {checkId} Results?mostrecent={mostrecent}&amp;detail_level={detail_level}
@@ -87,5 +87,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks
 definitions: []
