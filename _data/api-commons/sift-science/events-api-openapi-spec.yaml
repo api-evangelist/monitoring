@@ -12,6 +12,19 @@ produces:
 consumes:
 - application/json
 paths:
+  /api/v1/events:
+    post:
+      summary: Post an Event
+      description: '          This end point allows you to post events to the stream.
+        You can tag them, set priority and event aggregate them with other events.        '
+      operationId: post-an-event
+      parameters:
+      - type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - ""
   '/custom_events ':
     ' post ':
       summary: Custom Events
