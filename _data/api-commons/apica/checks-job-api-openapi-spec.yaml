@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Job
     ' post ':
       summary: Checks {checkId} Job
       description: ttttExecutes a check.ttt
@@ -27,5 +27,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Job
 definitions: []
