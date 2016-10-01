@@ -18,7 +18,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Proxysniffer
   '/checks/proxysniffer/locations ':
     ' get ':
       summary: Checks Proxysniffer Locations
@@ -29,7 +29,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Proxysniffer
   '/checks/proxysniffer/{checkId} ':
     ' put ':
       summary: Checks Proxysniffer {checkId}
@@ -39,7 +39,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Proxysniffer
   '/checks/proxysniffer/{checkId}/results/urldata ':
     ' post ':
       summary: Checks Proxysniffer {checkId} Results URLdata
@@ -49,7 +49,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Proxysniffer
   '/checks/proxysniffer/{checkId}/results/{resultId}/errorlog ':
     ' get ':
       summary: Checks Proxysniffer {checkId} Results {resultId} Errorlog
@@ -59,7 +59,7 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Proxysniffer
   '/checks/proxysniffer/{checkId}/results/{resultId}/urldata?format={format} ':
     ' get ':
       summary: Checks Proxysniffer {checkId} Results {resultId} URLdata?format={format}
@@ -69,5 +69,5 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - Checks Proxysniffer
 definitions: []
