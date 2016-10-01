@@ -19,7 +19,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     post:
       summary: Create a new bucket
       description: ""
@@ -34,7 +33,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
   /buckets/{bucketKey}:
     delete:
       summary: Delete a single bucket resource.
@@ -49,7 +47,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
     get:
       summary: Returns a single bucket resource.
       description: ""
@@ -63,7 +60,6 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
   /buckets/{bucketKey}/errors:
     get:
       summary: Retrieve a list of error messages in a bucket
@@ -87,5 +83,4 @@ paths:
           description: OK
       tags:
       - ""
-      security: []
 definitions: []
