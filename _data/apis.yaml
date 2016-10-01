@@ -9,6 +9,8 @@ tags:
 - Monitoring
 - Monitoring
 include:
+- name: Amazon CloudWatch
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/amazon-cloudwatch/apis.yaml
 - name: Amazon Web Services
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/amazon-web-services/apis.yaml
 - name: Apache Karaf
