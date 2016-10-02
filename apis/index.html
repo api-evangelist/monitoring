@@ -11,8 +11,7 @@ title: The API Stack
   {{ include.name }} - {{ thisurl }}
   {% for org in site.data.api-commons %}
     {% assign index = org %}
-    1
-    {{ index[0] }}
+    {{ thisurl }} == {{ index[0] }}<br />
     {% if index.apis != null %}
 
 
