@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Groups API
     version: 1.0.0
@@ -104,4 +104,4 @@
             description: OK
         tags:
         - Groups
-  definitions: []
+  definition
