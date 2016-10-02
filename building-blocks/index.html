@@ -3,13 +3,16 @@ layout: page
 title: 'API Monitoring News'
 ---
 
-<h3>{{ site.title }} Building Blocks</h3>
 <p>{{ site.building_block_desc }}</p>
 <ul style="padding: 0px 50px 0px 50px;">
-{% for curated in site.data.buildingblocks %}
+{% for block in site.data.buildingblocks %}
 	<li>
-		<a href="{{ curated.url }}" title="{{ curated.title }}" style="color:#000; font-size: 12px;">{{ curated.title }}</a>
-		<span style="color:#000; font-size: 12px;">(&nbsp;<a href="http://{{ curated.domain }}" style="color:#000; font-size: 12px;"><i>{{ curated.item_date | date_to_string }}&nbsp;{% if curated.domain != null %}on&nbsp;{{ curated.domain }}{% endif %}</i></a>)</span>
+		<span style="font-size: 18px; font-weight: bold;">{{ block.category_name }}</span>
+		<ul>
+			{% for building_block in block.building_blocks %}
+				<li><strong>building_block.name</strong> - building_block.about</li>
+			{% endfor %}
+		</ul>
 	</li>
 {% endfor %}
 </ul>
