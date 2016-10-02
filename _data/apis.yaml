@@ -55,8 +55,6 @@ include:
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/runscope/apis.yaml
 - name: Server Density
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/server-density/apis.yaml
-- name: Sift Science
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/sift-science/apis.yaml
 - name: Site24x7
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/site24x7/apis.yaml
 - name: SmartBear Software
