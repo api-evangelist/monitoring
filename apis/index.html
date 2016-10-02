@@ -3,13 +3,13 @@ layout: page
 title: The API Stack
 ---
 
+<table cellpadding="3" cellspacing="2" width="90%" border="0" style="margin-top: 10px;">
 {% for api in site.data.apis %}
   {% for include in api.include %}
 
   {% assign removeurl = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/api-commons/' %}
   {% assign thisurl = include.url | replace: removeurl %}
   {% assign thisurl = thisurl | replace: '/apis.yaml' %}
-  <h1>{{ include.name }}</h1>
 
   {% for org in site.data.api-commons %}
 
@@ -55,7 +55,7 @@ title: The API Stack
       {% endif %}
       <tr>
         <td>
-          
+
           <table cellpading="10" cellspacing="10" width="100%" class="card" border="0">
             <tr>
               <td colspan="2" style="padding: 15px;">
@@ -283,3 +283,4 @@ title: The API Stack
   {% endfor %}
   {% endfor %}
 {% endfor %}
+</table>
