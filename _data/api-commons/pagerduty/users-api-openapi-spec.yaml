@@ -1,7 +1,9 @@
 swagger: "2.0"
 info:
   title: Users API
+  description: The Users API.
   version: 1.0.0
+host: api.serverdensity.io.
 schemes:
 - http
 produces:
@@ -77,6 +79,30 @@ paths:
       summary: L
       description: L
       operationId: L
+      responses:
+        200:
+          description: OK
+      tags:
+      - Users
+  /users/users/userId:
+    "":
+      summary: Deleting a user
+      description: ""
+      operationId: deleting-a-user
+      parameters:
+      - in: path
+        name: token
+        description: Your API token.
+        type: string
+      - in: body
+        name: token
+        description: Your API token.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: userId
+        description: The ID of the user to delete
+        type: string
       responses:
         200:
           description: OK
