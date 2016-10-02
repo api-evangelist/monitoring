@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Messages API
     version: 1.0.0
@@ -125,4 +125,4 @@
             description: OK
         tags:
         - Messages
-  definitions: []
+  definition
