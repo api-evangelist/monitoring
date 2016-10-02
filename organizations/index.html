@@ -98,7 +98,7 @@ title: The API Stack
                   {% if twitter_url != '' %}
                     <li style="display: inline; padding-left: 15px; padding-right: 15px;">
                       <a href="{{ twitter_url }}" target="_blank" title="Twitter">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-twitter-icon.png" width="41" align="center" />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-twitter-icon.png" width="39" align="center" />
                       </a>
                     </li>
                   {% endif %}
@@ -106,15 +106,15 @@ title: The API Stack
                   {% if gitub_url != '' %}
                     <li style="display: inline; padding-left: 15px; padding-right: 15px;">
                       <a href="{{ gitub_url }}" target="_blank" title="Github">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github-icon.png" width="47" align="center" />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github-icon.png" width="45" align="center" />
                       </a>
                     </li>
                   {% endif %}
 
-                  {% assign apisjson_url = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/api-commons/' | append: thisurl | append: '/' %}
+                  {% assign apisjson_url = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/api-commons/' | append: thisurl | append: '/apis.yaml' %}
                     <li style="display: inline; padding-left: 15px; padding-right: 15px;">
                       <a href="{{ apisjson_url }}" target="_blank" title="APIs.json">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="48" align="center" />
+                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="45" align="center" />
                       </a>
                     </li>
                 </ul>
