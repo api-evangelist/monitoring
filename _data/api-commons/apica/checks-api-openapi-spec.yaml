@@ -1,4 +1,4 @@
-- wagger: "2.0"
+swagger: "2.0"
 info:
   title: Checks API
   description: The Checks API.
