@@ -1,9 +1,9 @@
 swagger: "2.0"
 info:
-  title: API Science Monitors API
-  description: This is the API Science API for API monitors.
+  title: Monitor API
+  description: The Monitor API.
   version: v1
-host: api.apiscience.com
+host: www.site24x7.com.
 basePath: /v1
 schemes:
 - http
@@ -12,6 +12,22 @@ produces:
 consumes:
 - application/json
 paths:
+  /monitor/poll_now/{monitor_id}:
+    get:
+      summary: Poll Monitor
+      description: Poll a monitor.
+      operationId: poll-monitor
+      parameters:
+      - in: path
+        name: monitor_id
+        description: MandatoryUnique ID of the monitor. You can find monitor_id using
+          the monitor list api.
+        type: <td>string</td>
+      responses:
+        200:
+          description: OK
+      tags:
+      - Monitors
   /monitors:
     get:
       summary: Get All Monitors
@@ -72,6 +88,22 @@ paths:
           description: OK
       tags:
       - Monitors
+  /monitors/activate/{monitor_id}:
+    put:
+      summary: Activate Monitor
+      description: Activate a suspended monitor
+      operationId: activate-monitor
+      parameters:
+      - in: path
+        name: monitor_id
+        description: MandatoryUnique ID of the monitor. You can find monitor_id using
+          the monitor list api.
+        type: <td>string</td>
+      responses:
+        200:
+          description: OK
+      tags:
+      - Monitors
   /monitors/{id}:
     get:
       summary: Get a Specific Monitor
@@ -91,6 +123,22 @@ paths:
       summary: Testing your Monitor
       description: Testing your Monitor
       operationId: testMonitor
+      responses:
+        200:
+          description: OK
+      tags:
+      - Monitors
+  /monitors/{monitor_id}:
+    put:
+      summary: Update Monitor
+      description: Update an existing monitor
+      operationId: update-monitor
+      parameters:
+      - in: path
+        name: monitor_id
+        description: MandatoryUnique ID of the monitor. You can find monitor_id using
+          the monitor list api.
+        type: <td>string</td>
       responses:
         200:
           description: OK
