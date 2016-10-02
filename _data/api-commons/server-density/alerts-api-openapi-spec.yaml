@@ -1,7 +1,9 @@
 swagger: "2.0"
 info:
   title: Alerts API
+  description: The Alerts API.
   version: 1.0.0
+host: api.serverdensity.io.
 schemes:
 - http
 produces:
@@ -9,6 +11,66 @@ produces:
 consumes:
 - application/json
 paths:
+  /alerts/configs/alertId:
+    "":
+      summary: Deleting an alert
+      description: ""
+      operationId: deleting-an-alert
+      parameters:
+      - in: path
+        name: alertId
+        description: The ID of the alert to be deleted
+        type: string
+      - in: path
+        name: token
+        description: Your API token
+        type: string
+      - in: body
+        name: token
+        description: Your API token
+        schema:
+          $ref: '#/definitions/holder'
+      - in: query
+        name: token
+        description: Your API token.
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Alerts
+  /alerts/configs/subjectId:
+    "":
+      summary: Listing alerts by subject
+      description: Get a list of all configured alerts for a specific subject (device
+        or service).
+      operationId: listing-alerts-by-subject
+      parameters:
+      - in: path
+        name: subjectId
+        description: The ID of the subject e.g. the device ID
+        type: string
+      - in: path
+        name: subjectType
+        description: The type of the subject - device or service
+        type: string
+      - in: query
+        name: subjectType
+        description: The type of the subject - device or service
+        type: string
+      - in: path
+        name: token
+        description: Your API token.
+        type: string
+      - in: query
+        name: token
+        description: Your API token.
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Alerts
   '/alerts/recipient ':
     ' post ':
       summary: Alerts Recipient
@@ -56,6 +118,39 @@ paths:
       description: ttttGets a list of all alert targets that are visible to you as
         a customer.ttt
       operationId: -alerts-targets-
+      responses:
+        200:
+          description: OK
+      tags:
+      - Alerts
+  /alerts/triggered:
+    "":
+      summary: Triggered alerts
+      description: Get a list of all triggered alerts on your account, per subject
+        (device or service) or per alert config.
+      operationId: triggered-alerts
+      parameters:
+      - in: query
+        name: closed
+        description: Whether to filter by closed or open alerts - unset = all alerts,
+          false = open alerts, true = closed alerts.
+        type: string
+      - in: query
+        name: filter
+        description: You can provide a JSON encoded hash filter for the search that
+          will return items that match the filter. The filter can include anything
+          that is available on the triggered data, or the config that the triggered
+          data contains.
+        type: string
+      - in: query
+        name: subjectType
+        description: The type of the subject - device, service, deviceGroup or serviceGroup
+          if you also specify the subjectId as part of the URL (see examples below)
+        type: string
+      - in: query
+        name: token
+        description: Your API token.
+        type: string
       responses:
         200:
           description: OK
