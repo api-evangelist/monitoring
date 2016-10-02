@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Uptrends Complete API
     description: The Uptrends Complete API.
@@ -10,4 +10,4 @@
   consumes:
   - application/json
   paths: []
-  definitions: []
+  definition
