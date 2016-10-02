@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Browser Checks API
     version: 1.0.0
@@ -60,4 +60,4 @@
             description: OK
         tags:
         - Browser
-  definitions: []
+  definition
