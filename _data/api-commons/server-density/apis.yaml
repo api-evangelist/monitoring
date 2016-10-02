@@ -54,6 +54,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/server-density/metrics-api-openapi-spec.yaml
+- name: Notifications API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/server-density/notifications-api-openapi-spec.yaml
 - name: Postbacks API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
