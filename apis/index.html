@@ -10,11 +10,12 @@ title: The API Stack
   {{ include.name }} - {{ thisurl }}
   {% for org in site.data.api-commons %}
     {% assign index = org %}
-    {{ index }}<br />
+    1
     {% if index.apis != null %}
 
+
       {% assign masterapisjson = index.apis %}
-      <br /><hr />
+      2<br /><hr />
 
 
     {% endif %}
