@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Events API
     description: The Events API.
@@ -135,4 +135,4 @@
             description: OK
         tags:
         - Events
-  definitions: []
+  definition
