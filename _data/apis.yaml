@@ -61,5 +61,5 @@ include:
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/smartbear-software/apis.yaml
 - name: StatusPage.io
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/apis.yaml
-- name: Uptrend
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/uptrend/apis.yaml
+- name: Uptrends
+  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/uptrends/apis.yaml
