@@ -1,4 +1,4 @@
-- name: Runscope
+me: Runscope
   description: Runscope was started with the idea that depending on a web service API
     in a mobile or web application should be as easy as depending on code running locally.
     We&rsquo;ve assembled a team of API, infrastructure and developer experience experts
@@ -146,4 +146,4 @@
   maintainers:
   - FN: Kin Lane
     x-twitter: apievangelist
-    email: info@apievangelist.com
+    email: info@apievangelis
