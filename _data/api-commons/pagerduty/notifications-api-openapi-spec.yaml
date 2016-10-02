@@ -1,7 +1,9 @@
 swagger: "2.0"
 info:
   title: Notifications API
+  description: The Notifications API.
   version: 1.0.0
+host: api.serverdensity.io.
 schemes:
 - http
 produces:
@@ -47,4 +49,40 @@ paths:
           description: OK
       tags:
       - Notifications
+  /notifications/recipients:
+    "":
+      summary: Creating a recipient
+      description: Create recipients for your alert notifications
+      operationId: creating-a-recipient
+      parameters:
+      - in: body
+        name: channel
+        description: Channel name for chat integrations
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: name
+        description: The name of your notification integration
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: token
+        description: Your integration API token
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: type
+        description: The type of notification integration
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: url
+        description: URL for webhook integrations
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Metrics
 definitions: []
