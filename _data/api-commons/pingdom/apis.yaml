@@ -7,9 +7,9 @@ description: Pingdom is a service that tracks the uptime, downtime, and performa
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Analysis API
@@ -143,6 +143,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/traceroute-api-openapi-spec.yaml
 x-common:
+- type: x-base-url-for-api
+  url: https://api.pingdom.com
 - type: x-blog
   url: http://royal.pingdom.com/
 - type: x-blog-rss-feed
