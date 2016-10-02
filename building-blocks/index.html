@@ -10,7 +10,7 @@ title: 'API Monitoring News'
 		<span style="font-size: 18px; font-weight: bold;">{{ block.category_name }}</span>
 		<ul>
 			{% for building_block in block.building_blocks %}
-				<li><strong>building_block.name</strong> - building_block.about</li>
+				<li><strong>{{ building_block.name }}</strong> - {{ building_block.about }}</li>
 			{% endfor %}
 		</ul>
 	</li>
