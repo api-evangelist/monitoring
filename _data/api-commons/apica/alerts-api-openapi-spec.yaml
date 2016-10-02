@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Alerts API
     description: The Alerts API.
@@ -204,4 +204,4 @@
             description: OK
         tags:
         - Alerts
-  definitions: []
+  definition
