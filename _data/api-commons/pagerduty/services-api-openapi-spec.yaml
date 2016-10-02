@@ -1,1 +1,191 @@
-~
+swagger: "2.0"
+info:
+  title: Services API
+  version: 1.0.0
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /services:
+    get:
+      summary: List services
+      description: List existing services.
+      operationId: list-existing-services
+      parameters:
+      - in: query
+        name: include[]
+        description: Array of additional details to include.
+      - in: query
+        name: No Name
+      - in: query
+        name: query
+        description: Filters the result, showing only the services whose name or service_key
+          matches the query.
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+    post:
+      summary: Create a service
+      description: Create a new service.
+      operationId: create-a-new-service
+      parameters:
+      - in: body
+        name: service
+        description: The service to be created
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+    x-description:
+      summary: L
+      description: L
+      operationId: L
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+  /services/{id}:
+    delete:
+      summary: Delete a service
+      description: Delete an existing service. Once the service is deleted, it will
+        not be accessible from the web UI and new incidents wont be able to be created
+        for this service.
+      operationId: delete-an-existing-service-once-the-service-is-deleted-it-will-not-be-accessible-from-the-web-ui-and
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+    get:
+      summary: Get a service
+      description: Get details about an existing service.
+      operationId: get-details-about-an-existing-service
+      parameters:
+      - in: query
+        name: include[]
+        description: Array of additional details to include.
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+    put:
+      summary: Update a service
+      description: Update an existing service.
+      operationId: update-an-existing-service
+      parameters:
+      - in: query
+        name: No Name
+      - in: body
+        name: service
+        description: The service to be updated.
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+    x-description:
+      summary: M
+      description: M
+      operationId: M
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+  /services/{id}/integrations:
+    post:
+      summary: Create a new integration
+      description: Create a new integration belonging to a service.
+      operationId: create-a-new-integration-belonging-to-a-service
+      parameters:
+      - in: body
+        name: integration
+        description: The integration to be created
+        schema:
+          $ref: '#/definitions/holder'
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service Integrations
+    x-description:
+      summary: C
+      description: C
+      operationId: C
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service Integrations
+  /services/{id}/integrations/{integration_id}:
+    get:
+      summary: View an integration
+      description: Get details about an integration belonging to a service.
+      operationId: get-details-about-an-integration-belonging-to-a-service
+      parameters:
+      - in: query
+        name: include[]
+        description: Array of additional details to include.
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service Integrations
+    put:
+      summary: Update an existing integration
+      description: Update an integration belonging to a service.
+      operationId: update-an-integration-belonging-to-a-service
+      parameters:
+      - in: body
+        name: integration
+        description: The integration to be updated
+        schema:
+          $ref: '#/definitions/holder'
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service Integrations
+    x-description:
+      summary: V
+      description: V
+      operationId: V
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service Integrations
+  /services/{id}/integrations/{integration_id}/regenerate_key:
+    x-description:
+      summary: R
+      description: R
+      operationId: R
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service Integrations
+definitions: []
