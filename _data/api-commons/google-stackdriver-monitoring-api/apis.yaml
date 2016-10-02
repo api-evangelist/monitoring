@@ -8,9 +8,9 @@ description: Google Stackdriver provides powerful monitoring, logging, and diagn
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-stackdriver.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/google-stackdriver-monitoring-api/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Stackdriver Debugger API
@@ -43,7 +43,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/google-stackdriver-monitoring-api/stackdriver-monitoring-api-openapi-spec.yaml
-x-common: []
+x-common:
+- type: x-portal
+  url: https://cloud.google.com/monitoring/api/v3/
 include: []
 maintainers:
 - FN: Kin Lane
