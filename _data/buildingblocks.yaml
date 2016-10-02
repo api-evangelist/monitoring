@@ -1,0 +1,839 @@
+- category_name: Core Details
+  building_blocks:
+  - building_block_id: EauIZEN32CoXwIpsi116mN4Z7r1c9Sa15s0uzla4QafEA117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Editor
+    about: Being able to edit the request being made as part of API monitoring process.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-editor.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: uqaLYQTxy41uBRhKsoI123JM4PjMuHRwKoGmF5KdWkb6U117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Retry
+    about: Being able to retry a specific request that has been made at previous timeframe.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-retry.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: a1VKpsHENNmrxZkmgeveqZ2qZiBe3fEd1168jLxGEJXP0117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Sharing
+    about: Allow the sharing of a specific request designated for monitoring.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-sharing.jpeg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: D0eZ7VLYnmajy2nDDWUIjspamSo68NpITb0WJLRaSzY117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Playback
+    about: Enable the playback of a specific request that has been made at previous
+      timeframe.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-play.jpg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 2I0gl2rSLQ74gv59iNkIe9zLWs0xNC6RQP116eqJx9vGg117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Scheduling
+    about: Allow the scheduling of when to run specific task at specific time(s).
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-scheduling.jpeg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: vyXWUwn3q7c5SJqwp5o4Q6TWmHMoGE8QHitEguw7KMo117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Compare
+    about: Being able to compare to requests against each other.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-compare.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: Wo116IXImgJ2sykWr51M8b3SWG98rnyhigTkOno4BpOQU117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Scripting
+    about: The ability to script against a specific request.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-html-code.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: Bkp116OvNL9fXgjH5C9kygMEpZGo30jRqr4crRSkEzrkY117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Automation
+    about: The ability to automate the running of multiple requests.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-clock-gear.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 116twAHwsA123KtnzQWSGA7UVgFHwsqRjg8YKB1168iCqTchA117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Request Commenting
+    about: Allowing the ability to comment on a specific request.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-chat.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: sxGHjJa116yXo3pQla6ZMMo1GVxFplb116Tl9ZjZNozd123mE117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Service Availability
+    about: Making sure a service is available.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 62gvNNLmfXjZLRpEGr4NPqGa116sHbrdHiOd605M7hL1E117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Latency Measurement
+    about: Measuring the latency associated with a specific request.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-speedometer.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: jwtv0k8Ma3116uaay1pWo8WYNrcSIKh6tY6jeIIm0gNnA117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Response Header Validation
+    about: Being able to validate for a specific header for a request.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-validation.jpg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: FNbVF116fJeYOAU49VNj1lZgA123hRf7123AlOye6UD116dwUi8117
+    building_block_category_id: VZ123ak4ePukerTqa8ebyKVKPIgl8NxAcJ123LPOyU7R5AA117
+    name: Response Body Validation
+    about: Being able to validate the content of the body for a request.
+    category_id: "167"
+    category: Core Details
+    category_about: What are the core elements to API monitoring that I am finding
+      used by API providers, and offered by API service providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-validation.jpg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: Management Monitoring
+  building_blocks:
+  - building_block_id: E123VMmoJVT2nelT1jwXOH9IQWCKZEC5UefANxk116s92ZU117
+    building_block_category_id: ttmN815Bei1H5zV55P7hoXJOsahzD6XC9mvewlHcx1Q117
+    name: Documentation Monitoring
+    about: Keeping track of changes to an APIs documentation
+    category_id: "168"
+    category: Management Monitoring
+    category_about: Monitoring is not always about monitoring the APIs themselves.
+      This section explores the monitoring of other aspects of API operations.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-documentation.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: MNDoAtpxj12384NS8e123p8cFxaGe4e1231161239Pllfx1CoG123Dk117
+    building_block_category_id: ttmN815Bei1H5zV55P7hoXJOsahzD6XC9mvewlHcx1Q117
+    name: Pricing Monitoring
+    about: Notifications when an API platforms pricing changes
+    category_id: "168"
+    category: Management Monitoring
+    category_about: Monitoring is not always about monitoring the APIs themselves.
+      This section explores the monitoring of other aspects of API operations.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-dollar-sign.jpg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: qUJclcT8FeRfUI8ahTw123aQWWof123wPn9sVVRSXGLF116jY117
+    building_block_category_id: ttmN815Bei1H5zV55P7hoXJOsahzD6XC9mvewlHcx1Q117
+    name: Terms of Service Monitoring
+    about: Updates when a company changes the terms of service&nbsp;
+    category_id: "168"
+    category: Management Monitoring
+    category_about: Monitoring is not always about monitoring the APIs themselves.
+      This section explores the monitoring of other aspects of API operations.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-terms-conditions.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: Targeted Monitoring
+  building_blocks:
+  - building_block_id: 5ST7nBHwRZE2gcoQ4azadUxdpggwYZwb0KzKCl2C33g117
+    building_block_category_id: zOLfDP3Xo9Rd6fW0ZhczhPiI1tj123wBgkXTyYdQAwfyc117
+    name: Provider Based Monitoring
+    about: Being able to monitor an LAPI from a particular provider.
+    category_id: "169"
+    category: Targeted Monitoring
+    category_about: How can we monitor from various dimensions like location or with
+      specific providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-api-provider.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: vrMXbaS08eIoljYhhTEMwTmNFyOvxTjHe116RFgOAj9GY117
+    building_block_category_id: zOLfDP3Xo9Rd6fW0ZhczhPiI1tj123wBgkXTyYdQAwfyc117
+    name: Region Based Monitoring
+    about: Begin able to monitor from a specific geographical region.
+    category_id: "169"
+    category: Targeted Monitoring
+    category_about: How can we monitor from various dimensions like location or with
+      specific providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-region.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: kuSa116GFgOlx9hKXcQSWNjLKXLCwGyBWE0hTmv123nM1Xc117
+    building_block_category_id: zOLfDP3Xo9Rd6fW0ZhczhPiI1tj123wBgkXTyYdQAwfyc117
+    name: Public Monitoring
+    about: Monitoring of public APIs, and providing the information for others to
+      use.
+    category_id: "169"
+    category: Targeted Monitoring
+    category_about: How can we monitor from various dimensions like location or with
+      specific providers.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-people.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: Authentication
+  building_blocks:
+  - building_block_id: Z9tU0v8pkg9h3IP2K2ZbhLUWtGOGe7ilNHxbkbF3Gu8117
+    building_block_category_id: j901p7VPCsrXzRL123poxvaAkr4yXBSTD9nuossZjkTlI117
+    name: Basic Auth
+    about: Using Basic Auth, a username and password for authentication.
+    category_id: "170"
+    category: Authentication
+    category_about: What authentication approaches are available to us? Do our API
+      monitor tools and services cover all the authentication schemes we will use
+      across platforms.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-basic-auth.jpg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: wRR3zofaYINbFiYBEo9HlLSp4SnHrtB123Bmpe5fWLa3g117
+    building_block_category_id: j901p7VPCsrXzRL123poxvaAkr4yXBSTD9nuossZjkTlI117
+    name: OAuth
+    about: Using OAuth for platform authentication.
+    category_id: "170"
+    category: Authentication
+    category_about: What authentication approaches are available to us? Do our API
+      monitor tools and services cover all the authentication schemes we will use
+      across platforms.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/oauth-logo.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: HRnc0yXOiPMKAfCqDYK9DbDhu5RBlTUx4lL1Xh9123qQo117
+    building_block_category_id: j901p7VPCsrXzRL123poxvaAkr4yXBSTD9nuossZjkTlI117
+    name: API Keys
+    about: Using API keys for authentication.
+    category_id: "170"
+    category: Authentication
+    category_about: What authentication approaches are available to us? Do our API
+      monitor tools and services cover all the authentication schemes we will use
+      across platforms.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-key.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: Utility
+  building_blocks:
+  - building_block_id: rMTb123KBR9wlYlwa123ucfGbcAH6123MvYU30Yusp7oefIis117
+    building_block_category_id: NBKyEJQePQARNsDEudUHDAWH57Gg8wOeHCOiGY7VsfY117
+    name: Collections
+    about: Being able to organize requests into collections.
+    category_id: "171"
+    category: Utility
+    category_about: What are the other utilities available to use as part of the monitoring
+      process.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-collection.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 0U760d46I5cTDq8GRetYgTdHshZ3b2CwIvsKubJYR0Y117
+    building_block_category_id: NBKyEJQePQARNsDEudUHDAWH57Gg8wOeHCOiGY7VsfY117
+    name: Virtualize
+    about: The ability to virtualize any single or group of requests.
+    category_id: "171"
+    category: Utility
+    category_about: What are the other utilities available to use as part of the monitoring
+      process.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-virtualization.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: wcVlzzsyv9OyqJ983oaM8lce2eMJkfpY3XW7Ivyf1VI117
+    building_block_category_id: NBKyEJQePQARNsDEudUHDAWH57Gg8wOeHCOiGY7VsfY117
+    name: Localhost
+    about: Allow for executing monitoring requests using localhost.
+    category_id: "171"
+    category: Utility
+    category_about: What are the other utilities available to use as part of the monitoring
+      process.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-localhost.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: ODl116NJHDMaOo6jXrClvIV9KKCZjQilFi1wBSNSlIa04117
+    building_block_category_id: NBKyEJQePQARNsDEudUHDAWH57Gg8wOeHCOiGY7VsfY117
+    name: Teams
+    about: Enable the ability for teams to work together and share monitoring.
+    category_id: "171"
+    category: Utility
+    category_about: What are the other utilities available to use as part of the monitoring
+      process.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-team-male-female.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 0VbKZhk5RF5aMYcdVkuBCsAyTfqoNiLhJVossS6AE116U117
+    building_block_category_id: NBKyEJQePQARNsDEudUHDAWH57Gg8wOeHCOiGY7VsfY117
+    name: API
+    about: Providing an API for API monitoring tools.
+    category_id: "171"
+    category: Utility
+    category_about: What are the other utilities available to use as part of the monitoring
+      process.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/api-commons-icon.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: Notification
+  building_blocks:
+  - building_block_id: idvk6l69116DF6SwNf8rnNHvX4iLsYN4C0L116VhGLDQh4w117
+    building_block_category_id: yw7116PcVjNNuPXOUYD2cj5hm4TOiNMlZvN123icj8Q9123gY117
+    name: SMS
+    about: Allow notifications to be received by SMS.
+    category_id: "172"
+    category: Notification
+    category_about: Monitoring is all about awareness, so notifications is an important
+      part. What are some of the common ways API monitoring notifies either provider
+      or consumers of an API.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-sms-2.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: ZKRv8yPlGTb116c7iIe4ExfUUQ5fKCMp47oKTxHQZcP3k117
+    building_block_category_id: yw7116PcVjNNuPXOUYD2cj5hm4TOiNMlZvN123icj8Q9123gY117
+    name: Email
+    about: Allow notifications to be received by email.
+    category_id: "172"
+    category: Notification
+    category_about: Monitoring is all about awareness, so notifications is an important
+      part. What are some of the common ways API monitoring notifies either provider
+      or consumers of an API.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-email.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: Hcf6zOfDNNx4Ysms6AQYLZf4123wrbCy116aut88GEv8ick117
+    building_block_category_id: yw7116PcVjNNuPXOUYD2cj5hm4TOiNMlZvN123icj8Q9123gY117
+    name: Phone
+    about: Allow notifications to be received by Phone.
+    category_id: "172"
+    category: Notification
+    category_about: Monitoring is all about awareness, so notifications is an important
+      part. What are some of the common ways API monitoring notifies either provider
+      or consumers of an API.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-iphone.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: x5wRtnpwmbchMHLNpvXFp1wkvASS123IYPWbEXryGOMQY117
+    building_block_category_id: yw7116PcVjNNuPXOUYD2cj5hm4TOiNMlZvN123icj8Q9123gY117
+    name: Webhook
+    about: Allow notifications to be received by webhook.
+    category_id: "172"
+    category: Notification
+    category_about: Monitoring is all about awareness, so notifications is an important
+      part. What are some of the common ways API monitoring notifies either provider
+      or consumers of an API.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/webhooks.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: Import
+  building_blocks:
+  - building_block_id: 1VjfgTc350TkWfT3nyPZChjSktAnkPr5dYTltC6MB5g117
+    building_block_category_id: m7Snb00Om1fzw8116Rjgj1uMFnPCJbx116kYm5f0BrBMz44117
+    name: Postman
+    about: Allow for importing using Postman Collections.
+    category_id: "173"
+    category: Import
+    category_about: What options are available for importing, and exporting of API
+      monitoring test, details or other aspects of API monitoring. There are some
+      common formats emerging, that are used for allowing the import and export API
+      monitors.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-postman.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: iyOXfwdn1AJV39VpXA1Jyklg3123ObTb7OqpBsNSPkmWk117
+    building_block_category_id: m7Snb00Om1fzw8116Rjgj1uMFnPCJbx116kYm5f0BrBMz44117
+    name: OpenAPI Spec
+    about: Allow for importing using OpenAPI Spec.
+    category_id: "173"
+    category: Import
+    category_about: What options are available for importing, and exporting of API
+      monitoring test, details or other aspects of API monitoring. There are some
+      common formats emerging, that are used for allowing the import and export API
+      monitors.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-swagger-round.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: qnvtx7YwJgNTDcZSgRgdTYTGE7123fys5m116nlTOGiHxXs117
+    building_block_category_id: m7Snb00Om1fzw8116Rjgj1uMFnPCJbx116kYm5f0BrBMz44117
+    name: RAML
+    about: Allow for importing using RAML.
+    category_id: "173"
+    category: Import
+    category_about: What options are available for importing, and exporting of API
+      monitoring test, details or other aspects of API monitoring. There are some
+      common formats emerging, that are used for allowing the import and export API
+      monitors.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-raml.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: llPZeLk5S107FKlobCHseU7xsH01vqllJ116yQ8DglPYE117
+    building_block_category_id: m7Snb00Om1fzw8116Rjgj1uMFnPCJbx116kYm5f0BrBMz44117
+    name: HAR
+    about: Allow for importing using HAR.
+    category_id: "173"
+    category: Import
+    category_about: What options are available for importing, and exporting of API
+      monitoring test, details or other aspects of API monitoring. There are some
+      common formats emerging, that are used for allowing the import and export API
+      monitors.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-har-file.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: Reporting
+  building_blocks:
+  - building_block_id: 116Rlg8hdHRY5heSFEkMCyDcDWq6YBV96JpN9ra3f7SFE117
+    building_block_category_id: 9HG9PuXOK3EwwGtj0A9OtS4R116h123sz592TW116wQcexRT4117
+    name: Dashboard
+    about: Providing a dashboard to review monitors.
+    category_id: "174"
+    category: Reporting
+    category_about: Reporting is an essential step when it comes to monitoring, providing
+      real-time to historical access to API monitoring information and visualizations.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-status-dashboard.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 68b90sSprXiVipIicjaB8ZYtqQxsdqu3ilhljN4jBj0117
+    building_block_category_id: 9HG9PuXOK3EwwGtj0A9OtS4R116h123sz592TW116wQcexRT4117
+    name: Analytics
+    about: Providing analytics around API monitoring.
+    category_id: "174"
+    category: Reporting
+    category_about: Reporting is an essential step when it comes to monitoring, providing
+      real-time to historical access to API monitoring information and visualizations.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: ""
+    image_width: "100"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: Y116CCi3uvEpZbFF6kyDdpCXC7VxN1LdRNzgBNZUq9jXg117
+    building_block_category_id: 9HG9PuXOK3EwwGtj0A9OtS4R116h123sz592TW116wQcexRT4117
+    name: Embeddable
+    about: Providing emeddable tools for API monitoring.
+    category_id: "174"
+    category: Reporting
+    category_about: Reporting is an essential step when it comes to monitoring, providing
+      real-time to historical access to API monitoring information and visualizations.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-embeddable.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+- category_name: 3rd Party
+  building_blocks:
+  - building_block_id: RNuZNgCLdq31165F6VmbOqL1233RY9gMaKCqUi6UEsIII8c117
+    building_block_category_id: kZtO9oCOUcxz8P1bV1hkSMnME3OxANoP9W4xDiHd4ZM117
+    name: Slack
+    about: Provide integration with Slack.
+    category_id: "175"
+    category: 3rd Party
+    category_about: APIs are all about 3rd party integration, and it is common for
+      API monitoring services to provide ready to go integrations, to integrate services
+      with other platforms you depend on. These are some of the common 3rd party integration
+      elements present in API monitoring services.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/slack-icon.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: RxVRhY5oQLfpb0dwJ116FE3cyJJI116yR7A85ex123a1l3tbE117
+    building_block_category_id: kZtO9oCOUcxz8P1bV1hkSMnME3OxANoP9W4xDiHd4ZM117
+    name: PagerDuty
+    about: Provide integration with PagerDuty.
+    category_id: "175"
+    category: 3rd Party
+    category_about: APIs are all about 3rd party integration, and it is common for
+      API monitoring services to provide ready to go integrations, to integrate services
+      with other platforms you depend on. These are some of the common 3rd party integration
+      elements present in API monitoring services.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/pager-duty-icon.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 3g4FwVATd123p123hPj63ufmnUlmcuvXMSVEPNlwu6rWd6E117
+    building_block_category_id: kZtO9oCOUcxz8P1bV1hkSMnME3OxANoP9W4xDiHd4ZM117
+    name: VictorOps
+    about: Provide integration with VictorOps.
+    category_id: "175"
+    category: 3rd Party
+    category_about: APIs are all about 3rd party integration, and it is common for
+      API monitoring services to provide ready to go integrations, to integrate services
+      with other platforms you depend on. These are some of the common 3rd party integration
+      elements present in API monitoring services.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/victorops-icon.jpeg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: mIV2N9WVLkY7PP3ULfkcibVkkQ1169OOZXFNwV7VIPthc117
+    building_block_category_id: kZtO9oCOUcxz8P1bV1hkSMnME3OxANoP9W4xDiHd4ZM117
+    name: HipChat
+    about: Provide integration with HipChat.
+    category_id: "175"
+    category: 3rd Party
+    category_about: APIs are all about 3rd party integration, and it is common for
+      API monitoring services to provide ready to go integrations, to integrate services
+      with other platforms you depend on. These are some of the common 3rd party integration
+      elements present in API monitoring services.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/hip-chat-icon.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: U6hwrPJwBGeW6lY8njKn1161231416UUUkDK6JBAzt4t2sg117
+    building_block_category_id: kZtO9oCOUcxz8P1bV1hkSMnME3OxANoP9W4xDiHd4ZM117
+    name: Flowdock
+    about: Provide integration with Flowdock
+    category_id: "175"
+    category: 3rd Party
+    category_about: APIs are all about 3rd party integration, and it is common for
+      API monitoring services to provide ready to go integrations, to integrate services
+      with other platforms you depend on. These are some of the common 3rd party integration
+      elements present in API monitoring services.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/flowdock-icon.jpeg
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
+  - building_block_id: 8JSY4wAKxbyYrs123PZWu123senM5ZGgouTAv8HhznMt47c117
+    building_block_category_id: kZtO9oCOUcxz8P1bV1hkSMnME3OxANoP9W4xDiHd4ZM117
+    name: OpsGenie
+    about: Provide integration with OpsGenie.
+    category_id: "175"
+    category: 3rd Party
+    category_about: APIs are all about 3rd party integration, and it is common for
+      API monitoring services to provide ready to go integrations, to integrate services
+      with other platforms you depend on. These are some of the common 3rd party integration
+      elements present in API monitoring services.
+    category_image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-heart-monitor.png
+    category_hex: '#00933C'
+    image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/opsgenie-icon.png
+    image_width: "0"
+    sort_order: "0"
+    organizations: []
+    apis: []
+    links: []
+    tools: []
+    questions: []
