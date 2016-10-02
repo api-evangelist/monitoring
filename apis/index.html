@@ -7,6 +7,9 @@ title: The API Stack
 {% for folder in site.data %}
   {% for item in folder %}
     {% assign file = item %}
+
+    --{{ file }}--
+    
     {% if file.apis != null %}
       {% assign masterapisjson = file.apis %}
 
