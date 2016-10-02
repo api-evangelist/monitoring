@@ -1,7 +1,9 @@
 swagger: "2.0"
 info:
   title: Services API
+  description: The Services API.
   version: 1.0.0
+host: api.serverdensity.io.
 schemes:
 - http
 produces:
@@ -9,6 +11,311 @@ produces:
 consumes:
 - application/json
 paths:
+  /inventory/services:
+    "":
+      summary: Creating a service
+      description: ""
+      operationId: creating-a-service
+      parameters:
+      - in: body
+        name: auth
+        description: Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;,
+          &quot;password&quot;:&quot;password&quot;}
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: body
+        description: HTTP Check - Content of the HTTP requestbody
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: checkLocations
+        description: A JSON list of locations to check from e.g. [&quot;lon&quot;,
+          &quot;dub&quot;]. Each location has its own u201cAPI IDu201d which is noted
+          on the locations list. Location ID&#39;s can be found on our support site
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: checkMethod
+        description: 'HTTP Check - The HTTP method used to issue the check: either
+          GET, POST, PUT or DELETE. Required for HTTP check, irrelevant for TCP.'
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: checkType
+        description: 'The type of check: either http or tcp'
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: checkUrl
+        description: HTTP Check - The URL to issue the request to.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: data
+        description: TCP Check - The content to send when opening the TCP socket
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: group
+        description: The group the service belongs to. If this is empty itu2019s set
+          to null.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: headers
+        description: 'HTTP Check - headers to include e.g. {&quot;User-Agent&quot;:
+          &quot;Thomas the Tank Engine&quot;}'
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: host
+        description: TCP Check - The hostname or IP address to issue the TCP check
+          to
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: name
+        description: The display name for the service.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: port
+        description: TCP Check - The port number to issue the TCP check to
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: slowThreshold
+        description: HTTP Check - Request time millisecond threshold after which service
+          is deemed slow.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: tags
+        description: A JSON list of tag IDs.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: timeout
+        description: How many seconds to wait until timing out. Max 30.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: body
+        name: token
+        description: Your API token.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: query
+        name: token
+        description: Your API token.
+        type: string
+      - in: body
+        name: validateCert
+        description: HTTP Check - Whether to validate the SSL certificate or not
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+  /inventory/services/groups/?token=token:
+    "":
+      summary: Listing service groups
+      description: ""
+      operationId: listing-service-groups
+      parameters:
+      - in: path
+        name: token
+        description: Your API token
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
+  /inventory/services/serviceId:
+    "":
+      summary: Updating a service
+      description: ""
+      operationId: updating-a-service
+      parameters:
+      - in: path
+        name: auth
+        description: Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;,
+          &quot;password&quot;:&quot;password&quot;}
+        type: string
+      - in: body
+        name: auth
+        description: Basic HTTP auth username and password. e.g. {&quot;username&quot;:&quot;Thomas&quot;,
+          &quot;password&quot;:&quot;password&quot;}
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: body
+        description: HTTP Check - Content of the HTTP request body
+        type: string
+      - in: body
+        name: body
+        description: HTTP Check - Content of the HTTP request body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: checkLocations
+        description: A JSON list of locations to check from e.g. [&quot;lon&quot;,
+          &quot;dub&quot;]. Each location has its own &quot;API ID&quot; which is
+          noted on the locations list.
+        type: string
+      - in: body
+        name: checkLocations
+        description: A JSON list of locations to check from e.g. [&quot;lon&quot;,
+          &quot;dub&quot;]. Each location has its own &quot;API ID&quot; which is
+          noted on the locations list.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: checkMethod
+        description: 'HTTP Check - The HTTP method used to issue the check: either
+          GET or POST.'
+        type: string
+      - in: body
+        name: checkMethod
+        description: 'HTTP Check - The HTTP method used to issue the check: either
+          GET or POST.'
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: checkType
+        description: 'The type of check: either http or tcp'
+        type: string
+      - in: body
+        name: checkType
+        description: 'The type of check: either http or tcp'
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: checkUrl
+        description: HTTP Check - The URL to issue the request to.
+        type: string
+      - in: body
+        name: checkUrl
+        description: HTTP Check - The URL to issue the request to.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: data
+        description: TCP Check - The content to send when opening the TCP socket
+        type: string
+      - in: body
+        name: data
+        description: TCP Check - The content to send when opening the TCP socket
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: group
+        description: The group the service belongs to.
+        type: string
+      - in: body
+        name: group
+        description: The group the service belongs to.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: headers
+        description: 'HTTP headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas
+          the Tank Engine&quot;}'
+        type: string
+      - in: body
+        name: headers
+        description: 'HTTP headers to include e.g. {&quot;User-Agent&quot;: &quot;Thomas
+          the Tank Engine&quot;}'
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: host
+        description: TCP Check - The hostname or IP address to issue the TCP check
+          to
+        type: string
+      - in: body
+        name: host
+        description: TCP Check - The hostname or IP address to issue the TCP check
+          to
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: name
+        description: The display name for the service.
+        type: string
+      - in: body
+        name: name
+        description: The display name for the service.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: port
+        description: TCP Check - The port number to issue the TCP check to
+        type: string
+      - in: body
+        name: port
+        description: TCP Check - The port number to issue the TCP check to
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: serviceId
+        description: The ID of your service.
+        type: string
+      - in: path
+        name: slowThreshold
+        description: HTTP Check - Request time millisecond threshold after which service
+          is deemed slow.
+        type: string
+      - in: body
+        name: slowThreshold
+        description: HTTP Check - Request time millisecond threshold after which service
+          is deemed slow.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: tags
+        description: A JSON list of tag IDs.
+        type: string
+      - in: body
+        name: tags
+        description: A JSON list of tag IDs.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: timeout
+        description: How many seconds to wait until timing out. Max 30.
+        type: string
+      - in: body
+        name: timeout
+        description: How many seconds to wait until timing out. Max 30.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: token
+        description: Your API token.
+        type: string
+      - in: body
+        name: token
+        description: Your API token.
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: validateCert
+        description: Whether to validate the SSL certificate or not
+        type: string
+      - in: body
+        name: validateCert
+        description: Whether to validate the SSL certificate or not
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Services
   /services:
     get:
       summary: List services
