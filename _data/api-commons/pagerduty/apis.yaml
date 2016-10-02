@@ -7,9 +7,9 @@ description: 'PagerDuty is the 911 dispatch system for IT, helping operations en
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pagerduty/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Abilities API
@@ -163,6 +163,8 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pagerduty/vendors-api-openapi-spec.yaml
 x-common:
+- type: x-base-url-for-api
+  url: https://acme.pagerduty.com/api/
 - type: x-blog
   url: http://blog.pagerduty.com/
 - type: x-blog-rss-feed
