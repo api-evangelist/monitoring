@@ -5,5 +5,8 @@ title: The API Stack
 
 {% for api in site.data.apis %}
   {{ api }}
-  <hr />
+  {% for include in api.include %}
+  {{ include.name }} - {{ include.url }}
+  <hr /><br />
+  {% endfor %}
 {% endfor %}
