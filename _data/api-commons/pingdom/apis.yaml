@@ -12,16 +12,6 @@ modified: "2016-10-01"
 url: http://monitoring.apievangelist.com
 specificationVersion: "0.14"
 apis:
-- name: Actions API
-  description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
-  humanURL: ""
-  baseURL: ""
-  tags:
-  - Monitoring
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/actions-api-openapi-spec.yaml
 - name: Analysis API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
@@ -142,7 +132,7 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/summary-api-openapi-spec.yaml
-- name: Traceroute
+- name: Traceroute API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/456_logo.png
   humanURL: ""
@@ -151,7 +141,7 @@ apis:
   - Monitoring
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/traceroute-openapi-spec.yaml
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingdom/traceroute-api-openapi-spec.yaml
 x-common:
 - type: x-blog
   url: http://royal.pingdom.com/
