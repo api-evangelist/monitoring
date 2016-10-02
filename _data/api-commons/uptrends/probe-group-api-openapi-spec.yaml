@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Probe Group API
     description: The Probe Group API.
@@ -119,4 +119,4 @@
             description: OK
         tags:
         - Probe Groups
-  definitions: []
+  definition
