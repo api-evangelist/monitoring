@@ -5,9 +5,9 @@ description: Traditional monitoring services were designed long before APIs beca
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-science/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Check API
@@ -83,7 +83,11 @@ apis:
 x-common:
 - type: x-base-url-for-api
   url: http://api.apiscience.com
-- type: x-base-url-for-portal
+- type: x-blog
+  url: https://www.apiscience.com/blog/
+- type: x-blog-rss-feed
+  url: https://www.apiscience.com/blog/feed/
+- type: x-portal
   url: https://www.apiscience.com/docs/api
 - type: x-dedicated-plans--pricing-page
   url: https://www.apiscience.com/pricing
