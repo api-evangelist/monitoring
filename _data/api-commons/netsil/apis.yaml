@@ -9,12 +9,20 @@ description: 'Netsil automatically discovers your application&rsquo;s topology a
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/netsil-logo.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/netsil/apis.yaml
 specificationVersion: "0.14"
 apis: []
 x-common:
+- type: x-blog
+  url: https://blog.netsil.com
+- type: x-blog-rss-feed
+  url: https://blog.netsil.com/feed
+- type: x-github
+  url: https://github.com/netsil
+- type: x-twitter
+  url: https://twitter.com/Netsil_HQ
 - type: x-portal
   url: http://netsil.com/
 include: []
