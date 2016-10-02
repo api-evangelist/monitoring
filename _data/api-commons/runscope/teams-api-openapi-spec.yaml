@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Teams API
     version: 1.0.0
@@ -182,4 +182,4 @@
             description: OK
         tags:
         - ""
-  definitions: []
+  definition
