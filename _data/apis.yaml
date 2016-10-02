@@ -51,8 +51,6 @@ include:
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pingometer/apis.yaml
 - name: redcanary
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/apis.yaml
-- name: RightAPI
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/rightapi/apis.yaml
 - name: Runscope
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/runscope/apis.yaml
 - name: Server Density
