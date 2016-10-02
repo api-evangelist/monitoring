@@ -8,9 +8,9 @@ description: Red Canary continuously monitors your endpoints, reviews suspicious
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/red-canary-logo.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Carbon Black Client API
@@ -54,6 +54,12 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/redcanary/carbon-black-server-api-openapi-spec.yaml
 x-common:
+- type: x-blog
+  url: https://www.redcanary.co/blog/
+- type: x-blog-rss-feed
+  url: http://www.redcanary.co/feed
+- type: x-twitter
+  url: https://twitter.com/redcanaryco
 - type: x-portal
   url: https://www.redcanary.co/
 include: []
