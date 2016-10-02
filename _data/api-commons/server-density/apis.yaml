@@ -9,9 +9,9 @@ description: Server Density is a web application that monitors important server 
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/server-density-logo.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/server-density/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Alerts API
@@ -137,6 +137,12 @@ apis:
 x-common:
 - type: x-blog
   url: http://blog.serverdensity.com/
+- type: x-blog-rss-feed
+  url: http://feeds.feedburner.com/serverdensity
+- type: x-github
+  url: https://github.com/serverdensity
+- type: x-twitter
+  url: https://twitter.com/serverdensity
 - type: x-portal
   url: http://www.serverdensity.com/
 include: []
