@@ -8,15 +8,14 @@ title: The API Stack
   {% assign removeurl = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/api-commons/' %}
   {% assign thisurl = include.url | replace: removeurl %}
   {% assign thisurl = thisurl | replace: '/apis.yaml' %}
-  {{ include.name }} - {{ thisurl }}
+  <h1>{{ include.name }}</h1>
   {% for org in site.data.api-commons %}
     {% assign index = org %}
     {{ thisurl }} == {{ index[0] }}<br />
     {% if thisurl == index[0] %}
-      {% assign masterapisjson = index.apis %}
-      2<br /><hr />
-
-
+      {% assign masterapisjson = index %}
+      {{ masterapisjson }}
+      <br /><hr />
     {% endif %}
   {% endfor %}
   {% endfor %}
