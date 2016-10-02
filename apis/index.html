@@ -3,9 +3,8 @@ layout: page
 title: The API Stack
 ---
 
-<table cellpadding="3" cellspacing="2" width="90%" border="0" style="margin-top: 10px;">
 {% for api in site.data.apis.include %}
-  {{ api }}
+  <strong>{{ api.name }}</strong>
+  {{ api.url }}
   <hr />
 {% endfor %}
-</table>
