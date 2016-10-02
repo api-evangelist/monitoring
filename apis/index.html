@@ -13,11 +13,9 @@ title: The API Stack
   {% for org in site.data.api-commons %}
     {% assign index = org %}
     {% if thisurl == index[0] %}
-      {% assign masterapisjson = index %}
+      {% assign apisjson = index %}
 
         {% assign common_api_action_url = '' %}
-
-        {% for apisjson in masterapisjson %}
 
           {% if apisjson.specificationVersion != null %}
 
@@ -281,7 +279,7 @@ title: The API Stack
           </td>
         </tr>
           {% endif %}
-        {% endfor %}
+
 
     {% endif %}
   {% endfor %}
