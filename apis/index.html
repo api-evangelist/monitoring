@@ -15,8 +15,12 @@ title: The API Stack
 
     {% assign index = org %}
 
+    {{ thisurl }} == {{ index[0] }}<br />
+
     {% if thisurl == index[0] %}
+
       {{ apisjson }}
+
       {% assign apisjson = index[1].apis %}
       {% assign common_api_action_url = '' %}
 
