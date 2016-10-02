@@ -7,12 +7,20 @@ description: Nagios now known as Nagios Core, is a free and open source computer
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/nagios-logo
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/nagios/apis.yaml
 specificationVersion: "0.14"
 apis: []
 x-common:
+- type: x-blog
+  url: https://www.nagios.org/news/
+- type: x-blog-rss-feed
+  url: https://www.nagios.org/feed/
+- type: x-github
+  url: https://github.com/NagiosEnterprises
+- type: x-twitter
+  url: https://twitter.com/nagiosinc
 - type: x-portal
   url: https://www.nagios.org/
 include: []
