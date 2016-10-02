@@ -6,7 +6,13 @@ title: The API Stack
 {% for api in site.data.apis %}
   {{ api }}
   {% for include in api.include %}
-  {{ include.name }} - {{ include.url }}
+  {% assign removeurl = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/api-commons/' %}
+  {% assign thisurl = include.url | replace: removeurl %}
+  {{ include.name }} - {{ thisurl }}
+  {% for org in site.data.api-commons %}
+    {{ org }}
+    <br /><hr />
+  {% endfor %}
   <hr /><br />
   {% endfor %}
 {% endfor %}
