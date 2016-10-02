@@ -139,8 +139,10 @@ title: The API Stack
                           {% assign api_action_url = '' %}
                           {% assign openapi_json_spec_url = '' %}
                           {% assign openapi_yaml_spec_url = '' %}
+
                           {% for property in api.properties %}
 
+                          --{{ property.type }}--
 
                             {% assign thisname = apisjson.name | downcase %}
                             {% assign thisname = thisname | append:'/' %}
@@ -158,20 +160,8 @@ title: The API Stack
 
                             {% endif %}
 
-                            {% if property.type == 'x-openapi-spec-yaml' %}
+                            {% if property.type == 'x-openapi-spec' %}
                               {% assign openapi_yaml_spec_url = property.url %}
-                            {% endif %}
-
-                            {% if property.type == 'x-postman' %}
-                              {% assign postman_url = property.url %}
-                            {% endif %}
-
-                            {% if property.type == 'x-api-blueprint' %}
-                              {% assign api_blueprint_url = property.url %}
-                            {% endif %}
-
-                            {% if property.type == 'x-api-actions' %}
-                              {% assign api_action_url = property.url %}
                             {% endif %}
 
                           {% endfor %}
@@ -181,9 +171,9 @@ title: The API Stack
                               {{ api.name }}
                             </td>
                             <td align="right">
-                                <a href="{{ openapi_json_spec_url }}" target="_blank" title="OpenAPI Spec JSON">
+                                <!--<a href="{{ openapi_json_spec_url }}" target="_blank" title="OpenAPI Spec JSON">
                                   <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-swagger-round.png" width="25" align="right" />
-                                </a>
+                                </a>-->
                                 <a href="{{ openapi_yaml_spec_url }}" target="_blank" title="OpenAPI Spec Yaml">
                                   <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-yaml.png" width="25" align="right" />
                                 </a>
