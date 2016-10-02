@@ -11,8 +11,6 @@ tags:
 include:
 - name: Amazon CloudWatch
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/amazon-cloudwatch/apis.yaml
-- name: Apache Karaf
-  url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apache-karaf/apis.yaml
 - name: API Fortress
   url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/api-fortress/apis.yaml
 - name: API Owl
