@@ -10,7 +10,67 @@ created: "2016-10-01"
 modified: "2016-10-01"
 url: http://monitoring.apievangelist.com
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Components API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png
+  humanURL: http://doers.statuspage.io/api/v1/components/
+  baseURL: http://doers.statuspage.io/api/v1/components/
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/components-api-openapi-spec.yaml
+- name: Incidents API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png
+  humanURL: http://doers.statuspage.io/api/v1/incidents/
+  baseURL: http://doers.statuspage.io/api/v1/components/
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/incidents-api-openapi-spec.yaml
+- name: Metrics API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png
+  humanURL: http://doers.statuspage.io/api/v1/metrics/
+  baseURL: http://doers.statuspage.io/api/v1/components/
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/metrics-api-openapi-spec.yaml
+- name: Page Access User API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png
+  humanURL: http://doers.statuspage.io/api/v1/page_access_user/
+  baseURL: http://doers.statuspage.io/api/v1/components/
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/page-access-user-api-openapi-spec.yaml
+- name: Page API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png
+  humanURL: http://doers.statuspage.io/api/v1/page_profile/
+  baseURL: http://doers.statuspage.io/api/v1/components/
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/page-api-openapi-spec.yaml
+- name: Subscriber API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/status-page-io-icon.png
+  humanURL: http://doers.statuspage.io/api/v1/subscribers/
+  baseURL: http://doers.statuspage.io/api/v1/components/
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/statuspageio/subscriber-api-openapi-spec.yaml
 x-common: []
 include: []
 maintainers:
