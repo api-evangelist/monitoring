@@ -9,7 +9,7 @@ title: The API Stack
   {% assign thisurl = include.url | replace: removeurl %}
   {{ include.name }} - {{ thisurl }}
   {% for org in site.data.api-commons %}
-    {% if file.apis != null %}
+    {% if org.apis != null %}
     {{ org }}
     <br /><hr />
     {% endif %}
