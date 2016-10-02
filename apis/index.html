@@ -9,6 +9,7 @@ title: The API Stack
   {% assign thisurl = include.url | replace: removeurl %}
   {% assign thisurl = thisurl | replace: '/apis.yaml' %}
   <h1>{{ include.name }}</h1>
+  <table cellpadding="3" cellspacing="2" width="90%" border="0" style="margin-top: 10px;">
   {% for org in site.data.api-commons %}
     {% assign index = org %}
     {% if thisurl == index[0] %}
@@ -284,5 +285,6 @@ title: The API Stack
 
     {% endif %}
   {% endfor %}
+  </table>
   {% endfor %}
 {% endfor %}
