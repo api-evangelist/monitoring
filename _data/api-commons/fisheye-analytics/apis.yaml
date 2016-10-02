@@ -8,14 +8,18 @@ description: Fisheye Analytics is a Singaporean company that provides premium me
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1325_logo.jpg
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/fisheye-analytics/apis.yaml
 specificationVersion: "0.14"
 apis: []
 x-common:
 - type: x-blog
   url: http://blog.fisheyeanalytics.com/
+- type: x-blog-rss-feed
+  url: http://blog.fisheyeanalytics.com/feeds/posts/default?alt=rss
+- type: x-twitter
+  url: https://twitter.com/fisheyeanalytic
 - type: x-portal
   url: http://www.fisheyeanalytics.com/api.html
 include: []
