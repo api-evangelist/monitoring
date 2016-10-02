@@ -1,7 +1,10 @@
 swagger: "2.0"
 info:
   title: Contacts API
+  description: The Contacts API.
   version: 1.0.0
+host: api.pingdom.com
+basePath: /
 schemes:
 - http
 produces:
@@ -9,6 +12,25 @@ produces:
 consumes:
 - application/json
 paths:
+  n    /api/{version}/contacts:
+    n    get:
+      summary: Get Contacts List
+      description: '    Returns a list of all contacts.'
+      operationId: get-contacts-list
+      parameters:
+      - in: query
+        name: limit
+        description: Limits the number of returned contacts to the specified quantity.
+        type: <td>integer</td>
+      - in: query
+        name: offset
+        description: Offset for listing. (Requires limit.)
+        type: <td>integer</td>
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contacts
   /contacts.json:
     get:
       summary: Get All Contacts
