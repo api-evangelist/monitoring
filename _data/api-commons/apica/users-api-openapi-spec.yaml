@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Users API
     description: The Users API.
@@ -375,4 +375,4 @@
             description: OK
         tags:
         - Users
-  definitions: []
+  definition
