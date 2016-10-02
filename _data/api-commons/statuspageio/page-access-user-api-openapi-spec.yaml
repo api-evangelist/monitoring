@@ -1,0 +1,193 @@
+swagger: "2.0"
+info:
+  title: Page Access User API
+  description: The Page Access User API.
+  version: 1.0.0
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /pages/[page_id]/components/[component_id]/page_access_groups.json:
+    post:
+      summary: Assign page access groups to a component
+      description: Assign page access groups to a component
+      operationId: assign-page-access-groups-to-a-component
+      parameters:
+      - in: query
+        name: page_access_group_ids[]
+        description: Array of page access group ids for groups that can access the
+          referenced component
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+  /pages/[page_id]/components/[component_id]/page_access_users.json:
+    delete:
+      summary: Remove a component from all page access users
+      description: Remove a component from all page access users
+      operationId: remove-a-component-from-all-page-access-users
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+    post:
+      summary: Assign page access users to a component
+      description: Assign page access users to a component
+      operationId: assign-page-access-users-to-a-component
+      parameters:
+      - in: query
+        name: page_access_user_ids[]
+        description: Array of page access user ids for users that can access the referenced
+          component
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+  /pages/[page_id]/page_access_users.json:
+    get:
+      summary: Retrieve a list of users
+      description: Retrieve a list of users
+      operationId: retrieve-a-list-of-users
+      parameters:
+      - in: query
+        name: email
+        description: Filter the returned list of users by email address (users must
+          have assigned email addresses)
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+    post:
+      summary: Create a user who can view your status page
+      description: Create a user who can view your status page
+      operationId: create-a-user-who-can-view-your-status-page
+      parameters:
+      - in: query
+        name: page_access_user[component_ids][]
+        description: Array of component ids that the created user will ba able to
+          view
+        type: string
+      - in: query
+        name: page_access_user[email]
+        description: The email for StatusPage to use to communicate with the user
+          (required if StatusPage manages passwords for you)
+        type: string
+      - in: query
+        name: page_access_user[external_login]
+        description: A concatenated (and possibly hashed) string of login parameters,
+          organized alphabetically by field name.
+        type: string
+      - in: query
+        name: page_access_user[metric_ids][]
+        description: Array of metric ids that the created user will ba able to view
+        type: string
+      - in: query
+        name: page_access_user[page_access_group_ids][]
+        description: Array of PageAccessGroups (identified by code) that the created
+          user will be a member of
+        type: string
+      - in: query
+        name: page_access_user[subscribe_to_components]
+        description: A value of true will subscribe the user to notifications for
+          incidents associated with components they can see, this value is optional
+          and defaults to false
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+  /pages/[page_id]/page_access_users/[page_access_user_id].json:
+    delete:
+      summary: Delete a user who could access your status page
+      description: Delete a user who could access your status page
+      operationId: delete-a-user-who-could-access-your-status-page
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+    patch:
+      summary: Change information for a user who can view your status page
+      description: Change information for a user who can view your status page
+      operationId: change-information-for-a-user-who-can-view-your-status-page
+      parameters:
+      - in: query
+        name: page_access_user[component_ids][]
+        description: Array of component ids that the created user will ba able to
+          view
+        type: string
+      - in: query
+        name: page_access_user[email]
+        description: The email for StatusPage to use to communicate with the user
+          (required if StatusPage manages passwords for you)
+        type: string
+      - in: query
+        name: page_access_user[external_login]
+        description: A concatenated (and possibly hashed) string of login parameters,
+          organized alphabetically by field name.
+        type: string
+      - in: query
+        name: page_access_user[metric_ids][]
+        description: Array of metric ids that the created user will ba able to view
+        type: string
+      - in: query
+        name: page_access_user[page_access_group_ids][]
+        description: Array of PageAccessGroups (identified by code) that the created
+          user will be a member of
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+  /pages/[page_id]/page_access_users/[page_access_user_id]/components.json:
+    delete:
+      summary: Remove all components from a page access user
+      description: Remove all components from a page access user
+      operationId: remove-all-components-from-a-page-access-user
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+    patch:
+      summary: Assign components to a page access user (adds new components to a user)
+      description: Assign components to a page access user (adds new components to
+        a user)
+      operationId: assign-components-to-a-page-access-user-adds-new-components-to-a-user
+      parameters:
+      - in: query
+        name: component_ids[]
+        description: Array of component ids that the user will ba able to view
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+    post:
+      summary: Assign components to a page access user (overwrites existing components)
+      description: Assign components to a page access user (overwrites existing components)
+      operationId: assign-components-to-a-page-access-user-overwrites-existing-components
+      parameters:
+      - in: query
+        name: component_ids[]
+        description: Array of component ids that the user will ba able to view
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Page Access Users
+definitions: []
