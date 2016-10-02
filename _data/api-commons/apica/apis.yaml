@@ -184,8 +184,16 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apica/users-api-openapi-spec.yaml
 x-common:
+- type: x-blog
+  url: https://www.apicasystem.com/blog/
+- type: x-blog-rss-feed
+  url: https://www.apicasystem.com/feed/
 - type: x-portal
-  url: https://www.apicasystem.com
+  url: http://api-wpm.apicasystem.com/v3/help
+- type: x-github
+  url: https://github.com/ApicaSystem
+- type: x-twitter
+  url: https://twitter.com/apicasystems
 include: []
 maintainers:
 - FN: Kin Lane
