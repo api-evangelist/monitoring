@@ -1,4 +1,4 @@
-- swagger: "2.0"
+- wagger: "2.0"
 info:
   title: Browser Checks API
   version: 1.0.0
