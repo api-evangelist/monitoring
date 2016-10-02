@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Account API
     description: The account API.
@@ -76,4 +76,4 @@
             description: OK
         tags:
         - Account
-  definitions: []
+  definition
