@@ -3,7 +3,7 @@ info:
   title: Metrics API
   description: The Metrics API.
   version: 1.0.0
-host: api.truesight.bmc.com
+host: api.serverdensity.io.
 basePath: /
 schemes:
 - http
@@ -31,6 +31,81 @@ paths:
           description: OK
       tags:
       - ""
+  /metrics/definitions:
+    "":
+      summary: Available metrics
+      description: Determine which metrics are available to return historical data
+        for, for a specific subject (device or service) over a specific time range.
+      operationId: available-metrics
+      parameters:
+      - in: query
+        name: end
+        description: The UTC date string for the end time range in format YYYY-MM-DDTHH:mm:SSZ
+          e.g. 2013-09-15T23:59:59Z
+        type: string
+      - in: query
+        name: start
+        description: The UTC date string for the start time range in format YYYY-MM-DDTHH:mm:SSZ
+          e.g. 2013-09-15T00:00:00Z
+        type: string
+      - in: query
+        name: subjectId
+        description: The ID of the subject to get the definitions for, e.g. a device
+          ID.
+        type: string
+      - in: query
+        name: token
+        description: Your API token
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Metrics
+  /metrics/dynamicgraphs/:
+    "":
+      summary: Dynamic metrics
+      description: Return historical metrics data, for a devices and/or services that
+        match a search or regex style inventory filter search over a specific time
+        range.
+      operationId: dynamic-metrics
+      parameters:
+      - in: query
+        name: end
+        description: The UTC date string for the end time range in format YYYY-MM-DDTHH:mm:SSZ
+          e.g. 2013-09-15T23:59:59Z
+        type: string
+      - in: query
+        name: ids
+        description: List of inventory IDs
+        type: string
+      - in: query
+        name: inventoryFilter
+        description: A regular expression that will return all devices or services
+          that match the pattern.
+        type: string
+      - in: query
+        name: names
+        description: Human-readable names of a device or service
+        type: string
+      - in: query
+        name: start
+        description: The UTC date string for the start time range in format YYYY-MM-DDTHH:mm:SSZ
+          e.g. 2013-09-15T00:00:00Z
+        type: string
+      - in: query
+        name: token
+        description: Your API token
+        type: string
+      - in: query
+        name: type
+        description: Specify whether to return only devices, services or all.
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Metrics
   /v1/metrics:
     get:
       summary: Get Metrics
