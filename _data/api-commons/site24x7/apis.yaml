@@ -7,9 +7,9 @@ description: Site24x7 is a web infrastructure monitoring service that helps to m
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/site24x7-logo-new.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/site24x7/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Actions API
