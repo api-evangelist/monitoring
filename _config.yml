@@ -127,3 +127,6 @@ org_desc: As I keep track on the world of APIs and read through the information 
 
 # tools
 tools_desc: These are the open source management related tooling that I am tracking on as part of my research, and can be used as part of the API Monitoring process.
+
+# building blocks
+building_block_desc: As I look through each of the APIs, tools, and services present in this research I look for the common building blocks of what makes them work. I aggregate them here and work to clean up and organize as part of my API monitoring research.
