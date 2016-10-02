@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Checks URL
     version: 1.0.0
@@ -71,4 +71,4 @@
             description: OK
         tags:
         - Checks URL
-  definitions: []
+  definition
