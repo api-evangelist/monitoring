@@ -1,4 +1,4 @@
-- name: Apica
+me: Apica
   description: Apica provides the most effective technology for optimizing the performance
     of cloud and mobile applications. Apica offers companies and developers alike easy-to-use,
     cloud-based load testing and web performance monitoring tools to test applications
@@ -198,4 +198,4 @@
   maintainers:
   - FN: Kin Lane
     x-twitter: apievangelist
-    email: info@apievangelist.com
+    email: info@apievangelis
