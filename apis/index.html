@@ -12,7 +12,7 @@ title: The API Stack
   {% for org in site.data.api-commons %}
     {% assign index = org %}
     {% if thisurl == index[0] %}
-      {% assign apisjson = index %}
+      {% assign apisjson = index[1] %}
 
       {{ apisjson }}<br />
 
