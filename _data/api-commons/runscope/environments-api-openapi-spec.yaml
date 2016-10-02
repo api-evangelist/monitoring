@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Environments API
     version: 1.0.0
@@ -88,4 +88,4 @@
             description: OK
         tags:
         - Environments
-  definitions: []
+  definition
