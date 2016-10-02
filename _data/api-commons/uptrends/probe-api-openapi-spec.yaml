@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Probe API
     description: The Probe API.
@@ -79,4 +79,4 @@
             description: OK
         tags:
         - Probe
-  definitions: []
+  definition
