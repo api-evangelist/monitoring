@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: No Title
     version: 1.0.0
@@ -286,4 +286,4 @@
             description: OK
         tags:
         - Schedule Users
-  definitions: []
+  definition
