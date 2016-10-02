@@ -6,9 +6,9 @@ description: New Relic offers SaaS Software Analytics Platform that offers Appli
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/newrelic-logo-square.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-02"
+modified: "2016-10-02"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Alert  Plugin Condition API
@@ -261,7 +261,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/new-relic/users-api-openapi-spec.yaml
-x-common: []
+x-common:
+- type: x-blog
+  url: https://blog.newrelic.com/
+- type: x-blog-rss-feed
+  url: https://blog.newrelic.com/feed/
+- type: x-portal
+  url: https://rpm.newrelic.com/api/explore/
+- type: x-github
+  url: https://github.com/newrelic
+- type: x-twitter
+  url: https://twitter.com/NewRelic
 include: []
 maintainers:
 - FN: Kin Lane
