@@ -142,8 +142,6 @@ title: The API Stack
 
                           {% for property in api.properties %}
 
-                          --{{ property.type }}--
-
                             {% assign thisname = apisjson.name | downcase %}
                             {% assign thisname = thisname | append:'/' %}
                             {% assign thisname = thisname | replace: ' ','-' %}
