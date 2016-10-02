@@ -1,4 +1,4 @@
-- name: Uptrends
+me: Uptrends
   description: Uptrends is all about Cloud-based website performance and network monitoring.
     We are proud to say that we have become a trusted standard in network and website
     performance monitoring since our founding in 2007. We are developers at heart and
@@ -59,4 +59,4 @@
   maintainers:
   - FN: Kin Lane
     x-twitter: apievangelist
-    email: info@apievangelist.com
+    email: info@apievangelis
