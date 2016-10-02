@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Checks Command API
     version: 1.0.0
@@ -93,4 +93,4 @@
             description: OK
         tags:
         - Checks Command
-  definitions: []
+  definition
