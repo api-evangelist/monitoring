@@ -1,4 +1,4 @@
-- swagger: "2.0"
+agger: "2.0"
   info:
     title: Checks Job API
     version: 1.0.0
@@ -28,4 +28,4 @@
             description: OK
         tags:
         - Checks Job
-  definitions: []
+  definition
