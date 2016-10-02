@@ -3,8 +3,7 @@ layout: page
 title: The API Stack
 ---
 
-{% for api in site.data.apis.include %}
-  <strong>{{ api.name }}</strong>
-  {{ api.url }}
+{% for api in site.data.apis %}
+  {{ api }}
   <hr />
 {% endfor %}
