@@ -32,6 +32,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pagerduty/addons-api-openapi-spec.yaml
+- name: APIS
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pagerduty/apis-openapi-spec.yaml
 - name: Escalation Policies API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png
@@ -92,6 +102,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pagerduty/oncalls-api-openapi-spec.yaml
+- name: PagerDuty Complete API
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png
+  humanURL: ""
+  baseURL: ""
+  tags:
+  - Monitoring
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/pagerduty/pagerduty-complete-api-openapi-spec.yaml
 - name: Schedules API
   description: ""
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/632_logo.png
