@@ -1,5 +1,69 @@
 [
 	{
+		"curated_id": "PX0u123I09IUYNpVZj116PoK2tDy9QEN8KjyoOJ3116xHBpDYLwEi79zoeER7k1bQLgEcdo34q7bWLM123LAvezm0cj94g117117",
+		"item_date": "2016-09-26 00:00:00",
+		"title": "How to monitor Elasticsearch with Datadog",
+		"url": "https://www.datadoghq.com/blog/monitor-elasticsearch-datadog/",
+		"domain": "www.datadoghq.com",
+		"image": ""
+	},
+	{
+		"curated_id": "gkmfxSSxBHv50Ri7e4cJVgRD2ZU584MNluawuU8XIBgF7H8tJn123eTMQ7os0Ghoh42ofs8eUUo6L70I5FhGMDqg117117",
+		"item_date": "2016-09-27 00:00:00",
+		"title": "REST API Inspector",
+		"url": "https://restdb.io/blog",
+		"domain": "restdb.io",
+		"image": ""
+	},
+	{
+		"curated_id": "CjmM123rUo3Ib7OIz5szVfJSJCRMuOkG123roZGBx1ZDZhiFcRqKKJzUwDCQ1ubpg5iLr5VkSCJMIlTZdFy6bndxRQ117117",
+		"item_date": "2016-09-27 00:00:00",
+		"title": "Monitor your Azure Logic Apps with Datadog",
+		"url": "https://www.datadoghq.com/blog/monitor-azure-logic-app-workflows-datadog/",
+		"domain": "www.datadoghq.com",
+		"image": ""
+	},
+	{
+		"curated_id": "VuKhRSTCMLVi5WzM3gcYG5twgY9hZZvzcujod4dMlZOS116vxAMuQySd5t76FGmM116d23bMFzP9OUV9P73iw2EvUg117117",
+		"item_date": "2016-09-28 00:00:00",
+		"title": "Monitor Azure Redis Cache with Datadog",
+		"url": "https://www.datadoghq.com/blog/monitor-azure-redis-cache-datadog/",
+		"domain": "www.datadoghq.com",
+		"image": ""
+	},
+	{
+		"curated_id": "1aIfMKNNxh4dQSFb7nUwJWL1XkRvHPPf4hRBYRr8123yj6MCYSvffr1Vp116eIXTx8rm0BnHrOySq6FrzLlHBusymA117117",
+		"item_date": "2016-09-29 00:00:00",
+		"title": "How to Monitor Network Activity When Your Infrastructure Lacks an Edge",
+		"url": "https://dzone.com/articles/how-to-monitor-network-activity-when-your-infrastr",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "zcrhksOKXzleYzCyRxjh4zKK5WWaRjGBV8tU5yijws9DpMo123IhwMoAEpyFPg7QOS4gBMJ53cFdatVGbJAs4wqg117117",
+		"item_date": "2016-09-29 00:00:00",
+		"title": "Validating API Responses Using JavaScript",
+		"url": "https://www.apiscience.com/blog/validate-apis-using-javascript/",
+		"domain": "www.apiscience.com",
+		"image": ""
+	},
+	{
+		"curated_id": "123ymqHrW6aGhvFgMF1RtJd9koh9SPKaweuHuwoC1I6b9ksESwK2vbrcBbHnD4TyglKqEKdcFjnDOszDTOdR6g2Q117117",
+		"item_date": "2016-09-28 00:00:00",
+		"title": "Article Traffic Data Monitoring Using IoT Kafka and Spark Streaming",
+		"url": "http://www.infoq.com/articles/traffic-data-monitoring-iot-kafka-and-spark-streaming?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+		"domain": "www.infoq.com",
+		"image": ""
+	},
+	{
+		"curated_id": "CiQtffV7E116E5dlY5h123wpOdW6Tq4wQTzBWCksSOlYVgCsvJVbAwV73baXL0CYvKjVt9AI1161vks0KPFCS0R9u1236A117117",
+		"item_date": "2016-09-27 00:00:00",
+		"title": "Microsoft Debuts Public Preview of Azure Monitoring",
+		"url": "http://winbuzzer.com/2016/09/27/microsoft-debuts-public-preview-azure-monitoring-xcxwbn/",
+		"domain": "winbuzzer.com",
+		"image": ""
+	},
+	{
 		"curated_id": "aTvNWQaocYpmYzEqKyZStWzFUJn6pK3116rS116E2HXCOWfooZDRrVnLcZVYefC0r8siBNt4qmfd0IzhNMf9I3AmCA117117",
 		"item_date": "2016-09-12 00:00:00",
 		"title": "Integrating API Monitoring with PagerDuty",
@@ -1166,14 +1230,6 @@
 		"url": "http://apimetrics.io/2015/02/17/apimetrics-gets-funding-bain-capital-ventures/",
 		"domain": "apimetrics.io",
 		"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/apimetrics-io20150217apimetrics-gets-funding-bain-capital-ventures.png"
-	},
-	{
-		"curated_id": "hc1cQnzng5Z4zbJkpHn116NSIWHN9Kl116muzwphmmHaqgcLmgTt8eLZxOCmJ5vYqIKvJaaQGLhXpGxHOBZx0K123vmA117117",
-		"item_date": "2015-01-22 00:00:00",
-		"title": "Google Cloud Monitoring",
-		"url": "http://www.programmableweb.com/api/google-cloud-monitoring",
-		"domain": "www.programmableweb.com",
-		"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/www-programmableweb-comapigoogle-cloud-monitoring.png"
 	},
 	{
 		"curated_id": "ivYhZUkB8Ja8wHvGQ2Z7vAOmhnchiBEcIzlUQBxald0bvlRU4oCo1lxSz7DYHkDtJZ116cz5uaCVs116NE3x5M6V6A117117",
