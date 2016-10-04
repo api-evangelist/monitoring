@@ -1,8 +1,13 @@
 ---
 layout: page
-title: The API Stack
+title: APIs In My API Monitoring Collection
 ---
 
+{% assign apisjson_url = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/apis.yaml' %}
+<p><a href="{{ apisjson_url }}" target="_blank" title="The APIs.json for {{ site.title }}">
+    <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="50" align="right" />
+</a></p>
+<p>These are a listing of APIs in this collection, focusing on the detail of each API that is indexed as part of the APIs.json for this collection, and the OpenAPI Specs I'm working on for each provider.</p>
 <table cellpadding="3" cellspacing="2" width="90%" border="0" style="margin-top: 10px;">
 {% assign api = site.data.apis %}
 {% for include in api.include %}
