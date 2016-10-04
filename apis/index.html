@@ -40,7 +40,7 @@ title: The API Stack
                 <td style="padding: 15px;">
                   <a href="{{ website_url }}" style="font-size: 22px;"><strong>{{ apisjson.name }}</strong></a><br />
                 </td>
-                <td style="padding: 15px;" width="10%">
+                <td style="padding: 15px;" width="20%">
                   <a href="{{ apisjson_url }}" target="_blank" title="The APIs.json for {{ apisjson.name }}">
                     <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="45" align="right" />
                   </a>
@@ -85,13 +85,13 @@ title: The API Stack
                             <td align="left" style="padding-left: 40px;">
                               {{ api.name }}
                             </td>
-                            <td align="right">
+                            <td align="center" width="20%">
                                 <a href="{{ openapi_yaml_spec_url }}" target="_blank" title="OpenAPI Spec Yaml">
                                   <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-yaml.png" width="25" align="right" />
                                 </a>
                             </td>
                           </tr>
-                          <tr style="display: none;" id="methods-for-{{ pathname }}">
+                          <tr>
                             <td colspan="2" align="left" style="margin-left: 25px; margin-right: 25px;">
 
                               <ul style="padding-left: 70px;">
@@ -113,6 +113,7 @@ title: The API Stack
 
                                 {% endfor %}
                               </ul>
+
                             </td>
                           </tr>
                         </table>
