@@ -74,11 +74,9 @@ title: The API Stack
                               {% assign pathname = pathname | replace: '/','' %}
                               {% assign pathname = pathname | replace: '.yaml','' %}
 
-                              --Here: {{ pathname }}--
-                              --Here2: {{ thisname }}--
                               {% assign this_apis_json = site.data.api-commons | map: thisname %}
                               {% assign openapi_spec_yaml = this_apis_json | map: pathname %}
-                              --Here3: {{ openapi_spec_yaml }}--
+                              
                             {% endif %}
 
                           {% endfor %}
