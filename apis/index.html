@@ -76,8 +76,8 @@ title: The API Stack
                               {% assign pathname = pathname | replace: '/','' %}
                               {% assign pathname = pathname | replace: '.yaml','' %}
 
-                              --{{ pathname }}--
-                              {% assign openapi_spec_json = data | map: pathname %}
+                              --Here: {{ pathname }}--
+                              {% assign openapi_spec_yaml = data | map: pathname %}
 
                             {% endif %}
 
@@ -95,9 +95,9 @@ title: The API Stack
                           </tr>
                           <tr style="display: none;" id="methods-for-{{ pathname }}">
                             <td colspan="2" align="left" style="margin-left: 25px; margin-right: 25px;">
-                              -- {{ openapi_spec_json }} --
+                              -- {{ openapi_spec_yaml }} --
                               <ul>
-                                {% for spec in openapi_spec_json %}
+                                {% for spec in openapi_spec_yaml %}
 
                                   {% for path in spec.paths %}
 
