@@ -60,7 +60,7 @@ title: The API Stack
                             {% assign thisname = thisname | append:'/' %}
                             {% assign thisname = thisname | replace: ' ','-' %}
 
-                            {% if property.type == 'x-openapi-spec-json' %}
+                            {% if property.type == 'x-openapi-spec' %}
 
                               {% assign openapi_json_spec_url = property.url %}
 
@@ -70,6 +70,8 @@ title: The API Stack
                               {% assign pathname = pathname | replace: thisname,'' %}
                               {% assign pathname = pathname | replace: '/','' %}
                               {% assign pathname = pathname | replace: '.json','' %}
+
+                              --{{ pathname }}--
                               {% assign openapi_spec_json = file | map: pathname %}
 
                             {% endif %}
