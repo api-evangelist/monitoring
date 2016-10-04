@@ -57,68 +57,10 @@ title: The API Stack
       <tr>
         <td>
 
-          <table cellpading="10" cellspacing="10" width="100%" class="card" border="0">
+          <table cellpading="1" cellspacing="1" width="100%" border="0">
             <tr>
-              <td colspan="2" style="padding: 15px;">
-                {% if apisjson.image != null %}
-                  <a href="{{ website_url }}">
-                    <img src="{{ apisjson.image }}" align="left" style="padding: 10px;" width="125" />
-                  </a>
-                {% endif %}
+              <td colspan="2" style="padding: 15px;">}
                 <a href="{{ website_url }}" style="font-size: 22px;"><strong>{{ apisjson.name }}</strong></a><br />
-                {{ apisjson.description }}
-              </td>
-            </tr>
-            <tr>
-              <td align="center" colspan="3" style="margin-left: 25px; margin-right: 25px; padding-bottom; 10px;">
-                <ul style="list-style: none; display: inline;">
-                  {% if portal_url != '' %}
-                    <li style="display: inline; padding-left: 15px; padding-right: 15px;">
-                      <a href="{{ portal_url }}" target="_blank" title="Portal">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-portal-developers.jpg" width="30" align="center" />
-                      </a>
-                    </li>
-                  {% endif %}
-                  {% if blog_url != '' %}
-                    <li style="display: inline; padding-left: 15px; padding-right: 15px;">
-                      <a href="{{ blog_url }}" target="_blank" title="Blog">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-blog-icon.png" width="26" align="center" />
-                      </a>
-                    </li>
-                  {% endif %}
-
-                  {% if blogrss_url != '' %}
-                    <li style="display: inline; padding-left: 15px; padding-right: 15px;">
-                      <a href="{{ blogrss_url }}" target="_blank" title="Blog RSS">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-rss-icon.png" width="26" align="center" />
-                      </a>
-                    </li>
-                  {% endif %}
-
-                  {% if twitter_url != '' %}
-                    <li style="display: inline; padding-left: 15px; padding-right: 15px;">
-                      <a href="{{ twitter_url }}" target="_blank" title="Twitter">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-twitter-icon.png" width="45" align="center" />
-                      </a>
-                    </li>
-                  {% endif %}
-
-                  {% if gitub_url != '' %}
-                    <li style="display: inline; padding-left: 15px; padding-right: 15px;">
-                      <a href="{{ gitub_url }}" target="_blank" title="Github">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github-icon.png" width="52" align="center" />
-                      </a>
-                    </li>
-                  {% endif %}
-
-                  {% if apisjson.url != null %}
-                    <li style="display: inline; padding-left: 15px; padding-right: 15px;">
-                      <a href="{{ apisjson.url }}" target="_blank" title="APIs.json">
-                        <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="48" align="center" />
-                      </a>
-                    </li>
-                  {% endif %}
-                </ul>
               </td>
             </tr>
             <tr>
@@ -202,68 +144,9 @@ title: The API Stack
                             </td>
                           </tr>
                         </table>
-
-                        {% if api_action_url != '' %}
-                        <p style="font-size: 18px; text-align: left; margin-left: 117px; padding-top: 8px;"><strong>Actions:</strong></p>
-                        <table cellpadding="3" cellspacing="2" width="70%" border="0">
-                          {% assign pathname = api_action_url | replace: site.url,'' %}
-                          {% assign pathname = pathname | replace: '/data/','' %}
-                          {% assign pathname = pathname | replace: thisname,'' %}
-                          {% assign pathname = pathname | replace: '/','' %}
-                          {% assign pathname = pathname | replace: '.json','' %}
-                          {% assign api_action_spec = file | map: pathname %}
-                          <tr>
-                            <td colspan="2" align="left" style="margin-left: 75px; margin-right: 75px; margin-top: 15px;">
-                              <ul style="margin-left: 15px;">
-                                {% for actions in api_action_spec %}
-                                  {% for action in actions %}
-                                    {% assign action_label = action.Action %}
-                                    {% assign action_url = action.URL %}
-                                    <li style="font-size: 14px; list-style: none;">
-                                      <a href="{{ action_url }}">
-                                        <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/zapier/zapier-icon.png" width="30" style="margin-right: 5px;" />
-                                        {{ action_label }}
-                                      </a>
-                                    </li>
-                                  {% endfor %}
-                                {% endfor %}
-                              </ul>
-                            </td>
-                            </tr>
-                          </table>
-                        {% endif %}
-                      {% endfor %}
-                    {% endif %}
                   </td>
                 </tr>
-                {% if common_api_action_url != '' %}
-
-                  {% assign pathname = common_api_action_url | replace: site.url,'' %}
-                  {% assign pathname = pathname | replace: '/data/','' %}
-                  {% assign pathname = pathname | replace: thisname,'' %}
-                  {% assign pathname = pathname | replace: '/','' %}
-                  {% assign pathname = pathname | replace: '.json','' %}
-                  {% assign api_action_spec = file | map: pathname %}
-                  <tr>
-                    <td colspan="3" align="left" style="margin-left: 75px; margin-right: 75px; margin-top 15px;">
-                      <p style="font-size: 18px; margin-left: 117px; padding-top: 5px;"><strong>Actions:</strong></p>
-                      <ul style="margin-left: 125px;">
-                        {% for actions in api_action_spec %}
-                          {% for action in actions %}
-                            {% assign action_label = action.Action %}
-                            {% assign action_url = action.URL %}
-                            <li style="font-size: 14px; list-style: none;">
-                              <a href="{{ action_url }}">
-                                <img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/zapier/zapier-icon.png" width="30" style="margin-right: 5px;" />
-                                {{ action_label }}
-                              </a>
-                            </li>
-                          {% endfor %}
-                        {% endfor %}
-                      </ul>
-                    </td>
-                  </tr>
-              {% endif %}
+                
           </table>
         </td>
       </tr>
