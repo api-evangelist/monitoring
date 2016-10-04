@@ -76,7 +76,7 @@ title: The API Stack
 
                               {% assign this_apis_json = site.data.api-commons | map: thisname %}
                               {% assign openapi_spec_yaml = this_apis_json | map: pathname %}
-                              
+
                             {% endif %}
 
                           {% endfor %}
@@ -94,7 +94,7 @@ title: The API Stack
                           <tr style="display: none;" id="methods-for-{{ pathname }}">
                             <td colspan="2" align="left" style="margin-left: 25px; margin-right: 25px;">
 
-                              <ul>
+                              <ul style="padding-left: 70px;">
                                 {% for spec in openapi_spec_yaml %}
 
                                   {% for path in spec.paths %}
