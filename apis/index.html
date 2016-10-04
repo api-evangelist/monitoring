@@ -64,7 +64,6 @@ title: The API Stack
 
                               {% assign openapi_json_spec_url = property.url %}
 
-                              --{{ openapi_json_spec_url }}--
                               {% assign pathname = openapi_json_spec_url | replace: 'https://raw.githubusercontent.com/','' %}
 
                               {% assign pathname = pathname | replace: '_data/','' %}
@@ -99,7 +98,7 @@ title: The API Stack
                           </tr>
                           <tr style="display: none;" id="methods-for-{{ pathname }}">
                             <td colspan="2" align="left" style="margin-left: 25px; margin-right: 25px;">
-
+                              -- {{ openapi_spec_json }} --
                               <ul>
                                 {% for spec in openapi_spec_json %}
 
