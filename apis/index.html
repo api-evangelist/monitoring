@@ -64,12 +64,11 @@ title: The API Stack
 
                               {% assign openapi_json_spec_url = property.url %}
 
-                              --{{ openapi_json_spec_url }}--
                               {% assign pathname = openapi_json_spec_url | replace: site.url,'' %}
                               {% assign pathname = pathname | replace: '/data/','' %}
                               {% assign pathname = pathname | replace: thisname,'' %}
                               {% assign pathname = pathname | replace: '/','' %}
-                              {% assign pathname = pathname | replace: '.json','' %}
+                              {% assign pathname = pathname | replace: '.yaml','' %}
 
                               --{{ pathname }}--
                               {% assign openapi_spec_json = file | map: pathname %}
