@@ -44,7 +44,7 @@ title: The API Stack
             </a>
           </td>
         </tr>
-        
+
         {% assign api_action_url = '' %}
         {% for api in apisjson.apis %}
 
@@ -104,7 +104,7 @@ title: The API Stack
 
                         {% assign verb = method[0] | upcase %}
                         {% assign summary = method[1].summary %}
-                        <li style="font-size: 12px;">{{ path[0] }} <strong>[{{ verb }}]</strong> {{ summary }}</li>
+                        <li style="font-size: 12px;">{{ summary }} - {{ path[0] }} <strong>[{{ verb }}]</strong></li>
 
                       {% endfor %}
 
