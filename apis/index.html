@@ -79,6 +79,7 @@ title: APIs In My API Monitoring Collection
                 {% assign pathname = pathname | replace: '.yaml','' %}
 
                 {% assign this_apis_json = site.data.api-commons | map: thisname %}
+                {{ this_apis_json }}
                 {% assign openapi_spec_yaml = this_apis_json | map: pathname %}
 
               {% endif %}
