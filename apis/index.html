@@ -68,7 +68,7 @@ title: APIs In My API Monitoring Collection
                 {% assign openapi_spec_url = property.url %}
 
                 {% assign pathname = openapi_spec_url | replace: 'https://raw.githubusercontent.com/','' %}
-
+                {{ pathname }}
                 {% assign pathname = pathname | replace: '_data/','' %}
                 {% assign pathname = pathname | replace: 'gh-pages/','' %}
                 {% assign pathname = pathname | replace: 'api-commons/','' %}
@@ -79,6 +79,7 @@ title: APIs In My API Monitoring Collection
                 {% assign pathname = pathname | replace: '.yaml','' %}
 
                 {% assign this_apis_json = site.data.api-commons | map: thisname %}
+                {{ pathname }}
                 {% assign openapi_spec_yaml = this_apis_json | map: pathname %}
 
               {% endif %}
@@ -95,9 +96,9 @@ title: APIs In My API Monitoring Collection
             </tr>
             <tr>
               <td colspan="2" align="left" style="margin-left: 25px; margin-right: 25px;">
-                
-                <ul style="padding-left: 70px;">
 
+                <ul style="padding-left: 70px;">
+                  HERE: {{ openapi_spec_yaml }}
                   {% for spec in openapi_spec_yaml %}
 
                     {% for path in spec.paths %}
