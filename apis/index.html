@@ -58,9 +58,7 @@ title: The API Stack
                           {% for property in api.properties %}
 
                             {% assign thisname = apisjson.name | downcase %}
-                            {% assign thisname = thisname | append:'/' %}
                             {% assign thisname = thisname | replace: ' ','-' %}
-                            {% assign thisname = thisname | append:'/' %}
 
                             {% if property.type == 'x-openapi-spec' %}
 
