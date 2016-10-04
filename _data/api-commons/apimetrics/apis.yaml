@@ -9,9 +9,9 @@ description: APImetrics builds on 3 years experience gained working on the chall
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
 tags:
 - Monitoring
-created: "2016-10-01"
-modified: "2016-10-01"
-url: http://monitoring.apievangelist.com
+created: "2016-10-03"
+modified: "2016-10-03"
+url: https://raw.githubusercontent.com/api-evangelist/monitoring/gh-pages/_data/api-commons/apimetrics/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: APIMetrics Auth API
@@ -83,6 +83,8 @@ x-common:
   url: http://apimetrics.io/feed/
 - type: x-base-url-for-portal
   url: https://apimetrics.readme.io/
+- type: x-github
+  url: https://github.com/APImetrics
 - type: x-dedicated-plans--pricing-page
   url: http://apimetrics.io/
 - type: x-privacy-policy-page
