@@ -7,7 +7,7 @@ layout: none
 </head>
 <body>
   {% for org in site.data.organizations %}
-  {% if org.github != null %}
+  {% if org.github != '' %}
   <outline title="{{ org.name }}" text="{{ org.name }} Github" type="rss" version="RSS" xmlUrl="{{ org.github }}.atom" htmlUrl="{{ org.github }}"/>
   {% endif %}
   {% endfor %}

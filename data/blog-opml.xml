@@ -7,9 +7,12 @@ layout: none
 </head>
 <body>
   {% for org in site.data.organizations %}
-  {% if org.blogrss != null %}
+  {% if org.blogrss != '' %}
   <outline title="{{ org.name }}" text="{{ org.name }} Blog" type="rss" version="RSS" xmlUrl="{{ org.blogrss }} " htmlUrl="{{ org.blog }}"/>
   {% endif %}
   {% endfor %}
 </body>
 </opml>
+
+
+view-source:https://github.com/kinlane.atom

@@ -8,7 +8,7 @@ layout: default
 <p>These are posts from the API Evangelist blog that are focused on API monitoring, allowing for a filtered look at my analysis on the topic. I rely on these posts, along with the curated, organizations, APIs, and tools to help paint me a picture of what is going on.</p>
 <div class="posts">
   {% for post in paginator.posts %}
-    {% if post.title != null %}
+    {% if post.title != '' %}
 
       <div class="post">
 
