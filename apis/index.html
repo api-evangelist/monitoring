@@ -20,56 +20,29 @@ title: The API Stack
       {% assign apisjson = index[1].apis %}
       {% assign common_api_action_url = '' %}
 
-      {% assign blog_url = '' %}
-      {% assign blogrss_url = '' %}
-      {% assign portal_url = '' %}
-      {% assign gitub_url = '' %}
-      {% assign twitter_url = '' %}
-      {% assign website_url = '' %}
-
-      {% for common in apisjson.x-common %}
-        {% if common.type == 'x-blog' %}
-          {% assign blog_url = common.url %}
-        {% endif %}
-        {% if common.type == 'x-blog-rss-feed' %}
-          {% assign blogrss_url = common.url %}
-        {% endif %}
-        {% if common.type == 'x-portal' %}
-          {% assign portal_url = common.url %}
-        {% endif %}
-        {% if common.type == 'x-github' %}
-          {% assign gitub_url = common.url %}
-        {% endif %}
-        {% if common.type == 'x-twitter' %}
-          {% assign twitter_url = common.url %}
-        {% endif %}
-        {% if common.type == 'x-api-actions' %}
-          {% assign common_api_action_url = common.url %}
-        {% endif %}
-      {% endfor %}
-
       {% if apisjson.humanURL == null %}
         {% assign website_url = portal_url %}
       {% else %}
         {% assign website_url = apisjson.humanURL %}
       {% endif %}
 
-      <tr>
-        <td>
+      {% assign api_action_url = '' %}
+      {% assign numberofapis = apisjson.apis | size %}
+      {% if numberofapis == 0 %}
 
-          <table cellpading="10" cellspacing="10" width="100%" border="0">
-            <tr>
-              <td colspan="2" style="padding: 15px;">
-                <a href="{{ website_url }}" style="font-size: 22px;"><strong>{{ apisjson.name }}</strong></a><br />
-              </td>
-            </tr>
-            <tr>
-              <td align="center" colspan="3" style="margin-left: 90px; margin-right: 90px;">
-                  {% assign api_action_url = '' %}
-                  {% assign numberofapis = apisjson.apis | size %}
-                  {% if numberofapis == 0 %}
+      {% else %}
 
-                  {% else %}
+        <tr>
+          <td>
+
+            <table cellpading="10" cellspacing="10" width="100%" border="0">
+              <tr>
+                <td colspan="2" style="padding: 15px;">
+                  <a href="{{ website_url }}" style="font-size: 22px;"><strong>{{ apisjson.name }}</strong></a><br />
+                </td>
+              </tr>
+              <tr>
+                <td align="center" colspan="3" style="margin-left: 90px; margin-right: 90px;">
 
                     <p style="font-size: 18px; text-align: left; margin-left: 117px;"><strong>APIs:</strong></p>
                       {% assign api_action_url = '' %}
@@ -146,13 +119,15 @@ title: The API Stack
                         </table>
 
                       {% endfor %}
-                    {% endif %}
-                  </td>
-                </tr>
 
-          </table>
-        </td>
-      </tr>
+                    </td>
+                  </tr>
+
+            </table>
+          </td>
+        </tr>
+
+      {% endif %}
 
     {% endif %}
   {% endfor %}
