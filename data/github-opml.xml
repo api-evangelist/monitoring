@@ -6,10 +6,6 @@ layout: none
 <title>API Monitoring Blog OPML</title>
 </head>
 <body>
-  {% for org in site.data.organizations %}
-  {% if org.github != '' %}
-  <outline title="{{ org.name }}" text="{{ org.name }} Github" type="rss" version="RSS" xmlUrl="{{ org.github }}.atom" htmlUrl="{{ org.github }}"/>
-  {% endif %}
-  {% endfor %}
+  {% for org in site.data.organizations %}{% if org.github != '' %}<outline title="{{ org.name }}" text="{{ org.name }} Github" type="rss" version="RSS" xmlUrl="{{ org.github }}.atom" htmlUrl="{{ org.github }}"/>{% endif %}{% endfor %}
 </body>
 </opml>
