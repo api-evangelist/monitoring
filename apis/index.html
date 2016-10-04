@@ -76,7 +76,7 @@ title: The API Stack
                               {% assign pathname = pathname | replace: '.yaml','' %}
 
                               --{{ pathname }}--
-                              {% assign openapi_spec_json = file | map: pathname %}
+                              {% assign openapi_spec_json = apisjson | map: pathname %}
 
                             {% endif %}
 
