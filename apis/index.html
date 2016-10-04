@@ -49,7 +49,7 @@ title: The API Stack
               </tr>
                       {% assign api_action_url = '' %}
                       {% for api in apisjson.apis %}
-key: {{ api[0] }}
+
                           {% assign api_action_spec = '' %}
                           {% assign api_action_url = '' %}
                           {% assign openapi_json_spec_url = '' %}
@@ -77,8 +77,9 @@ key: {{ api[0] }}
                               {% assign pathname = pathname | replace: '.yaml','' %}
 
                               --Here: {{ pathname }}--
-                              {% assign openapi_spec_yaml = data | map: pathname %}
-                              --Here2: {{ openapi_spec_yaml }}--
+                              --Here2: {{ thisname }}--
+                              {% assign openapi_spec_yaml = data | map: thisname %}
+                              --Here3: {{ openapi_spec_yaml }}--
                             {% endif %}
 
                           {% endfor %}
