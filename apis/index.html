@@ -40,10 +40,10 @@ title: APIs In My API Monitoring Collection
         {% assign apisjson_url = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/api-commons/' | append: thisurl | append: '/apis.yaml' %}
 
         <tr>
-          <td style="padding: 15px;">
-            <a href="{{ website_url }}" style="font-size: 22px;"><strong>{{ apisjson.name }}</strong></a><br />
+          <td>
+            <a href="{{ website_url }}" style="font-size: 18px;"><strong>{{ apisjson.name }}</strong></a><br />
           </td>
-          <td style="padding: 15px;" width="20%">
+          <td width="20%">
             <a href="{{ apisjson_url }}" target="_blank" title="The APIs.json for {{ apisjson.name }}">
               <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="45" />
             </a>
