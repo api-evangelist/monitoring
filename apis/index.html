@@ -49,7 +49,7 @@ title: The API Stack
               </tr>
                       {% assign api_action_url = '' %}
                       {% for api in apisjson.apis %}
-{{ api[0] }}
+key: {{ api[0] }}
                           {% assign api_action_spec = '' %}
                           {% assign api_action_url = '' %}
                           {% assign openapi_json_spec_url = '' %}
