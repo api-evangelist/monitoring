@@ -65,7 +65,11 @@ title: The API Stack
                               {% assign openapi_json_spec_url = property.url %}
 
                               --{{ openapi_json_spec_url }}--
-                              {% assign pathname = openapi_json_spec_url | replace: 'https://raw.githubusercontent.com','' %}
+                              {% assign pathname = openapi_json_spec_url | replace: 'https://raw.githubusercontent.com/','' %}
+
+                              {% assign pathname = pathname | replace: '_data/','' %}
+                              {% assign pathname = pathname | replace: 'gh-pages/','' %}
+                              {% assign pathname = pathname | replace: 'api-commons/','' %}
                               {% assign pathname = pathname | replace: site.org,'' %}
                               {% assign pathname = pathname | replace: site.repo,'' %}
                               {% assign pathname = pathname | replace: thisname,'' %}
