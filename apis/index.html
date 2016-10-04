@@ -11,6 +11,7 @@ title: The API Stack
   {% assign thisurl = include.url | replace: removeurl %}
   {% assign thisurl = thisurl | replace: '/apis.yaml' %}
 
+
   {% for org in site.data.api-commons %}
 
     {% assign index = org %}
@@ -32,100 +33,90 @@ title: The API Stack
 
       {% else %}
         {% assign apisjson_url = 'https://raw.githubusercontent.com/' | append: site.org | append: '/' | append: site.repo | append: '/gh-pages/_data/api-commons/' | append: thisurl | append: '/apis.yaml' %}
+
         <tr>
-          <td>
-
-            <table cellpading="10" cellspacing="10" width="100%" border="1">
-              <tr>
-                <td style="padding: 15px;">
-                  <a href="{{ website_url }}" style="font-size: 22px;"><strong>{{ apisjson.name }}</strong></a><br />
-                </td>
-                <td style="padding: 15px;" width="20%">
-                  <a href="{{ apisjson_url }}" target="_blank" title="The APIs.json for {{ apisjson.name }}">
-                    <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="45" align="right" />
-                  </a>
-                </td>
-              </tr>
-                      {% assign api_action_url = '' %}
-                      {% for api in apisjson.apis %}
-
-                          {% assign api_action_spec = '' %}
-                          {% assign api_action_url = '' %}
-                          {% assign openapi_json_spec_url = '' %}
-                          {% assign openapi_yaml_spec_url = '' %}
-
-                          {% for property in api.properties %}
-
-                            {% assign thisname = apisjson.name | downcase %}
-                            {% assign thisname = thisname | replace: ' ','-' %}
-
-                            {% if property.type == 'x-openapi-spec' %}
-
-                              {% assign openapi_json_spec_url = property.url %}
-
-                              {% assign pathname = openapi_json_spec_url | replace: 'https://raw.githubusercontent.com/','' %}
-
-                              {% assign pathname = pathname | replace: '_data/','' %}
-                              {% assign pathname = pathname | replace: 'gh-pages/','' %}
-                              {% assign pathname = pathname | replace: 'api-commons/','' %}
-                              {% assign pathname = pathname | replace: site.org,'' %}
-                              {% assign pathname = pathname | replace: site.repo,'' %}
-                              {% assign pathname = pathname | replace: thisname,'' %}
-                              {% assign pathname = pathname | replace: '/','' %}
-                              {% assign pathname = pathname | replace: '.yaml','' %}
-
-                              {% assign this_apis_json = site.data.api-commons | map: thisname %}
-                              {% assign openapi_spec_yaml = this_apis_json | map: pathname %}
-
-                            {% endif %}
-
-                          {% endfor %}
-
-                          <tr>
-                            <td align="left" style="padding-left: 40px;">
-                              {{ api.name }}
-                            </td>
-                            <td align="center" width="20%">
-                                <a href="{{ openapi_yaml_spec_url }}" target="_blank" title="OpenAPI Spec Yaml">
-                                  <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-yaml.png" width="45" align="right" />
-                                </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" align="left" style="margin-left: 25px; margin-right: 25px;">
-
-                              <ul style="padding-left: 70px;">
-                                {% for spec in openapi_spec_yaml %}
-
-                                  {% for path in spec.paths %}
-
-                                    {% assign method_json = path[1] %}
-
-                                    {% for method in method_json %}
-
-                                      {% assign verb = method[0] | upcase %}
-                                      {% assign summary = method[1].summary %}
-                                      <li style="font-size: 12px;">{{ path[0] }} <strong>[{{ verb }}]</strong> {{ summary }}</li>
-
-                                    {% endfor %}
-
-                                  {% endfor %}
-
-                                {% endfor %}
-                              </ul>
-
-                            </td>
-                          </tr>
-
-                      {% endfor %}
-                    </table>
-
-                    </td>
-                  </tr>
-
-            </table>
+          <td style="padding: 15px;">
+            <a href="{{ website_url }}" style="font-size: 22px;"><strong>{{ apisjson.name }}</strong></a><br />
+          </td>
+          <td style="padding: 15px;" width="20%">
+            <a href="{{ apisjson_url }}" target="_blank" title="The APIs.json for {{ apisjson.name }}">
+              <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-a.png" width="45" align="right" />
+            </a>
           </td>
         </tr>
+        
+        {% assign api_action_url = '' %}
+        {% for api in apisjson.apis %}
+
+            {% assign api_action_spec = '' %}
+            {% assign api_action_url = '' %}
+            {% assign openapi_json_spec_url = '' %}
+            {% assign openapi_yaml_spec_url = '' %}
+
+            {% for property in api.properties %}
+
+              {% assign thisname = apisjson.name | downcase %}
+              {% assign thisname = thisname | replace: ' ','-' %}
+
+              {% if property.type == 'x-openapi-spec' %}
+
+                {% assign openapi_json_spec_url = property.url %}
+
+                {% assign pathname = openapi_json_spec_url | replace: 'https://raw.githubusercontent.com/','' %}
+
+                {% assign pathname = pathname | replace: '_data/','' %}
+                {% assign pathname = pathname | replace: 'gh-pages/','' %}
+                {% assign pathname = pathname | replace: 'api-commons/','' %}
+                {% assign pathname = pathname | replace: site.org,'' %}
+                {% assign pathname = pathname | replace: site.repo,'' %}
+                {% assign pathname = pathname | replace: thisname,'' %}
+                {% assign pathname = pathname | replace: '/','' %}
+                {% assign pathname = pathname | replace: '.yaml','' %}
+
+                {% assign this_apis_json = site.data.api-commons | map: thisname %}
+                {% assign openapi_spec_yaml = this_apis_json | map: pathname %}
+
+              {% endif %}
+
+            {% endfor %}
+
+            <tr>
+              <td align="left" style="padding-left: 40px;">
+                {{ api.name }}
+              </td>
+              <td align="center" width="20%">
+                  <a href="{{ openapi_yaml_spec_url }}" target="_blank" title="OpenAPI Spec Yaml">
+                    <img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-yaml.png" width="45" />
+                  </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left" style="margin-left: 25px; margin-right: 25px;">
+
+                <ul style="padding-left: 70px;">
+                  {% for spec in openapi_spec_yaml %}
+
+                    {% for path in spec.paths %}
+
+                      {% assign method_json = path[1] %}
+
+                      {% for method in method_json %}
+
+                        {% assign verb = method[0] | upcase %}
+                        {% assign summary = method[1].summary %}
+                        <li style="font-size: 12px;">{{ path[0] }} <strong>[{{ verb }}]</strong> {{ summary }}</li>
+
+                      {% endfor %}
+
+                    {% endfor %}
+
+                  {% endfor %}
+                </ul>
+
+              </td>
+            </tr>
+
+        {% endfor %}
 
       {% endif %}
 
