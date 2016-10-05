@@ -3,17 +3,17 @@ layout: none
 ---
 
 {
-  "name": "{{ site.project_title }}",
-  "description": "{{ site.project_title }}",
-  "image": "https://s3.amazonaws.com/kinlane-productions/adopta-agency/adopta-agency-logo-uppercase.png",
+  "name": "{{ site.title }}",
+  "description": "{{ site.project_summary }}",
+  "image": "{{ site.project_image }}",
   "tags": [
     {% for tags in site.project_tags limit:10 %}
     "Kin Lane"{% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
   ],
-  "created": "{{ page.date | date: "%Y-%m-%d" }}",
-  "modified": "{{ page.date | date: "%Y-%m-%d" }}",
-  "url": "{{ site.project_url }}",
+  "created": "{{ site..last_updated | date: "%Y-%m-%d" }}",
+  "modified": "{{ site.last_updated | date: "%Y-%m-%d" }}",
+  "url": "{{ site.url }}/apis.json",
   "SpecificationVersion": "0.14",
   "apis": [
     {
