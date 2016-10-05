@@ -15,38 +15,15 @@ layout: none
   "modified": "{{ site.last_updated | date: "%Y-%m-%d" }}",
   "url": "{{ site.url }}/apis.json",
   "SpecificationVersion": "0.14",
-  "apis": [
-    {% for api in site.api limit:100 %}
+  "apis": [],
+  "include": [
+		{% for api in site.data.apis %}
     {
-      "name": "{{ api.title }}",
-      "humanURL": "{{ site.project_url }}",
-      "baseURL": "{{ site.project_url }}",
-      "tags": [
-        {% for tags in site.project_tags limit:10 %}
-        "Kin Lane"{% if forloop.last %}{% else %},{% endif %}
-        {% endfor %}
-      ],
-      "properties": [
-        {
-          "type": "Swagger",
-          "url": "{{ api.swagger_url }}"
-        },
-        {
-          "type": "X-documentation",
-          "url": "{{ site.project_url }}/documentation/?swagger_url={{ api.swagger_url }}"
-        }
-      ],
-      "contact": [
-        {
-          "FN": "{{ site.support_title }}",
-          "email": "{{ site.support_email }}",
-          "X-twitter": "{{ site.support_twitter }}"
-        }
-      ]
+      "name": "{{ api.name }}",
+      "humanURL": "{{ api.url }}",
     }{% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
-  ],
-  "include": [],
+	],
   "maintainers": [
     {
       "FN": "{{ site.support_title }}",
