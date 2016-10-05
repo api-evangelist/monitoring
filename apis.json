@@ -6,18 +6,13 @@ layout: none
   "name": "{{ site.title }}",
   "description": "{{ site.project_summary }}",
   "image": "{{ site.project_image }}",
-  "tags": [
-    {% for tags in site.project_tags limit:10 %}
-    "Kin Lane"{% if forloop.last %}{% else %},{% endif %}
-    {% endfor %}
-  ],
-  "created": "{{ site..last_updated | date: "%Y-%m-%d" }}",
+  "created": "2016-10-01",
   "modified": "{{ site.last_updated | date: "%Y-%m-%d" }}",
   "url": "{{ site.url }}/apis.json",
   "SpecificationVersion": "0.14",
   "apis": [],
   "include": [
-		{% for api in site.data.apis %}
+		{% for api in site.data.apis.include %}
     {
       "name": "{{ api.name }}",
       "humanURL": "{{ api.url }}",
