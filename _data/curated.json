@@ -1,5 +1,29 @@
 [
 	{
+		"curated_id": "l51166G116cUaV93dM1OPh116b123QhAydYSYV1239A1230mYvXI5WY4GddoWZlZw8KN13MP0pBqb9tJJeNdy2DXPkZEmebjPw117117",
+		"item_date": "2016-10-03 12:16:04",
+		"title": "A Docker Container To Capture All Traffic From Host",
+		"url": "http://jerrygamblin.com/2016/05/28/a-docker-container-to-capture-all-traffic-from-host/?hootPostID=dbfeb195b7d98e4385ebdd31ce907af3",
+		"domain": "jerrygamblin.com",
+		"image": ""
+	},
+	{
+		"curated_id": "RCnAznzx02Y0JkYPI4gvqOgyW116aKVh16m0bhhY116jvfcKBHJsQvXPtFXfb28ru4bh93hz8uwZjs1160B4SjlstVSA117117",
+		"item_date": "2016-10-05 09:25:47",
+		"title": "Meet Zipkin A Tracer for Debugging Microservices",
+		"url": "http://thenewstack.io/meet-zipkin-tracer-debugging-microservices/",
+		"domain": "thenewstack.io",
+		"image": ""
+	},
+	{
+		"curated_id": "f1MkWNBAExLUJV1169HMydL4JWw2Z2ea116NyczYUJ0nw08bon9o5RtY7FhmTDeoW123v1HehXS1p3Hn1233WUOPSUOXqw117117",
+		"item_date": "2016-10-03 12:06:45",
+		"title": "Tweet API calls can fail in many different ways How does your team detect API failures Image by realm httpstco7tcrdHNVbG",
+		"url": "https://twitter.com/Runscope/statuses/783020481276317696",
+		"domain": "twitter.com",
+		"image": ""
+	},
+	{
 		"curated_id": "PX0u123I09IUYNpVZj116PoK2tDy9QEN8KjyoOJ3116xHBpDYLwEi79zoeER7k1bQLgEcdo34q7bWLM123LAvezm0cj94g117117",
 		"item_date": "2016-09-26 00:00:00",
 		"title": "How to monitor Elasticsearch with Datadog",
