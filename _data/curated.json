@@ -1,5 +1,21 @@
 [
 	{
+		"curated_id": "LORV4ZEVhDUSuRj123b1160bv3yENcdrd885rOKTXgXG123qeDOB0123m1hvw0vbdfQCnN123evey116Jy6StnPMaJ116zTc9bFA117117",
+		"item_date": "2016-10-06 15:49:15",
+		"title": "Script Engine Included Libraries  Docs  Runscope API Performance Monitoring  Runscope API Testing  Monitoring",
+		"url": "https://www.runscope.com/docs/api-testing/scripts/libraries",
+		"domain": "www.runscope.com",
+		"image": ""
+	},
+	{
+		"curated_id": "hH123qWn7Hcw116jO2AfopRs123TB123oPRcrpoVTAgqZtedk58FXoGKie116oTMim4yro3wjeBkMlbFZ1UKd30jR2IQyDpw117117",
+		"item_date": "2016-10-06 00:00:00",
+		"title": "Introduction to Docker Monitoring",
+		"url": "https://dzone.com/refcardz/intro-to-docker-monitoring",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
 		"curated_id": "l51166G116cUaV93dM1OPh116b123QhAydYSYV1239A1230mYvXI5WY4GddoWZlZw8KN13MP0pBqb9tJJeNdy2DXPkZEmebjPw117117",
 		"item_date": "2016-10-03 12:16:04",
 		"title": "A Docker Container To Capture All Traffic From Host",
@@ -21,6 +37,22 @@
 		"title": "Tweet API calls can fail in many different ways How does your team detect API failures Image by realm httpstco7tcrdHNVbG",
 		"url": "https://twitter.com/Runscope/statuses/783020481276317696",
 		"domain": "twitter.com",
+		"image": ""
+	},
+	{
+		"curated_id": "UwC8ibIkyY6bo5hZ5WnJorPQjAYB1NtguGWwLwnJBGerPwXTAU6dAekgvSF1r74iwIrmHTfjD85fAI71F9TB123A117117",
+		"item_date": "2016-10-03 00:00:00",
+		"title": "Using JavaScript and Chai Asserts to Validate API Response Timing versus Data Size",
+		"url": "https://www.apiscience.com/blog/chai-javascript-assert-timing-validation/",
+		"domain": "www.apiscience.com",
+		"image": ""
+	},
+	{
+		"curated_id": "1239123miE9snyhvhMtgrOVtPqL9WZlDhS9at6QNSNncfrEROvuELJCnWrcBTE116LlSHgtIY1162fWdQWtNHHsvEqAL0g117117",
+		"item_date": "2016-10-03 00:00:00",
+		"title": "Introducing the allnew Site24x7 Alarms View  Incident management made easy",
+		"url": "http://blogs.site24x7.com/2016/10/03/introducing-site24x7-alarms-view/",
+		"domain": "blogs.site24x7.com",
 		"image": ""
 	},
 	{
