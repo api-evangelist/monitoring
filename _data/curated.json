@@ -1,5 +1,29 @@
 [
 	{
+		"curated_id": "PyE123Yw1PgC4IAxeP6116yPqVONTsdPY9f1f8SiFkdgqYDYBu76f0wCJNJsR9l66bSzxkyhftDi0ZTBigQUVYhGxQ117117",
+		"item_date": "2016-10-21 00:00:00",
+		"title": "Anomaly Detection and Machine Learning Applied to DevOps and Monitoring",
+		"url": "https://www.opsclarity.com/anomaly-detection-machine-learning-applied-devops-monitoring/",
+		"domain": "www.opsclarity.com",
+		"image": ""
+	},
+	{
+		"curated_id": "5jNWr4I5fZ7116znDD123CHzaX5fiRsv7n9116oSGILJ55HwxVhSutDD1238joOmexAAFtXNjCvbatVW7bKKBBuSECsdmA117117",
+		"item_date": "2016-10-17 00:00:00",
+		"title": "Introducing Veneur high performance and global aggregation for Datadog",
+		"url": "https://stripe.com/blog/introducing-veneur-high-performance-and-global-aggregation-for-datadog",
+		"domain": "stripe.com",
+		"image": ""
+	},
+	{
+		"curated_id": "nENlVpA7tmu4uH123LwfQD4JkkSxwVVeNXcUke0WyOd123QpH6EuriUbgqhkf4QXmF9765aVdSy2j116qj123ThXzwWlNA117117",
+		"item_date": "2016-10-20 00:00:00",
+		"title": "Presentation Publish Secure and Monitor APIs with Cloud Foundry Route Services",
+		"url": "https://www.infoq.com/presentations/api-cloud-foundry-route",
+		"domain": "www.infoq.com",
+		"image": ""
+	},
+	{
 		"curated_id": "wjLX41116wXMo123YsZWkMs1vBQphOzGSbFCxk3N7bkM6zt9EDCGyPcOM9So8O0ej7poRc423hqGJ123fNB7ondFs6Ag117117",
 		"item_date": "2016-10-17 11:10:23",
 		"title": "Jani Karhunen  Website and API monitoring withAdminLabs",
