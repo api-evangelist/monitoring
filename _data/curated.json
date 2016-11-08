@@ -1,5 +1,45 @@
 [
 	{
+		"curated_id": "N6pTymztyMey9nOJeC5Q116fzwVCJgLej9f7yXpXCQGt8JHpHOYmovy9BhOukKPToAjZLK9TliWWNmYky4N6jaIQ117117",
+		"item_date": "2016-11-01 00:00:00",
+		"title": "Propane tank monitoring radio gets LP Gas Growth Summit launch",
+		"url": "http://www.lpgasmagazine.com/propane-tank-monitoring-radio-gets-lp-gas-growth-summit-launch/",
+		"domain": "www.lpgasmagazine.com",
+		"image": ""
+	},
+	{
+		"curated_id": "kY9ZoXfzbXDNDj116zwpXhUdMNdCBak1b6J0o7M1167KM2ln2qgicVkdR6HryrUR38Hwedcew8FkV34xoEUNhL0Irg117117",
+		"item_date": "2016-11-01 00:00:00",
+		"title": "Amazon CloudWatch Update  Extended Metrics Retention  User Interface Update",
+		"url": "https://aws.amazon.com/blogs/aws/amazon-cloudwatch-update-extended-metrics-retention-user-interface-update/",
+		"domain": "aws.amazon.com",
+		"image": ""
+	},
+	{
+		"curated_id": "sSKHTBSfQNKtpERDTF3URXeU3oezfUdPmWjQKp8gLtJG71fWCJx9BiSjEEkVJiKvEhjg0rLxsqz071jUy4jhQw117117",
+		"item_date": "2016-11-02 00:00:00",
+		"title": "Our transaction monitoring just got better",
+		"url": "http://royal.pingdom.com/2016/11/02/transaction-monitoring-just-got-better/",
+		"domain": "royal.pingdom.com",
+		"image": ""
+	},
+	{
+		"curated_id": "tOBOUc0nn116c116OOmhZs1KHWT4mZgclbX5hzO0Ob02ptQM4nz61bS4U3iSayOvLi7seeivTMhyxHtpgJUiqEJjKA117117",
+		"item_date": "2016-11-04 00:00:00",
+		"title": "Datadog  New Relic Monitor every layer of your stack",
+		"url": "https://www.datadoghq.com/blog/new-relic-apm-synthetics-monitoring/",
+		"domain": "www.datadoghq.com",
+		"image": ""
+	},
+	{
+		"curated_id": "rdphe5atXidk6O6GjiN1123A0dI9yz8jxkIBcX8XSGTLSMNsZUgiEYqBbHJrkP9L116123XrUes1cUM8hnY1VzWOJKmg117117",
+		"item_date": "2016-11-04 00:00:00",
+		"title": "HTTP Benchmark and Pipelining",
+		"url": "https://dzone.com/articles/http-benchmark-and-pipelining",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
 		"curated_id": "PyE123Yw1PgC4IAxeP6116yPqVONTsdPY9f1f8SiFkdgqYDYBu76f0wCJNJsR9l66bSzxkyhftDi0ZTBigQUVYhGxQ117117",
 		"item_date": "2016-10-21 00:00:00",
 		"title": "Anomaly Detection and Machine Learning Applied to DevOps and Monitoring",
