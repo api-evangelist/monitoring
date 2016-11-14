@@ -1,5 +1,29 @@
 [
 	{
+		"curated_id": "ATJZFyOZf1FT4OitWUY5oCbr26haJ1231rPoIUy1ZHqxPYlxj8pCV6v1VDliyCpRwnUK2jHo20Qr116WwM7lywhdsw117117",
+		"item_date": "2016-11-10 00:00:00",
+		"title": "APImetrics Launches Single Number Score for API Health",
+		"url": "http://www.programmableweb.com/news/apimetrics-launches-single-number-score-api-health/brief/2016/11/10",
+		"domain": "www.programmableweb.com",
+		"image": ""
+	},
+	{
+		"curated_id": "5aE123eyFnZGrDUNB3Gj5MibS0uxTNXCrSZJBPvnymXKs5rcIyhmdNTUD0YsfcyTi0j7MQGyufsyFO6FQvGRo5Cg117117",
+		"item_date": "2016-11-07 00:00:00",
+		"title": "Exploring your applications latency profile using Stackdriver Trace",
+		"url": "https://cloudplatform.googleblog.com/2016/11/exploring-your-applications-latency-profile-using-Stackdriver-Trace.html",
+		"domain": "cloudplatform.googleblog.com",
+		"image": ""
+	},
+	{
+		"curated_id": "2qhHQzJ859wmOZoIFXKhEmwSgJl3116xC92JE3CWCghvnUlCxoKIy3gDtW6Sv62zlxuGlkFR116yIrtj2dh9HK9Uuw117117",
+		"item_date": "2016-11-07 00:00:00",
+		"title": "New Relic extends monitoring to containers and micro service environments",
+		"url": "https://techcrunch.com/2016/11/07/new-relic-extends-monitoring-to-containers-and-micro-service-environments/",
+		"domain": "techcrunch.com",
+		"image": ""
+	},
+	{
 		"curated_id": "N6pTymztyMey9nOJeC5Q116fzwVCJgLej9f7yXpXCQGt8JHpHOYmovy9BhOukKPToAjZLK9TliWWNmYky4N6jaIQ117117",
 		"item_date": "2016-11-01 00:00:00",
 		"title": "Propane tank monitoring radio gets LP Gas Growth Summit launch",
