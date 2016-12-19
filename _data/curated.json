@@ -1,5 +1,13 @@
 [
 	{
+		"curated_id": "B4ACxuxcFdOHyGIzXcrxjzh4pJNaksvzJiPg1rMGVx2jZFQ1zDLLXdNKujpI6apQrMVbL1f17BckO1zlXe6IXw117117",
+		"item_date": "2016-12-15 00:00:00",
+		"title": "Building Your Own Monitoring Solution  A Look at openshifttools",
+		"url": "https://blog.openshift.com/build-monitoring-solution-look-openshift-tools/",
+		"domain": "blog.openshift.com",
+		"image": ""
+	},
+	{
 		"curated_id": "ATJZFyOZf1FT4OitWUY5oCbr26haJ1231rPoIUy1ZHqxPYlxj8pCV6v1VDliyCpRwnUK2jHo20Qr116WwM7lywhdsw117117",
 		"item_date": "2016-11-10 00:00:00",
 		"title": "APImetrics Launches Single Number Score for API Health",
