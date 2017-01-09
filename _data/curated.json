@@ -1,5 +1,45 @@
 [
 	{
+		"curated_id": "l4SNqu22fh0feqyz6PK708gs7hX93ZT0Tun116hWWRn2zmYB6UiRT116Ew48FP116zDKp0HGKwimnY6fcDRHRV2PfjNA117117",
+		"item_date": "2017-01-03 00:00:00",
+		"title": "New AL500 LiDAR System from Acuity Technologies",
+		"url": "http://www.pobonline.com/articles/100735-new-al-500-lidar-system-from-acuity-technologies",
+		"domain": "www.pobonline.com",
+		"image": ""
+	},
+	{
+		"curated_id": "Q3JJ3WLqY1uTwiXQYAuyK6RGxCYvgztL7c3eWbjTwFkK8F2bp0wC116ptErbS1Q9123MVSinz89iUqt29GtSxhI9gA117117",
+		"item_date": "2017-01-06 00:00:00",
+		"title": "Splunk and AWS Monitoring  Metrics in a Serverless World",
+		"url": "http://blogs.splunk.com/2017/01/06/splunk-and-aws-monitoring-metrics-in-a-serverless-world/",
+		"domain": "blogs.splunk.com",
+		"image": ""
+	},
+	{
+		"curated_id": "sJEDREYeUtTi7b1A4i5HEZwkwodUkpjpzs4osnklT2ihl2qm5i8ZR3Fhrv56NR8s3Fu5B74MDDo1cv2hpzjWLA117117",
+		"item_date": "2017-01-05 00:00:00",
+		"title": "Prometheus and GitLab",
+		"url": "https://about.gitlab.com/2017/01/05/prometheus-and-gitlab/",
+		"domain": "about.gitlab.com",
+		"image": ""
+	},
+	{
+		"curated_id": "EpeYbLTxdZXNv2aPjbzbkfjOx4akLJ6V7GE7QBwAHTNCDRJGSppn116crFxcbSoxNhos4CcLr7iMsYOKlA1LnWWA117117",
+		"item_date": "2017-01-04 08:32:41",
+		"title": "The AL500 Lidar is Small Enough for Fixed Installation Comes with an API",
+		"url": "http://www.spar3d.com/news/lidar/al-500-lidar-small-enough-fixed-installation-comes-api/",
+		"domain": "www.spar3d.com",
+		"image": ""
+	},
+	{
+		"curated_id": "smfjpu67KD116KBsAWmamWgZZ1elYzwclCkftrlO7AjSf74wTAlaX0joIqgfis8T3U1237Br1PaZ9IXCHwvmJMUahw117117",
+		"item_date": "2017-01-04 00:00:00",
+		"title": "CES 2017 preview Announcing the 3rd generation FLIR ONE",
+		"url": "https://developer.flir.com/news-and-updates/ces-2017-preview-announcing-the-3rd-generation-flir-one/",
+		"domain": "developer.flir.com",
+		"image": ""
+	},
+	{
 		"curated_id": "MUlVPMpx9mIx433A53KjHcjq06fzpbpyqEZMNhFhsoJAlBHGwPCM50l3OOXNIFcR1y78NdH5vqFmTncES116mqWA117117",
 		"item_date": "2016-12-27 00:00:00",
 		"title": "Stackdriver Trace  Zipkin distributed tracing and performance analysis for everyone",
