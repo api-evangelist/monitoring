@@ -1,5 +1,13 @@
 [
 	{
+		"curated_id": "HUmJSAbCUyCQxpSngc8H116iq7MSxYCseQ08Z0pAYlGEHK7BjboK3i4avKQ1gUTvfwJxmGHHSfNC116mLqAK1169rWAw117117",
+		"item_date": "2017-03-04 00:00:00",
+		"title": "How to Monitor Azure App Services with Retrace",
+		"url": "https://stackify.com/monitor-azure-app-services-retrace/",
+		"domain": "stackify.com",
+		"image": ""
+	},
+	{
 		"curated_id": "rfYseYckgh6Wj123YRRrV116sQdFo2A0wTeoIPqBjJsPx116GOSCa116TE3DE29chm2KW116PoOi7Zx6qMQYxM2AdJsPPcQA117117",
 		"item_date": "2017-03-01 00:00:00",
 		"title": "New Relic Synthetics Monitoring Using Selenium",
