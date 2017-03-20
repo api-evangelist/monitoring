@@ -1,5 +1,29 @@
 [
 	{
+		"curated_id": "1fPXNiR116c9QIh5pfRDxUm944Z8YHIcD6QNH7Nej8T9Mbf5apUbjbY2rqiFJV2whDbpro5mdHswxs5TQs6Z7aEA117117",
+		"item_date": "2017-03-14 00:00:00",
+		"title": "Introducing composite monitors",
+		"url": "https://www.datadoghq.com/blog/composite-monitors/",
+		"domain": "www.datadoghq.com",
+		"image": ""
+	},
+	{
+		"curated_id": "NAoBserwJtazW2eL0m0nlCh0QY6ktdkIQSfY7XjX116a116Eo4s8llYsLgOU1RHFch2kPYPSWtPqfeouR116KuS7CHVw117117",
+		"item_date": "2017-03-15 00:00:00",
+		"title": "Using New Relic to Monitor Applications on OpenShift",
+		"url": "https://blog.openshift.com/using-new-relic-to-monitor-applications-on-openshift/",
+		"domain": "blog.openshift.com",
+		"image": ""
+	},
+	{
+		"curated_id": "15k116y5Ywgi0B0Lkhd1237av116adAAmlevyLIMtM2MVH6116JkUbvwLM5n0pI1vpMf116H0gO123rsc9HXllvI9X6CN6ZMtw117117",
+		"item_date": "2017-03-18 00:00:00",
+		"title": "5 Steps to MeteorJS Monitoring",
+		"url": "https://dzone.com/articles/5-steps-to-meteorjs-monitoring-1",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
 		"curated_id": "6SWCfREl9F11654xnI6YCvWwf9NEfqNGrFu3yCeAN123vbvulm1s1230RqbM66hu5dnJUBxNYADjJPbOEACoeknDiyOQ117117",
 		"item_date": "2017-03-09 15:06:06",
 		"title": "Tweet Retry on Failure  Threshold Alerts Optimize Your Teams API Monitoring Notifications",
