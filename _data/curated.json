@@ -1,5 +1,61 @@
 [
 	{
+		"curated_id": "mqlxuD8sAe1XhSwuDXUCSFrL60jNhLbq43SgbbyTlQFh7g6h5auV7XKdC32kVCuYdn0UZOD4RBiWf6bLQXyOVQ117117",
+		"item_date": "2017-04-04 21:20:28",
+		"title": "Detecting Failed API Monitor Checks Using the API Science API",
+		"url": "https://www.apiscience.com/blog/detecting-failed-api-monitor-checks/",
+		"domain": "www.apiscience.com",
+		"image": ""
+	},
+	{
+		"curated_id": "yzNfMJbhn13Fw7IHi8CbAcAmGa7oAc214c5NrWeysj85IR6v2YCfOJhyTjMki6Pd9vVQIj84UKMpy6ZjKPqakg117117",
+		"item_date": "2017-04-07 00:00:00",
+		"title": "Census Data API is Down",
+		"url": "http://apimetrics.io/2017/04/07/census-data-api-is-down/",
+		"domain": "apimetrics.io",
+		"image": ""
+	},
+	{
+		"curated_id": "116vbXP1ZBBRnCVy23sg123BGTK862BANRrUx1OThLCNfNCZ5WTMjC3GBoM2wRSSef2usMC0nGSrlyOmxOdWHlbGxA117117",
+		"item_date": "2017-04-06 00:00:00",
+		"title": "CRFS releases new MATLAB Toolbox",
+		"url": "https://us.crfs.com/en/news/crfs-releases-new-matlab-toolbox/",
+		"domain": "us.crfs.com",
+		"image": ""
+	},
+	{
+		"curated_id": "Zw116If1RCDmUvt5123KCKWQTRQO5sjCxLeyqW7Zbkh2NpI1237vQrD0pOWEjR185zbCpctADZ9sCwifcWplFOOjTDDg117117",
+		"item_date": "2017-04-05 00:00:00",
+		"title": "The Dreaded 418 Error Monitoring HTCPCP Microservices in IoT Deployments",
+		"url": "https://dzone.com/articles/the-dreaded-418-error-monitoring-htcpcp-microservices-in-iot-deployments",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "sJWB1JnEXTZJVcCLhPWcjtRpAmjVvOqpw4ixUerQvnBoK7rirdsDc1232UNmDkq123rbcoAu2tRgbdEMnBK1161lEufw117117",
+		"item_date": "2017-04-05 00:00:00",
+		"title": "AutoPublishing and Monitoring APIs With Spring Boot",
+		"url": "https://dzone.com/articles/auto-publishing-amp-monitoring-apis-with-spring-bo",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "scUQGDhs4Ja9c2DlSbT4J65S116l33k6v4IdeliGw5q8ocTqo9ReNCoquVLgMPFNyhYzND123oZAlLNO123RrpnGdyew117117",
+		"item_date": "2017-04-04 00:00:00",
+		"title": "Detecting Failed API Monitor Checks Using the API Science API",
+		"url": "https://www.apiscience.com/blog/detecting-failed-api-monitor-checks/",
+		"domain": "www.apiscience.com",
+		"image": ""
+	},
+	{
+		"curated_id": "1116i5TVdbYEuk4BVdVKpViY4ArTSMwg4VmVdSyb2jrQjITmDCcJ27uP1NCugtN116xlhG4os7jY4lSpSvxNUDAwow117117",
+		"item_date": "2017-04-04 00:00:00",
+		"title": "Introducing Monitoring Insight into Your Infrastructure",
+		"url": "https://www.digitalocean.com/company/blog/introducing-monitoring/",
+		"domain": "www.digitalocean.com",
+		"image": ""
+	},
+	{
 		"curated_id": "03Z5Z5XvbhAAsaLTYHRWOPBSrRom123N6W8zvIPfnBUOrS41230RTJ3zJU4yipFa3wEcby13TQm2aUAymL2VHY7n4Q117117",
 		"item_date": "2017-03-24 00:00:00",
 		"title": "Using Google Sheets and Runscope to Run API Tests with Multiple Variable Sets",
