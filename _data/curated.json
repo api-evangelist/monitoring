@@ -2,9 +2,9 @@
 	{
 		"curated_id": "0FuwCQvBXGfYkePOFGY82qVjVTxFQrUuam54IYvfjqcrsZKOqxBPmtyDNTkugp9RpCjp1I9n1n61Bo0KnkzKLw117117",
 		"item_date": "2017-04-11 09:45:35",
-		"title": "Tweet Push Postman Monitor results to your Keen Stream analytics Get started using the keenio  integration httpstcoPf5kwGb3Pm",
-		"url": "https://twitter.com/postmanclient/statuses/851838651281674240",
-		"domain": "twitter.com",
+		"title": "Push Postman Monitor results to your Keen Stream analytics",
+		"url": "https://keen.io/docs/integrations/postman/",
+		"domain": "keen.io",
 		"image": ""
 	},
 	{
@@ -34,7 +34,7 @@
 	{
 		"curated_id": "0XeiHjZ0OR2nRkub4ApyFH06gmIDRDI0TL74Dlfvld9Yx34MNNXD4f8i9ika2xqg1cvUhHJGN123oRyit116qa6pYQ117117",
 		"item_date": "2017-04-10 00:00:00",
-		"title": "Five things weve learned about monitoring containers and their",
+		"title": "Five Things Weve Learned About Monitoring Containers And Their Orchestrators",
 		"url": "http://highscalability.com/blog/2017/4/10/five-things-weve-learned-about-monitoring-containers-and-the.html",
 		"domain": "highscalability.com",
 		"image": ""
