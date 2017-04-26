@@ -1,10 +1,34 @@
 [
 	{
+		"curated_id": "mPySoj2uQqljvbsIfuf6IG6oyuhFS2FrJZXeLRURfqoQrklZDtECW2T6uefBY3LbvMjhzmv6iSAFizEwvkv4EA117117",
+		"item_date": "2017-04-19 00:00:00",
+		"title": "APImetrics ThreeYear Study More Than Half Of Existing APIs Have Problems That Could Affect Customers INFOGRAPHIC",
+		"url": "http://apimetrics.io/2017/04/19/api-problems-infographic/",
+		"domain": "apimetrics.io",
+		"image": ""
+	},
+	{
+		"curated_id": "l116hPjVfh3tyfZigjem7DJWGEQ9dmR2oheGQBf5W1QYQls3QNzRsLrC8AKnWaocW9qLea26BkIOI1235NVREanlHQ117117",
+		"item_date": "2017-04-19 00:00:00",
+		"title": "Distributed tracing for Go",
+		"url": "https://cloudplatform.googleblog.com/2017/04/distributed-tracing-for-Go.html",
+		"domain": "cloudplatform.googleblog.com",
+		"image": ""
+	},
+	{
 		"curated_id": "1HMnOVbxDF1123oepZm6fgl123VTlTDUZNsoyjxZ8Xw0xZ2mE1nQFbhsTFUbUMEUCvxklWnE25ZaluCPhFFOTxF8ZA117117",
 		"item_date": "2017-04-21 00:00:00",
 		"title": "Everything You Need to Know About the APImetrics CASC Score",
 		"url": "http://apimetrics.io/2017/04/21/casc-score/",
 		"domain": "apimetrics.io",
+		"image": ""
+	},
+	{
+		"curated_id": "k5XpC0FKenNzQT98uNfqVAAc3A3qArIHkLbmOga116sqSGZM6IozZ4iE0x9dXVp8LHk7z8eAcvQHrW6HseTDoZ4w117117",
+		"item_date": "2017-04-20 00:00:00",
+		"title": "Monitor Akkabased applications with Lightbend  Datadog",
+		"url": "https://www.datadoghq.com/blog/monitor-lightbend/",
+		"domain": "www.datadoghq.com",
 		"image": ""
 	},
 	{
