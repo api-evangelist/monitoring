@@ -33,7 +33,8 @@
   blog: ''
   blog_rss: ''
   github: 'https://github.com/Runscope/'
-  image: ''
+  image: >-
+    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
   tags: 'Monitoring, Flask'
 - slug: mailcheck
   name: Mailcheck
@@ -124,7 +125,7 @@
   blog_rss: ''
   github: 'https://github.com/yanc0/'
   image: 'https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png'
-  tags: 'Monitoring, General'
+  tags: 'Monitoring, General, Performance,General'
 - slug: status-ok
   name: StatusOK
   description: >-
