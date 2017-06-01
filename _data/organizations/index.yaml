@@ -344,11 +344,15 @@
   blog: 'http://lightstep.com/blog/'
   blog_rss: 'http://lightstep.com/feed.xml'
   github: 'https://github.com/lightstep'
-  image: ''
+  image: 'https://s3.amazonaws.com/kinlane-productions/lightstep/lightstep.png'
   tags: Monitoring
 - slug: mention
   name: Mention
-  description: ''
+  description: >-
+    Mention changes the way you monitor the web. Create keyword-based alerts on
+    your company, your brand, your competitors, and receive updates in real time
+    about any mentions on the web and social networks.  React to your audience,
+    collaborate with your team, and get analytics on your mentions.  
   url: 'https://mention.net/'
   short_url: ''
   twitter: 'https://twitter.com/mention'
@@ -515,17 +519,6 @@
   image: >-
     http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png
   tags: 'My API Stack,Monitoring,Testing,Monitoring,Testing,API LIfeycle'
-- slug: samepoint-realtime-social-media
-  name: Samepoint Real-Time Social Media
-  description: ''
-  url: 'http://api.samepoint.com/'
-  short_url: ''
-  twitter: ''
-  blog: ''
-  blog_rss: ''
-  github: ''
-  image: ''
-  tags: 'Media,Monitoringsocial,Social'
 - slug: server-density
   name: Server Density
   description: >-
