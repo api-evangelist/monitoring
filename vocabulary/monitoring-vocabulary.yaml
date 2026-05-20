@@ -1,0 +1,339 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Monitoring
+  description: Vocabulary for the API monitoring topic, covering synthetic checks, application performance monitoring, logs, metrics, distributed tracing, error tracking, alerting, and incident response.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: Datadog
+      namespace: datadog
+      status: active
+    - name: New Relic
+      namespace: new-relic
+      status: active
+    - name: PagerDuty
+      namespace: pagerduty
+      status: active
+    - name: Sentry
+      namespace: sentry
+      status: active
+    - name: Prometheus
+      namespace: prometheus
+      status: active
+    - name: Grafana
+      namespace: grafana
+      status: active
+    - name: OpenTelemetry
+      namespace: opentelemetry
+      status: active
+    - name: Statuspage
+      namespace: statuspage
+      status: active
+
+  resources:
+    - name: checks
+      description: Synthetic and uptime checks executed against APIs and endpoints
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+        - pause
+        - resume
+    - name: metrics
+      description: Time-series metric points ingested from infrastructure and applications
+      actions:
+        - ingest
+        - query
+        - list
+    - name: logs
+      description: Application and infrastructure log records, indexed for search
+      actions:
+        - ingest
+        - query
+        - list
+    - name: traces
+      description: Distributed traces composed of spans across services
+      actions:
+        - ingest
+        - query
+        - get
+    - name: alerts
+      description: Alert rules and active alert instances triggered by metric, log, or check conditions
+      actions:
+        - create
+        - list
+        - get
+        - update
+        - delete
+        - acknowledge
+        - resolve
+    - name: incidents
+      description: Operational incidents coordinated across response teams
+      actions:
+        - create
+        - get
+        - list
+        - update
+        - resolve
+    - name: on-call-schedules
+      description: On-call rotations and escalation policies that route alerts to responders
+      actions:
+        - list
+        - get
+        - create
+        - update
+    - name: status-page-components
+      description: Public status page components and their current operational status
+      actions:
+        - list
+        - get
+        - update
+
+  actions:
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: query
+      description: Query metric, log, or trace data with a search expression
+      httpMethod: POST
+      pattern: query
+    - name: ingest
+      description: Push telemetry data into the platform
+      httpMethod: POST
+      pattern: write
+    - name: create
+      description: Create a new resource
+      httpMethod: POST
+      pattern: write
+    - name: update
+      description: Update an existing resource
+      httpMethod: PUT
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+    - name: pause
+      description: Temporarily pause a check or alert
+      httpMethod: POST
+      pattern: write
+    - name: resume
+      description: Resume a paused check or alert
+      httpMethod: POST
+      pattern: write
+    - name: acknowledge
+      description: Acknowledge an alert or incident
+      httpMethod: POST
+      pattern: write
+    - name: resolve
+      description: Resolve an alert or incident
+      httpMethod: POST
+      pattern: write
+
+  schemas:
+    core:
+      - name: SyntheticCheck
+        description: A synthetic monitoring check executed against an endpoint
+        properties:
+          - name
+          - type
+          - target_url
+          - request
+          - assertions
+          - locations
+          - frequency_seconds
+          - status
+          - tags
+      - name: Incident
+        description: An operational incident opened in response to monitoring signals
+        properties:
+          - title
+          - severity
+          - status
+          - impacted_services
+          - alert_sources
+          - commander
+          - responders
+          - communication_channel
+          - status_page_url
+          - started_at
+          - resolved_at
+          - postmortem_url
+
+  enums:
+    check_types:
+      - http
+      - browser
+      - tcp
+      - dns
+      - icmp
+      - grpc
+      - graphql
+      - multi-step
+    check_status:
+      - passing
+      - degraded
+      - failing
+      - paused
+    incident_severity:
+      - sev1
+      - sev2
+      - sev3
+      - sev4
+      - sev5
+    incident_status:
+      - triggered
+      - acknowledged
+      - investigating
+      - identified
+      - monitoring
+      - resolved
+    telemetry_signal:
+      - metric
+      - log
+      - trace
+      - event
+
+capability:
+  workflows:
+    - name: External API Uptime Monitoring
+      description: Run synthetic HTTP checks against public API endpoints from multiple regions, alerting on availability or latency regressions
+      apis:
+        - pingdom
+        - checkly
+        - better-stack
+        - datadog
+      personas:
+        - Site Reliability Engineer
+      domains:
+        - Synthetic Monitoring
+    - name: Microservice Performance Troubleshooting
+      description: Use distributed tracing, metrics, and logs to investigate latency or error rate regressions across microservices
+      apis:
+        - datadog
+        - new-relic
+        - honeycomb
+        - opentelemetry
+      personas:
+        - Application Engineer
+      domains:
+        - Observability
+    - name: On-Call Paging and Escalation
+      description: Route alerts from monitoring systems to on-call engineers through schedules and escalation policies
+      apis:
+        - pagerduty
+        - opsgenie
+        - squadcast
+      personas:
+        - Site Reliability Engineer
+        - On-Call Engineer
+      domains:
+        - Incident Response
+    - name: Incident Response and Postmortems
+      description: Coordinate incident response, communications, and postmortems for production incidents
+      apis:
+        - incident-io
+        - firehydrant
+        - rootly
+        - statuspage
+      personas:
+        - Incident Commander
+        - On-Call Engineer
+      domains:
+        - Incident Response
+    - name: Frontend Error Tracking
+      description: Capture and triage frontend errors, with release tracking and session replay
+      apis:
+        - sentry
+        - rollbar
+        - bugsnag
+        - logrocket
+      personas:
+        - Application Engineer
+      domains:
+        - Error Tracking
+
+  personas:
+    - id: site-reliability-engineer
+      name: Site Reliability Engineer
+      description: Engineers responsible for production reliability, SLOs, and observability tooling
+      workflows:
+        - External API Uptime Monitoring
+        - On-Call Paging and Escalation
+    - id: application-engineer
+      name: Application Engineer
+      description: Engineers building and operating services who use observability to diagnose their own code
+      workflows:
+        - Microservice Performance Troubleshooting
+        - Frontend Error Tracking
+    - id: on-call-engineer
+      name: On-Call Engineer
+      description: Engineers in an on-call rotation who acknowledge and respond to pages
+      workflows:
+        - On-Call Paging and Escalation
+        - Incident Response and Postmortems
+    - id: incident-commander
+      name: Incident Commander
+      description: Person leading the coordination of an active incident
+      workflows:
+        - Incident Response and Postmortems
+
+  domains:
+    - name: Synthetic Monitoring
+      description: Scheduled external checks against API and web endpoints
+    - name: Observability
+      description: Metrics, logs, and traces used to understand the internal state of systems
+    - name: Incident Response
+      description: Practices and tools for paging, coordinating, and resolving production incidents
+    - name: Error Tracking
+      description: Capture and triage of application and frontend errors
+
+crossReference:
+  - resource: checks
+    operations:
+      - list
+      - create
+      - pause
+      - resume
+    workflows:
+      - External API Uptime Monitoring
+    personas:
+      - Site Reliability Engineer
+  - resource: alerts
+    operations:
+      - create
+      - acknowledge
+      - resolve
+    workflows:
+      - On-Call Paging and Escalation
+    personas:
+      - Site Reliability Engineer
+      - On-Call Engineer
+  - resource: incidents
+    operations:
+      - create
+      - update
+      - resolve
+    workflows:
+      - Incident Response and Postmortems
+    personas:
+      - Incident Commander
+      - On-Call Engineer
+  - resource: traces
+    operations:
+      - ingest
+      - query
+    workflows:
+      - Microservice Performance Troubleshooting
+    personas:
+      - Application Engineer

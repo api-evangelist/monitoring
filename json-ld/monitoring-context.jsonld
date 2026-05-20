@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "mon": "https://api-evangelist.github.io/monitoring/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "https://www.w3.org/ns/dcat#",
+
+    "SyntheticCheck": "mon:SyntheticCheck",
+    "Incident": "mon:Incident",
+
+    "name": "schema:name",
+    "title": "schema:name",
+    "description": "schema:description",
+
+    "type": {
+      "@id": "mon:checkType",
+      "@type": "xsd:string"
+    },
+    "target_url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "frequency_seconds": {
+      "@id": "mon:frequencySeconds",
+      "@type": "xsd:integer"
+    },
+    "status": {
+      "@id": "mon:status",
+      "@type": "xsd:string"
+    },
+    "locations": {
+      "@id": "mon:locations",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "assertions": {
+      "@id": "mon:assertions",
+      "@container": "@set"
+    },
+    "request": "mon:request",
+    "severity": {
+      "@id": "mon:severity",
+      "@type": "xsd:string"
+    },
+    "impacted_services": {
+      "@id": "mon:impactedServices",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "alert_sources": {
+      "@id": "mon:alertSources",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "commander": "mon:commander",
+    "responders": {
+      "@id": "mon:responders",
+      "@container": "@set"
+    },
+    "communication_channel": {
+      "@id": "mon:communicationChannel",
+      "@type": "xsd:string"
+    },
+    "status_page_url": {
+      "@id": "mon:statusPageUrl",
+      "@type": "@id"
+    },
+    "started_at": {
+      "@id": "schema:startDate",
+      "@type": "xsd:dateTime"
+    },
+    "resolved_at": {
+      "@id": "schema:endDate",
+      "@type": "xsd:dateTime"
+    },
+    "postmortem_url": {
+      "@id": "mon:postmortemUrl",
+      "@type": "@id"
+    },
+    "tags": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "created": {
+      "@id": "dcterms:created",
+      "@type": "xsd:dateTime"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/monitoring/refs/heads/main/json-structure/monitoring-incident-structure.json",
+  "name": "Incident",
+  "description": "An operational incident opened in response to one or more alerts, used to coordinate response, communication, and postmortem activities across a monitoring and incident response stack.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the incident.",
+      "example": "INC-2026-0142"
+    },
+    "title": {
+      "type": "string",
+      "description": "Short human-readable title for the incident.",
+      "example": "Elevated 5xx error rate on payments API"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the incident.",
+      "example": "Payments service is returning a 5xx response rate above 5% across all regions starting at 14:02 UTC."
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "sev1",
+        "sev2",
+        "sev3",
+        "sev4",
+        "sev5"
+      ],
+      "description": "Severity level of the incident, where sev1 is the most critical.",
+      "example": "sev2"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "triggered",
+        "acknowledged",
+        "investigating",
+        "identified",
+        "monitoring",
+        "resolved"
+      ],
+      "description": "Current lifecycle status of the incident.",
+      "example": "investigating"
+    },
+    "impacted_services": {
+      "type": "array",
+      "description": "Services or components affected by the incident.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "payments-api",
+        "checkout-frontend"
+      ]
+    },
+    "alert_sources": {
+      "type": "array",
+      "description": "Monitoring tools that triggered alerts contributing to the incident.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "datadog",
+        "pingdom",
+        "sentry"
+      ]
+    },
+    "commander": {
+      "type": "object",
+      "description": "Person currently leading the incident response.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Alex Rivera"
+        },
+        "email": {
+          "type": "string",
+          "example": "alex@example.com"
+        }
+      }
+    },
+    "responders": {
+      "type": "array",
+      "description": "Engineers and stakeholders participating in the response.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Jordan Park"
+          },
+          "role": {
+            "type": "string",
+            "example": "subject-matter-expert"
+          }
+        }
+      }
+    },
+    "communication_channel": {
+      "type": "string",
+      "description": "Primary chat or call channel used during the incident.",
+      "example": "#inc-2026-0142"
+    },
+    "status_page_url": {
+      "type": "uri",
+      "description": "Public status page entry, when applicable.",
+      "example": "https://status.example.com/incidents/abc123"
+    },
+    "started_at": {
+      "type": "datetime",
+      "description": "Time the incident began impacting users.",
+      "example": "2026-05-19T14:02:00Z"
+    },
+    "resolved_at": {
+      "type": "datetime",
+      "description": "Time the incident was resolved.",
+      "example": "2026-05-19T15:11:00Z"
+    },
+    "postmortem_url": {
+      "type": "uri",
+      "description": "Link to the postmortem document, once available.",
+      "example": "https://example.com/postmortems/inc-2026-0142"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing the incident.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "payments",
+        "5xx",
+        "regional"
+      ]
+    }
+  },
+  "required": [
+    "title",
+    "severity",
+    "status",
+    "started_at"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/monitoring/refs/heads/main/json-schema/monitoring-synthetic-check-schema.json",
+  "title": "SyntheticCheck",
+  "description": "A scheduled synthetic monitoring check executed against an API endpoint from one or more probe locations to verify availability, latency, and response content.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the synthetic check.",
+      "example": "check_01HZX9ABCD"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the synthetic check.",
+      "example": "Production API Health"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of what the check validates.",
+      "example": "Verifies the /v1/health endpoint returns HTTP 200 within 500ms from every region."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["http", "browser", "tcp", "dns", "icmp", "grpc", "graphql", "multi-step"],
+      "description": "Category of synthetic check.",
+      "example": "http"
+    },
+    "target_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Target URL or endpoint being checked.",
+      "example": "https://api.example.com/v1/health"
+    },
+    "request": {
+      "type": "object",
+      "description": "HTTP request configuration for the check.",
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
+          "example": "GET"
+        },
+        "headers": {
+          "type": "object",
+          "additionalProperties": { "type": "string" },
+          "example": { "Authorization": "Bearer ***" }
+        },
+        "body": {
+          "type": "string",
+          "description": "Optional request body."
+        }
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "description": "Conditions that must be true for the check to pass.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["status_code", "response_time", "body_contains", "body_json_path", "header_equals", "ssl_expiry"],
+            "example": "status_code"
+          },
+          "operator": {
+            "type": "string",
+            "enum": ["equals", "not_equals", "less_than", "greater_than", "contains", "matches"],
+            "example": "equals"
+          },
+          "value": {
+            "description": "Expected value for the assertion.",
+            "example": 200
+          }
+        }
+      }
+    },
+    "locations": {
+      "type": "array",
+      "description": "Probe locations from which the check runs.",
+      "items": { "type": "string" },
+      "example": ["us-east-1", "eu-west-1", "ap-southeast-1"]
+    },
+    "frequency_seconds": {
+      "type": "integer",
+      "description": "How often the check executes, in seconds.",
+      "minimum": 30,
+      "example": 60
+    },
+    "status": {
+      "type": "string",
+      "enum": ["passing", "degraded", "failing", "paused"],
+      "description": "Current operational status of the check.",
+      "example": "passing"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing the check.",
+      "items": { "type": "string" },
+      "example": ["production", "public-api", "health"]
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "example": "2026-05-19T12:00:00Z"
+    }
+  },
+  "required": ["name", "type", "target_url", "frequency_seconds"]
+}

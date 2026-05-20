@@ -1,0 +1,21 @@
+{
+  "id": "INC-2026-0142",
+  "title": "Elevated 5xx error rate on payments API",
+  "description": "Payments service is returning a 5xx response rate above 5% across all regions starting at 14:02 UTC. Synthetic checks from us-east-1 and eu-west-1 are failing, and Sentry shows a spike in DatabaseTimeout exceptions tied to release v2026.05.19-rc3.",
+  "severity": "sev2",
+  "status": "investigating",
+  "impacted_services": ["payments-api", "checkout-frontend"],
+  "alert_sources": ["datadog", "pingdom", "sentry"],
+  "commander": {
+    "name": "Alex Rivera",
+    "email": "alex@example.com"
+  },
+  "responders": [
+    { "name": "Jordan Park", "role": "subject-matter-expert" },
+    { "name": "Sam Chen", "role": "communications-lead" }
+  ],
+  "communication_channel": "#inc-2026-0142",
+  "status_page_url": "https://status.example.com/incidents/abc123",
+  "started_at": "2026-05-19T14:02:00Z",
+  "tags": ["payments", "5xx", "release-rollback"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "check_01HZX9ABCD",
+  "name": "Production Payments API Health",
+  "description": "Verifies that GET /v1/health returns HTTP 200 within 500ms from every probe region and that the body includes \"ok\": true.",
+  "type": "http",
+  "target_url": "https://api.example.com/v1/health",
+  "request": {
+    "method": "GET",
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "monitoring-synthetic/1.0"
+    }
+  },
+  "assertions": [
+    { "type": "status_code", "operator": "equals", "value": 200 },
+    { "type": "response_time", "operator": "less_than", "value": 500 },
+    { "type": "body_json_path", "operator": "equals", "value": { "path": "$.ok", "expected": true } },
+    { "type": "ssl_expiry", "operator": "greater_than", "value": 14 }
+  ],
+  "locations": ["us-east-1", "us-west-2", "eu-west-1", "ap-southeast-1"],
+  "frequency_seconds": 60,
+  "status": "passing",
+  "tags": ["production", "payments", "public-api", "health"],
+  "created": "2026-05-19T12:00:00Z"
+}
