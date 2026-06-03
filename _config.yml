@@ -1,0 +1,26 @@
+title: Monitoring
+description: An index and topic collection covering API monitoring, application performance
+  monitoring, observability, uptime monitoring, log aggregation, error tracking, distributed
+  tracing, and incident response. API monitoring spans synthetic checks against public
+  endpoints, real-user and application performance monitoring, logs and metrics collection,
+  distributed tracing across microservices, error tracking, status page communication,
+  and on-call paging when something breaks. This collection brings together commercial
+  observability platforms like Datadog, New Relic, Dynatrace, and Splunk; open-source
+  projects like Prometheus, Grafana, OpenTelemetry, Jaeger, and Zipkin; uptime and
+  synthetic monitoring services like Pingdom, Checkly, Better Stack, and UptimeRobot;
+  error trackers like Sentry, Rollbar, Bugsnag, and Honeybadger; and incident response
+  platforms like PagerDuty, Opsgenie, Incident.io, and FireHydrant.
+url: https://monitoring.apievangelist.com
+collections:
+  api_stories:
+    output: false
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- Dockerfile
+- examples
+- json-ld
+- json-schema
+- json-structure
+- vocabulary
