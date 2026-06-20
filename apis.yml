@@ -6,7 +6,7 @@ description: >-
   collection brings together commercial observability platforms like Datadog, New Relic, Dynatrace, and Splunk; open-source projects like Prometheus, Grafana, OpenTelemetry, Jaeger, and Zipkin; uptime and synthetic monitoring services like
   Pingdom, Checkly, Better Stack, and UptimeRobot; error trackers like Sentry, Rollbar, Bugsnag, and Honeybadger; and incident response platforms like PagerDuty, Opsgenie, Incident.io, and FireHydrant.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - API Monitoring
 - Observability
