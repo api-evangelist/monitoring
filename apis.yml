@@ -1,5 +1,6 @@
 aid: monitoring
 name: Monitoring
+kind: topic
 description: >-
   An index and topic collection covering API monitoring, application performance monitoring, observability, uptime monitoring, log aggregation, error tracking, distributed tracing, and incident response. API monitoring spans synthetic checks
   against public endpoints, real-user and application performance monitoring, logs and metrics collection, distributed tracing across microservices, error tracking, status page communication, and on-call paging when something breaks. This
