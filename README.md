@@ -1,156 +1,97 @@
-# Monitoring (monitoring)
+# Monitoring
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
 An index and topic collection covering API monitoring, application performance monitoring, observability, uptime monitoring, log aggregation, error tracking, distributed tracing, and incident response. API monitoring spans synthetic checks against public endpoints, real-user and application performance monitoring, logs and metrics collection, distributed tracing across microservices, error tracking, status page communication, and on-call paging when something breaks. This collection brings together commercial observability platforms like Datadog, New Relic, Dynatrace, and Splunk; open-source projects like Prometheus, Grafana, OpenTelemetry, Jaeger, and Zipkin; uptime and synthetic monitoring services like Pingdom, Checkly, Better Stack, and UptimeRobot; error trackers like Sentry, Rollbar, Bugsnag, and Honeybadger; and incident response platforms like PagerDuty, Opsgenie, Incident.io, and FireHydrant.
 
-**URL:** [https://apievangelist.com](https://apievangelist.com)
+**Areas:** API Monitoring · Observability · Uptime · Synthetic Monitoring · Incident Response
 
-## Tags:
+## Monitoring on APIs.io
 
- - API Monitoring, Observability, Uptime, Synthetic Monitoring, Incident Response
+Everything profiled for Monitoring is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/monitoring/](https://apis.io/providers/monitoring/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-05-19
-- **Modified:** 2026-05-19
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
+- [GitHub](https://github.com/api-evangelist)
 
-- [Portal](https://apievangelist.com)
-- [GitHubOrganization](https://github.com/api-evangelist)
-- [JSONSchema - Synthetic Check Schema](https://raw.githubusercontent.com/api-evangelist/monitoring/refs/heads/main/json-schema/monitoring-synthetic-check-schema.json)
-- [JSONSchema - Incident Schema](https://raw.githubusercontent.com/api-evangelist/monitoring/refs/heads/main/json-schema/monitoring-incident-schema.json)
-- [JSON-LD](https://raw.githubusercontent.com/api-evangelist/monitoring/refs/heads/main/json-ld/monitoring-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/monitoring/refs/heads/main/vocabulary/monitoring-vocabulary.yaml)
+## API Evangelist rating
 
-## Features
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| Name | Description |
-|------|-------------|
-| Synthetic and Uptime Monitoring | Scheduled checks executed from globally distributed probes that hit HTTP, GraphQL, and gRPC endpoints to verify availability, response codes, latency, and content assertions before real users are affected. |
-| Application Performance Monitoring (APM) | Instrumentation of application code to capture request rates, latency percentiles, error rates, throughput, and slow endpoints across services, with code-level visibility into bottlenecks. |
-| Distributed Tracing | End-to-end traces that follow a single request across microservice boundaries, captured via OpenTelemetry, Jaeger, Zipkin, or vendor SDKs to expose where latency and errors accumulate in distributed systems. |
-| Log Aggregation and Search | Centralized collection, indexing, and search of structured and unstructured logs from applications, infrastructure, and edge components, with retention tiers and query languages for incident investigation. |
-| Metrics and Time-Series | Collection of dimensional metrics from infrastructure, runtimes, and custom application counters into time-series databases like Prometheus, VictoriaMetrics, or vendor backends for dashboards and alerting. |
-| Error and Crash Tracking | Capture of exceptions, stack traces, and user context from frontends and backends, with deduplication, regression detection, and release tracking provided by tools like Sentry, Rollbar, Bugsnag, and Honeybadger. |
-| Alerting and Incident Response | Threshold and anomaly-based alerts that flow into on-call rotations, escalation policies, and incident workflows handled by PagerDuty, Opsgenie, Incident.io, FireHydrant, and similar platforms. |
-| Status Pages and Communication | Public and private status pages that communicate incident status, scheduled maintenance, and component health to customers and stakeholders during and after incidents. |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| External API Uptime Monitoring | Operate scheduled synthetic checks against public APIs from multiple regions to verify endpoint availability, TLS validity, and latency, and alert on regressions before customers report them. |
-| Microservice Performance Troubleshooting | Use distributed tracing and APM to follow slow or failing requests across microservices, identify the responsible span, and correlate with logs and metrics from the same time window. |
-| SRE Service Level Objective Tracking | Define and track service level indicators and objectives using tools like Nobl9, Datadog, and Prometheus, computing error budgets and burn rates against availability and latency targets. |
-| On-Call Paging and Escalation | Route alerts from monitoring systems to the right on-call engineer with PagerDuty, Opsgenie, or Squadcast, including escalation policies, schedule rotations, and acknowledgement tracking. |
-| Incident Response and Postmortems | Coordinate incident response with platforms like Incident.io, FireHydrant, and Rootly that open Slack channels, assign roles, track timelines, and generate postmortem documents. |
-| Frontend Error and Session Monitoring | Capture frontend exceptions, console errors, network failures, and replayable user sessions with Sentry, LogRocket, OpenReplay, and Bugsnag to diagnose customer-facing bugs. |
-| Status Page Communication | Publish real-time status of API components on Statuspage, Better Stack, or OneUptime so customers and integrators know when degradations and outages affect them. |
-| Cost-Optimized Log Pipelines | Use observability pipelines like Cribl, Vector, and Fluent Bit to route, transform, and tier log data before it lands in expensive indexing backends, reducing observability spend. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Monitoring: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| Datadog | SaaS observability platform combining metrics, traces, logs, RUM, synthetic monitoring, and security signals in a single backend. |
-| New Relic | Full-stack observability platform offering APM, infrastructure monitoring, logs, browser, mobile, and synthetic monitoring under a unified pricing model. |
-| PagerDuty | Incident response platform that ingests alerts from monitoring tools and routes them through on-call schedules, escalation policies, and incident workflows. |
-| Sentry | Open-source error tracking and performance monitoring for frontends and backends with release tracking, source maps, and issue triage. |
-| Prometheus | Open-source dimensional metrics database with a pull-based scraper, PromQL query language, and a foundational role in Kubernetes observability stacks. |
-| Grafana | Open-source dashboarding and alerting frontend that visualizes data from Prometheus, Loki, Tempo, and dozens of other data sources. |
-| OpenTelemetry | CNCF specification, SDKs, and collector for emitting traces, metrics, and logs in a vendor-neutral format to any compatible backend. |
-| Statuspage | Atlassian-hosted status page service used by API providers to communicate component status, incidents, and scheduled maintenance to customers. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable API specifications organized by format.
-
-### JSON Schema
-
-- [Synthetic Check Schema](json-schema/monitoring-synthetic-check-schema.json)
-- [Incident Schema](json-schema/monitoring-incident-schema.json)
-
-### JSON Structure
-
-- [Synthetic Check Structure](json-structure/monitoring-synthetic-check-structure.json)
-- [Incident Structure](json-structure/monitoring-incident-structure.json)
-
-### JSON-LD
-
-- [Monitoring Context](json-ld/monitoring-context.jsonld)
-
-## Vocabulary
-
-- [Monitoring Vocabulary](vocabulary/monitoring-vocabulary.yaml) — Unified taxonomy mapping resources, actions, workflows, and personas across API monitoring, observability, and incident response
-
-## Network
-
-This index references the following API monitoring, observability, and incident response repositories:
-
-- [Airbrake](https://github.com/api-evangelist/airbrake)
-- [Amazon CloudWatch](https://github.com/api-evangelist/aws-cloudwatch)
-- [AppDynamics](https://github.com/api-evangelist/appdynamics)
-- [APIToolkit](https://github.com/api-evangelist/apitoolkit)
-- [Assertible](https://github.com/api-evangelist/assertible)
-- [Axiom](https://github.com/api-evangelist/axiom)
-- [Azure Monitor](https://github.com/api-evangelist/microsoft-azure-monitor)
-- [Better Stack](https://github.com/api-evangelist/better-stack)
-- [BigPanda](https://github.com/api-evangelist/bigpanda)
-- [Bugsnag](https://github.com/api-evangelist/bugsnag)
-- [Checkly](https://github.com/api-evangelist/checkly)
-- [Chronosphere](https://github.com/api-evangelist/chronosphere)
-- [Coralogix](https://github.com/api-evangelist/coralogix)
-- [Cribl](https://github.com/api-evangelist/cribl)
-- [Datadog](https://github.com/api-evangelist/datadog)
-- [Dynatrace](https://github.com/api-evangelist/dynatrace)
-- [Elastic Observability](https://github.com/api-evangelist/elastic-observability)
-- [FireHydrant](https://github.com/api-evangelist/firehydrant)
-- [Google Cloud Monitoring](https://github.com/api-evangelist/google-cloud-monitoring)
-- [Grafana](https://github.com/api-evangelist/grafana)
-- [Graylog](https://github.com/api-evangelist/graylog)
-- [Honeybadger](https://github.com/api-evangelist/honeybadger)
-- [Honeycomb](https://github.com/api-evangelist/honeycomb)
-- [Incident.io](https://github.com/api-evangelist/incident-io)
-- [Instana](https://github.com/api-evangelist/instana)
-- [Jaeger](https://github.com/api-evangelist/jaeger)
-- [Lightstep](https://github.com/api-evangelist/lightstep)
-- [LogicMonitor](https://github.com/api-evangelist/logicmonitor)
-- [LogRocket](https://github.com/api-evangelist/logrocket)
-- [Middleware](https://github.com/api-evangelist/middleware)
-- [Moogsoft](https://github.com/api-evangelist/moogsoft)
-- [Nagios](https://github.com/api-evangelist/nagios)
-- [New Relic](https://github.com/api-evangelist/new-relic)
-- [Nobl9](https://github.com/api-evangelist/nobl9)
-- [NodePing](https://github.com/api-evangelist/nodeping)
-- [OneUptime](https://github.com/api-evangelist/oneuptime)
-- [OpenObserve](https://github.com/api-evangelist/openobserve)
-- [OpenReplay](https://github.com/api-evangelist/openreplay)
-- [OpenTelemetry](https://github.com/api-evangelist/opentelemetry)
-- [OpsGenie](https://github.com/api-evangelist/opsgenie)
-- [PagerDuty](https://github.com/api-evangelist/pagerduty)
-- [Pingdom](https://github.com/api-evangelist/pingdom)
-- [Prometheus](https://github.com/api-evangelist/prometheus)
-- [Rollbar](https://github.com/api-evangelist/rollbar)
-- [Rootly](https://github.com/api-evangelist/rootly)
-- [Sentry](https://github.com/api-evangelist/sentry)
-- [SigNoz](https://github.com/api-evangelist/signoz)
-- [SIGNL4](https://github.com/api-evangelist/signl4)
-- [Splunk](https://github.com/api-evangelist/splunk)
-- [Splunk On-Call (VictorOps)](https://github.com/api-evangelist/victorops)
-- [Squadcast](https://github.com/api-evangelist/squadcast)
-- [Statuspage](https://github.com/api-evangelist/statuspage)
-- [Sumo Logic](https://github.com/api-evangelist/sumo-logic)
-- [Sysdig](https://github.com/api-evangelist/sysdig)
-- [Traceable](https://github.com/api-evangelist/traceable)
-- [Treblle](https://github.com/api-evangelist/treblle)
-- [Uptrace](https://github.com/api-evangelist/uptrace)
-- [VictoriaMetrics](https://github.com/api-evangelist/victoriametrics)
-- [xMatters](https://github.com/api-evangelist/xmatters)
-- [Zabbix](https://github.com/api-evangelist/zabbix)
-- [Zenduty](https://github.com/api-evangelist/zenduty)
-- [Zipkin](https://github.com/api-evangelist/zipkin)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/monitoring/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
