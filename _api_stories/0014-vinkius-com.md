@@ -1,6 +1,6 @@
 ---
-title: 'New Relic AI MCP: Real-Time LLM Observability & Cost Tracking'
-link: https://vinkius.com/new-relic-ai-llm-observability-mcp/
+title: Real-Time OFAC Sanctions Service Monitoring with MCP Server
+link: https://vinkius.com/automating-ofac-sanctions-checks-with-mcp-server/
 published: '2026-07-09'
 provider: vinkius-com
 repo: https://github.com/api-evangelist/vinkius-com
